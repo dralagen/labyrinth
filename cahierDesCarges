@@ -1,0 +1,49 @@
+labyrinth
+=========
+
+N=15
+taille NxN
+
+case du début   (1,1).
+case de la fin  (N,N).
+
+Génération :
+-------------
+    Lecture du fichier : labyrinth
+      0 : salle
+      1 : mur
+
+
+INFO
+----
+
+
+but aller de la case début a la case fin en restant en vie
+  par default :
+    debut: 1x1
+    fin : 15x15
+vie=0;
+XP=0;
+lvl=1;
+armure=100;
+
+piece, event propa, armure, :
+- vide               5/20 => +5%   armure => 10/lvl  % XP
+- armure             4/20 => +50%  armure => 10/lvl  % XP
+- monstre inoffencif 4/20 => -0%   armure => 50/lvl  % XP
+- monstre facile     2/20 => -10%  armure => 100/lvl % XP
+- monstre moyen      2/20 => -25%  armure => 200/lvl % XP
+- monstre difficile  2/20 => -50%  armure => 400/lvl % XP
+- monstre impossible 1/20 => -100% armure => 0 XP
+
+Mort => -1 vie
+    si vie == -1 alors game over
+
+tant que  XP >= 100% alors
+    vie++;
+    lvl=1;
+    XP-=100;
+
+si armure > 100 alors armure = 100
+si armure < 0 alors vie--
+
