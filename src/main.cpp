@@ -6,13 +6,15 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-	int tailleX, tailleY;
+	int tailleX=16, tailleY=16;
 
+	/*
 	cout << "Taille en abscisse : ";
 	cin >> tailleX;
 	cout << "Taille en ordonnée : ";
 	cin >> tailleY;
 	cout << endl;
+	*/
 
 	Labyrinth laby(tailleX,tailleY);
 	laby.print();

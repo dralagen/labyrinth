@@ -14,13 +14,13 @@ struct pos {
 class Labyrinth
 {
 	public:
-		Labyrinth(int x = 10, int y = 5);
+		Labyrinth(int x = 8, int y = 8);
 		~Labyrinth();
 
 		void print() const;
 	private:
-		int m_tailleX,m_tailleY;
-		Room *m_rooms;
+		int   m_tailleX, m_tailleY;
+		Room **m_rooms;
 		bool *m_visited;
 
 		int position(int x, int y) const;

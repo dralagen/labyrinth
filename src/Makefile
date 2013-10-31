@@ -13,11 +13,11 @@ laby: $(OBJ)
 %.o: %.c
 	@$(CC) -o $@ -c $< $(CFLAGS)
 
-.PHONY: clean mrproper
+.PHONY: clean delete
 
 clean:
 	@rm -rf *.o
 
-mrproper: clean
+delete: clean
 	@rm -rf $(EXEC)
-			
+

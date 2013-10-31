@@ -8,19 +8,19 @@ Room::~Room() {
 
 
 void Room::top(std::string &s) const {
-	s += BORDER;
-	s += (m_north)?" ":BORDER;
-	s += BORDER;
+	s += WALL;
+	s += (m_north)?OPEN_DOOR:CLOSED_DOOR;
+	s += WALL;
 }
 void Room::center(std::string &s) const {
-	s += (m_west)?" ":BORDER;
-	s += " ";
-	s += (m_east)?" ":BORDER;
+	s += (m_west)?OPEN_DOOR:CLOSED_DOOR;
+	s += CONTENT;
+	s += (m_east)?OPEN_DOOR:CLOSED_DOOR;
 }
 void Room::bottom(std::string &s) const {
-	s += BORDER;
-	s += (m_south)?" ":BORDER;
-	s += BORDER;
+	s += WALL;
+	s += (m_south)?OPEN_DOOR:CLOSED_DOOR;
+	s += WALL;
 }
 
 void Room::setNorth	(bool b)	{ m_north	= b; }
