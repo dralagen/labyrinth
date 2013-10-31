@@ -4,11 +4,24 @@ Labyrinth::Labyrinth(int x, int y) : m_tailleX(x), m_tailleY(y) {
 	m_rooms = new Room*[m_tailleX*m_tailleY];
 	m_visited = new bool[m_tailleX*m_tailleY];
 
-	for (int i = 0; i < m_tailleX*m_tailleY; ++i) {
-		m_rooms[i] = new Room;
-	}
-
 	srand(time(NULL));
+
+	m_rooms[0] = new StartRoom;
+	m_rooms[(m_tailleX*m_tailleY)-1] = new EndRoom;
+
+	int random;
+	for (int i = 0; i < m_tailleX*m_tailleY; ++i) {
+		if (m_rooms[i] == NULL) {
+			random = rand()%100;
+			if (random < 30) {
+				m_rooms[i] = new EmptyRoom;
+			} else if (random < 50) {
+				m_rooms[i] = new TreasureRoom;
+			}	else {
+				m_rooms[i] = new MonsterRoom;
+			}
+		}
+	}
 
 	pos p = {.x = m_tailleX-1, .y = m_tailleY-1};
 	init(p);

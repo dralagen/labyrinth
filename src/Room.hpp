@@ -5,7 +5,6 @@
 #include <iostream>
 
 #define WALL        "##"
-#define CONTENT     "  "
 #define OPEN_DOOR   "  "
 #define CLOSED_DOOR "##"
 
@@ -13,8 +12,7 @@ class Room
 {
 	public:
 		Room();
-
-		~Room();
+		//virtual ~Room();
 
 		void top(std::string &s) const;
 		void center(std::string &s) const;
@@ -25,7 +23,7 @@ class Room
 		void setSouth ( bool b );
 		void setWest  ( bool b );
 
-	private:
+	protected:
 		std::string m_content;
 		bool m_north, m_east, m_south, m_west;
 };

@@ -1,11 +1,7 @@
 #include "Room.hpp"
-Room::Room(): m_content("vide"), m_north(false), m_east(false), m_south(false), m_west(false)
+Room::Room(): m_content("  "), m_north(false), m_east(false), m_south(false), m_west(false)
 {
 }
-
-Room::~Room() {
-}
-
 
 void Room::top(std::string &s) const {
 	s += WALL;
@@ -14,7 +10,7 @@ void Room::top(std::string &s) const {
 }
 void Room::center(std::string &s) const {
 	s += (m_west)?OPEN_DOOR:CLOSED_DOOR;
-	s += CONTENT;
+	s += m_content;
 	s += (m_east)?OPEN_DOOR:CLOSED_DOOR;
 }
 void Room::bottom(std::string &s) const {
