@@ -13,6 +13,9 @@
 #include <ctime>
 
 
+#define LABYRINTH_TAILLE_X_DEFAULT 8
+#define LABYRINTH_TAILLE_Y_DEFAULT 8
+
 struct pos {
 	int x, y;
 };
@@ -20,14 +23,17 @@ struct pos {
 class Labyrinth
 {
 	public:
-		Labyrinth(int x = 8, int y = 8);
+		Labyrinth(int x = LABYRINTH_TAILLE_X_DEFAULT, int y = LABYRINTH_TAILLE_Y_DEFAULT);
 		~Labyrinth();
+		Labyrinth(const Labyrinth &lab);
+		Labyrinth& operator=(const Labyrinth &lab);
 
-		void print() const;
+
+		void print(bool godMode = false) const;
 	private:
-		int   m_tailleX, m_tailleY;
+		const int    m_tailleX  , m_tailleY;
+		pos    m_current;
 		Room **m_rooms;
-		bool *m_visited;
 
 		int position(int x, int y) const;
 		int position(pos p) const;

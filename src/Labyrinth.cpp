@@ -2,12 +2,15 @@
 
 Labyrinth::Labyrinth(int x, int y) : m_tailleX(x), m_tailleY(y) {
 	m_rooms = new Room*[m_tailleX*m_tailleY];
-	m_visited = new bool[m_tailleX*m_tailleY];
 
 	srand(time(NULL));
 
-	m_rooms[0] = new StartRoom;
-	m_rooms[(m_tailleX*m_tailleY)-1] = new EndRoom;
+	m_current.x = (rand()%m_tailleX);
+	m_current.y = (rand()%m_tailleY);
+	m_rooms[position(m_current)] = new StartRoom;
+
+	pos p = {.x = (rand()%m_tailleX), .y = (rand()%m_tailleY)};
+	m_rooms[position(p)] = new EndRoom;
 
 	int random;
 	for (int i = 0; i < m_tailleX*m_tailleY; ++i) {
@@ -23,8 +26,28 @@ Labyrinth::Labyrinth(int x, int y) : m_tailleX(x), m_tailleY(y) {
 		}
 	}
 
-	pos p = {.x = m_tailleX-1, .y = m_tailleY-1};
 	init(p);
+	for (int i = 0; i < m_tailleY*m_tailleX; ++i) {
+		m_rooms[i]->setVisited(false);
+	}
+
+/*********************************************
+ *  Relance l'init pour faire plus de porte  *
+ *********************************************/
+	init(p);
+	for (int i = 0; i < m_tailleY*m_tailleX; ++i) {
+		m_rooms[i]->setVisited(false);
+	}
+	m_rooms[position(m_current)]->setVisited(true);
+}
+
+Labyrinth::Labyrinth(const Labyrinth &lab):m_tailleY(lab.m_tailleY), m_tailleX(lab.m_tailleX) {
+	m_current = m_current;
+	m_rooms = new Room*[m_tailleY*m_tailleX];
+
+	for (int i = 0; i < m_tailleY*m_tailleX; ++i) {
+		m_rooms[i] = new Room(*lab.m_rooms[i]);
+	}
 }
 
 Labyrinth::~Labyrinth() {
@@ -32,10 +55,17 @@ Labyrinth::~Labyrinth() {
 		delete m_rooms[i];
 	}
 	delete[] m_rooms;
-	delete[] m_visited;
 }
 
-void Labyrinth::print() const {
+Labyrinth &Labyrinth::operator=(const Labyrinth &lab) {
+	if (&lab != this) {
+		Labyrinth tmp(lab);
+		std::swap(tmp, *this);
+	}
+	return *this;
+}
+
+void Labyrinth::print(bool godMode) const {
 	std::string top,bottom,center;
 
 	for (int y = 0; y < m_tailleY; y++)
@@ -45,9 +75,7 @@ void Labyrinth::print() const {
 		bottom="";
 		for (int x = 0; x < m_tailleX; x++)
 		{
-			m_rooms[position(x,y)]->top(top);
-			m_rooms[position(x,y)]->bottom(bottom);
-			m_rooms[position(x,y)]->center(center);
+			m_rooms[position(x,y)]->print(top,center,bottom, godMode);
 		}
 		std::cout << top << std::endl << center << std::endl << bottom << std::endl;
 	}
@@ -72,8 +100,7 @@ int Labyrinth::position(pos p) const {
 }
 
 void Labyrinth::init(pos p) {
-	m_visited[position(p)] = true;
-
+	m_rooms[position(p)]->setVisited(true);
 	while (hasAdjacent(p)) {
 		pos np = oneAdjacent(p); //choose the next salle
 		openDoor(p,np);
@@ -82,7 +109,7 @@ void Labyrinth::init(pos p) {
 }
 
 void Labyrinth::openDoor(pos p1, pos p2) {
-	if (p1.x == p2.x) {
+	if (p1.x == p2.x && p1.y != p2.y) {
 		if (p1.y > p2.y) {
 			m_rooms[position(p1)]->setNorth(true);
 			m_rooms[position(p2)]->setSouth(true);
@@ -92,7 +119,7 @@ void Labyrinth::openDoor(pos p1, pos p2) {
 			m_rooms[position(p2)]->setNorth(true);
 		}
 	}
-	else {
+	else if (p1.x != p2.x && p1.y == p2.y) {
 		if (p1.x > p2.x) {
 			m_rooms[position(p1)]->setWest(true);
 			m_rooms[position(p2)]->setEast(true);
@@ -102,13 +129,14 @@ void Labyrinth::openDoor(pos p1, pos p2) {
 			m_rooms[position(p2)]->setWest(true);
 		}
 	}
+	// else not adjacent door.
 }
 
 bool Labyrinth::hasAdjacent(pos p) const {
-	return !( m_visited[position(p.x+1, p.y		)] 	&&
-						m_visited[position(p.x  , p.y+1	)]	&&
-						m_visited[position(p.x-1, p.y		)] 	&&
-						m_visited[position(p.x  , p.y-1	)]
+	return !( m_rooms[position(p.x+1, p.y		)]->getVisited() 	&&
+						m_rooms[position(p.x  , p.y+1	)]->getVisited()	&&
+						m_rooms[position(p.x-1, p.y		)]->getVisited() 	&&
+						m_rooms[position(p.x  , p.y-1	)]->getVisited()
 					);
 }
 
@@ -118,23 +146,23 @@ pos Labyrinth::oneAdjacent(pos p) const {
 	do {
 		switch (random) {
 			case 1:
-				if (!m_visited[position(p.x-1, p.y)]) {
+				if (!m_rooms[position(p.x-1, p.y)]->getVisited()) {
 					np.x = np.x-1;
 				}
 				break;
 			case 2:
-				if (!m_visited[position(p.x+1, p.y)]) {
+				if (!m_rooms[position(p.x+1, p.y)]->getVisited()) {
 					np.x = np.x+1;
 				}
 				break;
 			case 3:
-				if (!m_visited[position(p.x, p.y-1)]) {
+				if (!m_rooms[position(p.x, p.y-1)]->getVisited()) {
 					np.y = np.y-1;
 				}
 
 				break;
 			default:
-				if (!m_visited[position(p.x, p.y+1)]) {
+				if (!m_rooms[position(p.x, p.y+1)]->getVisited()) {
 					np.y = np.y+1;
 				}
 
