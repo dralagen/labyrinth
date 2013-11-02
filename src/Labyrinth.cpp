@@ -12,6 +12,8 @@ Labyrinth::Labyrinth(int x, int y) : m_tailleX(x), m_tailleY(y) {
 	pos p = {.x = (rand()%m_tailleX), .y = (rand()%m_tailleY)};
 	m_rooms[position(p)] = new EndRoom;
 
+	std::cout << m_rooms[position(p)]->isEnd() << std::endl;
+	
 	int random;
 	for (int i = 0; i < m_tailleX*m_tailleY; ++i) {
 		if (m_rooms[i] == NULL) {
@@ -31,9 +33,9 @@ Labyrinth::Labyrinth(int x, int y) : m_tailleX(x), m_tailleY(y) {
 		m_rooms[i]->setVisited(false);
 	}
 
-/*********************************************
- *  Relance l'init pour faire plus de porte  *
- *********************************************/
+	/*********************************************
+	 *  Relance l'init pour faire plus de porte  *
+	 *********************************************/
 	init(p);
 	for (int i = 0; i < m_tailleY*m_tailleX; ++i) {
 		m_rooms[i]->setVisited(false);
@@ -172,3 +174,50 @@ pos Labyrinth::oneAdjacent(pos p) const {
 	return np;
 }
 
+bool Labyrinth::hasNorth() {
+	return m_rooms[position(m_current)]->getNorth();
+}
+
+bool Labyrinth::hasEast() {
+	return m_rooms[position(m_current)]->getEast();
+}
+
+bool Labyrinth::hasSouth() {
+	return m_rooms[position(m_current)]->getSouth();
+}
+
+bool Labyrinth::hasWest() {
+	return m_rooms[position(m_current)]->getWest();
+}
+
+void Labyrinth::goNorth() {
+	if (hasNorth()) {
+		m_current.y--;
+		m_rooms[position(m_current)]->setVisited(true);
+	}
+}
+
+void Labyrinth::goEast() {
+	if (hasEast()) {
+		m_current.x++;
+		m_rooms[position(m_current)]->setVisited(true);
+	}
+}
+
+void Labyrinth::goSouth() {
+	if (hasSouth()) {
+		m_current.y++;
+		m_rooms[position(m_current)]->setVisited(true);
+	}
+}
+
+void Labyrinth::goWest() {
+	if (hasWest()) {
+		m_current.x--;
+		m_rooms[position(m_current)]->setVisited(true);
+	}
+}
+
+bool Labyrinth::isEnd() {
+	return m_rooms[position(m_current)]->isEnd();
+}

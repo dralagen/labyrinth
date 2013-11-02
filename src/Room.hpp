@@ -15,12 +15,16 @@ class Room
 		Room();
 		//virtual ~Room();
 
-		void print  (std::string  &t, std::string &c, std::string &b, bool godMode = false) const;
+		void print  (std::string  &t,
+								 std::string &c,
+								 std::string &b,
+								 bool godMode = false) const;
 
+		virtual bool isEnd() const;
 
-/************
- *  Setter  *
- ************/
+		/************
+		 *  Setter  *
+		 ************/
 
 		void setNorth   (bool b);
 		void setEast    (bool b);
@@ -28,10 +32,14 @@ class Room
 		void setWest    (bool b);
 		void setVisited (bool b);
 
-/************
- *  Getter  *
- ************/
-		bool getVisited ();
+		/************
+		 *  Getter  *
+		 ************/
+		bool getNorth   () const;
+		bool getEast    () const;
+		bool getSouth   () const;
+		bool getWest    () const;
+		bool getVisited () const;
 
 	protected:
 		std::string m_content;

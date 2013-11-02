@@ -16,6 +16,7 @@ int main(int argc, char **argv)
 	cout << endl;
 
 	Game g(tailleX,tailleY);
+
 	g.launch();
 
 	return 0;

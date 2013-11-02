@@ -3,3 +3,4 @@
 StartRoom::StartRoom(): Room::Room() {
 	m_content = "St";
 }
+

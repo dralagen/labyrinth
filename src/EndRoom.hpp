@@ -9,6 +9,8 @@ class EndRoom : public Room
 		EndRoom ();
 		//virtual ~EndRoom();
 
+		bool isEnd() const;
+
 	private:
 		/* data */
 };

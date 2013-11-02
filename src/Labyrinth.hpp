@@ -23,13 +23,26 @@ struct pos {
 class Labyrinth
 {
 	public:
-		Labyrinth(int x = LABYRINTH_TAILLE_X_DEFAULT, int y = LABYRINTH_TAILLE_Y_DEFAULT);
+		Labyrinth(int x = LABYRINTH_TAILLE_X_DEFAULT,
+							int y = LABYRINTH_TAILLE_Y_DEFAULT);
 		~Labyrinth();
 		Labyrinth(const Labyrinth &lab);
 		Labyrinth& operator=(const Labyrinth &lab);
 
-
 		void print(bool godMode = false) const;
+
+		bool hasNorth();
+		bool hasEast();
+		bool hasSouth();
+		bool hasWest();
+
+		void goNorth();
+		void goEast();
+		void goSouth();
+		void goWest();
+
+		bool isEnd();
+
 	private:
 		const int    m_tailleX  , m_tailleY;
 		pos    m_current;

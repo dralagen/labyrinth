@@ -2,16 +2,16 @@
 Room::Room(): m_content("  "), m_north(false), m_east(false), m_south(false), m_west(false), m_visited(false) {}
 
 void Room::print(std::string &t, std::string &c, std::string &b, bool godMode) const {
- if (m_visited || godMode) {
+	if (m_visited || godMode) {
 		top(t);
 		center(c);
 		bottom(b);
- } else {
+	} else {
 		t+=FOG;
 		c+=FOG;
 		b+=FOG;
 
- }
+	}
 }
 
 
@@ -37,4 +37,12 @@ void Room::setSouth   (bool  b) { m_south   = b; }
 void Room::setWest    (bool  b) { m_west    = b; }
 void Room::setVisited (bool  b) { m_visited = b; }
 
-bool Room::getVisited () { return m_visited; }
+
+bool Room::getNorth    ( ) const { return m_north;   }
+bool Room::getEast     ( ) const { return m_east;    }
+bool Room::getSouth    ( ) const { return m_south;   }
+bool Room::getWest     ( ) const { return m_west;    }
+bool Room::getVisited  ( ) const { return m_visited; }
+
+bool Room::isEnd() const { return false; }
+
