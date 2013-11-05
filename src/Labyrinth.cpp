@@ -39,17 +39,19 @@ Labyrinth::Labyrinth(int x, int y) : m_tailleX(x), m_tailleY(y) {
 	for (int i = 0; i < m_tailleY*m_tailleX; ++i) {
 		m_rooms[i]->setUnvisited();
 	}
-	m_rooms[position(m_current)]->setVisited();
+	m_rooms[position(m_current)]->setPosition();
 }
 
+/*
 Labyrinth::Labyrinth(const Labyrinth &lab):m_tailleY(lab.m_tailleY), m_tailleX(lab.m_tailleX) {
 	m_current = m_current;
 	m_rooms = new Room*[m_tailleY*m_tailleX];
 
 	for (int i = 0; i < m_tailleY*m_tailleX; ++i) {
-		m_rooms[i] = new Room(*lab.m_rooms[i]);
+		m_rooms[i] = new Room(lab.m_rooms[i]);
 	}
 }
+*/
 
 Labyrinth::~Labyrinth() {
 	for (int i = 0; i < m_tailleY*m_tailleX; ++i) {
@@ -193,7 +195,7 @@ void Labyrinth::goNorth() {
 	if (hasNorth()) {
 		m_precedent = m_current;
 		m_current.y--;
-		m_rooms[position(m_current)]->setVisited();
+		newPosition();
 	}
 }
 
@@ -201,7 +203,7 @@ void Labyrinth::goEast() {
 	if (hasEast()) {
 		m_precedent = m_current;
 		m_current.x++;
-		m_rooms[position(m_current)]->setVisited();
+		newPosition();
 	}
 }
 
@@ -209,7 +211,7 @@ void Labyrinth::goSouth() {
 	if (hasSouth()) {
 		m_precedent = m_current;
 		m_current.y++;
-		m_rooms[position(m_current)]->setVisited();
+		newPosition();
 	}
 }
 
@@ -217,8 +219,17 @@ void Labyrinth::goWest() {
 	if (hasWest()) {
 		m_precedent = m_current;
 		m_current.x--;
-		m_rooms[position(m_current)]->setVisited();
+		newPosition();
 	}
+}
+
+void Labyrinth::newPosition() {
+	m_rooms[position(m_precedent)]->setVisited();
+	m_rooms[position(m_current)]->setPosition();
+}
+
+void Labyrinth::action() {
+	m_rooms[position(m_current)]->action();
 }
 
 bool Labyrinth::isEnd() {

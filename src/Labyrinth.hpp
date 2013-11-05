@@ -21,10 +21,11 @@ class Labyrinth
 		Labyrinth(int x = LABYRINTH_TAILLE_X_DEFAULT,
 							int y = LABYRINTH_TAILLE_Y_DEFAULT);
 		~Labyrinth();
-		Labyrinth(const Labyrinth &lab);
+		//Labyrinth(const Labyrinth &lab);
 		Labyrinth& operator=(const Labyrinth &lab);
 
 		void print(bool godMode = false) const;
+		void action();
 
 		bool hasNorth();
 		bool hasEast();
@@ -46,6 +47,8 @@ class Labyrinth
 
 		int position(int x, int y) const;
 		int position(pos p) const;
+
+		void newPosition();
 
 		void init(pos p);
 		void openDoor(pos p1, pos p2);

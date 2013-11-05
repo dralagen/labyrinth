@@ -9,8 +9,7 @@ class TreasureRoom : public Room
 		TreasureRoom ();
 		//virtual ~TreasureRoom ();
 
-	private:
-		/* data */
+		virtual void action();
 };
 
 #endif /* TREASUREROOM_HPP */

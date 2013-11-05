@@ -1,7 +1,7 @@
 #include "Room.hpp"
 
 Room::Room(): m_content("  "), m_north(false), m_east(false), m_south(false), m_west(false) {
-	m_etat = new RoomEtat(this);
+	m_etat = new RoomEtatUnvisited(this);
 }
 
 Room::~Room() {
@@ -17,6 +17,7 @@ void Room::print(std::string &t, std::string &c, std::string &b, bool godMode) c
 		m_etat->print(t,c,b);
 	}
 }
+
 
 void Room::top(std::string &s) const {
 	s += WALL;
@@ -43,9 +44,13 @@ void Room::setVisited () {
 	delete m_etat;
 	m_etat = new RoomEtatVisited(this);
 }
+void Room::setPosition () {
+	delete m_etat;
+	m_etat = new RoomEtatPosition(this);
+}
 void Room::setUnvisited () {
 	delete m_etat;
-	m_etat = new RoomEtat(this);
+	m_etat = new RoomEtatUnvisited(this);
 }
 
 bool Room::getNorth    ( ) const { return m_north;   }

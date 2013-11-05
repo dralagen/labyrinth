@@ -1,12 +1,8 @@
 #ifndef ROOMETATVISITED_HPP
 #define ROOMETATVISITED_HPP
 
-#include <iostream>
-#include <string>
-
 #include "RoomEtat.hpp"
 
-class RoomEtat;
 class RoomEtatVisited : public RoomEtat
 {
 	public:

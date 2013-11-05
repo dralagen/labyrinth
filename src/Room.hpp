@@ -8,6 +8,7 @@
 
 #define WALL        "##"
 #define EMPTY       "  "
+#define POSITION    "Me"
 #define OPEN_DOOR   "  "
 #define CLOSED_DOOR "##"
 #define FOG         "******"
@@ -27,6 +28,8 @@ class Room
 
 		virtual bool isEnd() const;
 
+		virtual void action()=0;
+
 		/************
 		 *  Setter  *
 		 ************/
@@ -36,7 +39,12 @@ class Room
 		void setSouth   (bool b);
 		void setWest    (bool b);
 
+
+		/***************
+		 *  Etat Room  *
+		 ***************/
 		void setVisited   ();
+		void setPosition  ();
 		void setUnvisited ();
 
 		/************

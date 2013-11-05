@@ -9,8 +9,7 @@ class StartRoom : public Room
 		StartRoom ();
 		//virtual ~StartRoom();
 
-	private:
-		/* data */
+		virtual void action();
 };
 
 #endif /* STARTROOM_HPP */

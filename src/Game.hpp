@@ -10,7 +10,8 @@ class Game
 	public:
 		Game (int x = LABYRINTH_TAILLE_X_DEFAULT,
 					int y = LABYRINTH_TAILLE_Y_DEFAULT);
-		Game (const Labyrinth &lab);
+		//Game (const Labyrinth &lab);
+
 		//virtual ~Game ();
 
 		void launch();

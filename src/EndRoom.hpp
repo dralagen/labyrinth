@@ -9,10 +9,9 @@ class EndRoom : public Room
 		EndRoom ();
 		//virtual ~EndRoom();
 
-		bool isEnd() const;
+		virtual bool isEnd() const;
 
-	private:
-		/* data */
+		virtual void action();
 };
 
 #endif /* ENDROOM_HPP */

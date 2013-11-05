@@ -8,12 +8,3 @@ RoomEtat::RoomEtat(Room *r) {
 
 RoomEtat::~RoomEtat() {}
 
-void RoomEtat::print(std::string &t,
-				 						 std::string &c,
-						 				 std::string &b) const {
-	t += FOG;
-	c += FOG;
-	b += FOG;
-}
-
-bool RoomEtat::visited() const { return false; }

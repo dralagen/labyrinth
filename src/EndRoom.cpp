@@ -6,3 +6,6 @@ EndRoom::EndRoom() : Room::Room() {
 
 bool EndRoom::isEnd() const { return !Room::isEnd(); }
 
+void EndRoom::action() {
+	std::cout << "You win !!" << std::endl;
+}

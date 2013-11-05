@@ -9,8 +9,7 @@ class MonsterRoom : public Room
 		MonsterRoom ();
 		//virtual ~MonsterRoom ();
 
-	private:
-		/* data */
+		virtual void action();
 };
 
 #endif /* MONSTERROOM_HPP */

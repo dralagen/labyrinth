@@ -16,9 +16,9 @@ class RoomEtat
 
 		virtual void print  (std::string &t,
 												 std::string &c,
-												 std::string &b) const;
+												 std::string &b) const = 0;
 
-		virtual bool visited() const;
+		virtual bool visited() const = 0;
 
 	protected:
 		Room *m_room;
@@ -26,6 +26,8 @@ class RoomEtat
 
 
 #include "RoomEtatVisited.hpp"
+#include "RoomEtatPosition.hpp"
+#include "RoomEtatUnvisited.hpp"
 
 #endif /* ROOMETAT_HPP */
 

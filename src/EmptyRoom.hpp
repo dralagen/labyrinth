@@ -9,6 +9,8 @@ class EmptyRoom : public Room
 		EmptyRoom ();
 		//virtual ~EmptyRoom();
 
+		virtual void action();
+
 	private:
 };
 
