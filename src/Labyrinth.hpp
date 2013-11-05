@@ -2,11 +2,6 @@
 #define LABYRINTH_HPP
 
 #include "Room.hpp"
-#include "EmptyRoom.hpp"
-#include "StartRoom.hpp"
-#include "EndRoom.hpp"
-#include "MonsterRoom.hpp"
-#include "TreasureRoom.hpp"
 
 #include <iostream>
 #include <cstdlib>
@@ -44,8 +39,9 @@ class Labyrinth
 		bool isEnd();
 
 	private:
-		const int    m_tailleX  , m_tailleY;
-		pos    m_current;
+		const int m_tailleX    , m_tailleY;
+		pos       m_current;
+		pos       m_precedent;
 		Room **m_rooms;
 
 		int position(int x, int y) const;

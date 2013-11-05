@@ -4,18 +4,23 @@
 #include <string>
 #include <iostream>
 
+#include "RoomEtat.hpp"
+
 #define WALL        "##"
+#define EMPTY       "  "
 #define OPEN_DOOR   "  "
 #define CLOSED_DOOR "##"
-#define FOG					"******"
+#define FOG         "******"
+
+class RoomEtat;
 
 class Room
 {
 	public:
 		Room();
-		//virtual ~Room();
+		virtual ~Room();
 
-		void print  (std::string  &t,
+		void print  (std::string &t,
 								 std::string &c,
 								 std::string &b,
 								 bool godMode = false) const;
@@ -30,7 +35,9 @@ class Room
 		void setEast    (bool b);
 		void setSouth   (bool b);
 		void setWest    (bool b);
-		void setVisited (bool b);
+
+		void setVisited   ();
+		void setUnvisited ();
 
 		/************
 		 *  Getter  *
@@ -44,12 +51,19 @@ class Room
 	protected:
 		std::string m_content;
 		bool m_north, m_east, m_south, m_west;
-		bool m_visited;
+
+		RoomEtat *m_etat;
 
 	private:
 		void top    (std::string  &s) const;
 		void center (std::string  &s) const;
 		void bottom (std::string  &s) const;
 };
+
+#include "EmptyRoom.hpp"
+#include "StartRoom.hpp"
+#include "EndRoom.hpp"
+#include "MonsterRoom.hpp"
+#include "TreasureRoom.hpp"
 
 #endif // ROOM_HPP

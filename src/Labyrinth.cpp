@@ -7,13 +7,12 @@ Labyrinth::Labyrinth(int x, int y) : m_tailleX(x), m_tailleY(y) {
 
 	m_current.x = (rand()%m_tailleX);
 	m_current.y = (rand()%m_tailleY);
+	m_precedent = m_current;
 	m_rooms[position(m_current)] = new StartRoom;
 
 	pos p = {.x = (rand()%m_tailleX), .y = (rand()%m_tailleY)};
 	m_rooms[position(p)] = new EndRoom;
 
-	std::cout << m_rooms[position(p)]->isEnd() << std::endl;
-	
 	int random;
 	for (int i = 0; i < m_tailleX*m_tailleY; ++i) {
 		if (m_rooms[i] == NULL) {
@@ -30,7 +29,7 @@ Labyrinth::Labyrinth(int x, int y) : m_tailleX(x), m_tailleY(y) {
 
 	init(p);
 	for (int i = 0; i < m_tailleY*m_tailleX; ++i) {
-		m_rooms[i]->setVisited(false);
+		m_rooms[i]->setUnvisited();
 	}
 
 	/*********************************************
@@ -38,9 +37,9 @@ Labyrinth::Labyrinth(int x, int y) : m_tailleX(x), m_tailleY(y) {
 	 *********************************************/
 	init(p);
 	for (int i = 0; i < m_tailleY*m_tailleX; ++i) {
-		m_rooms[i]->setVisited(false);
+		m_rooms[i]->setUnvisited();
 	}
-	m_rooms[position(m_current)]->setVisited(true);
+	m_rooms[position(m_current)]->setVisited();
 }
 
 Labyrinth::Labyrinth(const Labyrinth &lab):m_tailleY(lab.m_tailleY), m_tailleX(lab.m_tailleX) {
@@ -102,7 +101,7 @@ int Labyrinth::position(pos p) const {
 }
 
 void Labyrinth::init(pos p) {
-	m_rooms[position(p)]->setVisited(true);
+	m_rooms[position(p)]->setVisited();
 	while (hasAdjacent(p)) {
 		pos np = oneAdjacent(p); //choose the next salle
 		openDoor(p,np);
@@ -192,29 +191,33 @@ bool Labyrinth::hasWest() {
 
 void Labyrinth::goNorth() {
 	if (hasNorth()) {
+		m_precedent = m_current;
 		m_current.y--;
-		m_rooms[position(m_current)]->setVisited(true);
+		m_rooms[position(m_current)]->setVisited();
 	}
 }
 
 void Labyrinth::goEast() {
 	if (hasEast()) {
+		m_precedent = m_current;
 		m_current.x++;
-		m_rooms[position(m_current)]->setVisited(true);
+		m_rooms[position(m_current)]->setVisited();
 	}
 }
 
 void Labyrinth::goSouth() {
 	if (hasSouth()) {
+		m_precedent = m_current;
 		m_current.y++;
-		m_rooms[position(m_current)]->setVisited(true);
+		m_rooms[position(m_current)]->setVisited();
 	}
 }
 
 void Labyrinth::goWest() {
 	if (hasWest()) {
+		m_precedent = m_current;
 		m_current.x--;
-		m_rooms[position(m_current)]->setVisited(true);
+		m_rooms[position(m_current)]->setVisited();
 	}
 }
 
