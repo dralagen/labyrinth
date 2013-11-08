@@ -1,10 +1,13 @@
 #include "StartRoom.hpp"
 
-StartRoom::StartRoom(): Room::Room() {
-	m_content = "St";
+StartRoom::StartRoom() {
+ 	m_content = "St";
 }
 
-void StartRoom::action() {
+StartRoom::~StartRoom() {}
+
+bool StartRoom::action() {
 	std::cout << "Point de départ. Trouvez la sortie" << std::endl;
+	return true;
 }
 

@@ -1,11 +1,14 @@
 #include "EndRoom.hpp"
 
-EndRoom::EndRoom() : Room::Room() {
-	m_content = "Ed";
+EndRoom::EndRoom(){
+ 	m_content = "Ed";
 }
 
-bool EndRoom::isEnd() const { return !Room::isEnd(); }
+EndRoom::~EndRoom() {}
 
-void EndRoom::action() {
+bool EndRoom::isEnd() const { return true; }
+
+bool EndRoom::action() {
 	std::cout << "You win !!" << std::endl;
+	return false;
 }

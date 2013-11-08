@@ -13,7 +13,7 @@ void RoomEtatVisited::print(std::string &t,
 	t += WALL;
 
 	c += (m_room->getWest())?OPEN_DOOR:CLOSED_DOOR;
-	c += EMPTY;
+	c += m_room->getContent();
 	c += (m_room->getEast())?OPEN_DOOR:CLOSED_DOOR;
 
 	b += WALL;

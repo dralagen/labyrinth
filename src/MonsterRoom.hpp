@@ -1,15 +1,15 @@
 #ifndef MONSTERROOM_HPP
 #define MONSTERROOM_HPP
 
-#include "Room.hpp"
+#include "RoomComportement.hpp"
 
-class MonsterRoom : public Room
+class MonsterRoom : public RoomComportement
 {
 	public:
 		MonsterRoom ();
-		//virtual ~MonsterRoom ();
+		virtual ~MonsterRoom ();
 
-		virtual void action();
+		virtual bool action();
 };
 
 #endif /* MONSTERROOM_HPP */

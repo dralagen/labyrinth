@@ -1,9 +1,12 @@
 #include "TreasureRoom.hpp"
 
-TreasureRoom::TreasureRoom():Room::Room() {
+TreasureRoom::TreasureRoom() {
 	m_content = "Tr";
 }
 
-void TreasureRoom::action() {
+TreasureRoom::~TreasureRoom() {}
+
+bool TreasureRoom::action() {
 	std::cout << "Vous avez trouvé un coffre" << std::endl;
+	return true;
 }

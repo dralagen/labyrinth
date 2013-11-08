@@ -1,15 +1,15 @@
 #ifndef EMPTYROOM_HPP
 #define EMPTYROOM_HPP
 
-#include "Room.hpp"
+#include "RoomComportement.hpp"
 
-class EmptyRoom : public Room
+class EmptyRoom : public RoomComportement
 {
 	public:
 		EmptyRoom ();
-		//virtual ~EmptyRoom();
+		virtual ~EmptyRoom();
 
-		virtual void action();
+		virtual bool action();
 
 	private:
 };

@@ -1,15 +1,15 @@
 #ifndef TREASUREROOM_HPP
 #define TREASUREROOM_HPP
 
-#include "Room.hpp"
+#include "RoomComportement.hpp"
 
-class TreasureRoom : public Room
+class TreasureRoom : public RoomComportement
 {
 	public:
 		TreasureRoom ();
-		//virtual ~TreasureRoom ();
+		virtual ~TreasureRoom ();
 
-		virtual void action();
+		virtual bool action();
 };
 
 #endif /* TREASUREROOM_HPP */

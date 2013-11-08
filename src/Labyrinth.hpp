@@ -27,28 +27,35 @@ class Labyrinth
 		void print(bool godMode = false) const;
 		void action();
 
-		bool hasNorth();
-		bool hasEast();
-		bool hasSouth();
-		bool hasWest();
+		bool hasNorth() const;
+		bool hasEast() const;
+		bool hasSouth() const;
+		bool hasWest() const;
 
 		void goNorth();
 		void goEast();
 		void goSouth();
 		void goWest();
 
-		bool isEnd();
+		bool isEnd() const;
+
+		void gen();
+
+		void setStart(pos p);
+		void setStart(int x, int y);
 
 	private:
 		const int m_tailleX    , m_tailleY;
 		pos       m_current;
 		pos       m_precedent;
-		Room **m_rooms;
+		Room *m_rooms;
+		bool m_gen;
 
 		int position(int x, int y) const;
 		int position(pos p) const;
 
 		void newPosition();
+		void _gen();
 
 		void init(pos p);
 		void openDoor(pos p1, pos p2);

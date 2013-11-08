@@ -1,6 +1,10 @@
 #include "EmptyRoom.hpp"
 
-EmptyRoom::EmptyRoom() : Room::Room() {}
+EmptyRoom::EmptyRoom() {}
 
-void EmptyRoom::action() {}
+EmptyRoom::~EmptyRoom() {}
+
+bool EmptyRoom::action() {
+	return false;
+}
 

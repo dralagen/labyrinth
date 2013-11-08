@@ -14,7 +14,7 @@ void RoomEtatPosition::print(std::string &t,
 	t += WALL;
 
 	c += (m_room->getWest())?OPEN_DOOR:CLOSED_DOOR;
-	c += POSITION;
+	c += "Me";
 	c += (m_room->getEast())?OPEN_DOOR:CLOSED_DOOR;
 
 	b += WALL;

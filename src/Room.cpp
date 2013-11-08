@@ -1,11 +1,12 @@
 #include "Room.hpp"
 
-Room::Room(): m_content("  "), m_north(false), m_east(false), m_south(false), m_west(false) {
+Room::Room(): m_north(false), m_east(false), m_south(false), m_west(false), m_comp(0) {
 	m_etat = new RoomEtatUnvisited(this);
 }
 
 Room::~Room() {
 	delete m_etat;
+	delete m_comp;
 }
 
 void Room::print(std::string &t, std::string &c, std::string &b, bool godMode) const {
@@ -18,6 +19,11 @@ void Room::print(std::string &t, std::string &c, std::string &b, bool godMode) c
 	}
 }
 
+void Room::action() {
+	if (m_comp->action()) {
+		setComportement(new EmptyRoom);
+	}
+}
 
 void Room::top(std::string &s) const {
 	s += WALL;
@@ -26,7 +32,7 @@ void Room::top(std::string &s) const {
 }
 void Room::center(std::string &s) const {
 	s += (m_west)?OPEN_DOOR:CLOSED_DOOR;
-	s += m_content;
+	s += m_comp->getContent();
 	s += (m_east)?OPEN_DOOR:CLOSED_DOOR;
 }
 void Room::bottom(std::string &s) const {
@@ -39,6 +45,10 @@ void Room::setNorth   (bool  b) { m_north   = b; }
 void Room::setEast    (bool  b) { m_east    = b; }
 void Room::setSouth   (bool  b) { m_south   = b; }
 void Room::setWest    (bool  b) { m_west    = b; }
+void Room::setComportement (RoomComportement *r) {
+	delete m_comp;
+	m_comp = r;
+}
 
 void Room::setVisited () {
 	delete m_etat;
@@ -59,5 +69,8 @@ bool Room::getSouth    ( ) const { return m_south;   }
 bool Room::getWest     ( ) const { return m_west;    }
 
 bool Room::getVisited  ( ) const { return m_etat->visited(); }
-bool Room::isEnd() const { return false; }
+bool Room::isEnd() const { return m_comp->isEnd(); }
+
+std::string Room::getContent() const { return m_comp->getContent(); }
+
 

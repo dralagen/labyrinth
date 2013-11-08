@@ -5,15 +5,16 @@
 #include <iostream>
 
 #include "RoomEtat.hpp"
+#include "RoomComportement.hpp"
+
 
 #define WALL        "##"
-#define EMPTY       "  "
-#define POSITION    "Me"
 #define OPEN_DOOR   "  "
 #define CLOSED_DOOR "##"
 #define FOG         "******"
 
 class RoomEtat;
+class RoomComportement;
 
 class Room
 {
@@ -26,19 +27,18 @@ class Room
 								 std::string &b,
 								 bool godMode = false) const;
 
-		virtual bool isEnd() const;
+		bool isEnd() const;
 
-		virtual void action()=0;
+		void action();
 
 		/************
 		 *  Setter  *
 		 ************/
-
 		void setNorth   (bool b);
 		void setEast    (bool b);
 		void setSouth   (bool b);
 		void setWest    (bool b);
-
+		void setComportement (RoomComportement *r);
 
 		/***************
 		 *  Etat Room  *
@@ -55,12 +55,12 @@ class Room
 		bool getSouth   () const;
 		bool getWest    () const;
 		bool getVisited () const;
-
+		std::string getContent () const;
 	protected:
-		std::string m_content;
 		bool m_north, m_east, m_south, m_west;
 
 		RoomEtat *m_etat;
+		RoomComportement *m_comp;
 
 	private:
 		void top    (std::string  &s) const;
@@ -68,10 +68,5 @@ class Room
 		void bottom (std::string  &s) const;
 };
 
-#include "EmptyRoom.hpp"
-#include "StartRoom.hpp"
-#include "EndRoom.hpp"
-#include "MonsterRoom.hpp"
-#include "TreasureRoom.hpp"
 
 #endif // ROOM_HPP

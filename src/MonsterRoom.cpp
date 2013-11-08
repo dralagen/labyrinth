@@ -1,9 +1,12 @@
 #include "MonsterRoom.hpp"
 
-MonsterRoom::MonsterRoom() : Room::Room() {
+MonsterRoom::MonsterRoom() {
 	m_content = "Mn";
 }
 
-void MonsterRoom::action() {
+MonsterRoom::~MonsterRoom() {}
+
+bool MonsterRoom::action() {
 	std::cout << "Vous êtes tombez sur un monstre" << std::endl;
+	return true;
 }
