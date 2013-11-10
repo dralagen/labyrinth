@@ -29,7 +29,7 @@ class Room
 
 		bool isEnd() const;
 
-		void action();
+		int action();
 
 		/************
 		 *  Setter  *

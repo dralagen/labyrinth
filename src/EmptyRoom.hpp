@@ -9,7 +9,7 @@ class EmptyRoom : public RoomComportement
 		EmptyRoom ();
 		virtual ~EmptyRoom();
 
-		virtual bool action();
+		virtual int action();
 
 	private:
 };

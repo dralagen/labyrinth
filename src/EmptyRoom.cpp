@@ -4,7 +4,7 @@ EmptyRoom::EmptyRoom() {}
 
 EmptyRoom::~EmptyRoom() {}
 
-bool EmptyRoom::action() {
-	return false;
+int EmptyRoom::action() {
+	return RC_NOTHING;
 }
 

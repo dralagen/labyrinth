@@ -6,8 +6,8 @@ StartRoom::StartRoom() {
 
 StartRoom::~StartRoom() {}
 
-bool StartRoom::action() {
+int StartRoom::action() {
 	std::cout << "Point de départ. Trouvez la sortie" << std::endl;
-	return true;
+	return RC_NOTHING;
 }
 

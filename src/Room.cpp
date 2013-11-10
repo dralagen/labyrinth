@@ -19,10 +19,12 @@ void Room::print(std::string &t, std::string &c, std::string &b, bool godMode) c
 	}
 }
 
-void Room::action() {
-	if (m_comp->action()) {
+int Room::action() {
+	int ret = m_comp->action();
+	if (ret == RC_CLEAN) {
 		setComportement(new EmptyRoom);
 	}
+	return ret;
 }
 
 void Room::top(std::string &s) const {

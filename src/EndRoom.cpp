@@ -8,7 +8,7 @@ EndRoom::~EndRoom() {}
 
 bool EndRoom::isEnd() const { return true; }
 
-bool EndRoom::action() {
+int EndRoom::action() {
 	std::cout << "You win !!" << std::endl;
-	return false;
+	return RC_NOTHING;
 }

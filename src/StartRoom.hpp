@@ -9,7 +9,7 @@ class StartRoom : public RoomComportement
 		StartRoom ();
 		virtual ~StartRoom();
 
-		virtual bool action();
+		virtual int action();
 };
 
 #endif /* STARTROOM_HPP */

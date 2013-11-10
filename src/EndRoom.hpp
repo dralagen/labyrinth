@@ -11,7 +11,7 @@ class EndRoom : public RoomComportement
 
 		virtual bool isEnd() const;
 
-		virtual bool action();
+		virtual int action();
 };
 
 #endif /* ENDROOM_HPP */

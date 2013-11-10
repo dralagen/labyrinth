@@ -2,8 +2,11 @@
 #define ROOMCOMPORTEMENT_HPP
 
 #include <string>
+#include <iostream>
 
-#include "Room.hpp"
+#define RC_NOTHING 0
+#define RC_CLEAN 1
+#define RC_UNDO -1
 
 class RoomComportement
 {
@@ -11,7 +14,8 @@ class RoomComportement
 		RoomComportement ();
 		virtual ~RoomComportement();
 
-		virtual bool action() = 0;
+		virtual int action() = 0;
+
 		virtual bool isEnd() const;
 
 		std::string getContent();

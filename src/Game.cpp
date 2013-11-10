@@ -7,8 +7,8 @@ Game::Game(int x, int y): m_labyrinth(x,y) {}
 void Game::launch() {
 	m_labyrinth.gen();
 	while(!m_labyrinth.isEnd()) {
-		m_labyrinth.print();
 		m_labyrinth.action();
+		m_labyrinth.print();
 		chooseRoom();
 	}
 
@@ -29,12 +29,12 @@ void Game::chooseRoom() {
 		std::cout << "q) aller à l'ouest" << std::endl;
 	}
 
-	char buf;
+	std::string buf;
 	std::cout << "Votre choix ? ";
 	std::cin >> buf;
 	std::cout << std::endl;
 
-	switch (buf) {
+	switch (buf[0]) {
 		case 'z':
 			m_labyrinth.goNorth();
 			break;
@@ -50,7 +50,6 @@ void Game::chooseRoom() {
 		case 'q':
 			m_labyrinth.goWest();
 			break;
-
 	}
 
 }

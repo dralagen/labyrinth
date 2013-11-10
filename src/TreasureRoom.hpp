@@ -9,7 +9,7 @@ class TreasureRoom : public RoomComportement
 		TreasureRoom ();
 		virtual ~TreasureRoom ();
 
-		virtual bool action();
+		virtual int action();
 };
 
 #endif /* TREASUREROOM_HPP */

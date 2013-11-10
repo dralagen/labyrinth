@@ -253,7 +253,11 @@ void Labyrinth::newPosition() {
 }
 
 void Labyrinth::action() {
-	m_rooms[position(m_current)].action();
+	if (m_rooms[position(m_current)].action() == RC_UNDO) {
+		m_rooms[position(m_current)].setVisited();
+		m_current = m_precedent;
+		m_rooms[position(m_current)].setPosition();
+	}
 }
 
 bool Labyrinth::isEnd() const {

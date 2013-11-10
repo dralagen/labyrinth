@@ -6,7 +6,16 @@ TreasureRoom::TreasureRoom() {
 
 TreasureRoom::~TreasureRoom() {}
 
-bool TreasureRoom::action() {
+int TreasureRoom::action() {
 	std::cout << "Vous avez trouvé un coffre" << std::endl;
-	return true;
+	std::string buff;
+	do {
+	std::cout << "Voulez-vous l'ouvrir ?(y or n)" << std::endl;
+	std::cin >> buff;
+	} while (buff[0] == 'Y' || buff[0] == 'N');
+
+	if (buff[0] == 'y')
+		return RC_CLEAN;
+
+	return RC_NOTHING;
 }

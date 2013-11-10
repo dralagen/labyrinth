@@ -9,7 +9,7 @@ class MonsterRoom : public RoomComportement
 		MonsterRoom ();
 		virtual ~MonsterRoom ();
 
-		virtual bool action();
+		virtual int action();
 };
 
 #endif /* MONSTERROOM_HPP */
