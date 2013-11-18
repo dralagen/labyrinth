@@ -9,6 +9,10 @@ using namespace std;
 int main(int argc, char **argv)
 {
 	Game *g;
+
+
+#ifdef BOOST_LEXICAL_CAST_INCLUDED
+
 	if (argc == 1) {
 		g = new Game();
 	}
@@ -19,6 +23,19 @@ int main(int argc, char **argv)
 		cout << "Error arg : " << argv[0] << " Width Height" << endl;
 	  return 1;
 	}
+
+#else
+
+	int tailleX,tailleY;
+
+	cout << "Taille en Abscisse : ";
+	cin >> tailleX;
+	cout << "Taille en Ordonnée : ";
+	cin >> tailleY;
+
+	g=new Game(tailleX, tailleY);
+
+#endif
 
 
 	g->launch();
