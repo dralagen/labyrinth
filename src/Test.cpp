@@ -14,7 +14,7 @@
 
 
 using namespace std;
-int main()
+int main2()
 {
     Personnage * p = new Personnage("John");
     p->afficheStat();
@@ -26,7 +26,7 @@ int main()
     p->actuStat();
     p->afficheStat();
     p->afficheEquip();
-    
+
     delete p;
     return 0;
 }
