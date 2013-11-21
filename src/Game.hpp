@@ -5,6 +5,7 @@
 #include <algorithm>
 
 #include "Labyrinth.hpp"
+#include "Personnage.hpp"
 
 class Game
 {
@@ -18,12 +19,14 @@ class Game
 		void launch();
 		void chooseRoom();
 		void end();
+		void help();
 
 		void fight();
 		void treasure();
 
 	private:
 		Labyrinth m_labyrinth;
+		Personnage m_perso;
 
 };
 
