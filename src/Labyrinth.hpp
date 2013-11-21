@@ -25,7 +25,7 @@ class Labyrinth
 		Labyrinth& operator=(const Labyrinth &lab);
 
 		void print(bool godMode = false) const;
-		void action();
+		int action();
 
 		bool hasNorth() const;
 		bool hasEast() const;
@@ -38,7 +38,7 @@ class Labyrinth
 		void goWest();
 
 		bool isEnd() const;
-
+		void clean();
 		void gen();
 
 		void setStart(pos p);

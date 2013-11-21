@@ -4,9 +4,10 @@
 #include <string>
 #include <iostream>
 
-#define RC_NOTHING 0
-#define RC_CLEAN 1
-#define RC_UNDO -1
+#define RC_NOTHING   0
+#define RC_TREASURE  1
+#define RC_MONSTER   2
+#define RC_UNDO     -1
 
 class RoomComportement
 {

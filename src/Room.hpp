@@ -7,13 +7,13 @@
 #include "RoomEtat.hpp"
 #include "RoomComportement.hpp"
 
-
 #define WALL        "##"
 #define OPEN_DOOR   "  "
 #define CLOSED_DOOR "##"
 #define FOG         "******"
 
 class RoomEtat;
+
 class RoomComportement;
 
 class Room
@@ -59,8 +59,11 @@ class Room
 	protected:
 		bool m_north, m_east, m_south, m_west;
 
-		RoomEtat *m_etat;
-		RoomComportement *m_comp;
+		RoomEtat *m_visited;
+		RoomEtat *m_position;
+		RoomEtat *m_unvisited;
+		RoomEtat          *m_etat;
+		RoomComportement  *m_comp;
 
 	private:
 		void top    (std::string  &s) const;

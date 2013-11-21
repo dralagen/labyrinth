@@ -15,7 +15,7 @@ int MonsterRoom::action() {
 	} while (buff.at(0) == 'Y' || buff.at(0) == 'N');
 
 	if (buff[0] == 'y')
-		return RC_CLEAN;
+		return RC_MONSTER;
 
 	return RC_UNDO;
 

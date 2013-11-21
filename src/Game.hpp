@@ -1,9 +1,10 @@
 #ifndef GAME_HPP
 #define GAME_HPP
 
-#include "Labyrinth.hpp"
 #include <string>
 #include <algorithm>
+
+#include "Labyrinth.hpp"
 
 class Game
 {
@@ -17,6 +18,9 @@ class Game
 		void launch();
 		void chooseRoom();
 		void end();
+
+		void fight();
+		void treasure();
 
 	private:
 		Labyrinth m_labyrinth;

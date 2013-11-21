@@ -1,7 +1,10 @@
 #include "Room.hpp"
 
 Room::Room(): m_north(false), m_east(false), m_south(false), m_west(false), m_comp(0) {
-	m_etat = new RoomEtatUnvisited(this);
+ 	m_visited = new RoomEtatVisited(this);
+	m_position = new RoomEtatPosition(this);
+ 	m_unvisited = new RoomEtatUnvisited(this);
+	m_etat = m_unvisited;
 }
 
 Room::~Room() {
@@ -20,11 +23,7 @@ void Room::print(std::string &t, std::string &c, std::string &b, bool godMode) c
 }
 
 int Room::action() {
-	int ret = m_comp->action();
-	if (ret == RC_CLEAN) {
-		setComportement(new EmptyRoom);
-	}
-	return ret;
+	return m_comp->action();
 }
 
 void Room::top(std::string &s) const {
@@ -53,16 +52,13 @@ void Room::setComportement (RoomComportement *r) {
 }
 
 void Room::setVisited () {
-	delete m_etat;
-	m_etat = new RoomEtatVisited(this);
+	m_etat = m_visited;
 }
 void Room::setPosition () {
-	delete m_etat;
-	m_etat = new RoomEtatPosition(this);
+	m_etat = m_position;
 }
 void Room::setUnvisited () {
-	delete m_etat;
-	m_etat = new RoomEtatUnvisited(this);
+	m_etat = m_unvisited;
 }
 
 bool Room::getNorth    ( ) const { return m_north;   }

@@ -15,7 +15,7 @@ int TreasureRoom::action() {
 	} while (buff[0] == 'Y' || buff[0] == 'N');
 
 	if (buff[0] == 'y')
-		return RC_CLEAN;
+		return RC_TREASURE;
 
 	return RC_NOTHING;
 }

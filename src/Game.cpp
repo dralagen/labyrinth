@@ -6,8 +6,14 @@ Game::Game(int x, int y): m_labyrinth(x,y) {}
 
 void Game::launch() {
 	m_labyrinth.gen();
+	int act;
 	while(!m_labyrinth.isEnd()) {
-		m_labyrinth.action();
+		act = m_labyrinth.action();
+		if (act == RC_MONSTER)
+			fight();
+		else if (act == RC_TREASURE)
+			treasure();
+
 		m_labyrinth.print();
 		chooseRoom();
 	}
@@ -57,4 +63,12 @@ void Game::chooseRoom() {
 void Game::end() {
 	m_labyrinth.print(true);
 	std::cout << "Vous êtes sorti de ce labyrinth" << std::endl;
+}
+
+void Game::fight() {
+	m_labyrinth.clean();
+}
+
+void Game::treasure() {
+	m_labyrinth.clean();
 }
