@@ -1,0 +1,107 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{fontspec}
+%\usepackage{xunicode}
+\usepackage[francais]{babel}
+\usepackage{color}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{lmodern}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+%\usepackage{layout}
+%\usepackage{setspace}
+%\usepackage{soul}
+%\usepackage{ulem}
+%\usepackage{eurosym}
+%\usepackage{bookman}
+%\usepackage{charter}
+%\usepackage{newcent}
+%\usepackage{mathpazo}
+%\usepackage{mathptmx}
+%\usepackage{url}
+%\usepackage{verbatim}
+%\usepackage{moreverb}
+\usepackage{listings}
+%\usepackage{wrapfig}
+%\usepackage{colortbl}
+%\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{mathrsfs}
+%\usepackage{asmthm}
+%\usepackage{makeidx}
+\usepackage{tabularx}
+
+
+\geometry{top=2.5cm, bottom=2cm, left=2cm, right=2cm}
+\setcounter{tocdepth}{3}
+
+%%%%%%%  VARIABLES     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\docsauthor}{GARANDEL Adrien \& RUCHAUD Alexis}
+\newcommand{\docstitle}{Labyrinth RPG}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%   MAKE TITLE   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{\docsauthor}
+\title{\docstitle}
+\date{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%  EN-TETE / PIED-PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\lhead{\docsauthor}
+\rhead{\docstitle}
+\rfoot{\thepage/\pageref{LastPage}}
+\lfoot{} %$\backslash\_0< Koin !$}
+\renewcommand{\footrulewidth}{0.5pt}
+\renewcommand{\headrulewidth}{0.5pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%  SETTING COLOR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{key}{rgb}{0.6,0,0.6}
+\definecolor{bck}{rgb}{0.92,0.92,0.92}
+\definecolor{comment}{rgb}{0.5,0.5,0.5}
+\definecolor{string}{rgb}{0,0.5,0}
+\definecolor{number}{rgb}{0,0.5,0.5}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%% SETTING %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lstset{
+language=C++,
+basicstyle=\fontfamily{lmtt} \small,
+numbers=left,
+numbersep=7pt,
+numberstyle=\small,
+showspaces=false,
+showtabs=false,
+tabsize=4,
+xleftmargin=20pt,
+xrightmargin=20pt,
+morekeywords={},
+%backgroundcolor=\color{bck},
+commentstyle=\color{comment},
+keywordstyle=\color{string},
+breaklines=true
+}
+
+\renewcommand{\FrenchLabelItem}{\space\textbullet}
+
+\setlength{\parskip}{1ex plus .8ex minus .8ex}
+\setlength{\parindent}{.8em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+	\maketitle{}
+	\thispagestyle{empty}
+
+	%\tableofcontents{}
+	%\newpage
+\end{document}
+
