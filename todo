@@ -1,0 +1,14 @@
+Personnage :
+ loot(coffre)
+	coffre type equipement
+	   call trouveEquipement
+  coffre type arme
+	   call trouverArme
+
+\brief perso tape monstre
+\return nombre de dégat avec les bonus du perso
+ int giveDamage()
+
+\brief monstre tape Perso
+\param degat : nombre de dégat sans armure
+ void receiveDamage(int degat)
