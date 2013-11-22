@@ -16,10 +16,12 @@ Personnage::Personnage(std::string nom)
 
 Personnage::~Personnage()
 {
+
 	delete casque_;
 	delete torse_;
 	delete jambe_;
 	delete arme_;
+
 }
 
 void Personnage::modifierVie(int v)
@@ -88,7 +90,7 @@ void Personnage::actuStat()
 		force_ = force_ + arme_->getBforce();
 		chance_ = chance_ + arme_->getBchance();
 	}
-	
+
 
 }
 void Personnage::afficheStat()
@@ -133,11 +135,11 @@ void Personnage::trouverEquipement(Equipement * e)
 			case EQJAMBE :
 				delete jambe_;
 				jambe_ = e;
-				break;			
+				break;
 		}
-		
+
     }
-    
+
 }
 
 
@@ -150,7 +152,7 @@ void Personnage::trouverArme(Arme * a)
     {
         arme_ = a;
     }
-    
+
 }
 
 std::string Personnage::getNom()
@@ -181,7 +183,7 @@ int Personnage::getChance()
 void Personnage::setCasque(Equipement *casque)
 {
 	casque_ = casque;
-	
+
 }
 
 void Personnage::setTorse(Equipement *torse)

@@ -1,14 +1,15 @@
 #include "HacheForce.hpp"
 
 HacheForce::HacheForce()
-{   
+{
     nom_= "Hache de Force";
     degat_ = 20;
     bchance_ = 0;
     bforce_ = 6;
     bvie_ = 0;
 }
-
+HacheForce::~HacheForce(){
+}
 std::string HacheForce::getNom()
 {
     return nom_;

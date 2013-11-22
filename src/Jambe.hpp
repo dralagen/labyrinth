@@ -6,7 +6,7 @@ class Jambe : public Equipement
 {
 
 	public:
-		//virtual ~Jambe();
+		virtual ~Jambe() {}
 		virtual std::string getNom()=0;
 		virtual int getBforce()=0;
 		virtual int getBvie()=0;

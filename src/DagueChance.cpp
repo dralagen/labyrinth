@@ -7,6 +7,8 @@ DagueChance::DagueChance()
     bforce_ = 0;
     bvie_ = 0;
 }
+DagueChance::~DagueChance() {
+}
 
 std::string DagueChance::getNom()
 {

@@ -1,12 +1,16 @@
 #include "EpeeForce.hpp"
 
 EpeeForce::EpeeForce()
-{ 
+{
     nom_ = "Epee de Force";
     degat_ = 15;
     bchance_ = 0;
     bforce_ = 4;
     bvie_ = 2;
+}
+
+EpeeForce::~EpeeForce() {
+
 }
 
 std::string EpeeForce::getNom()

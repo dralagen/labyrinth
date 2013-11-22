@@ -9,6 +9,9 @@ DagueVie::DagueVie()
     bvie_ = 4;
 }
 
+DagueVie::~DagueVie() {
+}
+
 std::string DagueVie::getNom()
 {
     return nom_;

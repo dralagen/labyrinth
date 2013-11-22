@@ -10,6 +10,9 @@ EpeeChance::EpeeChance()
     bvie_ = 2;
 }
 
+EpeeChance::~EpeeChance() {
+}
+
 std::string EpeeChance::getNom()
 {
     return nom_;

@@ -3,19 +3,20 @@
 #include "Epee.hpp"
 #include <string>
 class EpeeChance : public Epee
-{   
-    private:
-        std::string nom_;
-        int degat_;
-        int bchance_;
-        int bvie_;
-        int bforce_;
+{
+  private:
+    std::string nom_;
+    int degat_;
+    int bchance_;
+    int bvie_;
+    int bforce_;
 	public:
 		EpeeChance();
+    ~EpeeChance();
 		std::string getNom();
 		int getBforce();
-        int getBvie();
-        int getBchance();
+    int getBvie();
+    int getBchance();
 		int getDegat();
 		void setBforce(int bforce);
 		void setBvie(int bvie);

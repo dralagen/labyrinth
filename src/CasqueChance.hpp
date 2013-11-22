@@ -5,14 +5,13 @@
 class CasqueChance : public Casque
 {
 	private:
-	    std::string nom_;
+		std::string nom_;
 		int armure_;
 		int bchance_;
 		int bvie_;
 		int bforce_;
 	public:
 		CasqueChance();
-		//virtual ~CasqueChance();
 		std::string getNom();
 		int getBforce();
 		int getBvie();

@@ -8,7 +8,8 @@ HacheVie::HacheVie()
     bforce_ = 2;
     bvie_ = 4;
 }
-
+HacheVie::~HacheVie(){
+}
 std::string HacheVie::getNom()
 {
     return nom_;

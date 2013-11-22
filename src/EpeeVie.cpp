@@ -1,12 +1,16 @@
 #include "EpeeVie.hpp"
 
 EpeeVie::EpeeVie()
-{   
+{
     nom_ = "Epee de Vie";
     degat_ = 15;
     bchance_ = 0;
     bforce_ = 0;
     bvie_ = 6;
+}
+
+EpeeVie::~EpeeVie(){
+
 }
 
 std::string EpeeVie::getNom()

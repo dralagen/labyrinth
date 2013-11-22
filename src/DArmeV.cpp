@@ -30,12 +30,14 @@ DArmeV::DArmeV(Arme * e)
         {
             e->setNom(e->getNom()+" de Vie");
         }
-   
+
     }
      e->setBvie(e->getBvie()+2);
 }
 
-
+DArmeV::~DArmeV() {
+  delete e_;
+}
 
 std::string DArmeV::getNom()
 {

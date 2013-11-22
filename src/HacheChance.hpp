@@ -3,19 +3,20 @@
 #include "Hache.hpp"
 #include <string>
 class HacheChance : public Hache
-{   
-    private:
-        std::string nom_;
-        int degat_;
-        int bchance_;
-        int bvie_;
-        int bforce_;
+{
+  private:
+    std::string nom_;
+    int degat_;
+    int bchance_;
+    int bvie_;
+    int bforce_;
 	public:
 		HacheChance();
+    ~HacheChance();
 		std::string getNom();
 		int getBforce();
-        int getBvie();
-        int getBchance();
+    int getBvie();
+    int getBchance();
 		int getDegat();
 		void setBforce(int bforce);
 		void setBvie(int bvie);

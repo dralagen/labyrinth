@@ -30,12 +30,14 @@ DArmeF::DArmeF(Arme * e)
         {
             e->setNom(e->getNom()+" de Force");
         }
-   
+
     }
      e->setBforce(e->getBforce()+2);
 }
 
-
+DArmeF::~DArmeF() {
+  delete e_;
+}
 
 std::string DArmeF::getNom()
 {
