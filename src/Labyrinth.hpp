@@ -120,7 +120,7 @@ class Labyrinth
 		void goWest();
 
 		/**
-		 * \brief Verifie la fin
+		 * \brief Vérifie la fin
 		 *
 		 * \return vrai si on est sur la salle de fin
 		 */
