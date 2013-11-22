@@ -21,7 +21,7 @@ int main(/*int argc, char **argv*/)
 	}
 	else {
 		cout << "Error arg : " << argv[0] << " Width Height" << endl;
-	  return 1;
+		return 1;
 	}
 
 #else

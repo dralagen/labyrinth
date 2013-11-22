@@ -4,19 +4,19 @@
 #include <string>
 class DagueVie : public Dague
 {
-  private:
-    std::string nom_;
-    int degat_;
-    int bchance_;
-    int bvie_;
-    int bforce_;
+	private:
+		std::string nom_;
+		int degat_;
+		int bchance_;
+		int bvie_;
+		int bforce_;
 	public:
 		DagueVie();
-    ~DagueVie();
+		~DagueVie();
 		std::string getNom();
 		int getBforce();
-    int getBvie();
-    int getBchance();
+		int getBvie();
+		int getBchance();
 		int getDegat();
 		void setBforce(int bforce);
 		void setBvie(int bvie);

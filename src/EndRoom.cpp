@@ -1,7 +1,7 @@
 #include "EndRoom.hpp"
 
 EndRoom::EndRoom(int lvl): RoomComportement(lvl){
- 	m_content = "Ed";
+	m_content = "Ed";
 }
 
 EndRoom::~EndRoom() {}

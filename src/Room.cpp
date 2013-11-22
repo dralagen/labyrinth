@@ -1,9 +1,9 @@
 #include "Room.hpp"
 
 Room::Room(): m_north(false), m_east(false), m_south(false), m_west(false), m_comp(0) {
- 	m_visited = new RoomEtatVisited(this);
+	m_visited = new RoomEtatVisited(this);
 	m_position = new RoomEtatPosition(this);
- 	m_unvisited = new RoomEtatUnvisited(this);
+	m_unvisited = new RoomEtatUnvisited(this);
 	m_etat = m_unvisited;
 }
 

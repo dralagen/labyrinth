@@ -5,8 +5,8 @@ RoomEtatVisited::RoomEtatVisited(Room *r): RoomEtat(r) {}
 RoomEtatVisited::~RoomEtatVisited() {}
 
 void RoomEtatVisited::print(std::string &t,
-				 										std::string &c,
-					 									std::string &b) const {
+														std::string &c,
+														std::string &b) const {
 
 	t += WALL;
 	t += (m_room->getNorth())?OPEN_DOOR:CLOSED_DOOR;

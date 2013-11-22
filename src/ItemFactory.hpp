@@ -9,12 +9,12 @@
 #include "Jambe.hpp"
 #include "Torse.hpp"
 
-		enum ITEM_FACTORIES
-		{
-			FORCEF,
-			VIEF,
-			CHANCEF
-		};
+enum ITEM_FACTORIES
+{
+	FORCEF,
+	VIEF,
+	CHANCEF
+};
 
 class ItemFactory
 {

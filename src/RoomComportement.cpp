@@ -5,7 +5,7 @@ RoomComportement::RoomComportement(int lvl):m_content("  "),m_lvl(lvl) {}
 RoomComportement::~RoomComportement() {}
 
 std::string RoomComportement::getContent() {
- return m_content;
+	return m_content;
 }
 
 int RoomComportement::getLvl() {
