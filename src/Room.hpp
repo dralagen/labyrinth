@@ -4,6 +4,7 @@
 #include <string>
 #include <iostream>
 
+#include "Personnage.hpp"
 #include "RoomEtat.hpp"
 #include "RoomComportement.hpp"
 
@@ -29,7 +30,7 @@ class Room
 
 		bool isEnd() const;
 
-		int action();
+		int action(Personnage &perso);
 
 		/************
 		 *  Setter  *

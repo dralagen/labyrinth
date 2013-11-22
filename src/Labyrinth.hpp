@@ -2,6 +2,7 @@
 #define LABYRINTH_HPP
 
 #include "Room.hpp"
+#include "Personnage.hpp"
 
 #include <iostream>
 #include <cstdlib>
@@ -25,7 +26,7 @@ class Labyrinth
 		Labyrinth& operator=(const Labyrinth &lab);
 
 		void print(bool godMode = false) const;
-		int action();
+		void action(Personnage &perso);
 
 		bool hasNorth() const;
 		bool hasEast() const;
@@ -40,10 +41,10 @@ class Labyrinth
 		bool isEnd() const;
 		void clean();
 		void gen();
+		void undo();
 
 		void setStart(pos p);
 		void setStart(int x, int y);
-
 	private:
 		const int m_tailleX    , m_tailleY;
 		pos       m_current;

@@ -6,12 +6,10 @@
 class EmptyRoom : public RoomComportement
 {
 	public:
-		EmptyRoom ();
+		EmptyRoom (int lvl = 0);
 		virtual ~EmptyRoom();
 
-		virtual int action();
-
-	private:
+		virtual int action(Personnage &perso);
 };
 
 #endif /* EMPTYROOM_HPP */

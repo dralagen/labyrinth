@@ -1,18 +1,19 @@
 #include "Game.hpp"
 
 Game::Game(int x, int y): m_labyrinth(x,y), m_perso("John") {}
-
-//Game::Game(const Labyrinth &lab): m_labyrinth(lab)  {}
+Game::Game(std::string name, int x, int y): m_labyrinth(x,y), m_perso(name) {}
 
 void Game::launch() {
 	m_labyrinth.gen();
-	int act;
+
+	ItemFactory *it  = ItemFactory::CreateFactory(VIEF);
+	m_perso.trouverEquipement(new DEquipF(new DEquipA(it->GetCasque())));
+	m_perso.trouverEquipement(new DEquipF(it->GetTorse()));
+	it = ItemFactory::CreateFactory(FORCEF);
+	m_perso.trouverArme(new DArmeF(new DArmeD(it->GetHache())));
+
 	while(!m_labyrinth.isEnd()) {
-		act = m_labyrinth.action();
-		if (act == RC_MONSTER)
-			fight();
-		else if (act == RC_TREASURE)
-			treasure();
+		m_labyrinth.action(m_perso);
 
 		m_labyrinth.print();
     m_perso.actuStat();
@@ -70,14 +71,6 @@ void Game::chooseRoom() {
 void Game::end() {
 	m_labyrinth.print(true);
 	std::cout << "Vous êtes sorti de ce labyrinth" << std::endl;
-}
-
-void Game::fight() {
-	m_labyrinth.clean();
-}
-
-void Game::treasure() {
-	m_labyrinth.clean();
 }
 
 void Game::help() {

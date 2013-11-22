@@ -13,17 +13,6 @@ Labyrinth::Labyrinth(int x, int y) : m_tailleX(x), m_tailleY(y), m_gen(false) {
 	m_precedent = m_current;
 }
 
-/*
-Labyrinth::Labyrinth(const Labyrinth &lab):m_tailleY(lab.m_tailleY), m_tailleX(lab.m_tailleX) {
-	m_current = m_current;
-	m_rooms = new Room*[m_tailleY*m_tailleX];
-
-	for (int i = 0; i < m_tailleY*m_tailleX; ++i) {
-		m_rooms[i] = new Room(lab.m_rooms[i]);
-	}
-}
-*/
-
 Labyrinth::~Labyrinth() {
 	delete[] m_rooms;
 }
@@ -93,22 +82,21 @@ void Labyrinth::_gen() {
 	for (int i = 0; i < m_tailleX*m_tailleY; ++i) {
 			random = rand()%100;
 			if (random < 60) {
-				m_rooms[i].setComportement(new EmptyRoom);
+				m_rooms[i].setComportement(new EmptyRoom(0));
 			} else if (random < 70) {
-				m_rooms[i].setComportement(new TreasureRoom);
+				m_rooms[i].setComportement(new TreasureRoom(rand()%10+1));
 			}	else {
-				m_rooms[i].setComportement(new MonsterRoom);
+				m_rooms[i].setComportement(new MonsterRoom(rand()%10+1));
 			}
 	}
-
-	m_rooms[position(m_current)].setComportement(new StartRoom);
+	m_rooms[position(m_current)].setComportement(new StartRoom(0));
 
 	pos p;
 	do {
 		p.x = (rand()%m_tailleX);
 		p.y = (rand()%m_tailleY);
 	} while (p.x == m_current.x && p.y == m_current.y);
-	m_rooms[position(p)].setComportement(new EndRoom);
+	m_rooms[position(p)].setComportement(new EndRoom(10));
 
 
 	init(p);
@@ -252,14 +240,16 @@ void Labyrinth::newPosition() {
 	m_rooms[position(m_current)].setPosition();
 }
 
-int Labyrinth::action() {
-	int act = m_rooms[position(m_current)].action();
-	if (act  == RC_UNDO) {
+void Labyrinth::action(Personnage &perso) {
+	if (m_rooms[position(m_current)].action(perso) == RC_UNDO) {
+		undo();
+	}
+}
+
+void Labyrinth::undo() {
 		m_rooms[position(m_current)].setVisited();
 		m_current = m_precedent;
 		m_rooms[position(m_current)].setPosition();
-	}
-	return act;
 }
 
 void Labyrinth::clean() {

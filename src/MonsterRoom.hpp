@@ -2,14 +2,17 @@
 #define MONSTERROOM_HPP
 
 #include "RoomComportement.hpp"
+#include "Monster.hpp"
 
 class MonsterRoom : public RoomComportement
 {
 	public:
-		MonsterRoom ();
+		MonsterRoom (int lvl=1);
 		virtual ~MonsterRoom ();
 
-		virtual int action();
+		virtual int action(Personnage &perso);
+	private:
+		Monster m_monster;
 };
 
 #endif /* MONSTERROOM_HPP */

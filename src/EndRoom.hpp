@@ -6,12 +6,12 @@
 class EndRoom : public RoomComportement
 {
 	public:
-		EndRoom ();
+		EndRoom (int lvl = 10);
 		virtual ~EndRoom();
 
 		virtual bool isEnd() const;
 
-		virtual int action();
+		virtual int action(Personnage &perso);
 };
 
 #endif /* ENDROOM_HPP */

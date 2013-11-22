@@ -6,10 +6,10 @@
 class TreasureRoom : public RoomComportement
 {
 	public:
-		TreasureRoom ();
+		TreasureRoom (int lvl = 0);
 		virtual ~TreasureRoom ();
 
-		virtual int action();
+		virtual int action(Personnage &perso);
 };
 
 #endif /* TREASUREROOM_HPP */
