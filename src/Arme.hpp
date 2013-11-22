@@ -4,7 +4,7 @@
 class Arme
 {
 	public :
-    virtual ~Arme() {}
+		virtual ~Arme() {}
 		virtual std::string getNom()=0;
 		virtual int getBforce()=0;
 		virtual int getBvie()=0;

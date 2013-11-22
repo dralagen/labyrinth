@@ -7,8 +7,8 @@ RoomEtatUnvisited::RoomEtatUnvisited(Room *r) {
 RoomEtatUnvisited::~RoomEtatUnvisited() {}
 
 void RoomEtatUnvisited::print(std::string &t,
-				 						 std::string &c,
-						 				 std::string &b) const {
+															std::string &c,
+															std::string &b) const {
 	t += FOG;
 	c += FOG;
 	b += FOG;

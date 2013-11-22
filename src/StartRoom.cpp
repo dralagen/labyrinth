@@ -1,7 +1,7 @@
 #include "StartRoom.hpp"
 
 StartRoom::StartRoom(int lvl):RoomComportement(lvl) {
- 	m_content = "St";
+	m_content = "St";
 }
 
 StartRoom::~StartRoom() {}

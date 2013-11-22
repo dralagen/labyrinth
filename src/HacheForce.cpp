@@ -2,61 +2,61 @@
 
 HacheForce::HacheForce()
 {
-    nom_= "Hache de Force";
-    degat_ = 20;
-    bchance_ = 0;
-    bforce_ = 6;
-    bvie_ = 0;
+	nom_= "Hache de Force";
+	degat_ = 20;
+	bchance_ = 0;
+	bforce_ = 6;
+	bvie_ = 0;
 }
 HacheForce::~HacheForce(){
 }
 std::string HacheForce::getNom()
 {
-    return nom_;
+	return nom_;
 }
 
 int HacheForce::getBchance()
 {
-    return bchance_;
+	return bchance_;
 }
 
 int HacheForce::getDegat()
 {
-    return degat_;
+	return degat_;
 }
 
 int HacheForce::getBforce()
 {
-    return bforce_;
+	return bforce_;
 }
 
 
 int HacheForce::getBvie()
 {
-    return bvie_;
+	return bvie_;
 }
 
 void HacheForce::setBvie(int bvie)
 {
-    bvie_ = bvie;
+	bvie_ = bvie;
 }
 
 void HacheForce::setBchance(int bchance)
 {
-    bchance_ = bchance;
+	bchance_ = bchance;
 }
 
 void HacheForce::setDegat(int degat)
 {
-    degat_ = degat;
+	degat_ = degat;
 }
 
 void HacheForce::setBforce(int bforce)
 {
-    bforce_ = bforce;
+	bforce_ = bforce;
 }
 
 void HacheForce::setNom(std::string nom)
 {
-    nom_ = nom;
+	nom_ = nom;
 }

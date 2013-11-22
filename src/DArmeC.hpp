@@ -9,15 +9,15 @@
 class DArmeC : public Arme
 {
 
-  private:
-    Arme * e_;
-  public:
-    DArmeC(Arme * e);
-    ~DArmeC();
-    std::string getNom();
-    int getBforce();
-    int getBvie();
-    int getBchance();
+	private:
+		Arme * e_;
+	public:
+		DArmeC(Arme * e);
+		~DArmeC();
+		std::string getNom();
+		int getBforce();
+		int getBvie();
+		int getBchance();
 		int getDegat();
 		void setBforce(int bforce);
 		void setBvie(int bvie);

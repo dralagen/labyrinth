@@ -59,9 +59,9 @@ void Personnage::modifierChance(int c)
 
 void Personnage::actuStat()
 {
-    vieMax_ = 100;
-    force_ = 20;
-    chance_ = 10;
+	vieMax_ = 100;
+	force_ = 20;
+	chance_ = 10;
 	armure_ = 0;
 	if(casque_)
 	{
@@ -86,7 +86,7 @@ void Personnage::actuStat()
 	}
 	if(arme_)
 	{
-	    vieMax_ = vieMax_ + arme_->getBvie();
+		vieMax_ = vieMax_ + arme_->getBvie();
 		force_ = force_ + arme_->getBforce();
 		chance_ = chance_ + arme_->getBchance();
 	}
@@ -95,7 +95,7 @@ void Personnage::actuStat()
 }
 void Personnage::afficheStat()
 {
-    std::cout<<"*************************************"<<std::endl;
+	std::cout<<"*************************************"<<std::endl;
 	std::cout<<"Statistiques de "<< nom_ <<  std::endl;
 	std::cout<<" Vie : " << vie_ << " / " << vieMax_ << std::endl;
 	std::cout<<" Force : " << force_ << std::endl;
@@ -106,22 +106,22 @@ void Personnage::afficheStat()
 
 void Personnage::afficheEquip()
 {
-        std::cout<<"*************************************"<<std::endl;
-        std::cout<<"Equipement de "<< nom_ << std::endl;
-	    if(casque_) {std::cout<<"Casque : " << casque_->getNom() << std::endl;}
-	    if(torse_)  {std::cout<<"Torse : " << torse_->getNom() << std::endl;}
-	    if(jambe_)  {std::cout<<"Jambe : " << jambe_->getNom() << std::endl;}
-	    if(arme_)   {std::cout<<"Arme : " << arme_->getNom() << std::endl;}
-	    std::cout<<"*************************************"<<std::endl;
+	std::cout<<"*************************************"<<std::endl;
+	std::cout<<"Equipement de "<< nom_ << std::endl;
+	if(casque_) {std::cout<<"Casque : " << casque_->getNom() << std::endl;}
+	if(torse_)  {std::cout<<"Torse : " << torse_->getNom() << std::endl;}
+	if(jambe_)  {std::cout<<"Jambe : " << jambe_->getNom() << std::endl;}
+	if(arme_)   {std::cout<<"Arme : " << arme_->getNom() << std::endl;}
+	std::cout<<"*************************************"<<std::endl;
 }
 
 void Personnage::trouverEquipement(Equipement * e)
 {
-    std::string choix;
-    std::cout<< " Voulez vous equiper : " <<e->getNom()<<" ?    y/n" << std::endl;
-    std::cin >> choix;
-    if(choix == "y")
-    {
+	std::string choix;
+	std::cout<< " Voulez vous equiper : " <<e->getNom()<<" ?    y/n" << std::endl;
+	std::cin >> choix;
+	if(choix == "y")
+	{
 		switch (e->type())
 		{
 			case EQCASQUE :
@@ -138,20 +138,20 @@ void Personnage::trouverEquipement(Equipement * e)
 				break;
 		}
 
-    }
+	}
 
 }
 
 
 void Personnage::trouverArme(Arme * a)
 {
-    std::string choix;
-    std::cout<< " Voulez vous equiper : " <<a->getNom()<<" ?    y/n" << std::endl;
-    std::cin >> choix;
-    if(choix == "y")
-    {
-        arme_ = a;
-    }
+	std::string choix;
+	std::cout<< " Voulez vous equiper : " <<a->getNom()<<" ?    y/n" << std::endl;
+	std::cin >> choix;
+	if(choix == "y")
+	{
+		arme_ = a;
+	}
 
 }
 
@@ -203,22 +203,22 @@ void Personnage::setArme(Arme *arme)
 
 Equipement* Personnage::getCasque()
 {
-    return casque_;
+	return casque_;
 }
 
 Equipement* Personnage::getTorse()
 {
-    return torse_;
+	return torse_;
 }
 
 Equipement* Personnage::getJambe()
 {
-    return jambe_;
+	return jambe_;
 }
 
 Arme* Personnage::getArme()
 {
-    return arme_;
+	return arme_;
 }
 
 

@@ -16,9 +16,9 @@ void Game::launch() {
 		m_labyrinth.action(m_perso);
 
 		m_labyrinth.print();
-    m_perso.actuStat();
-    m_perso.afficheStat();
-    m_perso.afficheEquip();
+		m_perso.actuStat();
+		m_perso.afficheStat();
+		m_perso.afficheEquip();
 		chooseRoom();
 	}
 

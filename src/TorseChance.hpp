@@ -5,7 +5,7 @@
 class TorseChance : public Torse
 {
 	private:
-	    std::string nom_;
+		std::string nom_;
 		int armure_;
 		int bchance_;
 		int bvie_;

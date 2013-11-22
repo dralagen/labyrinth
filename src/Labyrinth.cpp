@@ -42,10 +42,10 @@ void Labyrinth::print(bool godMode) const {
 }
 
 void Labyrinth::setStart(int x, int y) {
- if (x > 0 && y > 0) {
-	 m_current.x = x%m_tailleX;
-	 m_current.y = y%m_tailleY;
- }
+	if (x > 0 && y > 0) {
+		m_current.x = x%m_tailleX;
+		m_current.y = y%m_tailleY;
+	}
 }
 
 void Labyrinth::setStart(pos p) {
@@ -71,23 +71,23 @@ int Labyrinth::position(pos p) const {
 }
 
 void Labyrinth::gen() {
- if (!m_gen) {
-	 _gen();
- }
+	if (!m_gen) {
+		_gen();
+	}
 }
 
 void Labyrinth::_gen() {
 
 	int random;
 	for (int i = 0; i < m_tailleX*m_tailleY; ++i) {
-			random = rand()%100;
-			if (random < 60) {
-				m_rooms[i].setComportement(new EmptyRoom(0));
-			} else if (random < 70) {
-				m_rooms[i].setComportement(new TreasureRoom(rand()%10+1));
-			}	else {
-				m_rooms[i].setComportement(new MonsterRoom(rand()%10+1));
-			}
+		random = rand()%100;
+		if (random < 60) {
+			m_rooms[i].setComportement(new EmptyRoom(0));
+		} else if (random < 70) {
+			m_rooms[i].setComportement(new TreasureRoom(rand()%10+1));
+		}	else {
+			m_rooms[i].setComportement(new MonsterRoom(rand()%10+1));
+		}
 	}
 	m_rooms[position(m_current)].setComportement(new StartRoom(0));
 
@@ -247,9 +247,9 @@ void Labyrinth::action(Personnage &perso) {
 }
 
 void Labyrinth::undo() {
-		m_rooms[position(m_current)].setVisited();
-		m_current = m_precedent;
-		m_rooms[position(m_current)].setPosition();
+	m_rooms[position(m_current)].setVisited();
+	m_current = m_precedent;
+	m_rooms[position(m_current)].setPosition();
 }
 
 void Labyrinth::clean() {

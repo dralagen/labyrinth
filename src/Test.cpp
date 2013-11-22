@@ -16,17 +16,17 @@
 using namespace std;
 int main2()
 {
-    Personnage * p = new Personnage("John");
-    p->afficheStat();
-    ItemFactory *factory = ItemFactory::CreateFactory(CHANCEF);
-    p->trouverEquipement(new DEquipC(factory->GetCasque()));
-    p->trouverEquipement(new DEquipV(new DEquipA(new DEquipF(factory->GetTorse()))));
-    p->trouverEquipement(factory->GetJambe());
-    p->trouverArme(factory->GetHache());
-    p->actuStat();
-    p->afficheStat();
-    p->afficheEquip();
+	Personnage * p = new Personnage("John");
+	p->afficheStat();
+	ItemFactory *factory = ItemFactory::CreateFactory(CHANCEF);
+	p->trouverEquipement(new DEquipC(factory->GetCasque()));
+	p->trouverEquipement(new DEquipV(new DEquipA(new DEquipF(factory->GetTorse()))));
+	p->trouverEquipement(factory->GetJambe());
+	p->trouverArme(factory->GetHache());
+	p->actuStat();
+	p->afficheStat();
+	p->afficheEquip();
 
-    delete p;
-    return 0;
+	delete p;
+	return 0;
 }
