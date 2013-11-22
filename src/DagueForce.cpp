@@ -9,6 +9,9 @@ DagueForce::DagueForce()
     bvie_ = 0;
 }
 
+DagueForce::~DagueForce() {
+}
+
 std::string DagueForce::getNom()
 {
     return nom_;

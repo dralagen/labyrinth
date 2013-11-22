@@ -8,15 +8,16 @@
 
 class DEquipV : public Equipement
 {
- 
-    private:
-        Equipement * e_;
-    public:
-        DEquipV(Equipement * e);
-        std::string getNom();
-        int getBforce();
-        int getBvie();
-        int getBchance();
+
+	private:
+		Equipement * e_;
+	public:
+		DEquipV(Equipement * e);
+		~DEquipV();
+		std::string getNom();
+		int getBforce();
+		int getBvie();
+		int getBchance();
 		int getArmure();
 		void setBforce(int bforce);
 		void setBvie(int bvie);

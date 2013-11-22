@@ -3,7 +3,7 @@
 #include "Dague.hpp"
 #include <string>
 class DagueForce : public Dague
-{   
+{
     private:
         std::string nom_;
         int degat_;
@@ -12,6 +12,7 @@ class DagueForce : public Dague
         int bforce_;
 	public:
 		DagueForce();
+    ~DagueForce();
 		std::string getNom();
 		int getBforce();
         int getBvie();

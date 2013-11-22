@@ -9,6 +9,9 @@ HacheChance::HacheChance()
     bvie_ = 0;
 }
 
+HacheChance::~HacheChance() {
+}
+
 std::string HacheChance::getNom()
 {
     return nom_;

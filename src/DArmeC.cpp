@@ -30,12 +30,14 @@ DArmeC::DArmeC(Arme * e)
         {
             e->setNom(e->getNom()+" de Chance");
         }
-   
+
     }
      e->setBchance(e->getBchance()+2);
 }
 
-
+DArmeC::~DArmeC() {
+  delete e_;
+}
 
 std::string DArmeC::getNom()
 {

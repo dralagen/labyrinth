@@ -6,7 +6,7 @@ class Torse : public Equipement
 {
 
 	public:
-		//virtual ~Torse();
+		virtual ~Torse() {}
 		virtual std::string getNom()=0;
 		virtual int getBforce()=0;
 		virtual int getBvie()=0;

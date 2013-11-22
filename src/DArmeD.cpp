@@ -30,12 +30,14 @@ DArmeD::DArmeD(Arme * e)
         {
             e->setNom("Puissante "+e->getNom());
         }
-   
+
     }
      e->setDegat(e->getDegat()+2);
 }
 
-
+DArmeD::~DArmeD() {
+  delete e_;
+}
 
 std::string DArmeD::getNom()
 {

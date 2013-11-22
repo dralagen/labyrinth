@@ -6,7 +6,7 @@ class Casque : public Equipement
 {
 
 	public:
-		//virtual ~Casque();
+		virtual ~Casque() {}
 		virtual std::string getNom()=0;
 		virtual int getBforce()=0;
 		virtual int getBvie()=0;

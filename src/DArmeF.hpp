@@ -8,16 +8,17 @@
 
 class DArmeF : public Arme
 {
- 
-    private:
-        Arme * e_;
-    public:
-        DArmeF(Arme * e);
-        std::string getNom();
-        int getBforce();
-        int getBvie();
-        int getBchance();
-		int getDegat();
+
+  private:
+    Arme * e_;
+  public:
+    DArmeF(Arme * e);
+    ~DArmeF();
+    std::string getNom();
+    int getBforce();
+    int getBvie();
+    int getBchance();
+    int getDegat();
 		void setBforce(int bforce);
 		void setBvie(int bvie);
 		void setBchance(int bchance);
