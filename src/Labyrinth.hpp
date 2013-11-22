@@ -22,15 +22,17 @@
 
 
 /**
- * \struct position (x,y) abscisse,ordonnée
+ * \struct position utilise des coordonnée pour stocker une position
  *
  */
 struct pos {
-	int x, y;
+	int x, ///< coordonnée abscisse
+		 	y; ///< coordonnée ordonnée
 };
 
 /**
- * \class gestion du labyrinth
+ * \class Labyrinth
+ * \brief gestion de labyrinthe
  */
 class Labyrinth
 {
@@ -48,7 +50,6 @@ class Labyrinth
 		 * \brief destructeur
 		 */
 		~Labyrinth();
-		//Labyrinth(const Labyrinth &lab);
 
 		/**
 		 * \brief surchage opérateur =
@@ -89,7 +90,7 @@ class Labyrinth
 		/**
 		 * \brief Verifie si il y a une porte au sud
 		 *
-		 * \return vrais si c'est une porte
+		 * \return vrai si c'est une porte
 		 *         faux si c'est un mur
 		 */
 		bool hasSouth() const;
