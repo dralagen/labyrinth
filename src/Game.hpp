@@ -26,7 +26,8 @@
 #include "DArmeV.hpp"
 
 /**
- * \class Game Gère une partie
+ * \class Game
+ * \brief Gère une partie
  *          manage un labyrinth avec un joueur
  */
 class Game
