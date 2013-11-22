@@ -42,7 +42,7 @@ void Labyrinth::print(bool godMode) const {
 }
 
 void Labyrinth::setStart(int x, int y) {
-	if (x > 0 && y > 0) {
+	if (x > 0 && y > 0 && !m_gen) {
 		m_current.x = x%m_tailleX;
 		m_current.y = y%m_tailleY;
 	}
@@ -125,21 +125,21 @@ void Labyrinth::init(pos p) {
 
 void Labyrinth::openDoor(pos p1, pos p2) {
 	if (p1.x == p2.x && p1.y != p2.y) {
-		if (p1.y > p2.y) {
+		if (p1.y == p2.y+1) {
 			m_rooms[position(p1)].setNorth(true);
 			m_rooms[position(p2)].setSouth(true);
 		}
-		else {
+		else if (p1.y+1 == p2.y) {
 			m_rooms[position(p1)].setSouth(true);
 			m_rooms[position(p2)].setNorth(true);
 		}
 	}
 	else if (p1.x != p2.x && p1.y == p2.y) {
-		if (p1.x > p2.x) {
+		if (p1.x == p2.x+1) {
 			m_rooms[position(p1)].setWest(true);
 			m_rooms[position(p2)].setEast(true);
 		}
-		else {
+		else if (p1.x+1 == p2.x) {
 			m_rooms[position(p1)].setEast(true);
 			m_rooms[position(p2)].setWest(true);
 		}
