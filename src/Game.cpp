@@ -1,6 +1,5 @@
 #include "Game.hpp"
 
-Game::Game(int x, int y): m_labyrinth(x,y), m_perso("John") {}
 Game::Game(std::string name, int x, int y): m_labyrinth(x,y), m_perso(name) {}
 
 void Game::launch() {
