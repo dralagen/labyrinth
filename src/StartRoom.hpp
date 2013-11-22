@@ -6,10 +6,10 @@
 class StartRoom : public RoomComportement
 {
 	public:
-		StartRoom ();
+		StartRoom (int lvl = 0);
 		virtual ~StartRoom();
 
-		virtual int action();
+		virtual int action(Personnage &perso);
 };
 
 #endif /* STARTROOM_HPP */

@@ -22,8 +22,21 @@ void Room::print(std::string &t, std::string &c, std::string &b, bool godMode) c
 	}
 }
 
-int Room::action() {
-	return m_comp->action();
+int Room::action(Personnage &perso) {
+	switch (m_comp->action(perso)) {
+		case RC_CLEAN_MONSTER:
+			setComportement(new TreasureRoom(m_comp->getLvl()));
+			return action(perso);
+			break;
+		case RC_OPEN_TREASURE:
+			setComportement(new EmptyRoom(m_comp->getLvl()));
+			break;
+		case RC_UNDO:
+			return RC_UNDO;
+			break;
+	}
+
+	return RC_NOTHING;
 }
 
 void Room::top(std::string &s) const {
@@ -46,6 +59,7 @@ void Room::setNorth   (bool  b) { m_north   = b; }
 void Room::setEast    (bool  b) { m_east    = b; }
 void Room::setSouth   (bool  b) { m_south   = b; }
 void Room::setWest    (bool  b) { m_west    = b; }
+
 void Room::setComportement (RoomComportement *r) {
 	delete m_comp;
 	m_comp = r;

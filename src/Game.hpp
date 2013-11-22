@@ -6,23 +6,32 @@
 
 #include "Labyrinth.hpp"
 #include "Personnage.hpp"
+#include "ItemFactory.hpp"
+#include "Equipement.hpp"
+#include "DEquipA.hpp"
+#include "DEquipC.hpp"
+#include "DEquipV.hpp"
+#include "DEquipF.hpp"
+#include "DArmeD.hpp"
+#include "DArmeF.hpp"
+#include "DArmeC.hpp"
+#include "DArmeV.hpp"
 
 class Game
 {
 	public:
 		Game (int x = LABYRINTH_TAILLE_X_DEFAULT,
 					int y = LABYRINTH_TAILLE_Y_DEFAULT);
-		//Game (const Labyrinth &lab);
 
-		//virtual ~Game ();
+		Game(std::string name,
+				 int x = LABYRINTH_TAILLE_X_DEFAULT,
+				 int y = LABYRINTH_TAILLE_Y_DEFAULT);
 
 		void launch();
 		void chooseRoom();
 		void end();
 		void help();
 
-		void fight();
-		void treasure();
 
 	private:
 		Labyrinth m_labyrinth;
