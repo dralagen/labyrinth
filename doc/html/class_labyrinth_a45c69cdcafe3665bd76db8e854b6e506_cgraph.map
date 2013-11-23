@@ -1,0 +1,5 @@
+<map id="Labyrinth::hasAdjacent" name="Labyrinth::hasAdjacent">
+<area shape="rect" id="node3" href="$class_labyrinth.html#ac586bb4db152210ed424f77d68505502" title="Calcule la position de la salle dans le tableau." alt="" coords="185,5,292,33"/>
+<area shape="rect" id="node5" href="$class_room.html#ae653a070a5eb0598097fcbe949e8b483" title="Récupère l&#39;état de la salle." alt="" coords="188,55,289,83"/>
+<area shape="rect" id="node7" href="$class_room_etat.html#ae02e142515e04ec9ad1219c1a1b99b61" title="RoomEtat::visited" alt="" coords="343,55,447,83"/>
+</map>

@@ -1,4 +1,5 @@
 #include "RoomEtatUnvisited.hpp"
+#include "Room.hpp"
 
 RoomEtatUnvisited::RoomEtatUnvisited(Room *r) {
 	m_room = r;

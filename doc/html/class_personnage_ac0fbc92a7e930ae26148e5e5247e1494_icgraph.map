@@ -1,0 +1,5 @@
+<map id="Personnage::getNom" name="Personnage::getNom">
+<area shape="rect" id="node3" href="$class_end_room.html#ad7691b55dcf3ed863c8a774138105900" title="Execute l&#39;action du comportement." alt="" coords="192,5,296,33"/>
+<area shape="rect" id="node5" href="$class_start_room.html#aae3c5e25ac0742c84ac6596d57bf3edb" title="Execute l&#39;action du comportement." alt="" coords="191,55,297,83"/>
+<area shape="rect" id="node7" href="$class_treasure_room.html#af2719c053785a2523dcd902820766bea" title="Execute l&#39;action du comportement." alt="" coords="180,106,308,134"/>
+</map>

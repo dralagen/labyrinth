@@ -1,0 +1,5 @@
+<map id="Room::isEnd" name="Room::isEnd">
+<area shape="rect" id="node3" href="$class_labyrinth.html#ad50cf7950f97a0d701b1f41125566883" title="Vérifie la fin." alt="" coords="136,5,235,33"/>
+<area shape="rect" id="node5" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie." alt="" coords="283,5,371,33"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="419,5,464,33"/>
+</map>

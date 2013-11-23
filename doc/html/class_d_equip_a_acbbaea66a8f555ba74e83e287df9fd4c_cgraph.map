@@ -1,0 +1,6 @@
+<map id="DEquipA::DEquipA" name="DEquipA::DEquipA">
+<area shape="rect" id="node3" href="$class_equipement.html#a43bd1d573051e8847c2d3dd9d4073d86" title="Equipement::getNom" alt="" coords="172,5,295,33"/>
+<area shape="rect" id="node5" href="$class_equipement.html#a1b7b74fb9aef1a71299854fe9893ad18" title="Equipement::setNom" alt="" coords="172,55,295,83"/>
+<area shape="rect" id="node7" href="$class_equipement.html#a1db04d55e1a4686cedc6e17f7460ec10" title="Equipement::setArmure" alt="" coords="167,106,300,134"/>
+<area shape="rect" id="node9" href="$class_equipement.html#ae055040a3818855a8ab6909c766af41b" title="Equipement::getArmure" alt="" coords="165,157,301,185"/>
+</map>

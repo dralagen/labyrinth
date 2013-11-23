@@ -1,0 +1,6 @@
+<map id="Jambe" name="Jambe">
+<area shape="rect" id="node5" href="$class_jambe_chance.html" title="{JambeChance\n|&#45; nom_\l&#45; armure_\l&#45; bchance_\land 2 more...\l|+ JambeChance()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="5,363,112,541"/>
+<area shape="rect" id="node7" href="$class_jambe_force.html" title="{JambeForce\n|&#45; nom_\l&#45; armure_\l&#45; bchance_\land 2 more...\l|+ JambeForce()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="136,363,235,541"/>
+<area shape="rect" id="node9" href="$class_jambe_vie.html" title="{JambeVie\n|&#45; nom_\l&#45; armure_\l&#45; bchance_\land 2 more...\l|+ JambeVie()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="259,363,344,541"/>
+<area shape="rect" id="node2" href="$class_equipement.html" title="{Equipement\n||+ ~Equipement()\l+ getNom()\l+ getBforce()\land 9 more...\l}" alt="" coords="135,6,236,135"/>
+</map>

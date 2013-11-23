@@ -1,0 +1,13 @@
+<map id="Game" name="Game">
+<area shape="rect" id="node2" href="$class_labyrinth.html" title="gestion de labyrinthe" alt="" coords="469,539,563,781"/>
+<area shape="rect" id="node4" href="$class_room.html" title="gestion de salle" alt="" coords="225,217,316,442"/>
+<area shape="rect" id="node6" href="$class_room_etat.html" title="{RoomEtat\n||+ RoomEtat()\l+ RoomEtat()\l+ ~RoomEtat()\land 2 more...\l}" alt="" coords="244,595,337,725"/>
+<area shape="rect" id="node9" href="$class_room_etat_unvisited.html" title="{RoomEtatUnvisited\n||+ RoomEtatUnvisited()\l+ ~RoomEtatUnvisited()\l+ print()\l+ visited()\l}" alt="" coords="312,846,448,975"/>
+<area shape="rect" id="node12" href="$class_room_etat_visited.html" title="{RoomEtatVisited\n||+ RoomEtatVisited()\l+ ~RoomEtatVisited()\l+ print()\l+ visited()\l}" alt="" coords="164,846,287,975"/>
+<area shape="rect" id="node17" href="$class_room_etat_position.html" title="{RoomEtatPosition\n||+ RoomEtatPosition()\l+ ~RoomEtatPosition()\l+ print()\l+ visited()\l}" alt="" coords="5,846,136,975"/>
+<area shape="rect" id="node15" href="$class_room_comportement.html" title="Génère le comportement des salles." alt="" coords="197,6,344,151"/>
+<area shape="rect" id="node20" href="$structpos.html" title="{pos\n|+ x\l+ y\l|}" alt="" coords="497,281,535,378"/>
+<area shape="rect" id="node22" href="$class_personnage.html" title="{Personnage\n|&#45; nom_\l&#45; vieMax_\l&#45; vie_\land 6 more...\l|+ Personnage()\l+ ~Personnage()\l+ modifierVie()\land 20 more...\l}" alt="" coords="587,571,688,749"/>
+<area shape="rect" id="node24" href="$class_arme.html" title="{Arme\n||+ ~Arme()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="699,265,784,394"/>
+<area shape="rect" id="node26" href="$class_equipement.html" title="{Equipement\n||+ ~Equipement()\l+ getNom()\l+ getBforce()\land 9 more...\l}" alt="" coords="573,265,675,394"/>
+</map>

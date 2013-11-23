@@ -1,0 +1,6 @@
+<map id="RoomComportement::isEnd" name="RoomComportement::isEnd">
+<area shape="rect" id="node3" href="$class_room.html#a2d04c2be573b64240139ffa96089d0de" title="verifie si c&#39;est la salle de fin" alt="" coords="208,5,291,33"/>
+<area shape="rect" id="node5" href="$class_labyrinth.html#ad50cf7950f97a0d701b1f41125566883" title="Vérifie la fin." alt="" coords="339,5,437,33"/>
+<area shape="rect" id="node7" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie." alt="" coords="485,5,573,33"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="621,5,667,33"/>
+</map>

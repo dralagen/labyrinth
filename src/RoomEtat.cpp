@@ -1,4 +1,5 @@
 #include "RoomEtat.hpp"
+#include "Room.hpp"
 
 RoomEtat::RoomEtat():m_room(0) {}
 

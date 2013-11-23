@@ -1,0 +1,6 @@
+<map id="DEquipC::DEquipC" name="DEquipC::DEquipC">
+<area shape="rect" id="node3" href="$class_equipement.html#a43bd1d573051e8847c2d3dd9d4073d86" title="Equipement::getNom" alt="" coords="177,5,300,33"/>
+<area shape="rect" id="node5" href="$class_equipement.html#a1b7b74fb9aef1a71299854fe9893ad18" title="Equipement::setNom" alt="" coords="177,55,300,83"/>
+<area shape="rect" id="node7" href="$class_equipement.html#a537e07c2707765cee64cb0db30754b00" title="Equipement::setBchance" alt="" coords="169,106,308,134"/>
+<area shape="rect" id="node9" href="$class_equipement.html#af7158282d7018b0934763aa33fef9577" title="Equipement::getBchance" alt="" coords="168,157,309,185"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Hache" name="Hache">
+<area shape="rect" id="node5" href="$class_hache_chance.html" title="{HacheChance\n|&#45; nom_\l&#45; degat_\l&#45; bchance_\land 2 more...\l|+ HacheChance()\l+ ~HacheChance()\l+ getNom()\land 9 more...\l}" alt="" coords="5,363,117,541"/>
+<area shape="rect" id="node7" href="$class_hache_force.html" title="{HacheForce\n|&#45; nom_\l&#45; degat_\l&#45; bchance_\land 2 more...\l|+ HacheForce()\l+ ~HacheForce()\l+ getNom()\land 9 more...\l}" alt="" coords="141,363,245,541"/>
+<area shape="rect" id="node9" href="$class_hache_vie.html" title="{HacheVie\n|&#45; nom_\l&#45; degat_\l&#45; bchance_\land 2 more...\l|+ HacheVie()\l+ ~HacheVie()\l+ getNom()\land 9 more...\l}" alt="" coords="269,363,360,541"/>
+<area shape="rect" id="node2" href="$class_arme.html" title="{Arme\n||+ ~Arme()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="151,6,236,135"/>
+</map>

@@ -1,4 +1,5 @@
 #include "RoomEtatPosition.hpp"
+#include "Room.hpp"
 
 RoomEtatPosition::RoomEtatPosition(Room *r): RoomEtat(r) {}
 

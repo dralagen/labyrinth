@@ -1,0 +1,7 @@
+<map id="Room::print" name="Room::print">
+<area shape="rect" id="node3" href="$class_room.html#a77d4ea167eb2e32638c4da2f84117873" title="Modifie le flux de sortie pour afficher le contenue de la salle." alt="" coords="147,5,219,33"/>
+<area shape="rect" id="node5" href="$class_room.html#a792dfc1df5837f19a485b56e68ca4361" title="Modifie le flux de sortie pour afficher le contenue de la salle." alt="" coords="140,55,225,83"/>
+<area shape="rect" id="node9" href="$class_room.html#a5f54422b1ad4569692927542c9ff6927" title="Modifie le flux de sortie pour afficher le contenue de la salle." alt="" coords="137,106,228,134"/>
+<area shape="rect" id="node11" href="$class_room_etat.html#a89c60a235c1373e1e7ecf8bbe9a7d3d3" title="RoomEtat::print" alt="" coords="135,157,231,185"/>
+<area shape="rect" id="node7" href="$class_room_comportement.html#a6927d638d17858a303d77b449c7552b4" title="Récupère le contenue de la salle." alt="" coords="281,55,463,83"/>
+</map>

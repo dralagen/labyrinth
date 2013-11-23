@@ -1,0 +1,6 @@
+<map id="Dague" name="Dague">
+<area shape="rect" id="node5" href="$class_dague_chance.html" title="{DagueChance\n|&#45; nom_\l&#45; degat_\l&#45; bchance_\land 2 more...\l|+ DagueChance()\l+ ~DagueChance()\l+ getNom()\land 9 more...\l}" alt="" coords="5,363,120,541"/>
+<area shape="rect" id="node7" href="$class_dague_force.html" title="{DagueForce\n|&#45; nom_\l&#45; degat_\l&#45; bchance_\land 2 more...\l|+ DagueForce()\l+ ~DagueForce()\l+ getNom()\land 9 more...\l}" alt="" coords="144,363,248,541"/>
+<area shape="rect" id="node9" href="$class_dague_vie.html" title="{DagueVie\n|&#45; nom_\l&#45; degat_\l&#45; bchance_\land 2 more...\l|+ DagueVie()\l+ ~DagueVie()\l+ getNom()\land 9 more...\l}" alt="" coords="272,363,363,541"/>
+<area shape="rect" id="node2" href="$class_arme.html" title="{Arme\n||+ ~Arme()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="153,6,239,135"/>
+</map>

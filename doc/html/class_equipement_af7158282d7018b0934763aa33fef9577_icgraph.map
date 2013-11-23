@@ -1,0 +1,11 @@
+<map id="Equipement::getBchance" name="Equipement::getBchance">
+<area shape="rect" id="node3" href="$class_d_equip_a.html#a975843e01866e9e7f647e602d5db3d67" title="DEquipA::getBchance" alt="" coords="196,5,321,33"/>
+<area shape="rect" id="node5" href="$class_d_equip_c.html#a84b4ff1ea2ee4a70f48bdbfe5b8507ed" title="DEquipC::DEquipC" alt="" coords="201,55,316,83"/>
+<area shape="rect" id="node7" href="$class_d_equip_c.html#ae931fd21000bc062d63b5732c5a6822e" title="DEquipC::getBchance" alt="" coords="196,106,321,134"/>
+<area shape="rect" id="node9" href="$class_d_equip_f.html#a38431854e49fb01a325e906057ff9663" title="DEquipF::getBchance" alt="" coords="196,157,321,185"/>
+<area shape="rect" id="node11" href="$class_d_equip_v.html#a921c795aefd215a68d3399749e158719" title="DEquipV::getBchance" alt="" coords="196,207,321,235"/>
+<area shape="rect" id="node13" href="$class_personnage.html#a540b4f0590d9ee6f11e10c335ff740a8" title="Personnage::actuStat" alt="" coords="196,258,321,286"/>
+<area shape="rect" id="node15" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie." alt="" coords="371,233,459,261"/>
+<area shape="rect" id="node19" href="$_test_8cpp.html#a0e663f52efbc8593793d628b4259ce9b" title="main2" alt="" coords="389,283,440,311"/>
+<area shape="rect" id="node17" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="507,233,552,261"/>
+</map>

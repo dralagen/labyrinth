@@ -1,0 +1,100 @@
+\section{Référence de la classe Room\-Etat}
+\label{class_room_etat}\index{Room\-Etat@{Room\-Etat}}
+
+
+Graphe d'héritage de Room\-Etat\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_room_etat__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Room\-Etat\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_room_etat__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Room\-Etat} ()
+\item 
+{\bf Room\-Etat} ({\bf Room} $\ast$r)
+\item 
+virtual {\bf $\sim$\-Room\-Etat} ()
+\item 
+virtual void {\bf print} (std\-::string \&t, std\-::string \&c, std\-::string \&b) const =0
+\item 
+virtual bool {\bf visited} () const =0
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Room} $\ast$ {\bf m\-\_\-room}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Room\-Etat@{Room\-Etat}!Room\-Etat@{Room\-Etat}}
+\index{Room\-Etat@{Room\-Etat}!RoomEtat@{Room\-Etat}}
+\subsubsection[{Room\-Etat}]{\setlength{\rightskip}{0pt plus 5cm}Room\-Etat\-::\-Room\-Etat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_room_etat_af58ed4af42aafb0ccb215f1b8e785b01}
+\index{Room\-Etat@{Room\-Etat}!Room\-Etat@{Room\-Etat}}
+\index{Room\-Etat@{Room\-Etat}!RoomEtat@{Room\-Etat}}
+\subsubsection[{Room\-Etat}]{\setlength{\rightskip}{0pt plus 5cm}Room\-Etat\-::\-Room\-Etat (
+\begin{DoxyParamCaption}
+\item[{{\bf Room} $\ast$}]{r}
+\end{DoxyParamCaption}
+)}\label{class_room_etat_aa92454fa4b9473b0932135b8f582abc7}
+\index{Room\-Etat@{Room\-Etat}!$\sim$\-Room\-Etat@{$\sim$\-Room\-Etat}}
+\index{$\sim$\-Room\-Etat@{$\sim$\-Room\-Etat}!RoomEtat@{Room\-Etat}}
+\subsubsection[{$\sim$\-Room\-Etat}]{\setlength{\rightskip}{0pt plus 5cm}virtual Room\-Etat\-::$\sim$\-Room\-Etat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_room_etat_a1236804c8e65f27b32f000f14bca9bcb}
+
+
+\subsection{Documentation des fonctions membres}
+\index{Room\-Etat@{Room\-Etat}!print@{print}}
+\index{print@{print}!RoomEtat@{Room\-Etat}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Room\-Etat\-::print (
+\begin{DoxyParamCaption}
+\item[{std\-::string \&}]{t, }
+\item[{std\-::string \&}]{c, }
+\item[{std\-::string \&}]{b}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_room_etat_a89c60a235c1373e1e7ecf8bbe9a7d3d3}
+
+
+Implémenté dans {\bf Room\-Etat\-Unvisited} \doxyref{}{p.}{class_room_etat_unvisited_a709991d876bbc33241013410ad3e7e90}, {\bf Room\-Etat\-Position} \doxyref{}{p.}{class_room_etat_position_a4bd17f6090de6dcc1ed19695e4c9e8ee}, et {\bf Room\-Etat\-Visited} \doxyref{}{p.}{class_room_etat_visited_a33b8302d981f08b6cc806b0af37fdd1c}.
+
+\index{Room\-Etat@{Room\-Etat}!visited@{visited}}
+\index{visited@{visited}!RoomEtat@{Room\-Etat}}
+\subsubsection[{visited}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Room\-Etat\-::visited (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_room_etat_ae02e142515e04ec9ad1219c1a1b99b61}
+
+
+Implémenté dans {\bf Room\-Etat\-Unvisited} \doxyref{}{p.}{class_room_etat_unvisited_ac3c73957079f70d58d6e587a30d044bc}, {\bf Room\-Etat\-Position} \doxyref{}{p.}{class_room_etat_position_abf6ab8f63bc1d2eaf37775e66811cd5c}, et {\bf Room\-Etat\-Visited} \doxyref{}{p.}{class_room_etat_visited_af4eb3a21cb02b7a56aee76f25daa054e}.
+
+
+
+\subsection{Documentation des données membres}
+\index{Room\-Etat@{Room\-Etat}!m\-\_\-room@{m\-\_\-room}}
+\index{m\-\_\-room@{m\-\_\-room}!RoomEtat@{Room\-Etat}}
+\subsubsection[{m\-\_\-room}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Room}$\ast$ Room\-Etat\-::m\-\_\-room\hspace{0.3cm}{\ttfamily [protected]}}\label{class_room_etat_a5b23317f60b9d268bbe669955b3c4725}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+src/{\bf Room\-Etat.\-hpp}\end{DoxyCompactItemize}

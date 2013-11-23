@@ -1,0 +1,5 @@
+<map id="Labyrinth::undo" name="Labyrinth::undo">
+<area shape="rect" id="node3" href="$class_labyrinth.html#a80514a0f6bc2a3a3e68a607ea51a800e" title="Actionne la salle courante." alt="" coords="151,5,249,33"/>
+<area shape="rect" id="node5" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie." alt="" coords="299,5,387,33"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="435,5,480,33"/>
+</map>

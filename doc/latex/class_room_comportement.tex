@@ -1,0 +1,174 @@
+\section{Référence de la classe Room\-Comportement}
+\label{class_room_comportement}\index{Room\-Comportement@{Room\-Comportement}}
+
+
+Génère le comportement des salles.  
+
+
+
+
+Graphe d'héritage de Room\-Comportement\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_room_comportement__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Room\-Comportement\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_room_comportement__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Room\-Comportement} (int lvl=10)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-Room\-Comportement} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+virtual int {\bf action} ({\bf Personnage} \&p)=0
+\begin{DoxyCompactList}\small\item\em Execute l'action du comportement. \end{DoxyCompactList}\item 
+virtual bool {\bf is\-End} () const 
+\begin{DoxyCompactList}\small\item\em Vérifie la fin. \end{DoxyCompactList}\item 
+int {\bf get\-Lvl} ()
+\begin{DoxyCompactList}\small\item\em Récupère le niveau ou force de la salle. \end{DoxyCompactList}\item 
+std\-::string {\bf get\-Content} ()
+\begin{DoxyCompactList}\small\item\em Récupère le contenue de la salle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf m\-\_\-content}
+\begin{DoxyCompactList}\small\item\em Valeur du contenue a afficher. \end{DoxyCompactList}\item 
+int {\bf m\-\_\-lvl}
+\begin{DoxyCompactList}\small\item\em stock le niveau de la salle \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Génère le comportement des salles. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Room\-Comportement@{Room\-Comportement}!Room\-Comportement@{Room\-Comportement}}
+\index{Room\-Comportement@{Room\-Comportement}!RoomComportement@{Room\-Comportement}}
+\subsubsection[{Room\-Comportement}]{\setlength{\rightskip}{0pt plus 5cm}Room\-Comportement\-::\-Room\-Comportement (
+\begin{DoxyParamCaption}
+\item[{int}]{lvl = {\ttfamily 10}}
+\end{DoxyParamCaption}
+)}\label{class_room_comportement_ad73012620d96a614fa9eb481227ad239}
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em lvl} & niveau de la salle \\
+\hline
+\end{DoxyParams}
+\index{Room\-Comportement@{Room\-Comportement}!$\sim$\-Room\-Comportement@{$\sim$\-Room\-Comportement}}
+\index{$\sim$\-Room\-Comportement@{$\sim$\-Room\-Comportement}!RoomComportement@{Room\-Comportement}}
+\subsubsection[{$\sim$\-Room\-Comportement}]{\setlength{\rightskip}{0pt plus 5cm}virtual Room\-Comportement\-::$\sim$\-Room\-Comportement (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_room_comportement_ab673ba4b3e39eb43fe39052e689ece15}
+
+
+Destructeur. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Room\-Comportement@{Room\-Comportement}!action@{action}}
+\index{action@{action}!RoomComportement@{Room\-Comportement}}
+\subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Room\-Comportement\-::action (
+\begin{DoxyParamCaption}
+\item[{{\bf Personnage} \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_room_comportement_ac5b509f405f9e52fea3a9392210fbbdb}
+
+
+Execute l'action du comportement. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & \doxyref{Personnage}{p.}{class_personnage} qui l'éxecute\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+l'action realisé 
+\end{DoxyReturn}
+
+
+Implémenté dans {\bf End\-Room} \doxyref{}{p.}{class_end_room_af97255a0d4a032726087020dbbce7929}, {\bf Monster\-Room} \doxyref{}{p.}{class_monster_room_a59f4b114cefd594803c7765d8c082e3a}, {\bf Empty\-Room} \doxyref{}{p.}{class_empty_room_a6081c8a795558273ed003b39438feeb6}, {\bf Start\-Room} \doxyref{}{p.}{class_start_room_a725feb221b89e85973f90cd2c98ab8f6}, et {\bf Treasure\-Room} \doxyref{}{p.}{class_treasure_room_ab72726e2289ff32cbd18a207b020c288}.
+
+\index{Room\-Comportement@{Room\-Comportement}!get\-Content@{get\-Content}}
+\index{get\-Content@{get\-Content}!RoomComportement@{Room\-Comportement}}
+\subsubsection[{get\-Content}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Room\-Comportement\-::get\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_room_comportement_a6927d638d17858a303d77b449c7552b4}
+
+
+Récupère le contenue de la salle. 
+
+\begin{DoxyReturn}{Renvoie}
+contenue de la salle 
+\end{DoxyReturn}
+\index{Room\-Comportement@{Room\-Comportement}!get\-Lvl@{get\-Lvl}}
+\index{get\-Lvl@{get\-Lvl}!RoomComportement@{Room\-Comportement}}
+\subsubsection[{get\-Lvl}]{\setlength{\rightskip}{0pt plus 5cm}int Room\-Comportement\-::get\-Lvl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_room_comportement_a645473f228c0e73532a309ad512456eb}
+
+
+Récupère le niveau ou force de la salle. 
+
+\begin{DoxyReturn}{Renvoie}
+le niveau 
+\end{DoxyReturn}
+\index{Room\-Comportement@{Room\-Comportement}!is\-End@{is\-End}}
+\index{is\-End@{is\-End}!RoomComportement@{Room\-Comportement}}
+\subsubsection[{is\-End}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Room\-Comportement\-::is\-End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_room_comportement_a71854b11d6dc72c7189ba25cfb38462b}
+
+
+Vérifie la fin. 
+
+\begin{DoxyReturn}{Renvoie}
+vrais si on est sur la salle de fin 
+\end{DoxyReturn}
+
+
+Réimplémentée dans {\bf End\-Room} \doxyref{}{p.}{class_end_room_a86fe0d5ca591ed54e5144aa12fe85442}.
+
+
+
+\subsection{Documentation des données membres}
+\index{Room\-Comportement@{Room\-Comportement}!m\-\_\-content@{m\-\_\-content}}
+\index{m\-\_\-content@{m\-\_\-content}!RoomComportement@{Room\-Comportement}}
+\subsubsection[{m\-\_\-content}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Room\-Comportement\-::m\-\_\-content\hspace{0.3cm}{\ttfamily [protected]}}\label{class_room_comportement_a48186371372d14465faffc7734e89fdc}
+
+
+Valeur du contenue a afficher. 
+
+\index{Room\-Comportement@{Room\-Comportement}!m\-\_\-lvl@{m\-\_\-lvl}}
+\index{m\-\_\-lvl@{m\-\_\-lvl}!RoomComportement@{Room\-Comportement}}
+\subsubsection[{m\-\_\-lvl}]{\setlength{\rightskip}{0pt plus 5cm}int Room\-Comportement\-::m\-\_\-lvl\hspace{0.3cm}{\ttfamily [protected]}}\label{class_room_comportement_acfc0d0c3c7dbcd88235e8c615f7290a3}
+
+
+stock le niveau de la salle 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+src/{\bf Room\-Comportement.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+<map id="Arme::getBforce" name="Arme::getBforce">
+<area shape="rect" id="node3" href="$class_d_arme_c.html#a8897906b826ed33f3a1af20b7ee7b21c" title="DArmeC::getBforce" alt="" coords="160,5,275,33"/>
+<area shape="rect" id="node5" href="$class_d_arme_d.html#a501bf8d95f205da038662644c8deb252" title="DArmeD::getBforce" alt="" coords="160,55,275,83"/>
+<area shape="rect" id="node7" href="$class_d_arme_f.html#a88e1d0ca6143fb0a00114a41ebcb7783" title="DArmeF::DArmeF" alt="" coords="163,106,272,134"/>
+<area shape="rect" id="node9" href="$class_d_arme_f.html#a5846b098730320bbcc92d9e9242d0696" title="DArmeF::getBforce" alt="" coords="160,157,275,185"/>
+<area shape="rect" id="node11" href="$class_d_arme_v.html#a70323fba012f9cc56eff0c45ccdc98bb" title="DArmeV::getBforce" alt="" coords="160,207,275,235"/>
+<area shape="rect" id="node13" href="$class_personnage.html#a540b4f0590d9ee6f11e10c335ff740a8" title="Personnage::actuStat" alt="" coords="155,258,280,286"/>
+<area shape="rect" id="node15" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie." alt="" coords="328,233,416,261"/>
+<area shape="rect" id="node19" href="$_test_8cpp.html#a0e663f52efbc8593793d628b4259ce9b" title="main2" alt="" coords="347,283,397,311"/>
+<area shape="rect" id="node17" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="464,233,509,261"/>
+</map>
