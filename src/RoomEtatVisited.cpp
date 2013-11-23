@@ -1,4 +1,5 @@
 #include "RoomEtatVisited.hpp"
+#include "Room.hpp"
 
 RoomEtatVisited::RoomEtatVisited(Room *r): RoomEtat(r) {}
 
