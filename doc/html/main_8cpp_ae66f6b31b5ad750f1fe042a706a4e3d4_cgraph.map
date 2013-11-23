@@ -1,0 +1,51 @@
+<map id="main" name="main">
+<area shape="rect" id="node3" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie." alt="" coords="99,866,187,894"/>
+<area shape="rect" id="node5" href="$class_labyrinth.html#a4f94ffe9a0097abea1657b8b3d8d85a6" title="génére qu&#39;une fois le labyrinth" alt="" coords="279,145,369,173"/>
+<area shape="rect" id="node22" href="$class_item_factory.html#ab10257decaf2cda946ec482a0dfdfe03" title="ItemFactory::CreateFactory" alt="" coords="247,815,401,843"/>
+<area shape="rect" id="node24" href="$class_personnage.html#a039ce12768debca443459af1eb3ca176" title="Personnage::trouverEquipement" alt="" coords="236,967,412,995"/>
+<area shape="rect" id="node30" href="$class_item_factory.html#a89450cf0176a8da74cc5a9b8ef5aaae6" title="ItemFactory::GetCasque" alt="" coords="255,1018,393,1046"/>
+<area shape="rect" id="node32" href="$class_item_factory.html#ad5f3eb7dffeed5577e05e859775af3dd" title="ItemFactory::GetTorse" alt="" coords="259,1069,389,1097"/>
+<area shape="rect" id="node34" href="$class_personnage.html#a020576cc14d815a1f4ebb9afe677e4c7" title="Personnage::trouverArme" alt="" coords="251,866,397,894"/>
+<area shape="rect" id="node38" href="$class_item_factory.html#afd402df71468d0a96ea12e92c80a185e" title="ItemFactory::GetHache" alt="" coords="257,1119,391,1147"/>
+<area shape="rect" id="node40" href="$class_labyrinth.html#ad50cf7950f97a0d701b1f41125566883" title="Vérifie la fin." alt="" coords="275,663,373,691"/>
+<area shape="rect" id="node47" href="$class_labyrinth.html#a80514a0f6bc2a3a3e68a607ea51a800e" title="Actionne la salle courante." alt="" coords="483,157,581,185"/>
+<area shape="rect" id="node55" href="$class_labyrinth.html#a7c0789decac44992b6baa12613b9109a" title="Affiche le labyrinthe." alt="" coords="485,765,579,793"/>
+<area shape="rect" id="node66" href="$class_personnage.html#a540b4f0590d9ee6f11e10c335ff740a8" title="Personnage::actuStat" alt="" coords="261,1170,387,1198"/>
+<area shape="rect" id="node82" href="$class_personnage.html#a960d6680688c5bee1868ef7238849e7b" title="Personnage::afficheStat" alt="" coords="256,1221,392,1249"/>
+<area shape="rect" id="node84" href="$class_personnage.html#abfa0fbd5f6c38c7297964046de26db0a" title="Personnage::afficheEquip" alt="" coords="252,917,396,945"/>
+<area shape="rect" id="node88" href="$class_game.html#a70b3d987f25dd5e1aeb6ab18cfedc387" title="Choisie une direction et execute l&#39;action de la salle." alt="" coords="264,435,384,463"/>
+<area shape="rect" id="node116" href="$class_game.html#aa2d938aa918268060e63980c7efd86f8" title="Action de fin." alt="" coords="287,765,361,793"/>
+<area shape="rect" id="node7" href="$class_labyrinth.html#afc29f7969b11105584bf51c616740bce" title="Génère le labyrinthe." alt="" coords="484,106,580,134"/>
+<area shape="rect" id="node9" href="$class_room.html#a78150061fe95e0d03b8730fb151cc39f" title="Modifie le comportement de la salle." alt="" coords="657,5,799,33"/>
+<area shape="rect" id="node11" href="$class_labyrinth.html#ac586bb4db152210ed424f77d68505502" title="Calcule la position de la salle dans le tableau." alt="" coords="855,385,961,413"/>
+<area shape="rect" id="node13" href="$class_labyrinth.html#a1589aae4f56635fd38d4704196571646" title="Ouvre les chemins a partir de la position p." alt="" coords="685,207,771,235"/>
+<area shape="rect" id="node18" href="$class_room.html#abcedb8c7a1685089a797805c0567219a" title="Etat de la salle : non visité" alt="" coords="671,106,785,134"/>
+<area shape="rect" id="node20" href="$class_room.html#ac5949bc2fb5288c733369ad51af7b084" title="Etat de la salle : ma position." alt="" coords="855,81,961,109"/>
+<area shape="rect" id="node16" href="$class_room.html#a50d357cd356b3b1d1bd8e7d9217e5b71" title="Etat de la salle : visité" alt="" coords="857,182,959,210"/>
+<area shape="rect" id="node26" href="$class_equipement.html#a43bd1d573051e8847c2d3dd9d4073d86" title="Equipement::getNom" alt="" coords="471,917,593,945"/>
+<area shape="rect" id="node28" href="$class_equipement.html#a05b2c9d4cf22b6aefb6603fa4e322aa2" title="Equipement::type" alt="" coords="480,967,584,995"/>
+<area shape="rect" id="node36" href="$class_arme.html#a0b6a30975be57770c6cae357b52395a0" title="Arme::getNom" alt="" coords="487,866,577,894"/>
+<area shape="rect" id="node43" href="$class_room.html#a2d04c2be573b64240139ffa96089d0de" title="verifie si c&#39;est la salle de fin" alt="" coords="491,714,573,742"/>
+<area shape="rect" id="node45" href="$class_room_comportement.html#a240991f90b07c35e0e9114e6a203ba88" title="Vérifie la fin." alt="" coords="651,714,805,742"/>
+<area shape="rect" id="node50" href="$class_labyrinth.html#aa6bbe37a3dae3799c0557c8c92a88f06" title="retourne a la position précédente position courante == position précédente" alt="" coords="680,157,776,185"/>
+<area shape="rect" id="node58" href="$class_room.html#a621adfd7a12485b67ba9c26882252830" title="Affiche le contenue de la salle." alt="" coords="689,815,767,843"/>
+<area shape="rect" id="node60" href="$class_room.html#a77d4ea167eb2e32638c4da2f84117873" title="Modifie le flux de sortie pour afficher le contenue de la salle." alt="" coords="872,765,944,793"/>
+<area shape="rect" id="node62" href="$class_room.html#a792dfc1df5837f19a485b56e68ca4361" title="Modifie le flux de sortie pour afficher le contenue de la salle." alt="" coords="865,815,951,843"/>
+<area shape="rect" id="node64" href="$class_room.html#a5f54422b1ad4569692927542c9ff6927" title="Modifie le flux de sortie pour afficher le contenue de la salle." alt="" coords="863,866,953,894"/>
+<area shape="rect" id="node68" href="$class_equipement.html#ae055040a3818855a8ab6909c766af41b" title="Equipement::getArmure" alt="" coords="464,1119,600,1147"/>
+<area shape="rect" id="node70" href="$class_equipement.html#aba39c70eea47d20e448cb94b32a51712" title="Equipement::getBvie" alt="" coords="472,1170,592,1198"/>
+<area shape="rect" id="node72" href="$class_equipement.html#a6bb05d8e30ea93648634afea52aaa32e" title="Equipement::getBforce" alt="" coords="467,1221,597,1249"/>
+<area shape="rect" id="node74" href="$class_equipement.html#af7158282d7018b0934763aa33fef9577" title="Equipement::getBchance" alt="" coords="461,1271,603,1299"/>
+<area shape="rect" id="node76" href="$class_arme.html#ad07794203a8fa685391cd6c107529aa1" title="Arme::getBvie" alt="" coords="488,1322,576,1350"/>
+<area shape="rect" id="node78" href="$class_arme.html#a25da1859e12ebceb90283fb980f00758" title="Arme::getBforce" alt="" coords="483,1018,581,1046"/>
+<area shape="rect" id="node80" href="$class_arme.html#afcd4a79f4603cd9ced1eafd15be54316" title="Arme::getBchance" alt="" coords="477,1069,587,1097"/>
+<area shape="rect" id="node90" href="$class_labyrinth.html#ab22fb393c8f6d844096ce6548dff2164" title="Verifie si il y a une porte au nord." alt="" coords="671,359,785,387"/>
+<area shape="rect" id="node93" href="$class_labyrinth.html#a6759f031dd720443786e52d946d3b95a" title="va au nord" alt="" coords="477,309,587,337"/>
+<area shape="rect" id="node96" href="$class_labyrinth.html#aa0008c659d5e512f805ddaff2620912c" title="Verifie si il y a une porte a l&#39;est." alt="" coords="673,461,783,489"/>
+<area shape="rect" id="node99" href="$class_labyrinth.html#ad23a37ea3383534c6206d5d09cc1d1cb" title="va a l&#39;est" alt="" coords="480,511,584,539"/>
+<area shape="rect" id="node102" href="$class_labyrinth.html#adeb5d81ef6beccdb0360e3c5bdab9f51" title="Verifie si il y a une porte au sud." alt="" coords="669,410,787,438"/>
+<area shape="rect" id="node105" href="$class_labyrinth.html#a5b7fa660f6f3ce459b80e661603f4c20" title="va au sud" alt="" coords="476,410,588,438"/>
+<area shape="rect" id="node108" href="$class_labyrinth.html#ae5ffa83a10d415f1f635a58bc25254ba" title="Verifie si il y a une porte a l&#39;ouest." alt="" coords="672,562,784,590"/>
+<area shape="rect" id="node111" href="$class_labyrinth.html#a28e673608e72a1b69cc91c85f882b477" title="va a l&#39;ouest" alt="" coords="479,613,585,641"/>
+<area shape="rect" id="node114" href="$class_game.html#ae650b8abcc603580654b9aa375dc260a" title="Affiche les commandes." alt="" coords="493,207,571,235"/>
+</map>

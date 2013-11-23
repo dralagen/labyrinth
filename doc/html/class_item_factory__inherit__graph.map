@@ -1,0 +1,5 @@
+<map id="ItemFactory" name="ItemFactory">
+<area shape="rect" id="node3" href="$class_chance_factory.html" title="{ChanceFactory\n||+ GetCasque()\l+ GetTorse()\l+ GetJambe()\land 4 more...\l}" alt="" coords="5,201,99,330"/>
+<area shape="rect" id="node5" href="$class_force_factory.html" title="{ForceFactory\n||+ GetCasque()\l+ GetTorse()\l+ GetJambe()\land 4 more...\l}" alt="" coords="123,201,216,330"/>
+<area shape="rect" id="node7" href="$class_vie_factory.html" title="{VieFactory\n||+ GetCasque()\l+ GetTorse()\l+ GetJambe()\land 4 more...\l}" alt="" coords="240,201,333,330"/>
+</map>

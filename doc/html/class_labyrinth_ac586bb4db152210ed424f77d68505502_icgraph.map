@@ -1,0 +1,27 @@
+<map id="Labyrinth::position" name="Labyrinth::position">
+<area shape="rect" id="node3" href="$class_labyrinth.html#a7c0789decac44992b6baa12613b9109a" title="Affiche le labyrinthe." alt="" coords="515,105,608,133"/>
+<area shape="rect" id="node12" href="$class_labyrinth.html#ac4400fc1f603dd48146be8108050bec4" title="Calcule la position de la salle dans le tableau." alt="" coords="175,709,281,737"/>
+<area shape="rect" id="node14" href="$class_labyrinth.html#afc29f7969b11105584bf51c616740bce" title="Génère le labyrinthe." alt="" coords="513,156,609,184"/>
+<area shape="rect" id="node19" href="$class_labyrinth.html#a1589aae4f56635fd38d4704196571646" title="Ouvre les chemins a partir de la position p." alt="" coords="355,101,440,129"/>
+<area shape="rect" id="node22" href="$class_labyrinth.html#a1c81f6ddf4749788d5e97774c6970411" title="Créer une porte entre la salle s1 et s2 s1 et s2 adjacent." alt="" coords="168,51,288,79"/>
+<area shape="rect" id="node25" href="$class_labyrinth.html#a45c69cdcafe3665bd76db8e854b6e506" title="cherche une salle adjacente non visité" alt="" coords="163,101,293,129"/>
+<area shape="rect" id="node28" href="$class_labyrinth.html#a46038c2605eadda50894b070a012eb12" title="prend une salle adjacente" alt="" coords="163,152,293,180"/>
+<area shape="rect" id="node31" href="$class_labyrinth.html#ab22fb393c8f6d844096ce6548dff2164" title="Verifie si il y a une porte au nord." alt="" coords="171,304,285,332"/>
+<area shape="rect" id="node39" href="$class_labyrinth.html#aa0008c659d5e512f805ddaff2620912c" title="Verifie si il y a une porte a l&#39;est." alt="" coords="173,355,283,383"/>
+<area shape="rect" id="node45" href="$class_labyrinth.html#adeb5d81ef6beccdb0360e3c5bdab9f51" title="Verifie si il y a une porte au sud." alt="" coords="169,456,287,484"/>
+<area shape="rect" id="node51" href="$class_labyrinth.html#ae5ffa83a10d415f1f635a58bc25254ba" title="Verifie si il y a une porte a l&#39;ouest." alt="" coords="172,507,284,535"/>
+<area shape="rect" id="node57" href="$class_labyrinth.html#a775a1d628f1179dfca9655dbca6a43f3" title="actualise ma position courante" alt="" coords="164,405,292,433"/>
+<area shape="rect" id="node63" href="$class_labyrinth.html#a80514a0f6bc2a3a3e68a607ea51a800e" title="Actionne la salle courante." alt="" coords="348,608,447,636"/>
+<area shape="rect" id="node66" href="$class_labyrinth.html#aa6bbe37a3dae3799c0557c8c92a88f06" title="retourne a la position précédente position courante == position précédente" alt="" coords="180,608,276,636"/>
+<area shape="rect" id="node69" href="$class_labyrinth.html#a417eadea0ab0a5df9bb5e9951e166590" title="la salle a été vidé" alt="" coords="180,760,276,788"/>
+<area shape="rect" id="node71" href="$class_labyrinth.html#ad50cf7950f97a0d701b1f41125566883" title="Vérifie la fin." alt="" coords="669,608,768,636"/>
+<area shape="rect" id="node5" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie." alt="" coords="816,321,904,349"/>
+<area shape="rect" id="node9" href="$class_game.html#aa2d938aa918268060e63980c7efd86f8" title="Action de fin." alt="" coords="681,213,756,241"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="952,321,997,349"/>
+<area shape="rect" id="node16" href="$class_labyrinth.html#a4f94ffe9a0097abea1657b8b3d8d85a6" title="génére qu&#39;une fois le labyrinth" alt="" coords="673,289,764,317"/>
+<area shape="rect" id="node33" href="$class_game.html#a70b3d987f25dd5e1aeb6ab18cfedc387" title="Choisie une direction et execute l&#39;action de la salle." alt="" coords="501,355,621,383"/>
+<area shape="rect" id="node36" href="$class_labyrinth.html#a6759f031dd720443786e52d946d3b95a" title="va au nord" alt="" coords="343,253,452,281"/>
+<area shape="rect" id="node42" href="$class_labyrinth.html#ad23a37ea3383534c6206d5d09cc1d1cb" title="va a l&#39;est" alt="" coords="345,355,449,383"/>
+<area shape="rect" id="node48" href="$class_labyrinth.html#a5b7fa660f6f3ce459b80e661603f4c20" title="va au sud" alt="" coords="341,405,453,433"/>
+<area shape="rect" id="node54" href="$class_labyrinth.html#a28e673608e72a1b69cc91c85f882b477" title="va a l&#39;ouest" alt="" coords="344,507,451,535"/>
+</map>

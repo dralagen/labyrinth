@@ -1,0 +1,9 @@
+<map id="Personnage::actuStat" name="Personnage::actuStat">
+<area shape="rect" id="node3" href="$class_equipement.html#ae055040a3818855a8ab6909c766af41b" title="Equipement::getArmure" alt="" coords="181,5,317,33"/>
+<area shape="rect" id="node5" href="$class_equipement.html#aba39c70eea47d20e448cb94b32a51712" title="Equipement::getBvie" alt="" coords="189,55,309,83"/>
+<area shape="rect" id="node7" href="$class_equipement.html#a6bb05d8e30ea93648634afea52aaa32e" title="Equipement::getBforce" alt="" coords="184,106,315,134"/>
+<area shape="rect" id="node9" href="$class_equipement.html#af7158282d7018b0934763aa33fef9577" title="Equipement::getBchance" alt="" coords="179,157,320,185"/>
+<area shape="rect" id="node11" href="$class_arme.html#ad07794203a8fa685391cd6c107529aa1" title="Arme::getBvie" alt="" coords="205,207,293,235"/>
+<area shape="rect" id="node13" href="$class_arme.html#a25da1859e12ebceb90283fb980f00758" title="Arme::getBforce" alt="" coords="200,258,299,286"/>
+<area shape="rect" id="node15" href="$class_arme.html#afcd4a79f4603cd9ced1eafd15be54316" title="Arme::getBchance" alt="" coords="195,309,304,337"/>
+</map>

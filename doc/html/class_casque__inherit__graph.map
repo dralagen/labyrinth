@@ -1,0 +1,6 @@
+<map id="Casque" name="Casque">
+<area shape="rect" id="node5" href="$class_casque_chance.html" title="{CasqueChance\n|&#45; nom_\l&#45; armure_\l&#45; bchance_\land 2 more...\l|+ CasqueChance()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="5,363,117,541"/>
+<area shape="rect" id="node7" href="$class_casque_force.html" title="{CasqueForce\n|&#45; nom_\l&#45; armure_\l&#45; bchance_\land 2 more...\l|+ CasqueForce()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="141,363,245,541"/>
+<area shape="rect" id="node9" href="$class_casque_vie.html" title="{CasqueVie\n|&#45; nom_\l&#45; armure_\l&#45; bchance_\land 2 more...\l|+ CasqueVie()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="269,363,360,541"/>
+<area shape="rect" id="node2" href="$class_equipement.html" title="{Equipement\n||+ ~Equipement()\l+ getNom()\l+ getBforce()\land 9 more...\l}" alt="" coords="143,6,244,135"/>
+</map>

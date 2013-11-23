@@ -4,7 +4,6 @@
 #include <string>
 #include <iostream>
 
-#include "Room.hpp"
 
 class Room;
 class RoomEtat
@@ -23,11 +22,6 @@ class RoomEtat
 	protected:
 		Room *m_room;
 };
-
-
-#include "RoomEtatVisited.hpp"
-#include "RoomEtatPosition.hpp"
-#include "RoomEtatUnvisited.hpp"
 
 #endif /* ROOMETAT_HPP */
 

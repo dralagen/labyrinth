@@ -1,0 +1,19 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_equipement.html" title="Equipement" alt="" coords="7,207,84,235"/>
+<area shape="rect" id="node3" href="$class_casque.html" title="Casque" alt="" coords="137,55,196,83"/>
+<area shape="rect" id="node11" href="$class_d_equip_a.html" title="DEquipA" alt="" coords="135,106,199,134"/>
+<area shape="rect" id="node13" href="$class_d_equip_c.html" title="DEquipC" alt="" coords="135,157,199,185"/>
+<area shape="rect" id="node15" href="$class_d_equip_f.html" title="DEquipF" alt="" coords="135,207,199,235"/>
+<area shape="rect" id="node17" href="$class_d_equip_v.html" title="DEquipV" alt="" coords="135,258,199,286"/>
+<area shape="rect" id="node19" href="$class_jambe.html" title="Jambe" alt="" coords="140,309,193,337"/>
+<area shape="rect" id="node27" href="$class_torse.html" title="Torse" alt="" coords="141,410,192,438"/>
+<area shape="rect" id="node5" href="$class_casque_chance.html" title="CasqueChance" alt="" coords="248,5,344,33"/>
+<area shape="rect" id="node7" href="$class_casque_force.html" title="CasqueForce" alt="" coords="253,55,339,83"/>
+<area shape="rect" id="node9" href="$class_casque_vie.html" title="CasqueVie" alt="" coords="259,106,333,134"/>
+<area shape="rect" id="node21" href="$class_jambe_chance.html" title="JambeChance" alt="" coords="251,233,341,261"/>
+<area shape="rect" id="node23" href="$class_jambe_force.html" title="JambeForce" alt="" coords="255,283,337,311"/>
+<area shape="rect" id="node25" href="$class_jambe_vie.html" title="JambeVie" alt="" coords="261,334,331,362"/>
+<area shape="rect" id="node29" href="$class_torse_chance.html" title="TorseChance" alt="" coords="253,385,339,413"/>
+<area shape="rect" id="node31" href="$class_torse_force.html" title="TorseForce" alt="" coords="257,435,335,463"/>
+<area shape="rect" id="node33" href="$class_torse_vie.html" title="TorseVie" alt="" coords="264,486,328,514"/>
+</map>

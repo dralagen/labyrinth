@@ -1,0 +1,288 @@
+\section{Référence de la classe Personnage}
+\label{class_personnage}\index{Personnage@{Personnage}}
+
+
+Graphe de collaboration de Personnage\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{class_personnage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Personnage} (std\-::string nom)
+\item 
+{\bf $\sim$\-Personnage} ()
+\item 
+void {\bf modifier\-Vie} (int vie)
+\item 
+void {\bf modifier\-Force} (int f)
+\item 
+void {\bf modifier\-Chance} (int c)
+\item 
+void {\bf actu\-Stat} ()
+\item 
+void {\bf affiche\-Stat} ()
+\item 
+void {\bf affiche\-Equip} ()
+\item 
+std\-::string {\bf get\-Nom} ()
+\item 
+int {\bf get\-Vie} ()
+\item 
+int {\bf get\-Vie\-Max} ()
+\item 
+int {\bf get\-Chance} ()
+\item 
+int {\bf get\-Force} ()
+\item 
+void {\bf set\-Casque} ({\bf Equipement} $\ast$casque)
+\item 
+void {\bf set\-Torse} ({\bf Equipement} $\ast$torse)
+\item 
+void {\bf set\-Jambe} ({\bf Equipement} $\ast$jambe)
+\item 
+void {\bf set\-Arme} ({\bf Arme} $\ast$arme)
+\item 
+{\bf Equipement} $\ast$ {\bf get\-Casque} ()
+\item 
+{\bf Equipement} $\ast$ {\bf get\-Torse} ()
+\item 
+{\bf Equipement} $\ast$ {\bf get\-Jambe} ()
+\item 
+{\bf Arme} $\ast$ {\bf get\-Arme} ()
+\item 
+void {\bf trouver\-Equipement} ({\bf Equipement} $\ast$e)
+\item 
+void {\bf trouver\-Arme} ({\bf Arme} $\ast$a)
+\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf nom\-\_\-}
+\item 
+int {\bf vie\-Max\-\_\-}
+\item 
+int {\bf vie\-\_\-}
+\item 
+int {\bf chance\-\_\-}
+\item 
+int {\bf force\-\_\-}
+\item 
+int {\bf armure\-\_\-}
+\item 
+{\bf Equipement} $\ast$ {\bf casque\-\_\-}
+\item 
+{\bf Equipement} $\ast$ {\bf torse\-\_\-}
+\item 
+{\bf Equipement} $\ast$ {\bf jambe\-\_\-}
+\item 
+{\bf Arme} $\ast$ {\bf arme\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Personnage@{Personnage}!Personnage@{Personnage}}
+\index{Personnage@{Personnage}!Personnage@{Personnage}}
+\subsubsection[{Personnage}]{\setlength{\rightskip}{0pt plus 5cm}Personnage\-::\-Personnage (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{nom}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a7b67c1690f8588ad97a445692ffb49fd}
+\index{Personnage@{Personnage}!$\sim$\-Personnage@{$\sim$\-Personnage}}
+\index{$\sim$\-Personnage@{$\sim$\-Personnage}!Personnage@{Personnage}}
+\subsubsection[{$\sim$\-Personnage}]{\setlength{\rightskip}{0pt plus 5cm}Personnage\-::$\sim$\-Personnage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a05bdf2a469885bb1fbb6c2e8f98972ab}
+
+
+\subsection{Documentation des fonctions membres}
+\index{Personnage@{Personnage}!actu\-Stat@{actu\-Stat}}
+\index{actu\-Stat@{actu\-Stat}!Personnage@{Personnage}}
+\subsubsection[{actu\-Stat}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::actu\-Stat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a540b4f0590d9ee6f11e10c335ff740a8}
+\index{Personnage@{Personnage}!affiche\-Equip@{affiche\-Equip}}
+\index{affiche\-Equip@{affiche\-Equip}!Personnage@{Personnage}}
+\subsubsection[{affiche\-Equip}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::affiche\-Equip (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_abfa0fbd5f6c38c7297964046de26db0a}
+\index{Personnage@{Personnage}!affiche\-Stat@{affiche\-Stat}}
+\index{affiche\-Stat@{affiche\-Stat}!Personnage@{Personnage}}
+\subsubsection[{affiche\-Stat}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::affiche\-Stat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a960d6680688c5bee1868ef7238849e7b}
+\index{Personnage@{Personnage}!get\-Arme@{get\-Arme}}
+\index{get\-Arme@{get\-Arme}!Personnage@{Personnage}}
+\subsubsection[{get\-Arme}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Arme}$\ast$ Personnage\-::get\-Arme (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_af5852c0d48fbcd8445b106a0a87ada11}
+\index{Personnage@{Personnage}!get\-Casque@{get\-Casque}}
+\index{get\-Casque@{get\-Casque}!Personnage@{Personnage}}
+\subsubsection[{get\-Casque}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Equipement}$\ast$ Personnage\-::get\-Casque (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_af831caf19a03973a356e693b9a0d3fb1}
+\index{Personnage@{Personnage}!get\-Chance@{get\-Chance}}
+\index{get\-Chance@{get\-Chance}!Personnage@{Personnage}}
+\subsubsection[{get\-Chance}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::get\-Chance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_aa5eabf95d3d0d31385bda9ae8427d57e}
+\index{Personnage@{Personnage}!get\-Force@{get\-Force}}
+\index{get\-Force@{get\-Force}!Personnage@{Personnage}}
+\subsubsection[{get\-Force}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::get\-Force (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a40de0ba95f25eb6f1653b6a4183763ae}
+\index{Personnage@{Personnage}!get\-Jambe@{get\-Jambe}}
+\index{get\-Jambe@{get\-Jambe}!Personnage@{Personnage}}
+\subsubsection[{get\-Jambe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Equipement}$\ast$ Personnage\-::get\-Jambe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_af0dfec10cded19725be96d75356854e4}
+\index{Personnage@{Personnage}!get\-Nom@{get\-Nom}}
+\index{get\-Nom@{get\-Nom}!Personnage@{Personnage}}
+\subsubsection[{get\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Personnage\-::get\-Nom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_ac0fbc92a7e930ae26148e5e5247e1494}
+\index{Personnage@{Personnage}!get\-Torse@{get\-Torse}}
+\index{get\-Torse@{get\-Torse}!Personnage@{Personnage}}
+\subsubsection[{get\-Torse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Equipement}$\ast$ Personnage\-::get\-Torse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_aa784e4051825f1da27c9961b68a3cd58}
+\index{Personnage@{Personnage}!get\-Vie@{get\-Vie}}
+\index{get\-Vie@{get\-Vie}!Personnage@{Personnage}}
+\subsubsection[{get\-Vie}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::get\-Vie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a261cbb9bb3b23a147d0f88b10eaa1857}
+\index{Personnage@{Personnage}!get\-Vie\-Max@{get\-Vie\-Max}}
+\index{get\-Vie\-Max@{get\-Vie\-Max}!Personnage@{Personnage}}
+\subsubsection[{get\-Vie\-Max}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::get\-Vie\-Max (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a96cd651889938e58eafd48373f4c36c4}
+\index{Personnage@{Personnage}!modifier\-Chance@{modifier\-Chance}}
+\index{modifier\-Chance@{modifier\-Chance}!Personnage@{Personnage}}
+\subsubsection[{modifier\-Chance}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::modifier\-Chance (
+\begin{DoxyParamCaption}
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a9ebc2089ffd538189715e3cc58bab4e0}
+\index{Personnage@{Personnage}!modifier\-Force@{modifier\-Force}}
+\index{modifier\-Force@{modifier\-Force}!Personnage@{Personnage}}
+\subsubsection[{modifier\-Force}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::modifier\-Force (
+\begin{DoxyParamCaption}
+\item[{int}]{f}
+\end{DoxyParamCaption}
+)}\label{class_personnage_ade3579c11cd6e6c535ff7290c5248ff5}
+\index{Personnage@{Personnage}!modifier\-Vie@{modifier\-Vie}}
+\index{modifier\-Vie@{modifier\-Vie}!Personnage@{Personnage}}
+\subsubsection[{modifier\-Vie}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::modifier\-Vie (
+\begin{DoxyParamCaption}
+\item[{int}]{vie}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a9362a76b5b3219916d68697e0606bf2c}
+\index{Personnage@{Personnage}!set\-Arme@{set\-Arme}}
+\index{set\-Arme@{set\-Arme}!Personnage@{Personnage}}
+\subsubsection[{set\-Arme}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::set\-Arme (
+\begin{DoxyParamCaption}
+\item[{{\bf Arme} $\ast$}]{arme}
+\end{DoxyParamCaption}
+)}\label{class_personnage_ac24d31489cc986e870e60f257a9d0849}
+\index{Personnage@{Personnage}!set\-Casque@{set\-Casque}}
+\index{set\-Casque@{set\-Casque}!Personnage@{Personnage}}
+\subsubsection[{set\-Casque}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::set\-Casque (
+\begin{DoxyParamCaption}
+\item[{{\bf Equipement} $\ast$}]{casque}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a6008154c7725bf6309cba8eb63cf2a94}
+\index{Personnage@{Personnage}!set\-Jambe@{set\-Jambe}}
+\index{set\-Jambe@{set\-Jambe}!Personnage@{Personnage}}
+\subsubsection[{set\-Jambe}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::set\-Jambe (
+\begin{DoxyParamCaption}
+\item[{{\bf Equipement} $\ast$}]{jambe}
+\end{DoxyParamCaption}
+)}\label{class_personnage_ac63bee6c81c929308bf36d14253a43e2}
+\index{Personnage@{Personnage}!set\-Torse@{set\-Torse}}
+\index{set\-Torse@{set\-Torse}!Personnage@{Personnage}}
+\subsubsection[{set\-Torse}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::set\-Torse (
+\begin{DoxyParamCaption}
+\item[{{\bf Equipement} $\ast$}]{torse}
+\end{DoxyParamCaption}
+)}\label{class_personnage_aa4cb28bb5fcd125cdbc632a51fb87b7d}
+\index{Personnage@{Personnage}!trouver\-Arme@{trouver\-Arme}}
+\index{trouver\-Arme@{trouver\-Arme}!Personnage@{Personnage}}
+\subsubsection[{trouver\-Arme}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::trouver\-Arme (
+\begin{DoxyParamCaption}
+\item[{{\bf Arme} $\ast$}]{a}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a020576cc14d815a1f4ebb9afe677e4c7}
+\index{Personnage@{Personnage}!trouver\-Equipement@{trouver\-Equipement}}
+\index{trouver\-Equipement@{trouver\-Equipement}!Personnage@{Personnage}}
+\subsubsection[{trouver\-Equipement}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::trouver\-Equipement (
+\begin{DoxyParamCaption}
+\item[{{\bf Equipement} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a039ce12768debca443459af1eb3ca176}
+
+
+\subsection{Documentation des données membres}
+\index{Personnage@{Personnage}!arme\-\_\-@{arme\-\_\-}}
+\index{arme\-\_\-@{arme\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{arme\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Arme}$\ast$ Personnage\-::arme\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_a533d049b89eea9c730cb5baeebf3d1ae}
+\index{Personnage@{Personnage}!armure\-\_\-@{armure\-\_\-}}
+\index{armure\-\_\-@{armure\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{armure\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::armure\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_adc9faad1d30de099542f716096a32a3b}
+\index{Personnage@{Personnage}!casque\-\_\-@{casque\-\_\-}}
+\index{casque\-\_\-@{casque\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{casque\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Equipement}$\ast$ Personnage\-::casque\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_a605a9b8a91b42ceb77632446cb1d24a1}
+\index{Personnage@{Personnage}!chance\-\_\-@{chance\-\_\-}}
+\index{chance\-\_\-@{chance\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{chance\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::chance\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_a383168e6874a1dee5d50fb5c539ccd5e}
+\index{Personnage@{Personnage}!force\-\_\-@{force\-\_\-}}
+\index{force\-\_\-@{force\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{force\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::force\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_a43cb0829b230d9281adc847fb8218ca7}
+\index{Personnage@{Personnage}!jambe\-\_\-@{jambe\-\_\-}}
+\index{jambe\-\_\-@{jambe\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{jambe\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Equipement}$\ast$ Personnage\-::jambe\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_ab0c4cf4c9854ea6537cef5d1bf22aa19}
+\index{Personnage@{Personnage}!nom\-\_\-@{nom\-\_\-}}
+\index{nom\-\_\-@{nom\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{nom\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Personnage\-::nom\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_aa1bd752d4544e108f4172c182c2c57dc}
+\index{Personnage@{Personnage}!torse\-\_\-@{torse\-\_\-}}
+\index{torse\-\_\-@{torse\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{torse\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Equipement}$\ast$ Personnage\-::torse\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_a1f149feed4bebb34eef01785a5528b67}
+\index{Personnage@{Personnage}!vie\-\_\-@{vie\-\_\-}}
+\index{vie\-\_\-@{vie\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{vie\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::vie\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_ab73c27e86ff1ad20b8702320f7db36e4}
+\index{Personnage@{Personnage}!vie\-Max\-\_\-@{vie\-Max\-\_\-}}
+\index{vie\-Max\-\_\-@{vie\-Max\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{vie\-Max\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::vie\-Max\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_aca50034f2dfacb9f575e2bc9802ce283}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+src/{\bf Personnage.\-hpp}\end{DoxyCompactItemize}

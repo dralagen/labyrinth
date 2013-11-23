@@ -1,0 +1,18 @@
+<map id="Equipement" name="Equipement">
+<area shape="rect" id="node3" href="$class_casque.html" title="{Casque\n||+ ~Casque()\l+ getNom()\l+ getBforce()\land 9 more...\l}" alt="" coords="151,185,236,314"/>
+<area shape="rect" id="node11" href="$class_d_equip_a.html" title="{DEquipA\n|&#45; e_\l|+ DEquipA()\l+ ~DEquipA()\l+ getNom()\land 10 more...\l}" alt="" coords="260,185,351,314"/>
+<area shape="rect" id="node13" href="$class_d_equip_c.html" title="{DEquipC\n|&#45; e_\l|+ DEquipC()\l+ ~DEquipC()\l+ getNom()\land 10 more...\l}" alt="" coords="375,185,465,314"/>
+<area shape="rect" id="node15" href="$class_d_equip_f.html" title="{DEquipF\n|&#45; e_\l|+ DEquipF()\l+ ~DEquipF()\l+ getNom()\land 10 more...\l}" alt="" coords="489,185,580,314"/>
+<area shape="rect" id="node17" href="$class_d_equip_v.html" title="{DEquipV\n|&#45; e_\l|+ DEquipV()\l+ ~DEquipV()\l+ getNom()\land 10 more...\l}" alt="" coords="604,185,695,314"/>
+<area shape="rect" id="node19" href="$class_jambe.html" title="{Jambe\n||+ ~Jambe()\l+ getNom()\l+ getBforce()\land 9 more...\l}" alt="" coords="719,185,804,314"/>
+<area shape="rect" id="node27" href="$class_torse.html" title="{Torse\n||+ ~Torse()\l+ getNom()\l+ getBforce()\land 9 more...\l}" alt="" coords="956,185,1041,314"/>
+<area shape="rect" id="node5" href="$class_casque_chance.html" title="{CasqueChance\n|&#45; nom_\l&#45; armure_\l&#45; bchance_\land 2 more...\l|+ CasqueChance()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="5,363,117,541"/>
+<area shape="rect" id="node7" href="$class_casque_force.html" title="{CasqueForce\n|&#45; nom_\l&#45; armure_\l&#45; bchance_\land 2 more...\l|+ CasqueForce()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="141,363,245,541"/>
+<area shape="rect" id="node9" href="$class_casque_vie.html" title="{CasqueVie\n|&#45; nom_\l&#45; armure_\l&#45; bchance_\land 2 more...\l|+ CasqueVie()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="269,363,360,541"/>
+<area shape="rect" id="node21" href="$class_jambe_chance.html" title="{JambeChance\n|&#45; nom_\l&#45; armure_\l&#45; bchance_\land 2 more...\l|+ JambeChance()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="523,363,629,541"/>
+<area shape="rect" id="node23" href="$class_jambe_force.html" title="{JambeForce\n|&#45; nom_\l&#45; armure_\l&#45; bchance_\land 2 more...\l|+ JambeForce()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="653,363,752,541"/>
+<area shape="rect" id="node25" href="$class_jambe_vie.html" title="{JambeVie\n|&#45; nom_\l&#45; armure_\l&#45; bchance_\land 2 more...\l|+ JambeVie()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="776,363,861,541"/>
+<area shape="rect" id="node29" href="$class_torse_chance.html" title="{TorseChance\n|&#45; nom_\l&#45; armure_\l&#45; bchance_\land 2 more...\l|+ TorseChance()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="885,363,989,541"/>
+<area shape="rect" id="node31" href="$class_torse_force.html" title="{TorseForce\n|&#45; nom_\l&#45; armure_\l&#45; bchance_\land 2 more...\l|+ TorseForce()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="1013,363,1107,541"/>
+<area shape="rect" id="node33" href="$class_torse_vie.html" title="{TorseVie\n|&#45; nom_\l&#45; armure_\l&#45; bchance_\land 2 more...\l|+ TorseVie()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="1131,363,1216,541"/>
+</map>

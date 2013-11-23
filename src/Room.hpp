@@ -16,6 +16,16 @@
 #include "RoomEtat.hpp"
 #include "RoomComportement.hpp"
 
+#include "RoomEtatVisited.hpp"
+#include "RoomEtatPosition.hpp"
+#include "RoomEtatUnvisited.hpp"
+
+#include "EmptyRoom.hpp"
+#include "StartRoom.hpp"
+#include "EndRoom.hpp"
+#include "MonsterRoom.hpp"
+#include "TreasureRoom.hpp"
+
 #define WALL        "##"     ///< Affichage d'un mur
 #define OPEN_DOOR   "  "     ///< Affichage d'une porte ouverte
 #define CLOSED_DOOR "##"     ///< Affichage d'une porte vérouiller fermer
@@ -44,7 +54,11 @@ class Room
 
 		/**
 		 * \brief Affiche le contenue de la salle
-		 * sur 3 lignes en fonction de son état (visited, unvisited, position)
+		 *
+		 * Réalise un affichage sur 3 lignes en fonction de son état (visited, unvisited, position)\n
+		 * visited : Affiche le contenue de la salle \n
+		 * unvisited : Affiche un brouillard (masque le contenue) \n
+		 * position : Indique ma position dans le labyrinthe \n
 		 *
 		 * \param t flux première ligne
 		 * \param c flux deuxième ligne
@@ -102,7 +116,8 @@ class Room
 		void setWest    (bool b);
 		/**
 		 * \brief Modifie le comportement de la salle
-		 *           /!\ Destruction de l'ancien comportement
+		 *
+		 * /!\ Destruction de l'ancien comportement
 		 *
 		 * \param r nouveau comportement
 		 */
@@ -169,11 +184,12 @@ class Room
 		     m_south, ///< true => Porte Nord Ouverte
 		     m_west;  ///< true => Porte Nord Ouverte
 
-		RoomEtat         *m_visited;     ///< Etat visité
-		RoomEtat         *m_position;    ///< Etat ma position
-		RoomEtat         *m_unvisited;   ///< Etat non visité
-		RoomEtat         *m_etat;        ///< Etat courant
-		RoomComportement *m_comp;        ///< Comportement de la salle
+		RoomComportement  *m_comp;        ///< Comportement de la salle
+
+		RoomEtatVisited   m_visited;     ///< Etat visité
+		RoomEtatPosition  m_position;    ///< Etat ma position
+		RoomEtatUnvisited m_unvisited;   ///< Etat non visité
+		RoomEtat          *m_etat;        ///< Etat courant
 
 	private:
 		/**

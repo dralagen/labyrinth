@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Labyrinth RPG: Référence de la classe ItemFactory</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Labyrinth RPG
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Un labyrinthe en 2D additionné à un Jeu de Rôle</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_item_factory.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-static-methods">Fonctions membres publiques statiques</a> &#124;
+<a href="class_item_factory-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe ItemFactory</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Graphe d'héritage de ItemFactory:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_item_factory__inherit__graph.png" border="0" usemap="#_item_factory_inherit__map" alt="Inheritance graph"/></div>
+<map name="_item_factory_inherit__map" id="_item_factory_inherit__map">
+<area shape="rect" id="node3" href="class_chance_factory.html" title="{ChanceFactory\n||+ GetCasque()\l+ GetTorse()\l+ GetJambe()\land 4 more...\l}" alt="" coords="5,201,99,330"/><area shape="rect" id="node5" href="class_force_factory.html" title="{ForceFactory\n||+ GetCasque()\l+ GetTorse()\l+ GetJambe()\land 4 more...\l}" alt="" coords="123,201,216,330"/><area shape="rect" id="node7" href="class_vie_factory.html" title="{VieFactory\n||+ GetCasque()\l+ GetTorse()\l+ GetJambe()\land 4 more...\l}" alt="" coords="240,201,333,330"/></map>
+</div>
+<div class="dynheader">
+Graphe de collaboration de ItemFactory:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_item_factory__coll__graph.png" border="0" usemap="#_item_factory_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a89450cf0176a8da74cc5a9b8ef5aaae6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_casque.html">Casque</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_factory.html#a89450cf0176a8da74cc5a9b8ef5aaae6">GetCasque</a> ()=0</td></tr>
+<tr class="memitem:ad5f3eb7dffeed5577e05e859775af3dd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_torse.html">Torse</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_factory.html#ad5f3eb7dffeed5577e05e859775af3dd">GetTorse</a> ()=0</td></tr>
+<tr class="memitem:a0a9cc8a72f93f260a61d393d8fb76012"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_jambe.html">Jambe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_factory.html#a0a9cc8a72f93f260a61d393d8fb76012">GetJambe</a> ()=0</td></tr>
+<tr class="memitem:a0db8489e85637bb3f3f7096401176d18"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_conso.html">Conso</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_factory.html#a0db8489e85637bb3f3f7096401176d18">GetConso</a> ()=0</td></tr>
+<tr class="memitem:a8a413e61bf23ad24a549382e4e4e396f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_epee.html">Epee</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_factory.html#a8a413e61bf23ad24a549382e4e4e396f">GetEpee</a> ()=0</td></tr>
+<tr class="memitem:a65ed7c9978011812487e6b12b4155fbd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_dague.html">Dague</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_factory.html#a65ed7c9978011812487e6b12b4155fbd">GetDague</a> ()=0</td></tr>
+<tr class="memitem:afd402df71468d0a96ea12e92c80a185e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_hache.html">Hache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_factory.html#afd402df71468d0a96ea12e92c80a185e">GetHache</a> ()=0</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
+Fonctions membres publiques statiques</h2></td></tr>
+<tr class="memitem:a6b427dfb3c03771844365ec7c5db1fd7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_item_factory.html">ItemFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_factory.html#a6b427dfb3c03771844365ec7c5db1fd7">CreateFactory</a> (<a class="el" href="_item_factory_8hpp.html#a2aad577c94e878bfb80e87df2cda5052">ITEM_FACTORIES</a> factory)</td></tr>
+</table>
+<h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a6b427dfb3c03771844365ec7c5db1fd7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_item_factory.html">ItemFactory</a>* ItemFactory::CreateFactory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_item_factory_8hpp.html#a2aad577c94e878bfb80e87df2cda5052">ITEM_FACTORIES</a>&#160;</td>
+          <td class="paramname"><em>factory</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a89450cf0176a8da74cc5a9b8ef5aaae6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_casque.html">Casque</a>* ItemFactory::GetCasque </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implémenté dans <a class="el" href="class_force_factory.html#afcab897e11621c4f112b976a8eab1f15">ForceFactory</a>, <a class="el" href="class_vie_factory.html#a4a7678c12c01644af4c5bc7b01c99bc6">VieFactory</a>, et <a class="el" href="class_chance_factory.html#ab6fb002920a57729261ea6659576e164">ChanceFactory</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0db8489e85637bb3f3f7096401176d18"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_conso.html">Conso</a>* ItemFactory::GetConso </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implémenté dans <a class="el" href="class_force_factory.html#a3a5e520c3422d4c5008bc159d1405c0d">ForceFactory</a>, <a class="el" href="class_vie_factory.html#a20c3db838011d1e4733c255f268a0ed7">VieFactory</a>, et <a class="el" href="class_chance_factory.html#aac6ef128121a2e046ffe71b66b4ed39f">ChanceFactory</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a65ed7c9978011812487e6b12b4155fbd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_dague.html">Dague</a>* ItemFactory::GetDague </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implémenté dans <a class="el" href="class_force_factory.html#af67ecc0a1ed7591fe5745e39e5fdc720">ForceFactory</a>, <a class="el" href="class_vie_factory.html#a039c2f8915fcdcc2c67dbcdb84bb3221">VieFactory</a>, et <a class="el" href="class_chance_factory.html#aafacb483e9f7c32e605051a3fca801a5">ChanceFactory</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8a413e61bf23ad24a549382e4e4e396f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_epee.html">Epee</a>* ItemFactory::GetEpee </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implémenté dans <a class="el" href="class_force_factory.html#a279143a00d2343902ff9b633bad7caf1">ForceFactory</a>, <a class="el" href="class_vie_factory.html#a33efb8206362296e8588be9d9cbc538c">VieFactory</a>, et <a class="el" href="class_chance_factory.html#a33a21a5142f67cc0218fa14b70520480">ChanceFactory</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afd402df71468d0a96ea12e92c80a185e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_hache.html">Hache</a>* ItemFactory::GetHache </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implémenté dans <a class="el" href="class_force_factory.html#a21611d50d7373d2caebb16b1c6c61dd8">ForceFactory</a>, <a class="el" href="class_vie_factory.html#a2657711c54a573dc9f6c3a7d3bc875ad">VieFactory</a>, et <a class="el" href="class_chance_factory.html#a08105f8893159dc811dfa6f650321784">ChanceFactory</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a9cc8a72f93f260a61d393d8fb76012"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_jambe.html">Jambe</a>* ItemFactory::GetJambe </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implémenté dans <a class="el" href="class_force_factory.html#a18e03fb4277bc96b2da52b4fd5d81769">ForceFactory</a>, <a class="el" href="class_vie_factory.html#a6fcb52676188c1a6a73d2668dd5ef037">VieFactory</a>, et <a class="el" href="class_chance_factory.html#ac94fa9b411f7489c8d362dce13ee0370">ChanceFactory</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad5f3eb7dffeed5577e05e859775af3dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_torse.html">Torse</a>* ItemFactory::GetTorse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implémenté dans <a class="el" href="class_force_factory.html#a05ff246b85e501feb36d2aa96e2aecce">ForceFactory</a>, <a class="el" href="class_vie_factory.html#a3221374a8403fa4637f68caba79e87fb">VieFactory</a>, et <a class="el" href="class_chance_factory.html#a0e811061c4785372d75903f046cfd96d">ChanceFactory</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>src/<a class="el" href="_item_factory_8hpp_source.html">ItemFactory.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_item_factory.html">ItemFactory</a></li>
+    <li class="footer">Généré le Samedi Novembre 23 2013 17:39:57 pour Labyrinth RPG par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

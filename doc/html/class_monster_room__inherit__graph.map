@@ -1,0 +1,3 @@
+<map id="MonsterRoom" name="MonsterRoom">
+<area shape="rect" id="node2" href="$class_room_comportement.html" title="Génère le comportement des salles." alt="" coords="5,6,152,151"/>
+</map>

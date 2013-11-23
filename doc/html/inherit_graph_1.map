@@ -1,0 +1,6 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_conso.html" title="Conso" alt="" coords="5,55,59,83"/>
+<area shape="rect" id="node3" href="$class_conso_chance.html" title="ConsoChance" alt="" coords="107,5,197,33"/>
+<area shape="rect" id="node5" href="$class_conso_force.html" title="ConsoForce" alt="" coords="112,55,192,83"/>
+<area shape="rect" id="node7" href="$class_conso_vie.html" title="ConsoVie" alt="" coords="119,106,185,134"/>
+</map>

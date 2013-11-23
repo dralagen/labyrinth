@@ -1,0 +1,7 @@
+<map id="Labyrinth::openDoor" name="Labyrinth::openDoor">
+<area shape="rect" id="node3" href="$class_labyrinth.html#ac586bb4db152210ed424f77d68505502" title="Calcule la position de la salle dans le tableau." alt="" coords="175,5,281,33"/>
+<area shape="rect" id="node5" href="$class_room.html#a1a48c7e2bfa873b36d859eb3471b7400" title="Ouvre/ferme un access vers la salle North." alt="" coords="179,55,277,83"/>
+<area shape="rect" id="node7" href="$class_room.html#a668be12e9202bb38b09c02d880fabdd6" title="Ouvre/ferme un access vers la salle Sud." alt="" coords="179,106,277,134"/>
+<area shape="rect" id="node9" href="$class_room.html#a035421048480031e0cde52f1e330025c" title="Ouvre/ferme un access vers la salle Ouest." alt="" coords="181,157,275,185"/>
+<area shape="rect" id="node11" href="$class_room.html#a23e731f42c158963da07fd2022163021" title="Ouvre/ferme un access vers la salle Est." alt="" coords="183,207,273,235"/>
+</map>

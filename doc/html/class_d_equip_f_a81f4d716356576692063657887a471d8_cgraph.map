@@ -1,0 +1,6 @@
+<map id="DEquipF::DEquipF" name="DEquipF::DEquipF">
+<area shape="rect" id="node3" href="$class_equipement.html#a43bd1d573051e8847c2d3dd9d4073d86" title="Equipement::getNom" alt="" coords="169,5,292,33"/>
+<area shape="rect" id="node5" href="$class_equipement.html#a1b7b74fb9aef1a71299854fe9893ad18" title="Equipement::setNom" alt="" coords="169,55,292,83"/>
+<area shape="rect" id="node7" href="$class_equipement.html#a7d6dff682ced4ecf5d3cab1d1f6bc6a2" title="Equipement::setBforce" alt="" coords="165,106,296,134"/>
+<area shape="rect" id="node9" href="$class_equipement.html#a6bb05d8e30ea93648634afea52aaa32e" title="Equipement::getBforce" alt="" coords="165,157,296,185"/>
+</map>
