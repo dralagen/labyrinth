@@ -12,6 +12,12 @@
 #include "Room.hpp"
 #include "Personnage.hpp"
 
+#include "EmptyRoom.hpp"
+#include "StartRoom.hpp"
+#include "EndRoom.hpp"
+#include "MonsterRoom.hpp"
+#include "TreasureRoom.hpp"
+
 #include <iostream>
 #include <cstdlib>
 #include <ctime>

@@ -5,6 +5,7 @@
 #define EQCASQUE 1
 #define EQTORSE 2
 #define EQJAMBE 3
+#define EQBONUS 4
 
 class Equipement
 {
