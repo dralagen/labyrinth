@@ -70,11 +70,5 @@ class RoomComportement
 
 };
 
-#include "EmptyRoom.hpp"
-#include "StartRoom.hpp"
-#include "EndRoom.hpp"
-#include "MonsterRoom.hpp"
-#include "TreasureRoom.hpp"
-
 #endif /* ROOMCOMPORTEMENT_HPP */
 
