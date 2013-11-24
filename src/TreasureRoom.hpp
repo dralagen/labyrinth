@@ -2,6 +2,7 @@
 #define TREASUREROOM_HPP
 
 #include "RoomComportement.hpp"
+#include "Treasure.hpp"
 
 class TreasureRoom : public RoomComportement
 {
@@ -10,6 +11,8 @@ class TreasureRoom : public RoomComportement
 		virtual ~TreasureRoom ();
 
 		virtual int action(Personnage &perso);
+	private:
+		Treasure *m_treasure;
 };
 
 #endif /* TREASUREROOM_HPP */

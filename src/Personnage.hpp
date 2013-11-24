@@ -15,6 +15,7 @@ class Personnage
 		int vie_;
 		int chance_;
 		int force_;
+		int degat_;
 		int armure_;
 		Equipement *casque_;
 		Equipement *torse_;
@@ -44,7 +45,9 @@ class Personnage
 		Arme* getArme();
 		void trouverEquipement(Equipement * e);
 		void trouverArme(Arme * a);
-
+		int recoitDegat(int pv);
+		int envoieDegat();
+		bool isAlive();
 };
 
 #endif /* Personnage.hpp */

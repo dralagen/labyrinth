@@ -19,13 +19,13 @@ enum ITEM_FACTORIES
 class ItemFactory
 {
 	public:
-		virtual Casque* GetCasque() = 0;
-		virtual Torse* GetTorse() = 0;
-		virtual Jambe* GetJambe() = 0;
-		virtual Conso* GetConso() = 0;
-		virtual Epee* GetEpee() = 0;
-		virtual Dague* GetDague() = 0;
-		virtual Hache* GetHache() = 0;
+		virtual Casque *GetCasque() = 0;
+		virtual Torse  *GetTorse()  = 0;
+		virtual Jambe  *GetJambe()  = 0;
+		virtual Conso  *GetConso()  = 0;
+		virtual Epee   *GetEpee()   = 0;
+		virtual Dague  *GetDague()  = 0;
+		virtual Hache  *GetHache()  = 0;
 
 		static ItemFactory* CreateFactory(ITEM_FACTORIES factory);
 };

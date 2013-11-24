@@ -35,55 +35,5 @@ DArmeD::DArmeD(Arme * e)
 	e->setDegat(e->getDegat()+2);
 }
 
-DArmeD::~DArmeD() {
-	delete e_;
-}
+DArmeD::~DArmeD() {}
 
-std::string DArmeD::getNom()
-{
-	return e_->getNom();
-}
-int DArmeD::getBchance()
-{
-	return e_->getBchance();
-}
-
-int DArmeD::getDegat()
-{
-	return e_->getDegat();
-}
-
-int DArmeD::getBforce()
-{
-	return e_->getBforce();
-}
-
-
-int DArmeD::getBvie()
-{
-	return e_->getBvie();
-}
-
-void DArmeD::setBvie(int bvie)
-{
-	e_->setBvie(bvie);
-}
-
-void DArmeD::setBchance(int bchance)
-{
-	e_->setBchance(bchance);
-}
-
-void DArmeD::setDegat(int degat)
-{
-	e_->setDegat(degat);
-}
-
-void DArmeD::setBforce(int bforce)
-{
-	e_->setBforce(bforce);
-}
-void DArmeD::setNom(std::string nom)
-{
-	e_->setNom(nom);
-}

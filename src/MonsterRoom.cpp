@@ -8,7 +8,7 @@ MonsterRoom::~MonsterRoom() {
 }
 
 int MonsterRoom::action(Personnage &perso) {
-	std::cout << "Vous êtes tombez sur " << m_monster.getName() << std::endl;
+	std::cout << "Vous êtes tombé sur " << m_monster.getName() << std::endl;
 	std::string buff;
 	do {
 		std::cout << "Voulez-vous le combattre ?(y or n)" << std::endl;
@@ -16,10 +16,17 @@ int MonsterRoom::action(Personnage &perso) {
 	} while (buff.at(0) == 'Y' || buff.at(0) == 'N');
 
 	if (buff[0] == 'y') {
-		while (perso.getVie() > 0 && m_monster.getLife() > 0) {
-			if (! m_monster.receive(perso.getForce())) {
-				std::cout << m_monster.getLife() << std::endl;
-				perso.modifierVie(m_monster.give()*-1);
+		int damageMonster, damagePerso;
+		while (perso.isAlive() && m_monster.isAlive()) {
+			damageMonster = m_monster.receiveDamage(perso.envoieDegat());
+			std::cout << m_monster.getName() << " -" << damageMonster << "PV" << std::endl;
+			std::cout << "il lui reste " << m_monster.getLife() << "PV" << std::endl;
+			if (m_monster.isAlive()) {
+				sleep(1);
+				damagePerso = perso.recoitDegat(m_monster.giveDamage());
+				std::cout << perso.getNom() << " -" << damagePerso << "PV" << std::endl;
+				std::cout << "il vous reste " << perso.getVie() << "PV" << std::endl;
+				sleep(1);
 			}
 		}
 		if (perso.getVie() > 0) {
