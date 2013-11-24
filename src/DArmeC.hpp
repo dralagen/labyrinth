@@ -1,16 +1,13 @@
 #ifndef DARMEC_HPP
 #define DARMEC_HPP
-#include "Arme.hpp"
 #include <iostream>
 #include <sstream>
 #include <string>
 
+#include "DArme.hpp"
 
-class DArmeC : public Arme
+class DArmeC : public DArme
 {
-
-	private:
-		Arme * e_;
 	public:
 		DArmeC(Arme * e);
 		~DArmeC();
