@@ -1,16 +1,13 @@
 #ifndef DEQUIPF_HPP
 #define DEQUIPF_HPP
-#include "Equipement.hpp"
 #include <iostream>
 #include <sstream>
 #include <string>
 
+#include "DEquip.hpp"
 
-class DEquipF : public Equipement
+class DEquipF : public DEquip
 {
-
-	private:
-		Equipement * e_;
 	public:
 		DEquipF(Equipement * e);
 		~DEquipF();
@@ -24,7 +21,6 @@ class DEquipF : public Equipement
 		void setBchance(int bchance);
 		void setArmure(int armure);
 		void setNom(std::string nom);
-		int type();
 };
 
 

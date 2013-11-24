@@ -88,7 +88,3 @@ void DEquipC::setNom(std::string nom)
 	e_->setNom(nom);
 }
 
-int DEquipC::type()
-{
-	return e_->type();
-}
