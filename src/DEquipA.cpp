@@ -36,7 +36,6 @@ DEquipA::DEquipA(Equipement * e)
 }
 
 DEquipA::~DEquipA() {
-	delete e_;
 }
 
 std::string DEquipA::getNom()

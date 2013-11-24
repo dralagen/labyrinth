@@ -35,55 +35,5 @@ DArmeC::DArmeC(Arme * e)
 	e->setBchance(e->getBchance()+2);
 }
 
-DArmeC::~DArmeC() {
-	delete e_;
-}
+DArmeC::~DArmeC() {}
 
-std::string DArmeC::getNom()
-{
-	return e_->getNom();
-}
-int DArmeC::getBchance()
-{
-	return e_->getBchance();
-}
-
-int DArmeC::getDegat()
-{
-	return e_->getDegat();
-}
-
-int DArmeC::getBforce()
-{
-	return e_->getBforce();
-}
-
-
-int DArmeC::getBvie()
-{
-	return e_->getBvie();
-}
-
-void DArmeC::setBvie(int bvie)
-{
-	e_->setBvie(bvie);
-}
-
-void DArmeC::setBchance(int bchance)
-{
-	e_->setBchance(bchance);
-}
-
-void DArmeC::setDegat(int Degat)
-{
-	e_->setDegat(Degat);
-}
-
-void DArmeC::setBforce(int bforce)
-{
-	e_->setBforce(bforce);
-}
-void DArmeC::setNom(std::string nom)
-{
-	e_->setNom(nom);
-}

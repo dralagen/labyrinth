@@ -5,7 +5,7 @@ Room::Room(): m_north(false),	m_east(false), m_south(false), m_west(false), m_co
 }
 
 Room::~Room() {
-	delete m_etat;
+	// delete m_etat;
 	delete m_comp;
 }
 

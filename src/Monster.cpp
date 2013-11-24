@@ -1,6 +1,6 @@
 #include "Monster.hpp"
 
-Monster::Monster(int lvl): m_life(MONSTER_LIFE_MAX), m_damage(10), m_lvl(lvl){
+Monster::Monster(int lvl): m_life(MONSTER_LIFE_MAX*lvl), m_damage(5*lvl), m_lvl(lvl){
 	std::ostringstream name;
 	name << "Monstre lvl " << lvl;
 	m_name = name.str();
@@ -8,15 +8,20 @@ Monster::Monster(int lvl): m_life(MONSTER_LIFE_MAX), m_damage(10), m_lvl(lvl){
 
 Monster::~Monster() {}
 
-int Monster::give() {
-	return m_damage+(rand()%m_lvl);
+int Monster::giveDamage() {
+	return m_damage+(rand()%(2*m_lvl));
 }
 
-bool Monster::receive(int life) {
-	m_life = m_life - (life-rand()%(m_lvl));
-	if (m_life <= 0)
-		return true;
-	return false;
+int Monster::receiveDamage(int life) {
+	int damage = life - rand()%(2*m_lvl);
+	if (damage < 0)
+		damage = 0;
+
+	m_life -= damage;
+	if (m_life < 0)
+		m_life = 0;
+
+	return damage;
 }
 
 int Monster::getLife() {
@@ -25,4 +30,8 @@ int Monster::getLife() {
 
 std::string Monster::getName() {
 	return m_name;
+}
+
+bool Monster::isAlive() {
+	return (m_life > 0);
 }

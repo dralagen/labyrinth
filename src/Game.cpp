@@ -4,24 +4,16 @@ Game::Game(std::string name, int x, int y): m_labyrinth(x,y), m_perso(name) {}
 
 void Game::launch() {
 	m_labyrinth.gen();
-
-	ItemFactory *it  = ItemFactory::CreateFactory(VIEF);
-	m_perso.trouverEquipement(new DEquipF(new DEquipA(it->GetCasque())));
-	m_perso.trouverEquipement(new DEquipF(it->GetTorse()));
-	it = ItemFactory::CreateFactory(FORCEF);
-	m_perso.trouverArme(new DArmeF(new DArmeD(it->GetHache())));
-
-	while(!m_labyrinth.isEnd()) {
-		m_labyrinth.action(m_perso);
-
+	do {
 		m_labyrinth.print();
 		m_perso.actuStat();
 		m_perso.afficheStat();
 		m_perso.afficheEquip();
 		chooseRoom();
-	}
+		m_labyrinth.action(m_perso);
+	} while(!m_labyrinth.isEnd() && m_perso.getVie() > 0);
 
-	end();
+	m_labyrinth.print(true);
 }
 
 void Game::chooseRoom() {
@@ -67,11 +59,6 @@ void Game::chooseRoom() {
 	}
 }
 
-void Game::end() {
-	m_labyrinth.print(true);
-	std::cout << "Vous êtes sorti de ce labyrinth" << std::endl;
-}
-
 void Game::help() {
 	std::cout << "****************************" << std::endl;
 	std::cout << "Commande de base : " << std::endl;
@@ -82,3 +69,4 @@ void Game::help() {
 	std::cout << "'h' pour afficher cette aide" << std::endl;
 	std::cout << "****************************" << std::endl;
 }
+

@@ -35,55 +35,5 @@ DArmeF::DArmeF(Arme * e)
 	e->setBforce(e->getBforce()+2);
 }
 
-DArmeF::~DArmeF() {
-	delete e_;
-}
+DArmeF::~DArmeF() {}
 
-std::string DArmeF::getNom()
-{
-	return e_->getNom();
-}
-int DArmeF::getBchance()
-{
-	return e_->getBchance();
-}
-
-int DArmeF::getDegat()
-{
-	return e_->getDegat();
-}
-
-int DArmeF::getBforce()
-{
-	return e_->getBforce();
-}
-
-
-int DArmeF::getBvie()
-{
-	return e_->getBvie();
-}
-
-void DArmeF::setBvie(int bvie)
-{
-	e_->setBvie(bvie);
-}
-
-void DArmeF::setBchance(int bchance)
-{
-	e_->setBchance(bchance);
-}
-
-void DArmeF::setDegat(int degat)
-{
-	e_->setDegat(degat);
-}
-
-void DArmeF::setBforce(int bforce)
-{
-	e_->setBforce(bforce);
-}
-void DArmeF::setNom(std::string nom)
-{
-	e_->setNom(nom);
-}

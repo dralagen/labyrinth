@@ -11,16 +11,6 @@ class DEquipC : public DEquip
 	public:
 		DEquipC(Equipement * e);
 		~DEquipC();
-		std::string getNom();
-		int getBforce();
-		int getBvie();
-		int getBchance();
-		int getArmure();
-		void setBforce(int bforce);
-		void setBvie(int bvie);
-		void setBchance(int bchance);
-		void setArmure(int armure);
-		void setNom(std::string nom);
 };
 
 

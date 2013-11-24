@@ -1,22 +1,14 @@
 DEBUG=yes
-OS=linux
-ifeq (${OS},windows)
-	CC=i486-mingw32-g++
-	EXEC=laby.exe
-	CFLAGS=-I/usr/i486-mingw32/include/ -static-libgcc -static-libstdc++
-	LDFLAGS= -static-libgcc -static-libstdc++
+CC=g++
+EXEC=laby
+ifeq (${DEBUG},yes)
+	#debug
+	CFLAGS=-W -Wall -Wextra -pedantic -O0 -g --std=c++11
+	LDFLAGS=
 else
-	CC=g++
-	EXEC=laby
-	ifeq (${DEBUG},yes)
-		#debug
-		CFLAGS=-W -Wall -Wextra -pedantic -ansi -g
-		LDFLAGS=
-	else
-		#release
-		#CFLAGS=-O2 -s
-		LDFLAGS=-O2 -s
-	endif
+	#release
+	CFLAGS=-O2 -s -std=c++11
+	LDFLAGS=
 endif
 
 SRC= $(wildcard *.cpp)
