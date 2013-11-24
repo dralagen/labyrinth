@@ -88,7 +88,3 @@ void DEquipA::setNom(std::string nom)
 	e_->setNom(nom);
 }
 
-int DEquipA::type()
-{
-	return e_->type();
-}
