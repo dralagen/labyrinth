@@ -16,12 +16,6 @@
  */
 class EpeeVie : public Epee
 {
-	private:
-		std::string nom_;
-		int degat_;
-		int bchance_;
-		int bvie_;
-		int bforce_;
 	public:
 		EpeeVie();
 		~EpeeVie();

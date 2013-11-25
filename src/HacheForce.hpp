@@ -16,12 +16,6 @@
  */
 class HacheForce : public Hache
 {
-	private:
-		std::string nom_;
-		int degat_;
-		int bchance_;
-		int bvie_;
-		int bforce_;
 	public:
 		HacheForce();
 		~HacheForce();
