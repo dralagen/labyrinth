@@ -1,6 +1,9 @@
 *~
 *.[oa]
 *.gch
+*.aux
+*.log
+*.toc
 
 src/laby
 doc/*
