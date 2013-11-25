@@ -1,6 +1,0 @@
-<map id="DArmeD::DArmeD" name="DArmeD::DArmeD">
-<area shape="rect" id="node3" href="$class_arme.html#a0b6a30975be57770c6cae357b52395a0" title="Arme::getNom" alt="" coords="169,5,260,33"/>
-<area shape="rect" id="node5" href="$class_arme.html#a561f12b90bd01d26328541ba54f6aaa6" title="Arme::setNom" alt="" coords="169,55,260,83"/>
-<area shape="rect" id="node7" href="$class_arme.html#a2e2cd008885e4ba4dca346905e7e5f73" title="Arme::setDegat" alt="" coords="167,106,263,134"/>
-<area shape="rect" id="node9" href="$class_arme.html#a93e1b6f8c800359c7651b2fc456a3ee1" title="Arme::getDegat" alt="" coords="165,157,264,185"/>
-</map>

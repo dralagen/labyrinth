@@ -1,7 +1,0 @@
-<map id="Equipement::setBvie" name="Equipement::setBvie">
-<area shape="rect" id="node3" href="$class_d_equip_a.html#a6b03a0ae1b3316f029ae9b36089c0fa1" title="DEquipA::setBvie" alt="" coords="177,5,281,33"/>
-<area shape="rect" id="node5" href="$class_d_equip_c.html#a161dd46b56b42fc6190e3e71cbe12e73" title="DEquipC::setBvie" alt="" coords="177,55,281,83"/>
-<area shape="rect" id="node7" href="$class_d_equip_f.html#a4d66f2af5ba3f56178fed404a9379f47" title="DEquipF::setBvie" alt="" coords="177,106,281,134"/>
-<area shape="rect" id="node9" href="$class_d_equip_v.html#acf6d9090ca81524f3c8118e4ff405416" title="DEquipV::DEquipV" alt="" coords="173,157,285,185"/>
-<area shape="rect" id="node11" href="$class_d_equip_v.html#ae9ff290a7e7abc6355dfde5e5bfa9383" title="DEquipV::setBvie" alt="" coords="177,207,281,235"/>
-</map>

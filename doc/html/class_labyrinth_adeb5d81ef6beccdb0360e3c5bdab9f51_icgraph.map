@@ -1,6 +1,0 @@
-<map id="Labyrinth::hasSouth" name="Labyrinth::hasSouth">
-<area shape="rect" id="node3" href="$class_game.html#a70b3d987f25dd5e1aeb6ab18cfedc387" title="Choisie une direction et execute l&#39;action de la salle." alt="" coords="331,5,451,33"/>
-<area shape="rect" id="node9" href="$class_labyrinth.html#a5b7fa660f6f3ce459b80e661603f4c20" title="va au sud" alt="" coords="171,30,283,58"/>
-<area shape="rect" id="node5" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie." alt="" coords="499,5,587,33"/>
-<area shape="rect" id="node7" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="635,5,680,33"/>
-</map>

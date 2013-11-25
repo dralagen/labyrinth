@@ -1,8 +1,0 @@
-<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
-<area shape="rect" id="node1" href="$class_room_comportement.html" title="Génère le comportement des salles." alt="" coords="5,106,128,134"/>
-<area shape="rect" id="node3" href="$class_empty_room.html" title="EmptyRoom" alt="" coords="184,5,264,33"/>
-<area shape="rect" id="node5" href="$class_end_room.html" title="Salle de fin du labyrinth." alt="" coords="189,55,259,83"/>
-<area shape="rect" id="node7" href="$class_monster_room.html" title="Comportement de Salle contenant un monstre." alt="" coords="179,106,269,134"/>
-<area shape="rect" id="node9" href="$class_start_room.html" title="StartRoom" alt="" coords="187,157,261,185"/>
-<area shape="rect" id="node11" href="$class_treasure_room.html" title="TreasureRoom" alt="" coords="177,207,271,235"/>
-</map>

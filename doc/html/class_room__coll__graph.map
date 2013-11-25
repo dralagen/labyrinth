@@ -1,7 +1,0 @@
-<map id="Room" name="Room">
-<area shape="rect" id="node2" href="$class_room_etat.html" title="{RoomEtat\n||+ RoomEtat()\l+ RoomEtat()\l+ ~RoomEtat()\land 2 more...\l}" alt="" coords="251,507,344,637"/>
-<area shape="rect" id="node5" href="$class_room_etat_unvisited.html" title="{RoomEtatUnvisited\n||+ RoomEtatUnvisited()\l+ ~RoomEtatUnvisited()\l+ print()\l+ visited()\l}" alt="" coords="5,689,141,818"/>
-<area shape="rect" id="node8" href="$class_room_etat_visited.html" title="{RoomEtatVisited\n||+ RoomEtatVisited()\l+ ~RoomEtatVisited()\l+ print()\l+ visited()\l}" alt="" coords="328,689,451,818"/>
-<area shape="rect" id="node13" href="$class_room_etat_position.html" title="{RoomEtatPosition\n||+ RoomEtatPosition()\l+ ~RoomEtatPosition()\l+ print()\l+ visited()\l}" alt="" coords="171,689,301,818"/>
-<area shape="rect" id="node11" href="$class_room_comportement.html" title="Génère le comportement des salles." alt="" coords="156,6,303,151"/>
-</map>

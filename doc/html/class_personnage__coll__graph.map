@@ -1,4 +1,0 @@
-<map id="Personnage" name="Personnage">
-<area shape="rect" id="node2" href="$class_arme.html" title="{Arme\n||+ ~Arme()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="5,6,91,135"/>
-<area shape="rect" id="node4" href="$class_equipement.html" title="{Equipement\n||+ ~Equipement()\l+ getNom()\l+ getBforce()\land 9 more...\l}" alt="" coords="115,6,216,135"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="Personnage::modifierVie" name="Personnage::modifierVie">
-<area shape="rect" id="node3" href="$class_empty_room.html#a31fdcab2da18636773d28f393e48cd7b" title="Execute l&#39;action du comportement." alt="" coords="197,5,312,33"/>
-<area shape="rect" id="node5" href="$class_monster_room.html#ae69b27248fe57b2043d9653f3e831cb8" title="Execute l&#39;action du comportement." alt="" coords="193,55,316,83"/>
-</map>

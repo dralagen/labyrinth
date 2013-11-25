@@ -1,4 +1,0 @@
-<map id="Labyrinth::hasWest" name="Labyrinth::hasWest">
-<area shape="rect" id="node3" href="$class_labyrinth.html#ac586bb4db152210ed424f77d68505502" title="Calcule la position de la salle dans le tableau." alt="" coords="169,5,276,33"/>
-<area shape="rect" id="node5" href="$class_room.html#aafd7ca57898b2d8f4123fcd755646987" title="Récupère si l&#39;access est possible à l&#39;Ouest." alt="" coords="175,55,271,83"/>
-</map>

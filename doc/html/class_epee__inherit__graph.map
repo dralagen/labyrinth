@@ -1,6 +1,0 @@
-<map id="Epee" name="Epee">
-<area shape="rect" id="node5" href="$class_epee_chance.html" title="{EpeeChance\n|&#45; nom_\l&#45; degat_\l&#45; bchance_\land 2 more...\l|+ EpeeChance()\l+ ~EpeeChance()\l+ getNom()\land 9 more...\l}" alt="" coords="5,363,112,541"/>
-<area shape="rect" id="node7" href="$class_epee_force.html" title="{EpeeForce\n|&#45; nom_\l&#45; degat_\l&#45; bchance_\land 2 more...\l|+ EpeeForce()\l+ ~EpeeForce()\l+ getNom()\land 9 more...\l}" alt="" coords="136,363,235,541"/>
-<area shape="rect" id="node9" href="$class_epee_vie.html" title="{EpeeVie\n|&#45; nom_\l&#45; degat_\l&#45; bchance_\land 2 more...\l|+ EpeeVie()\l+ ~EpeeVie()\l+ getNom()\land 9 more...\l}" alt="" coords="259,363,344,541"/>
-<area shape="rect" id="node2" href="$class_arme.html" title="{Arme\n||+ ~Arme()\l+ getNom()\l+ getBforce()\land 8 more...\l}" alt="" coords="143,6,228,135"/>
-</map>

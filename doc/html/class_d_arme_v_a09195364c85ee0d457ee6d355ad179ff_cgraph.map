@@ -1,6 +1,0 @@
-<map id="DArmeV::DArmeV" name="DArmeV::DArmeV">
-<area shape="rect" id="node3" href="$class_arme.html#a0b6a30975be57770c6cae357b52395a0" title="Arme::getNom" alt="" coords="167,5,257,33"/>
-<area shape="rect" id="node5" href="$class_arme.html#a561f12b90bd01d26328541ba54f6aaa6" title="Arme::setNom" alt="" coords="167,55,257,83"/>
-<area shape="rect" id="node7" href="$class_arme.html#a0580ea53e4254942a4ef82aec8706ead" title="Arme::setBvie" alt="" coords="168,106,256,134"/>
-<area shape="rect" id="node9" href="$class_arme.html#ad07794203a8fa685391cd6c107529aa1" title="Arme::getBvie" alt="" coords="168,157,256,185"/>
-</map>

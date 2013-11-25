@@ -1,6 +1,0 @@
-<map id="Labyrinth::init" name="Labyrinth::init">
-<area shape="rect" id="node3" href="$class_labyrinth.html#afc29f7969b11105584bf51c616740bce" title="Génère le labyrinthe." alt="" coords="139,5,235,33"/>
-<area shape="rect" id="node5" href="$class_labyrinth.html#a4f94ffe9a0097abea1657b8b3d8d85a6" title="génére qu&#39;une fois le labyrinth" alt="" coords="283,5,373,33"/>
-<area shape="rect" id="node7" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie." alt="" coords="421,5,509,33"/>
-<area shape="rect" id="node9" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="557,5,603,33"/>
-</map>

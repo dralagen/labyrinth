@@ -1,5 +1,0 @@
-<map id="Conso" name="Conso">
-<area shape="rect" id="node3" href="$class_conso_chance.html" title="{ConsoChance\n|&#45; nom_\l&#45; bchance_\l&#45; bvie_\l&#45; bforce_\l|+ ConsoChance()\l+ getNom()\l+ getBforce()\land 6 more...\l}" alt="" coords="5,185,112,362"/>
-<area shape="rect" id="node5" href="$class_conso_force.html" title="{ConsoForce\n|&#45; nom_\l&#45; bchance_\l&#45; bvie_\l&#45; bforce_\l|+ ConsoForce()\l+ getNom()\l+ getBforce()\land 6 more...\l}" alt="" coords="136,185,235,362"/>
-<area shape="rect" id="node7" href="$class_conso_vie.html" title="{ConsoVie\n|&#45; nom_\l&#45; bchance_\l&#45; bvie_\l&#45; bforce_\l|+ ConsoVie()\l+ getNom()\l+ getBforce()\land 6 more...\l}" alt="" coords="259,185,344,362"/>
-</map>

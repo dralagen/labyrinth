@@ -1,7 +1,0 @@
-<map id="Equipement::setBchance" name="Equipement::setBchance">
-<area shape="rect" id="node3" href="$class_d_equip_a.html#ad6703b7f6519a44abf2d80d1dda1c156" title="DEquipA::setBchance" alt="" coords="196,5,321,33"/>
-<area shape="rect" id="node5" href="$class_d_equip_c.html#a84b4ff1ea2ee4a70f48bdbfe5b8507ed" title="DEquipC::DEquipC" alt="" coords="201,55,316,83"/>
-<area shape="rect" id="node7" href="$class_d_equip_c.html#a39f06efeac4523eaf44f30316e01411d" title="DEquipC::setBchance" alt="" coords="196,106,321,134"/>
-<area shape="rect" id="node9" href="$class_d_equip_f.html#a79f7cb4c6e0b956a546706290214c245" title="DEquipF::setBchance" alt="" coords="196,157,321,185"/>
-<area shape="rect" id="node11" href="$class_d_equip_v.html#a82991c3790a7732836756c1a4ee9f831" title="DEquipV::setBchance" alt="" coords="196,207,321,235"/>
-</map>

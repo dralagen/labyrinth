@@ -1,6 +1,0 @@
-<map id="Labyrinth::action" name="Labyrinth::action">
-<area shape="rect" id="node3" href="$class_labyrinth.html#ac586bb4db152210ed424f77d68505502" title="Calcule la position de la salle dans le tableau." alt="" coords="300,5,407,33"/>
-<area shape="rect" id="node5" href="$class_labyrinth.html#aa6bbe37a3dae3799c0557c8c92a88f06" title="retourne a la position précédente position courante == position précédente" alt="" coords="155,55,251,83"/>
-<area shape="rect" id="node8" href="$class_room.html#a50d357cd356b3b1d1bd8e7d9217e5b71" title="Etat de la salle : visité" alt="" coords="303,55,404,83"/>
-<area shape="rect" id="node10" href="$class_room.html#ac5949bc2fb5288c733369ad51af7b084" title="Etat de la salle : ma position." alt="" coords="300,106,407,134"/>
-</map>
