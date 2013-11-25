@@ -36,59 +36,5 @@ DEquipV::DEquipV(Equipement * e)
 }
 
 DEquipV::~DEquipV() {
-	delete e_;
 }
 
-std::string DEquipV::getNom()
-{
-	return e_->getNom();
-}
-int DEquipV::getBchance()
-{
-	return e_->getBchance();
-}
-
-int DEquipV::getArmure()
-{
-	return e_->getArmure();
-}
-
-int DEquipV::getBforce()
-{
-	return e_->getBforce();
-}
-
-
-int DEquipV::getBvie()
-{
-	return e_->getBvie();
-}
-
-void DEquipV::setBvie(int bvie)
-{
-	e_->setBvie(bvie);
-}
-
-void DEquipV::setBchance(int bchance)
-{
-	e_->setBchance(bchance);
-}
-
-void DEquipV::setArmure(int armure)
-{
-	e_->setArmure(armure);
-}
-
-void DEquipV::setBforce(int bforce)
-{
-	e_->setBforce(bforce);
-}
-void DEquipV::setNom(std::string nom)
-{
-	e_->setNom(nom);
-}
-
-int DEquipV::type()
-{
-	return e_->type();
-}

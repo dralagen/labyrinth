@@ -7,6 +7,7 @@ Personnage::Personnage(std::string nom)
 	vie_    = vieMax_;
 	chance_ = 10;
 	force_  = 20;
+	degat_  = 0;
 	armure_ = 0;
 	casque_ = 0;
 	torse_  = 0;
@@ -16,12 +17,10 @@ Personnage::Personnage(std::string nom)
 
 Personnage::~Personnage()
 {
-
 	delete casque_;
 	delete torse_;
 	delete jambe_;
 	delete arme_;
-
 }
 
 void Personnage::modifierVie(int v)
@@ -89,6 +88,7 @@ void Personnage::actuStat()
 		vieMax_ = vieMax_ + arme_->getBvie();
 		force_ = force_ + arme_->getBforce();
 		chance_ = chance_ + arme_->getBchance();
+		degat_ = arme_->getDegat();
 	}
 
 
@@ -99,6 +99,7 @@ void Personnage::afficheStat()
 	std::cout<<"Statistiques de "<< nom_ <<  std::endl;
 	std::cout<<" Vie : " << vie_ << " / " << vieMax_ << std::endl;
 	std::cout<<" Force : " << force_ << std::endl;
+	std::cout<<" Dégat : " << degat_ << std::endl;
 	std::cout<<" Chance : " << chance_ << std::endl;
 	std::cout<<" Armure : " << armure_ << std::endl;
 	std::cout<<"*************************************"<<std::endl;
@@ -117,6 +118,7 @@ void Personnage::afficheEquip()
 
 void Personnage::trouverEquipement(Equipement * e)
 {
+	afficheEquip();
 	std::string choix;
 	std::cout<< " Voulez vous equiper : " <<e->getNom()<<" ?    y/n" << std::endl;
 	std::cin >> choix;
@@ -137,7 +139,10 @@ void Personnage::trouverEquipement(Equipement * e)
 				jambe_ = e;
 				break;
 		}
-
+		actuStat();
+	}
+	else {
+		delete e;
 	}
 
 }
@@ -150,7 +155,12 @@ void Personnage::trouverArme(Arme * a)
 	std::cin >> choix;
 	if(choix == "y")
 	{
+		delete arme_;
 		arme_ = a;
+		actuStat();
+	}
+	else {
+		delete a;
 	}
 
 }
@@ -221,6 +231,22 @@ Arme* Personnage::getArme()
 	return arme_;
 }
 
+int Personnage::recoitDegat(int pv){
+	int degat;
+	if (armure_ == 0)
+		degat = pv;
+	else
+		degat = pv - rand()%(armure_);
 
+	if (degat < 0)
+		degat = 0;
 
-
+	vie_ -= degat;
+	return degat;
+}
+int Personnage::envoieDegat() {
+	return  degat_ + force_ + force_*(rand()%(chance_));
+}
+bool Personnage::isAlive() {
+	return vie_ > 0;
+}

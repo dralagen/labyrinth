@@ -17,22 +17,39 @@ class Monster
 		/**
 		 * \brief The monster gives damage
 		 *
-		 * \return nb PV
+		 * \return nb HP with 0 armor
 		 */
-		int give();
+		int giveDamage();
 
 
 		/**
 		 * \brief The monster receives damage
 		 *
-		 * \param life
+		 * \param damage with 0 armor
 		 *
-		 * \return true if is dead
+		 * \return damage reel
 		 */
-		bool receive(int life);
+		int receiveDamage(int damage);
 
+		/**
+		 * \brief
+		 *
+		 * \return
+		 */
 		std::string getName();
+		/**
+		 * \brief
+		 *
+		 * \return
+		 */
 		int getLife();
+
+		/**
+		 * \brief
+		 *
+		 * \return
+		 */
+		bool isAlive();
 
 	private:
 		int m_life;

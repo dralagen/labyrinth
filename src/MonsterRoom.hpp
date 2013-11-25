@@ -1,6 +1,8 @@
 #ifndef MONSTERROOM_HPP
 #define MONSTERROOM_HPP
 
+#include <unistd.h>
+
 #include "RoomComportement.hpp"
 #include "Monster.hpp"
 
