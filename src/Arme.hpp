@@ -14,7 +14,14 @@
  */
 class Arme
 {
+	protected:
+		std::string nom_;       ///< Nom de l'arme
+		int         degat_;     ///< Bonus de dégat
+		int         bchance_;   ///< Bonus de chance
+		int         bvie_;      ///< Bonus de vie
+		int         bforce_;    ///< Bonus de force
 	public :
+		Arme();
 		virtual ~Arme() {}
 		/**
 		 *\brief Retourne le nom de l'arme
