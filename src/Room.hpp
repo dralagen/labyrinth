@@ -186,9 +186,9 @@ class Room
 
 		RoomComportement  *m_comp;        ///< Comportement de la salle
 
-		RoomEtatVisited   m_visited;     ///< Etat visité
-		RoomEtatPosition  m_position;    ///< Etat ma position
-		RoomEtatUnvisited m_unvisited;   ///< Etat non visité
+		RoomEtatVisited    m_visited;     ///< Etat visité
+		RoomEtatPosition   m_position;    ///< Etat ma position
+		RoomEtatUnvisited  m_unvisited;   ///< Etat non visité
 		RoomEtat          *m_etat;        ///< Etat courant
 
 	private:

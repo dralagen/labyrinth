@@ -1,16 +1,14 @@
-#ifndef DEQUIPA_HPP
-#define DEQUIPA_HPP
-#include <iostream>
-#include <sstream>
-#include <string>
+#ifndef DEQUIP_HPP
+#define DEQUIP_HPP
 
-#include "DEquip.hpp"
+#include "Equipement.hpp"
 
-class DEquipA : public DEquip
+class DEquip : public Equipement
 {
+	protected:
+		Equipement * e_;
 	public:
-		DEquipA(Equipement * e);
-		~DEquipA();
+		~DEquip();
 		std::string getNom();
 		int getBforce();
 		int getBvie();
@@ -21,7 +19,8 @@ class DEquipA : public DEquip
 		void setBchance(int bchance);
 		void setArmure(int armure);
 		void setNom(std::string nom);
+		int type();
 };
 
+#endif /* DEQUIP_HPP */
 
-#endif /* DEquipA.hpp */

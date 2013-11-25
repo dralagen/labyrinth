@@ -55,12 +55,6 @@ class Game
 		void chooseRoom();
 
 		/**
-		 * \brief Action de fin
-		 *
-		 */
-		void end();
-
-		/**
 		 * \brief Affiche les commandes
 		 */
 		void help();
