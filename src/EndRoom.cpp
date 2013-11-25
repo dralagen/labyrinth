@@ -1,14 +1,18 @@
 #include "EndRoom.hpp"
 
-EndRoom::EndRoom(int lvl): RoomComportement(lvl){
+EndRoom::EndRoom(int lvl): RoomComportement(lvl), m_boss(lvl) {
 	m_content = "Ed";
 }
 
-EndRoom::~EndRoom() {}
+EndRoom::~EndRoom() {
+}
 
 bool EndRoom::isEnd() const { return true; }
 
 int EndRoom::action(Personnage &perso) {
-	std::cout << "Congratulation " << perso.getNom() << " !! You win !!" << std::endl;
-	return RC_NOTHING;
+	if (m_boss.action(perso) == RC_CLEAN_MONSTER) {
+		std::cout << "Congratulation " << perso.getNom() << " !! You win !!" << std::endl;
+		return RC_NOTHING;
+	}
+	return RC_UNDO;
 }
