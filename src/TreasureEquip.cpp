@@ -4,46 +4,48 @@
 #include "DEquipF.hpp"
 #include "DEquipV.hpp"
 
-TreasureEquip::TreasureEquip(int lvl): m_e(0) {
-	bool next=true;
-	if (lvl > 8)
-		lvl = 8;
+TreasureEquip::TreasureEquip(int lvl) {
+	if (lvl > 10)
+		m_lvl = 10;
+	else
+		m_lvl = lvl;
 
+}
+
+TreasureEquip::~TreasureEquip() {
+}
+
+void TreasureEquip::open(Personnage &p) {
 	ItemFactory *f = getFactory(rand());
+	Equipement *e;
 
 	switch (rand()%3) {
 		case 1:
-			m_e = f->GetCasque();
+			e = f->GetCasque();
 			break;
 		case 2:
-			m_e = f->GetTorse();
+			e = f->GetTorse();
 			break;
 		default:
-			m_e = f->GetJambe();
+			e = f->GetJambe();
 	}
 
-	do {
-		switch (rand()%(8-lvl/2)) {
+	for (int i = 0; i < m_lvl ; ++i)  {
+		switch (rand()%6) {
 			case 0:
-				m_e = new DEquipA(m_e);
+				e = new DEquipA(e);
 				break;
 			case 1:
-				m_e = new DEquipC(m_e);
+				e = new DEquipC(e);
 				break;
 			case 2:
-				m_e = new DEquipF(m_e);
+				e = new DEquipF(e);
 				break;
 			case 3:
-				m_e = new DEquipV(m_e);
-			default:
-			next = false;
+				e = new DEquipV(e);
+				break;
 		}
+	}
 
-	} while (next);
-}
-
-TreasureEquip::~TreasureEquip() {}
-
-void TreasureEquip::open(Personnage &p) {
-	p.trouverEquipement(m_e);
+	p.trouverEquipement(e);
 }

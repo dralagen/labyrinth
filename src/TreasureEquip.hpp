@@ -11,9 +11,6 @@ class TreasureEquip : public Treasure
 		TreasureEquip(int lvl = 0);
 		virtual ~TreasureEquip();
 		void open(Personnage &p);
-
-	private:
-		Equipement *m_e;
 };
 
 #endif /* TREASUREEQUIP_HPP */

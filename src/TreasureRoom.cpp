@@ -1,16 +1,24 @@
 #include "TreasureRoom.hpp"
 #include "TreasureEquip.hpp"
 #include "TreasureArme.hpp"
+#include "TreasureDecoArme.hpp"
+#include "TreasureDecoEquip.hpp"
 
 TreasureRoom::TreasureRoom(int lvl):RoomComportement(lvl) {
 	m_content = "Tr";
 
 	int random = rand()%100;
-	if (random < 25) {
-			m_treasure = new TreasureArme(lvl);
+	if (random < 15) {
+		m_treasure = new TreasureArme(lvl);
+	}
+	else if (random < 25) {
+		m_treasure = new TreasureDecoArme(lvl);
+	}
+	else if (random < 80 ){
+			m_treasure = new TreasureEquip(lvl);
 	}
 	else {
-			m_treasure = new TreasureEquip(lvl);
+		m_treasure = new TreasureDecoEquip(lvl);
 	}
 }
 
