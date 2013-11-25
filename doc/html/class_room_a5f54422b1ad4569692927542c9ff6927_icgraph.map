@@ -1,7 +1,0 @@
-<map id="Room::bottom" name="Room::bottom">
-<area shape="rect" id="node3" href="$class_room.html#a621adfd7a12485b67ba9c26882252830" title="Affiche le contenue de la salle." alt="" coords="145,5,223,33"/>
-<area shape="rect" id="node5" href="$class_labyrinth.html#a7c0789decac44992b6baa12613b9109a" title="Affiche le labyrinthe." alt="" coords="272,5,365,33"/>
-<area shape="rect" id="node7" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie." alt="" coords="536,5,624,33"/>
-<area shape="rect" id="node11" href="$class_game.html#aa2d938aa918268060e63980c7efd86f8" title="Action de fin." alt="" coords="413,30,488,58"/>
-<area shape="rect" id="node9" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="672,5,717,33"/>
-</map>

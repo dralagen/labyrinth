@@ -1,5 +1,0 @@
-<map id="Labyrinth::print" name="Labyrinth::print">
-<area shape="rect" id="node3" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie." alt="" coords="269,5,357,33"/>
-<area shape="rect" id="node7" href="$class_game.html#aa2d938aa918268060e63980c7efd86f8" title="Action de fin." alt="" coords="147,30,221,58"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="405,5,451,33"/>
-</map>

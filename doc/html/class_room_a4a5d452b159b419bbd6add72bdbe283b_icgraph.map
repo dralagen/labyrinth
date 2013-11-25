@@ -1,9 +1,0 @@
-<map id="Room::getEast" name="Room::getEast">
-<area shape="rect" id="node3" href="$class_labyrinth.html#aa0008c659d5e512f805ddaff2620912c" title="Verifie si il y a une porte a l&#39;est." alt="" coords="160,5,269,33"/>
-<area shape="rect" id="node14" href="$class_room_etat_position.html#a56ac0e9929a77a90ddd776f25f72ea65" title="RoomEtatPosition::print" alt="" coords="148,55,281,83"/>
-<area shape="rect" id="node16" href="$class_room_etat_visited.html#a5c4482da22bbc5f090c9db7be1eb882d" title="RoomEtatVisited::print" alt="" coords="151,106,279,134"/>
-<area shape="rect" id="node5" href="$class_game.html#a70b3d987f25dd5e1aeb6ab18cfedc387" title="Choisie une direction et execute l&#39;action de la salle." alt="" coords="485,5,605,33"/>
-<area shape="rect" id="node11" href="$class_labyrinth.html#ad23a37ea3383534c6206d5d09cc1d1cb" title="va a l&#39;est" alt="" coords="332,30,436,58"/>
-<area shape="rect" id="node7" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie." alt="" coords="653,5,741,33"/>
-<area shape="rect" id="node9" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="789,5,835,33"/>
-</map>

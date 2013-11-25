@@ -1,5 +1,0 @@
-<map id="RoomEtat" name="RoomEtat">
-<area shape="rect" id="node3" href="$class_room_etat_position.html" title="{RoomEtatPosition\n||+ RoomEtatPosition()\l+ ~RoomEtatPosition()\l+ print()\l+ visited()\l}" alt="" coords="5,185,136,314"/>
-<area shape="rect" id="node5" href="$class_room_etat_unvisited.html" title="{RoomEtatUnvisited\n||+ RoomEtatUnvisited()\l+ ~RoomEtatUnvisited()\l+ print()\l+ visited()\l}" alt="" coords="160,185,296,314"/>
-<area shape="rect" id="node7" href="$class_room_etat_visited.html" title="{RoomEtatVisited\n||+ RoomEtatVisited()\l+ ~RoomEtatVisited()\l+ print()\l+ visited()\l}" alt="" coords="320,185,443,314"/>
-</map>

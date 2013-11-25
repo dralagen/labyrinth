@@ -1,4 +1,0 @@
-<map id="EmptyRoom::action" name="EmptyRoom::action">
-<area shape="rect" id="node3" href="$class_personnage.html#a9362a76b5b3219916d68697e0606bf2c" title="Personnage::modifierVie" alt="" coords="168,5,307,33"/>
-<area shape="rect" id="node5" href="$class_personnage.html#a960d6680688c5bee1868ef7238849e7b" title="Personnage::afficheStat" alt="" coords="355,5,491,33"/>
-</map>
