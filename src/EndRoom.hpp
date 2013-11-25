@@ -9,6 +9,7 @@
 #define ENDROOM_HPP
 
 #include "RoomComportement.hpp"
+#include "MonsterRoom.hpp"
 
 /**
  * \class EndRoom
@@ -23,6 +24,9 @@ class EndRoom : public RoomComportement
 		virtual bool isEnd() const;
 
 		virtual int action(Personnage &perso);
+
+	private:
+		MonsterRoom m_boss;
 };
 
 #endif /* ENDROOM_HPP */
