@@ -19,13 +19,13 @@ int MonsterRoom::action(Personnage &perso) {
 		int damageMonster, damagePerso;
 		while (perso.isAlive() && m_monster.isAlive()) {
 			damageMonster = m_monster.receiveDamage(perso.envoieDegat());
-			std::cout << m_monster.getName() << " -" << damageMonster << "PV" << std::endl;
-			std::cout << "il lui reste " << m_monster.getLife() << "PV" << std::endl;
+			std::cout << m_monster.getName() << " -" << damageMonster << "PV";
+			std::cout << " => " << m_monster.getLife() << "PV" << std::endl;
 			if (m_monster.isAlive()) {
 				sleep(1);
 				damagePerso = perso.recoitDegat(m_monster.giveDamage());
-				std::cout << perso.getNom() << " -" << damagePerso << "PV" << std::endl;
-				std::cout << "il vous reste " << perso.getVie() << "PV" << std::endl;
+				std::cout << perso.getNom() << " -" << damagePerso << "PV";
+				std::cout << " => " << perso.getVie() << "PV" << std::endl;
 				sleep(1);
 			}
 		}

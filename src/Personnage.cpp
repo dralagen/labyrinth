@@ -65,27 +65,27 @@ void Personnage::actuStat()
 	if(casque_)
 	{
 		armure_ += casque_->getArmure();
-		vieMax_ = vieMax_ + casque_->getBvie();
+		vieMax_ = vieMax_ + 2*casque_->getBvie();
 		force_ = force_ + casque_->getBforce();
 		chance_ = chance_ + casque_->getBchance();
 	}
 	if(torse_)
 	{
 		armure_ += torse_->getArmure();
-		vieMax_ = vieMax_ + torse_->getBvie();
+		vieMax_ = vieMax_ + 2*torse_->getBvie();
 		force_ = force_ + torse_->getBforce();
 		chance_ = chance_ + torse_->getBchance();
 	}
 	if(jambe_)
 	{
 		armure_ += jambe_->getArmure();
-		vieMax_ = vieMax_ + jambe_->getBvie();
+		vieMax_ = vieMax_ + 2*jambe_->getBvie();
 		force_ = force_ + jambe_->getBforce();
 		chance_ = chance_ + jambe_->getBchance();
 	}
 	if(arme_)
 	{
-		vieMax_ = vieMax_ + arme_->getBvie();
+		vieMax_ = vieMax_ + 2*arme_->getBvie();
 		force_ = force_ + arme_->getBforce();
 		chance_ = chance_ + arme_->getBchance();
 		degat_ = arme_->getDegat();
@@ -245,7 +245,7 @@ int Personnage::recoitDegat(int pv){
 	return degat;
 }
 int Personnage::envoieDegat() {
-	return  degat_ + force_ + force_*(rand()%(chance_));
+	return  3*degat_ + force_ + force_*(rand()%(chance_));
 }
 bool Personnage::isAlive() {
 	return vie_ > 0;
