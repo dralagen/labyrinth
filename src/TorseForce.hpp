@@ -1,7 +1,18 @@
+/**
+ * \file TorseForce.hpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 22/11/2013
+ */
 #ifndef TORSEFORCE_HPP
 #define TORSEFORCE_HPP
 #include "Torse.hpp"
 #include <string>
+/**
+ * \class TorseForce
+ * \brief TorseForce herite de Torse
+ */
 class TorseForce : public Torse
 {
 	private:
