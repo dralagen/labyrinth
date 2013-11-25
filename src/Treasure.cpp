@@ -1,5 +1,8 @@
 #include "Treasure.hpp"
 
+Treasure::Treasure(int lvl): m_lvl(lvl) {
+}
+
 Treasure::~Treasure() {}
 
 ItemFactory* Treasure::getFactory(int i) {
