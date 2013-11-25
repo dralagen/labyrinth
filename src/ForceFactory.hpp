@@ -1,3 +1,10 @@
+/**
+ * \file ForceFactory.hpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 22/11/2013
+ */
 #ifndef FORCEFACTORY_HPP
 #define FORCEFACTORY_HPP
 
@@ -10,7 +17,10 @@
 #include "HacheForce.hpp"
 #include "JambeForce.hpp"
 #include "TorseForce.hpp"
-
+/**
+ * \class ForceFactory
+ * \brief Factory concrete pour creer des objets de type Force
+ */
 class ForceFactory : public ItemFactory
 {
 	public:
