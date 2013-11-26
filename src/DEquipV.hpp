@@ -8,8 +8,6 @@ class DEquipV : public DEquip
 	public:
 		DEquipV(Equipement * e);
 		~DEquipV();
-
-		std::string getNom();
 };
 
 #endif /* DEquipV.hpp */
