@@ -15,11 +15,6 @@ Jambe* ForceFactory::GetJambe()
 	return new JambeForce();
 }
 
-Conso* ForceFactory::GetConso()
-{
-	return new ConsoForce();
-}
-
 Epee* ForceFactory::GetEpee()
 {
 	return new EpeeForce();

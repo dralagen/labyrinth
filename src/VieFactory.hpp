@@ -10,7 +10,6 @@
 
 #include "ItemFactory.hpp"
 #include "CasqueVie.hpp"
-#include "ConsoVie.hpp"
 #include "DagueVie.hpp"
 #include "EpeeVie.hpp"
 #include "HacheVie.hpp"
@@ -27,7 +26,6 @@ class VieFactory : public ItemFactory
 		Casque* GetCasque();
 		Torse* GetTorse();
 		Jambe* GetJambe();
-		Conso* GetConso();
 		Epee* GetEpee();
 		Dague* GetDague();
 		Hache* GetHache();
