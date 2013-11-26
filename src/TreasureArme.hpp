@@ -9,7 +9,7 @@ class TreasureArme : public Treasure
 		/**
 		 * \brief Constructeur
 		 *
-		 * Construit un coffre contenant une arme de type dague, épée ou Hache avec un ou plusieurs bonus
+		 * Construit un coffre contenant une arme de type Dague, Epee ou Hache avec un ou plusieurs bonus
 		 *
 		 * \param lvl niveau du coffre plus c'est grand mieux sera l'objet
 		 */
