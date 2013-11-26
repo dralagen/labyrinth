@@ -15,7 +15,6 @@ class DArme : public Arme
 	public:
 		DArme(Arme *e);
 		virtual ~DArme();
-		virtual std::string getNom() = 0;
 		int getBforce();
 		int getBvie();
 		int getBchance();

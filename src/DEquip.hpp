@@ -10,7 +10,6 @@ class DEquip : public Equipement
 	public:
 		DEquip(Equipement *e);
 		~DEquip();
-		std::string getNom();
 		int getBforce();
 		int getBvie();
 		int getBchance();
