@@ -10,7 +10,13 @@
 class Personnage
 {
 	private :
-		std::string nom_;
+		const std::string nom_;
+		const int initVieMax_;
+		const int initChance_;
+		const int initForce_;
+		const int initDegat_;
+		const int initArmure_;
+
 		int vieMax_;
 		int vie_;
 		int chance_;
@@ -21,6 +27,8 @@ class Personnage
 		Equipement *torse_;
 		Equipement *jambe_;
 		Arme *arme_;
+
+		bool uptoday_;
 	public:
 		Personnage(std::string nom);
 		~Personnage();
@@ -35,6 +43,7 @@ class Personnage
 		int getVieMax();
 		int getChance();
 		int getForce();
+		void setEquipement(Equipement *e);
 		void setCasque(Equipement *casque);
 		void setTorse(Equipement *torse);
 		void setJambe(Equipement *jambe);
@@ -51,3 +60,4 @@ class Personnage
 };
 
 #endif /* Personnage.hpp */
+

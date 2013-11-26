@@ -11,6 +11,8 @@ class DArmeD : public DArme
 	public:
 		DArmeD(Arme * e);
 		~DArmeD();
+
+		std::string getNom();
 };
 
 
