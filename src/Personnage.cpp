@@ -69,31 +69,31 @@ void Personnage::actuStat()
 
 		if(casque_)
 		{
-			armure_ += casque_->getArmure();
-			vieMax_ = vieMax_ + 2*casque_->getBvie();
-			force_ = force_ + casque_->getBforce();
-			chance_ = chance_ + casque_->getBchance();
+		armure_ += casque_->getArmure();
+		vieMax_ += 2*casque_->getBvie();
+		force_  += casque_->getBforce();
+		chance_ += casque_->getBchance();
 		}
 		if(torse_)
 		{
-			armure_ += torse_->getArmure();
-			vieMax_ = vieMax_ + 2*torse_->getBvie();
-			force_ = force_ + torse_->getBforce();
-			chance_ = chance_ + torse_->getBchance();
+		armure_ += torse_->getArmure();
+		vieMax_ += 2*torse_->getBvie();
+		force_  += torse_->getBforce();
+		chance_ += torse_->getBchance();
 		}
 		if(jambe_)
 		{
-			armure_ += jambe_->getArmure();
-			vieMax_ = vieMax_ + 2*jambe_->getBvie();
-			force_ = force_ + jambe_->getBforce();
-			chance_ = chance_ + jambe_->getBchance();
+		armure_ += jambe_->getArmure();
+		vieMax_ += 2*jambe_->getBvie();
+		force_  += jambe_->getBforce();
+		chance_ += jambe_->getBchance();
 		}
 		if(arme_)
 		{
-			vieMax_ = vieMax_ + 2*arme_->getBvie();
-			force_ = force_ + arme_->getBforce();
-			chance_ = chance_ + arme_->getBchance();
-			degat_ = arme_->getDegat();
+		vieMax_ += 2*arme_->getBvie();
+		force_  += arme_->getBforce();
+		chance_ += arme_->getBchance();
+		degat_  += arme_->getDegat();
 		}
 		uptoday_ = true;
 	}
@@ -125,118 +125,118 @@ void Personnage::afficheEquip()
 void Personnage::trouverEquipement(Equipement * e)
 {
 	std::string choix;
-		switch (e->type())
-		{
-			case EQCASQUE :
-			        if(casque_)
-			        {
-			    	    std::cout<< " Voulez vous remplacer : "<<std::endl;
-	                    std::cout<<casque_->getNom()<<std::endl;
-	                    std::cout<< "Par : " <<std::endl;
-	                    std::cout<<e->getNom()<< " ?   y/n "<< std::endl;
-	                    std::cin >> choix;
-	                    if(choix == "y")
-	                    {
-				            delete casque_;
-				            setCasque(e);
-				            uptoday_ = false;
-				        }
-				        else
-				        {
-				        delete e;
-				        }
-				    }
-				    else
-				    {
-				        std::cout<<"Vous équipez : " << e->getNom() <<std::endl;
-				        setCasque(e);
-				        uptoday_ = false;
-				    }
-				    break;
-			case EQTORSE :
-			        if(torse_)
-			        {
-					    std::cout<< " Voulez vous remplacer : "<<std::endl;
-	                    std::cout<<torse_->getNom()<<std::endl;
-	                    std::cout<< "Par : " <<std::endl;
-	                    std::cout<<e->getNom()<< " ?   y/n "<< std::endl;
-	                    std::cin >> choix;
-	                    if(choix == "y")
-	                    {
-				            delete torse_;
-				            setTorse(e);
-				            uptoday_ = false;
-				        }
-				        else
-				        {
-				            delete e;
-				        }
-				        
-				    }
-				    else
-				    {
-				        std::cout<<"Vous équipez : " << e->getNom() <<std::endl;
-				        setTorse(e);
-				        uptoday_ = false;
-				    }
-				    break;
-			case EQJAMBE :
-			        if(jambe_)
-			        {
-					    std::cout<< " Voulez vous remplacer : "<<std::endl;
-	                    std::cout<<jambe_->getNom()<<std::endl;
-	                    std::cout<< "Par : " <<std::endl;
-	                    std::cout<<e->getNom()<< " ?   y/n "<< std::endl;
-	                    std::cin >> choix;
-	                    if(choix == "y")
-	                    {
-				            delete jambe_;
-				            setJambe(e);
-				            uptoday_ = false;
-				        }
-				        else
-				        {
-				            delete e;
-				        }
-				    }
-				    else
-				    {
-				        std::cout<<"Vous équipez : " << e->getNom() <<std::endl;
-				        setJambe(e);
-				        uptoday_ = false;
-				    }
-				    break;
-				   
-		}
+	switch (e->type())
+	{
+		case EQCASQUE :
+			if(casque_)
+			{
+				std::cout<< " Voulez vous remplacer : "<<std::endl;
+				std::cout<<casque_->getNom()<<std::endl;
+				std::cout<< "Par : " <<std::endl;
+				std::cout<<e->getNom()<< " ?   y/n "<< std::endl;
+				std::cin >> choix;
+				if(choix == "y")
+				{
+					delete casque_;
+					setCasque(e);
+					uptoday_ = false;
+				}
+				else
+				{
+					delete e;
+				}
+			}
+			else
+			{
+				std::cout<<"Vous équipez : " << e->getNom() <<std::endl;
+				setCasque(e);
+				uptoday_ = false;
+			}
+			break;
+		case EQTORSE :
+			if(torse_)
+			{
+				std::cout<< " Voulez vous remplacer : "<<std::endl;
+				std::cout<<torse_->getNom()<<std::endl;
+				std::cout<< "Par : " <<std::endl;
+				std::cout<<e->getNom()<< " ?   y/n "<< std::endl;
+				std::cin >> choix;
+				if(choix == "y")
+				{
+					delete torse_;
+					setTorse(e);
+					uptoday_ = false;
+				}
+				else
+				{
+					delete e;
+				}
+
+			}
+			else
+			{
+				std::cout<<"Vous équipez : " << e->getNom() <<std::endl;
+				setTorse(e);
+				uptoday_ = false;
+			}
+			break;
+		case EQJAMBE :
+			if(jambe_)
+			{
+				std::cout<< " Voulez vous remplacer : "<<std::endl;
+				std::cout<<jambe_->getNom()<<std::endl;
+				std::cout<< "Par : " <<std::endl;
+				std::cout<<e->getNom()<< " ?   y/n "<< std::endl;
+				std::cin >> choix;
+				if(choix == "y")
+				{
+					delete jambe_;
+					setJambe(e);
+					uptoday_ = false;
+				}
+				else
+				{
+					delete e;
+				}
+			}
+			else
+			{
+				std::cout<<"Vous équipez : " << e->getNom() <<std::endl;
+				setJambe(e);
+				uptoday_ = false;
+			}
+			break;
+
+	}
 }
 
 void Personnage::trouverArme(Arme * a)
 {
 	std::string choix;
-    if(arme_)
-    {
-	    std::cout<< " Voulez vous remplacer : "<<std::endl;
-	    std::cout<<arme_->getNom()<<std::endl;
-	    std::cout<< "Par : " <<std::endl;
-	    std::cout<<a->getNom()<< " ?   y/n "<< std::endl;
-        std::cin >> choix;
-        if(choix == "y")
-        {
-            delete jambe_;
-            setArme(a);
-            uptoday_ = false;
-        }
-        else
-        {
-            delete a;
-        }
-    }
-    else
-    {
-        std::cout<<"Vous équipez : " << a->getNom() <<std::endl;
-        setArme(a);
-        uptoday_ = false;
-    }
+	if(arme_)
+	{
+		std::cout<< " Voulez vous remplacer : "<<std::endl;
+		std::cout<<arme_->getNom()<<std::endl;
+		std::cout<< "Par : " <<std::endl;
+		std::cout<<a->getNom()<< " ?   y/n "<< std::endl;
+		std::cin >> choix;
+		if(choix == "y")
+		{
+			delete jambe_;
+			setArme(a);
+			uptoday_ = false;
+		}
+		else
+		{
+			delete a;
+		}
+	}
+	else
+	{
+		std::cout<<"Vous équipez : " << a->getNom() <<std::endl;
+		setArme(a);
+		uptoday_ = false;
+	}
 }
 
 std::string Personnage::getNom()
