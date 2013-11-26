@@ -1,18 +1,18 @@
 #include "Personnage.hpp"
 
-Personnage::Personnage(std::string nom)
+Personnage::Personnage(std::string nom): nom_(nom), initVieMax_(100), initChance_(10), initForce_(20), initDegat_(0), initArmure_(0)
 {
-	nom_    = nom;
-	vieMax_ = 100;
+	vieMax_ = initVieMax_;
 	vie_    = vieMax_;
-	chance_ = 10;
-	force_  = 20;
-	degat_  = 0;
-	armure_ = 0;
+	chance_ = initChance_;
+	force_  = initForce_;
+	degat_  = initDegat_;
+	armure_ = initArmure_;
 	casque_ = 0;
 	torse_  = 0;
 	jambe_  = 0;
 	arme_   = 0;
+	uptoday_ = true;
 }
 
 Personnage::~Personnage()
@@ -39,6 +39,7 @@ void Personnage::modifierVie(int v)
 }
 void Personnage::modifierForce(int f)
 {
+	actuStat();
 	force_ += f;
 	if(force_ <= 0)
 	{
@@ -48,6 +49,7 @@ void Personnage::modifierForce(int f)
 }
 void Personnage::modifierChance(int c)
 {
+	actuStat();
 	chance_ += c;
 	if(chance_ <= 0)
 	{
@@ -58,43 +60,47 @@ void Personnage::modifierChance(int c)
 
 void Personnage::actuStat()
 {
-	vieMax_ = 100;
-	force_ = 20;
-	chance_ = 10;
-	armure_ = 0;
-	if(casque_)
-	{
-		armure_ += casque_->getArmure();
-		vieMax_ = vieMax_ + 2*casque_->getBvie();
-		force_ = force_ + casque_->getBforce();
-		chance_ = chance_ + casque_->getBchance();
-	}
-	if(torse_)
-	{
-		armure_ += torse_->getArmure();
-		vieMax_ = vieMax_ + 2*torse_->getBvie();
-		force_ = force_ + torse_->getBforce();
-		chance_ = chance_ + torse_->getBchance();
-	}
-	if(jambe_)
-	{
-		armure_ += jambe_->getArmure();
-		vieMax_ = vieMax_ + 2*jambe_->getBvie();
-		force_ = force_ + jambe_->getBforce();
-		chance_ = chance_ + jambe_->getBchance();
-	}
-	if(arme_)
-	{
-		vieMax_ = vieMax_ + 2*arme_->getBvie();
-		force_ = force_ + arme_->getBforce();
-		chance_ = chance_ + arme_->getBchance();
-		degat_ = arme_->getDegat();
-	}
+	if (!uptoday_) {
+		vieMax_ = initVieMax_;
+		chance_ = initChance_;
+		force_  = initForce_;
+		degat_  = initDegat_;
+		armure_ = initArmure_;
 
-
+		if(casque_)
+		{
+			armure_ += casque_->getArmure();
+			vieMax_ = vieMax_ + 2*casque_->getBvie();
+			force_ = force_ + casque_->getBforce();
+			chance_ = chance_ + casque_->getBchance();
+		}
+		if(torse_)
+		{
+			armure_ += torse_->getArmure();
+			vieMax_ = vieMax_ + 2*torse_->getBvie();
+			force_ = force_ + torse_->getBforce();
+			chance_ = chance_ + torse_->getBchance();
+		}
+		if(jambe_)
+		{
+			armure_ += jambe_->getArmure();
+			vieMax_ = vieMax_ + 2*jambe_->getBvie();
+			force_ = force_ + jambe_->getBforce();
+			chance_ = chance_ + jambe_->getBchance();
+		}
+		if(arme_)
+		{
+			vieMax_ = vieMax_ + 2*arme_->getBvie();
+			force_ = force_ + arme_->getBforce();
+			chance_ = chance_ + arme_->getBchance();
+			degat_ = arme_->getDegat();
+		}
+		uptoday_ = true;
+	}
 }
 void Personnage::afficheStat()
 {
+	actuStat();
 	std::cout<<"*************************************"<<std::endl;
 	std::cout<<"Statistiques de "<< nom_ <<  std::endl;
 	std::cout<<" Vie : " << vie_ << " / " << vieMax_ << std::endl;
@@ -128,25 +134,23 @@ void Personnage::trouverEquipement(Equipement * e)
 		{
 			case EQCASQUE :
 				delete casque_;
-				casque_ = e;
+				setCasque(e);
 				break;
 			case EQTORSE :
 				delete torse_;
-				torse_ = e;
+				setTorse(e);
 				break;
 			case EQJAMBE :
 				delete jambe_;
-				jambe_ = e;
+				setJambe(e);
 				break;
 		}
-		actuStat();
 	}
 	else {
 		delete e;
 	}
 
 }
-
 
 void Personnage::trouverArme(Arme * a)
 {
@@ -157,7 +161,7 @@ void Personnage::trouverArme(Arme * a)
 	{
 		delete arme_;
 		arme_ = a;
-		actuStat();
+		uptoday_ = false;
 	}
 	else {
 		delete a;
@@ -167,47 +171,70 @@ void Personnage::trouverArme(Arme * a)
 
 std::string Personnage::getNom()
 {
+	actuStat();
 	return nom_;
 }
 
 int Personnage::getVie()
 {
+	actuStat();
 	return vie_;
 }
 
 int Personnage::getVieMax()
 {
+	actuStat();
 	return vieMax_;
 }
 
 int Personnage::getForce()
 {
+	actuStat();
 	return force_;
 }
 
 int Personnage::getChance()
 {
+	actuStat();
 	return chance_;
+}
+
+void Personnage::setEquipement(Equipement *e) {
+	switch (e->type())
+	{
+		case EQCASQUE :
+			setCasque(e);
+			break;
+		case EQTORSE :
+			setTorse(e);
+			break;
+		case EQJAMBE :
+			setJambe(e);
+			break;
+	}
 }
 
 void Personnage::setCasque(Equipement *casque)
 {
+	uptoday_ = false;
 	casque_ = casque;
-
 }
 
 void Personnage::setTorse(Equipement *torse)
 {
+	uptoday_ = false;
 	torse_ = torse;
 }
 
 void Personnage::setJambe(Equipement *jambe)
 {
+	uptoday_ = false;
 	jambe_ = jambe;
 }
 
 void Personnage::setArme(Arme *arme)
 {
+	uptoday_ = false;
 	arme_ = arme;
 }
 
@@ -232,6 +259,7 @@ Arme* Personnage::getArme()
 }
 
 int Personnage::recoitDegat(int pv){
+	actuStat();
 	int degat;
 	if (armure_ == 0)
 		degat = pv;
@@ -244,9 +272,13 @@ int Personnage::recoitDegat(int pv){
 	vie_ -= degat;
 	return degat;
 }
+
 int Personnage::envoieDegat() {
+	actuStat();
 	return  3*degat_ + force_ + force_*(rand()%(chance_));
 }
+
 bool Personnage::isAlive() {
 	return vie_ > 0;
 }
+

@@ -31,6 +31,7 @@ enum ITEM_FACTORIES
 class ItemFactory
 {
 	public:
+		virtual ~ItemFactory() {}
 		/*
 		 * \brief Renvoie un pointeur vers un Casque pour que
 		 * la factory concrete connaisse l'objet a creer

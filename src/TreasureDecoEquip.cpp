@@ -61,6 +61,7 @@ void TreasureDecoEquip::open(Personnage &p) {
 					e = new DEquipV(e);
 			}
 			std::cout << std::endl;
+			p.setEquipement(e);
 		}
 		sleep(1);
 	}
@@ -69,3 +70,4 @@ void TreasureDecoEquip::open(Personnage &p) {
 	}
 
 }
+

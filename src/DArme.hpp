@@ -1,24 +1,25 @@
 #ifndef DARME_HPP
 #define DARME_HPP
 
+#include <iostream>
+#include <sstream>
+
 #include "Arme.hpp"
 
 class DArme : public Arme
 {
 	protected:
 		Arme * e_;
+		std::string replace(std::string str);
+
 	public:
+		DArme(Arme *e);
 		virtual ~DArme();
-		std::string getNom();
+		virtual std::string getNom() = 0;
 		int getBforce();
 		int getBvie();
 		int getBchance();
 		int getDegat();
-		void setBforce(int bforce);
-		void setBvie(int bvie);
-		void setBchance(int bchance);
-		void setDegat(int degat);
-		void setNom(std::string nom);
 };
 
 #endif /* DARME_HPP */

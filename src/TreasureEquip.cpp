@@ -46,6 +46,7 @@ void TreasureEquip::open(Personnage &p) {
 				break;
 		}
 	}
-
+	delete f;
 	p.trouverEquipement(e);
+
 }

@@ -1,5 +1,12 @@
 #include "DEquip.hpp"
 
+#include <iostream>
+#include <sstream>
+
+DEquip::DEquip(Equipement *e) {
+	e_ = e;
+}
+
 DEquip::~DEquip() {
 	delete e_;
 }
@@ -23,34 +30,9 @@ int DEquip::getBforce()
 	return e_->getBforce();
 }
 
-
 int DEquip::getBvie()
 {
 	return e_->getBvie();
-}
-
-void DEquip::setBvie(int bvie)
-{
-	e_->setBvie(bvie);
-}
-
-void DEquip::setBchance(int bchance)
-{
-	e_->setBchance(bchance);
-}
-
-void DEquip::setArmure(int armure)
-{
-	e_->setArmure(armure);
-}
-
-void DEquip::setBforce(int bforce)
-{
-	e_->setBforce(bforce);
-}
-void DEquip::setNom(std::string nom)
-{
-	e_->setNom(nom);
 }
 
 int DEquip::type()
@@ -59,5 +41,38 @@ int DEquip::type()
 		return EQBONUS;
 
 	return e_->type();
+}
+
+std::string DEquip::replace(std::string str) {
+	std::size_t trouve;
+	std::string nom;
+	trouve = e_->getNom().find(str+"+");
+	if (trouve!=std::string::npos)
+	{
+		std::istringstream buff(e_->getNom().substr(trouve+str.length()+1,2));
+		int i;
+		buff >> i;
+		i++;
+		std::ostringstream convert;
+		convert << i;
+		if (i > 9)
+			nom = e_->getNom().replace(trouve+str.length()+1,2,convert.str());
+		else
+			nom = e_->getNom().replace(trouve+str.length()+1,1,convert.str());
+	}
+	else
+	{
+		trouve = e_->getNom().find(str);
+		if(trouve!=std::string::npos)
+		{
+			nom = e_->getNom().insert(trouve+str.length(),"+1 ");
+		}
+		else
+		{
+			nom = e_->getNom()+str;
+		}
+	}
+
+	return nom;
 }
 

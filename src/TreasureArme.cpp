@@ -45,6 +45,6 @@ void TreasureArme::open(Personnage &p) {
 				break;
 		}
 	}
-
+	delete f;
 	p.trouverArme(a);
 }
