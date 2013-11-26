@@ -9,7 +9,6 @@
 #define ITEMFACTORY_HPP
 
 #include "Casque.hpp"
-#include "Conso.hpp"
 #include "Dague.hpp"
 #include "Epee.hpp"
 #include "Hache.hpp"
@@ -50,12 +49,6 @@ class ItemFactory
 		 * \return Jambe * Pointeur vers Jambe
 		 * */
 		virtual Jambe  *GetJambe()  = 0;
-		/**
-		 * \brief Renvoie un pointeur vers un Consomable pour que
-		 * la factory concrete connaisse l'objet a creer
-		 * \return Conso * Pointeur vers Conso
-		 * */
-		virtual Conso  *GetConso()  = 0;
 		/**
 		 * \brief Renvoie un pointeur vers une Epee pour que
 		 * la factory concrete connaisse l'objet a creer
