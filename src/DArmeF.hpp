@@ -8,8 +8,6 @@ class DArmeF : public DArme
 	public:
 		DArmeF(Arme * e);
 		~DArmeF();
-
-		std::string getNom();
 };
 
 

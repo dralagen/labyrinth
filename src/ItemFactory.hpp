@@ -32,43 +32,43 @@ class ItemFactory
 {
 	public:
 		virtual ~ItemFactory() {}
-		/*
+		/**
 		 * \brief Renvoie un pointeur vers un Casque pour que
 		 * la factory concrete connaisse l'objet a creer
 		 * \return Casque* Pointeur vers Casque
 		 * */
 		virtual Casque *GetCasque() = 0;
-		/*
+		/**
 		 * \brief Renvoie un pointeur vers un Torse pour que
 		 * la factory concrete connaisse l'objet a creer
-		 * \retun Torse * Pointeur vers Torse
+		 * \return Torse * Pointeur vers Torse
 		 * */
 		virtual Torse  *GetTorse()  = 0;
-		/*
+		/**
 		 * \brief Renvoie un pointeur vers Jambe pour que
 		 * la factory concrete connaisse l'objet a creer
 		 * \return Jambe * Pointeur vers Jambe
 		 * */
 		virtual Jambe  *GetJambe()  = 0;
-		/*
+		/**
 		 * \brief Renvoie un pointeur vers un Consomable pour que
 		 * la factory concrete connaisse l'objet a creer
 		 * \return Conso * Pointeur vers Conso
 		 * */
 		virtual Conso  *GetConso()  = 0;
-		/*
+		/**
 		 * \brief Renvoie un pointeur vers une Epee pour que
 		 * la factory concrete connaisse l'objet a creer
 		 * \return Epee * Pointeur vers Epee
 		 * */
 		virtual Epee   *GetEpee()   = 0;
-		/*
+		/**
 		 * \brief Renvoie un pointeur vers une Dague pour que
 		 * la factory concrete connaisse l'objet a creer
 		 * \return Dague * Pointeur vers Dague
 		 * */
 		virtual Dague  *GetDague()  = 0;
-		/*
+		/**
 		 * \brief Renvoie un pointeur vers une Hache pour que
 		 * la factory concrete connaisse l'objet a creer
 		 * \return Hache * Pointeur vers Hache

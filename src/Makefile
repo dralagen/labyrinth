@@ -3,11 +3,11 @@ CC=g++
 EXEC=laby
 ifeq (${DEBUG},yes)
 	#debug
-	CFLAGS=-W -Wall -Wextra -pedantic -O0 -g --std=c++11
+	CFLAGS=-W -Wall -Wextra -pedantic -O0 -g --std=c++0x
 	LDFLAGS=
 else
 	#release
-	CFLAGS=-O2 -s -std=c++11
+	CFLAGS=-O2 -s -std=c++0x
 	LDFLAGS=
 endif
 
