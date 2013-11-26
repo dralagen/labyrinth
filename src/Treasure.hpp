@@ -36,6 +36,10 @@ class Treasure
 		virtual void open(Personnage &p) = 0;
 
 	protected:
+	    /**
+		 * \brief Creer une factory de Chance , Vie ou Force aléatoirement
+		 * \return factory Factory concrète de chance,vie ou force
+		 */
 		ItemFactory* getFactory(int i);
 
 		int m_lvl; ///< niveau du coffre;

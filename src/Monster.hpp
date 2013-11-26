@@ -15,39 +15,39 @@ class Monster
 		virtual ~Monster ();
 
 		/**
-		 * \brief The monster gives damage
+		 * \brief Degats fait par le monstre
 		 *
-		 * \return nb HP with 0 armor
+		 * \return Retourne le nombre de vie perdu pour 0 d'armure
 		 */
 		int giveDamage();
 
 
 		/**
-		 * \brief The monster receives damage
+		 * \brief Le monstre reçoit des dommages
 		 *
-		 * \param damage with 0 armor
+		 * \param Dommage sans armure
 		 *
-		 * \return damage reel
+		 * \return Retourne les dommages après application de l'armure
 		 */
 		int receiveDamage(int damage);
 
 		/**
-		 * \brief
+		 * \brief Nom du monstre
 		 *
-		 * \return
+		 * \return Retourne le nom du monstre (Monstre lvl X)
 		 */
 		std::string getName();
 		/**
-		 * \brief
+		 * \brief Vie du monstre
 		 *
-		 * \return
+		 * \return Retourne les points de vie du monstre
 		 */
 		int getLife();
 
 		/**
-		 * \brief
+		 * \brief Test si le monstre est vivant
 		 *
-		 * \return
+		 * \return Retourne vrai si le monstre est encore en vie
 		 */
 		bool isAlive();
 

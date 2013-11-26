@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <sstream>
+#include <unistd.h>
 
 DEquip::DEquip(Equipement *e) {
 	e_ = e;
@@ -11,10 +12,6 @@ DEquip::~DEquip() {
 	delete e_;
 }
 
-std::string DEquip::getNom()
-{
-	return e_->getNom();
-}
 int DEquip::getBchance()
 {
 	return e_->getBchance();

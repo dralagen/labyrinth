@@ -2,13 +2,10 @@
 
 DEquipC::DEquipC(Equipement * e):DEquip(e)
 {
+	nom_ = replace(" de Chance");
 	bchance_ = 2;
 }
 
 DEquipC::~DEquipC() {
-}
-
-std::string DEquipC::getNom() {
-	return replace(" de Chance");
 }
 
