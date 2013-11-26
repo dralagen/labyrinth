@@ -10,7 +10,6 @@
 
 #include "ItemFactory.hpp"
 #include "CasqueChance.hpp"
-#include "ConsoChance.hpp"
 #include "DagueChance.hpp"
 #include "EpeeChance.hpp"
 #include "HacheChance.hpp"
@@ -26,7 +25,6 @@ class ChanceFactory : public ItemFactory
 		Casque* GetCasque();
 		Torse* GetTorse();
 		Jambe* GetJambe();
-		Conso* GetConso();
 		Epee* GetEpee();
 		Dague* GetDague();
 		Hache* GetHache();

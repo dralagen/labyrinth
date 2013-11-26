@@ -15,11 +15,6 @@ Jambe* VieFactory::GetJambe()
 	return new JambeVie();
 }
 
-Conso* VieFactory::GetConso()
-{
-	return new ConsoVie();
-}
-
 Epee* VieFactory::GetEpee()
 {
 	return new EpeeVie();

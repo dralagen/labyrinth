@@ -11,7 +11,6 @@
 
 #include "ItemFactory.hpp"
 #include "CasqueForce.hpp"
-#include "ConsoForce.hpp"
 #include "DagueForce.hpp"
 #include "EpeeForce.hpp"
 #include "HacheForce.hpp"
@@ -27,7 +26,6 @@ class ForceFactory : public ItemFactory
 		Casque* GetCasque();
 		Torse* GetTorse();
 		Jambe* GetJambe();
-		Conso* GetConso();
 		Epee* GetEpee();
 		Dague* GetDague();
 		Hache* GetHache();

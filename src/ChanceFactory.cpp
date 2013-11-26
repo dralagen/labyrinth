@@ -15,11 +15,6 @@ Jambe* ChanceFactory::GetJambe()
 	return new JambeChance();
 }
 
-Conso* ChanceFactory::GetConso()
-{
-	return new ConsoChance();
-}
-
 Epee* ChanceFactory::GetEpee()
 {
 	return new EpeeChance();
