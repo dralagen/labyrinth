@@ -16,9 +16,10 @@ TreasureDecoEquip::~TreasureDecoEquip() {
 void TreasureDecoEquip::open(Personnage &p) {
 	std::string buff;
 	Equipement *e;
+	p.afficheEquip();
 	bool find = false;
 	do {
-		std::cout << "Équiepement à Amélioré ? (c,t ou j) ";
+		std::cout << "Équipement à Amélioré ? (Casque (c) ,Torse (t) ou Jambe (j)) ";
 		std::cin >> buff;
 		switch (buff[0]) {
 			case 'c':
