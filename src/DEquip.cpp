@@ -14,22 +14,22 @@ DEquip::~DEquip() {
 
 int DEquip::getBchance()
 {
-	return e_->getBchance();
+	return bchance_ + e_->getBchance();
 }
 
 int DEquip::getArmure()
 {
-	return e_->getArmure();
+	return armure_ + e_->getArmure();
 }
 
 int DEquip::getBforce()
 {
-	return e_->getBforce();
+	return bforce_ + e_->getBforce();
 }
 
 int DEquip::getBvie()
 {
-	return e_->getBvie();
+	return bvie_ + e_->getBvie();
 }
 
 int DEquip::type()
