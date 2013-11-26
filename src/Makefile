@@ -1,4 +1,4 @@
-DEBUG=yes
+DEBUG=no
 CC=g++
 EXEC=laby
 ifeq (${DEBUG},yes)
@@ -15,6 +15,10 @@ SRC= $(wildcard *.cpp)
 OBJ= $(SRC:.cpp=.o)
 
 all: $(EXEC)
+ifeq ($(DEBUG),no)
+	@echo "Clean project"
+	@rm -rf *.o
+endif
 
 $(EXEC): $(OBJ)
 	@echo "$@"
@@ -27,8 +31,10 @@ $(EXEC): $(OBJ)
 .PHONY: clean mrproper
 
 clean:
+	@echo "Clean object file"
 	@rm -rf *.o
 
 mrproper: clean
+	@echo "Delete Binary
 	@rm -rf $(EXEC)
 
