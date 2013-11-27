@@ -1,7 +1,7 @@
 /**
  * \file Labyrinth.hpp
  *
- * \author Dralagen
+ * \author Adrien Garandel & Alexis Ruchaud
  * \version 1.0
  * \date 22/11/2013
  */
@@ -28,7 +28,8 @@
 
 
 /**
- * \struct position utilise des coordonnée pour stocker une position
+ * \struct pos
+ * \brief position utilise des coordonnée pour stocker une position
  *
  */
 struct pos {
@@ -225,3 +226,4 @@ class Labyrinth
 };
 
 #endif // LABYRINTH_HPP
+

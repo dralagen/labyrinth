@@ -1,0 +1,6 @@
+<map id="Treasure" name="Treasure">
+<area shape="rect" id="node2" href="$class_treasure_arme.html" title="Coffre de salle comportant une arme aléatoire. " alt="" coords="5,160,120,253"/>
+<area shape="rect" id="node3" href="$class_treasure_deco_arme.html" title="Coffre de salle avec un ou des bonus d&#39;arme aléatoire. " alt="" coords="145,160,284,253"/>
+<area shape="rect" id="node4" href="$class_treasure_deco_equip.html" title="Coffre de salle contenant une ou des amélioration(s) pour un équipement. " alt="" coords="309,160,449,253"/>
+<area shape="rect" id="node5" href="$class_treasure_equip.html" title="Coffre de salle contenant un équipements aléatoir. " alt="" coords="475,160,591,253"/>
+</map>

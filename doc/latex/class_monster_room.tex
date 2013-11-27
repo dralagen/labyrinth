@@ -1,0 +1,185 @@
+\section{Référence de la classe Monster\-Room}
+\label{class_monster_room}\index{Monster\-Room@{Monster\-Room}}
+
+
+Comportement de Salle contenant un monstre.  
+
+
+
+
+Graphe d'héritage de Monster\-Room\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_monster_room__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Monster\-Room\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_monster_room__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Monster\-Room} (int lvl=1)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\-Monster\-Room} ()
+\item 
+virtual int {\bf action} ({\bf Personnage} \&perso)
+\begin{DoxyCompactList}\small\item\em Combat un montre. \end{DoxyCompactList}\item 
+virtual bool {\bf is\-End} () const 
+\begin{DoxyCompactList}\small\item\em Vérifie la fin. \end{DoxyCompactList}\item 
+int {\bf get\-Lvl} ()
+\begin{DoxyCompactList}\small\item\em Récupère le niveau ou force de la salle. \end{DoxyCompactList}\item 
+std\-::string {\bf get\-Content} ()
+\begin{DoxyCompactList}\small\item\em Récupère le contenue de la salle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf m\-\_\-content}
+\begin{DoxyCompactList}\small\item\em Valeur du contenue a afficher. \end{DoxyCompactList}\item 
+int {\bf m\-\_\-lvl}
+\begin{DoxyCompactList}\small\item\em stock le niveau de la salle \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Monster} {\bf m\-\_\-monster}
+\begin{DoxyCompactList}\small\item\em Monstre à combattre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Comportement de Salle contenant un monstre. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Monster\-Room@{Monster\-Room}!Monster\-Room@{Monster\-Room}}
+\index{Monster\-Room@{Monster\-Room}!MonsterRoom@{Monster\-Room}}
+\subsubsection[{Monster\-Room}]{\setlength{\rightskip}{0pt plus 5cm}Monster\-Room\-::\-Monster\-Room (
+\begin{DoxyParamCaption}
+\item[{int}]{lvl = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_monster_room_afb8b2dea2d0a3b17bf8068c1faae7bff}
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em lvl} & niveau du monstre à combattre (0$<$lvl$<$=10) \\
+\hline
+\end{DoxyParams}
+\index{Monster\-Room@{Monster\-Room}!$\sim$\-Monster\-Room@{$\sim$\-Monster\-Room}}
+\index{$\sim$\-Monster\-Room@{$\sim$\-Monster\-Room}!MonsterRoom@{Monster\-Room}}
+\subsubsection[{$\sim$\-Monster\-Room}]{\setlength{\rightskip}{0pt plus 5cm}Monster\-Room\-::$\sim$\-Monster\-Room (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_monster_room_a1c3de6eac6af81e276fbde1828a81ce0}
+
+
+\subsection{Documentation des fonctions membres}
+\index{Monster\-Room@{Monster\-Room}!action@{action}}
+\index{action@{action}!MonsterRoom@{Monster\-Room}}
+\subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}int Monster\-Room\-::action (
+\begin{DoxyParamCaption}
+\item[{{\bf Personnage} \&}]{perso}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_monster_room_ae69b27248fe57b2043d9653f3e831cb8}
+
+
+Combat un montre. 
+
+Si le joueur gagne il peut ouvire un coffre (\doxyref{Treasure\-Room}{p.}{class_treasure_room}) sinon la partie se fini
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & \doxyref{Personnage}{p.}{class_personnage} qui l'éxecute\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+l'action realisé 
+\end{DoxyReturn}
+
+
+Implémente {\bf Room\-Comportement} \doxyref{}{p.}{class_room_comportement_ac5b509f405f9e52fea3a9392210fbbdb}.
+
+\index{Monster\-Room@{Monster\-Room}!get\-Content@{get\-Content}}
+\index{get\-Content@{get\-Content}!MonsterRoom@{Monster\-Room}}
+\subsubsection[{get\-Content}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Room\-Comportement\-::get\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inherited]}}\label{class_room_comportement_a6927d638d17858a303d77b449c7552b4}
+
+
+Récupère le contenue de la salle. 
+
+\begin{DoxyReturn}{Renvoie}
+contenue de la salle 
+\end{DoxyReturn}
+\index{Monster\-Room@{Monster\-Room}!get\-Lvl@{get\-Lvl}}
+\index{get\-Lvl@{get\-Lvl}!MonsterRoom@{Monster\-Room}}
+\subsubsection[{get\-Lvl}]{\setlength{\rightskip}{0pt plus 5cm}int Room\-Comportement\-::get\-Lvl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inherited]}}\label{class_room_comportement_a645473f228c0e73532a309ad512456eb}
+
+
+Récupère le niveau ou force de la salle. 
+
+\begin{DoxyReturn}{Renvoie}
+le niveau 
+\end{DoxyReturn}
+\index{Monster\-Room@{Monster\-Room}!is\-End@{is\-End}}
+\index{is\-End@{is\-End}!MonsterRoom@{Monster\-Room}}
+\subsubsection[{is\-End}]{\setlength{\rightskip}{0pt plus 5cm}bool Room\-Comportement\-::is\-End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_room_comportement_a240991f90b07c35e0e9114e6a203ba88}
+
+
+Vérifie la fin. 
+
+\begin{DoxyReturn}{Renvoie}
+vrais si on est sur la salle de fin 
+\end{DoxyReturn}
+
+
+Réimplémentée dans {\bf End\-Room} \doxyref{}{p.}{class_end_room_a357ab3e12cd3af4e373a8d7c8c4681f4}.
+
+
+
+\subsection{Documentation des données membres}
+\index{Monster\-Room@{Monster\-Room}!m\-\_\-content@{m\-\_\-content}}
+\index{m\-\_\-content@{m\-\_\-content}!MonsterRoom@{Monster\-Room}}
+\subsubsection[{m\-\_\-content}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Room\-Comportement\-::m\-\_\-content\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_room_comportement_a48186371372d14465faffc7734e89fdc}
+
+
+Valeur du contenue a afficher. 
+
+\index{Monster\-Room@{Monster\-Room}!m\-\_\-lvl@{m\-\_\-lvl}}
+\index{m\-\_\-lvl@{m\-\_\-lvl}!MonsterRoom@{Monster\-Room}}
+\subsubsection[{m\-\_\-lvl}]{\setlength{\rightskip}{0pt plus 5cm}int Room\-Comportement\-::m\-\_\-lvl\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_room_comportement_acfc0d0c3c7dbcd88235e8c615f7290a3}
+
+
+stock le niveau de la salle 
+
+\index{Monster\-Room@{Monster\-Room}!m\-\_\-monster@{m\-\_\-monster}}
+\index{m\-\_\-monster@{m\-\_\-monster}!MonsterRoom@{Monster\-Room}}
+\subsubsection[{m\-\_\-monster}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Monster} Monster\-Room\-::m\-\_\-monster\hspace{0.3cm}{\ttfamily [private]}}\label{class_monster_room_a3811824f29760f700f945a49b278c3d7}
+
+
+Monstre à combattre. 
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/{\bf Monster\-Room.\-hpp}\item 
+src/{\bf Monster\-Room.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,967 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Labyrinth RPG: Référence de la classe Room</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Labyrinth RPG
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Un labyrinthe en 2D additionné à un Jeu de Rôle</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_room.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pro-attribs">Attributs protégés</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="class_room-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Room</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>gestion de salle  
+ <a href="class_room.html#details">Plus de détails...</a></p>
+<div class="dynheader">
+Graphe de collaboration de Room:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_room__coll__graph.png" border="0" usemap="#_room_coll__map" alt="Collaboration graph"/></div>
+<map name="_room_coll__map" id="_room_coll__map">
+<area shape="rect" id="node2" href="class_room_etat.html" title="Gestion de l&#39;état de visite de la salle. " alt="" coords="256,425,349,530"/><area shape="rect" id="node3" href="class_room_etat_unvisited.html" title="Salle jamais visité " alt="" coords="5,582,140,687"/><area shape="rect" id="node4" href="class_room_etat_visited.html" title="Salle déjà visité " alt="" coords="331,582,455,687"/><area shape="rect" id="node6" href="class_room_etat_position.html" title="Salle identifé comme ma position. " alt="" coords="173,582,303,687"/><area shape="rect" id="node5" href="class_room_comportement.html" title="Génère le comportement des salles. " alt="" coords="156,5,303,123"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:ac6ef93a7d9c3e1d624e025058d5f16ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#ac6ef93a7d9c3e1d624e025058d5f16ff">Room</a> ()</td></tr>
+<tr class="memdesc:ac6ef93a7d9c3e1d624e025058d5f16ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">constucteur  <a href="#ac6ef93a7d9c3e1d624e025058d5f16ff">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ac6ef93a7d9c3e1d624e025058d5f16ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d5da09983cc53097807fd43ba5481a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a67d5da09983cc53097807fd43ba5481a">~Room</a> ()</td></tr>
+<tr class="memdesc:a67d5da09983cc53097807fd43ba5481a"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructeur  <a href="#a67d5da09983cc53097807fd43ba5481a">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a67d5da09983cc53097807fd43ba5481a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a621adfd7a12485b67ba9c26882252830"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a621adfd7a12485b67ba9c26882252830">print</a> (std::string &amp;t, std::string &amp;c, std::string &amp;b, bool godMode=false) const </td></tr>
+<tr class="memdesc:a621adfd7a12485b67ba9c26882252830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le contenue de la salle.  <a href="#a621adfd7a12485b67ba9c26882252830">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a621adfd7a12485b67ba9c26882252830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d04c2be573b64240139ffa96089d0de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a2d04c2be573b64240139ffa96089d0de">isEnd</a> () const </td></tr>
+<tr class="memdesc:a2d04c2be573b64240139ffa96089d0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">verifie si c'est la salle de fin  <a href="#a2d04c2be573b64240139ffa96089d0de">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a2d04c2be573b64240139ffa96089d0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4ada24b6e294afb6f5cd7f012caab83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#ab4ada24b6e294afb6f5cd7f012caab83">action</a> (<a class="el" href="class_personnage.html">Personnage</a> &amp;perso)</td></tr>
+<tr class="memdesc:ab4ada24b6e294afb6f5cd7f012caab83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Effectue l'action de la salle.  <a href="#ab4ada24b6e294afb6f5cd7f012caab83">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ab4ada24b6e294afb6f5cd7f012caab83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a48c7e2bfa873b36d859eb3471b7400"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a1a48c7e2bfa873b36d859eb3471b7400">setNorth</a> (bool b)</td></tr>
+<tr class="memdesc:a1a48c7e2bfa873b36d859eb3471b7400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ouvre/ferme un access vers la salle North.  <a href="#a1a48c7e2bfa873b36d859eb3471b7400">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a1a48c7e2bfa873b36d859eb3471b7400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e731f42c158963da07fd2022163021"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a23e731f42c158963da07fd2022163021">setEast</a> (bool b)</td></tr>
+<tr class="memdesc:a23e731f42c158963da07fd2022163021"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ouvre/ferme un access vers la salle Est.  <a href="#a23e731f42c158963da07fd2022163021">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a23e731f42c158963da07fd2022163021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a668be12e9202bb38b09c02d880fabdd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a668be12e9202bb38b09c02d880fabdd6">setSouth</a> (bool b)</td></tr>
+<tr class="memdesc:a668be12e9202bb38b09c02d880fabdd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ouvre/ferme un access vers la salle Sud.  <a href="#a668be12e9202bb38b09c02d880fabdd6">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a668be12e9202bb38b09c02d880fabdd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a035421048480031e0cde52f1e330025c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a035421048480031e0cde52f1e330025c">setWest</a> (bool b)</td></tr>
+<tr class="memdesc:a035421048480031e0cde52f1e330025c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ouvre/ferme un access vers la salle Ouest.  <a href="#a035421048480031e0cde52f1e330025c">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a035421048480031e0cde52f1e330025c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78150061fe95e0d03b8730fb151cc39f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a78150061fe95e0d03b8730fb151cc39f">setComportement</a> (<a class="el" href="class_room_comportement.html">RoomComportement</a> *r)</td></tr>
+<tr class="memdesc:a78150061fe95e0d03b8730fb151cc39f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie le comportement de la salle.  <a href="#a78150061fe95e0d03b8730fb151cc39f">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a78150061fe95e0d03b8730fb151cc39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50d357cd356b3b1d1bd8e7d9217e5b71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a50d357cd356b3b1d1bd8e7d9217e5b71">setVisited</a> ()</td></tr>
+<tr class="memdesc:a50d357cd356b3b1d1bd8e7d9217e5b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Etat de la salle : visité  <a href="#a50d357cd356b3b1d1bd8e7d9217e5b71">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a50d357cd356b3b1d1bd8e7d9217e5b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5949bc2fb5288c733369ad51af7b084"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#ac5949bc2fb5288c733369ad51af7b084">setPosition</a> ()</td></tr>
+<tr class="memdesc:ac5949bc2fb5288c733369ad51af7b084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Etat de la salle : ma position.  <a href="#ac5949bc2fb5288c733369ad51af7b084">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ac5949bc2fb5288c733369ad51af7b084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcedb8c7a1685089a797805c0567219a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#abcedb8c7a1685089a797805c0567219a">setUnvisited</a> ()</td></tr>
+<tr class="memdesc:abcedb8c7a1685089a797805c0567219a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Etat de la salle : non visité  <a href="#abcedb8c7a1685089a797805c0567219a">Plus de détails...</a><br/></td></tr>
+<tr class="separator:abcedb8c7a1685089a797805c0567219a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22f38a4beb5db3140082e23da3da9316"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a22f38a4beb5db3140082e23da3da9316">getNorth</a> () const </td></tr>
+<tr class="memdesc:a22f38a4beb5db3140082e23da3da9316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère si l'access est possible au Nord.  <a href="#a22f38a4beb5db3140082e23da3da9316">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a22f38a4beb5db3140082e23da3da9316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5d452b159b419bbd6add72bdbe283b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a4a5d452b159b419bbd6add72bdbe283b">getEast</a> () const </td></tr>
+<tr class="memdesc:a4a5d452b159b419bbd6add72bdbe283b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère si l'access est possible à l'Est.  <a href="#a4a5d452b159b419bbd6add72bdbe283b">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a4a5d452b159b419bbd6add72bdbe283b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af329dbe45e8790c559361c7e03f135a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#af329dbe45e8790c559361c7e03f135a7">getSouth</a> () const </td></tr>
+<tr class="memdesc:af329dbe45e8790c559361c7e03f135a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère si l'access est possible au Sud.  <a href="#af329dbe45e8790c559361c7e03f135a7">Plus de détails...</a><br/></td></tr>
+<tr class="separator:af329dbe45e8790c559361c7e03f135a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd7ca57898b2d8f4123fcd755646987"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#aafd7ca57898b2d8f4123fcd755646987">getWest</a> () const </td></tr>
+<tr class="memdesc:aafd7ca57898b2d8f4123fcd755646987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère si l'access est possible à l'Ouest.  <a href="#aafd7ca57898b2d8f4123fcd755646987">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aafd7ca57898b2d8f4123fcd755646987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae653a070a5eb0598097fcbe949e8b483"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#ae653a070a5eb0598097fcbe949e8b483">getVisited</a> () const </td></tr>
+<tr class="memdesc:ae653a070a5eb0598097fcbe949e8b483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère l'état de la salle.  <a href="#ae653a070a5eb0598097fcbe949e8b483">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ae653a070a5eb0598097fcbe949e8b483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6267518113960cc5fbb40936ea9cbc36"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a6267518113960cc5fbb40936ea9cbc36">getContent</a> () const </td></tr>
+<tr class="memdesc:a6267518113960cc5fbb40936ea9cbc36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère le contenue de la salle.  <a href="#a6267518113960cc5fbb40936ea9cbc36">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a6267518113960cc5fbb40936ea9cbc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Attributs protégés</h2></td></tr>
+<tr class="memitem:aeb245b2ac8baea5fe4aa2b581ce1e4b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#aeb245b2ac8baea5fe4aa2b581ce1e4b9">m_north</a></td></tr>
+<tr class="memdesc:aeb245b2ac8baea5fe4aa2b581ce1e4b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">true =&gt; Porte Nord Ouverte  <a href="#aeb245b2ac8baea5fe4aa2b581ce1e4b9">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aeb245b2ac8baea5fe4aa2b581ce1e4b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e6bf0a1168694a27a13a8acf1452a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#ab6e6bf0a1168694a27a13a8acf1452a2">m_east</a></td></tr>
+<tr class="memdesc:ab6e6bf0a1168694a27a13a8acf1452a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">true =&gt; Porte Nord Ouverte  <a href="#ab6e6bf0a1168694a27a13a8acf1452a2">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ab6e6bf0a1168694a27a13a8acf1452a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac69181b1659a52d6e0259f7bfaae182"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#aac69181b1659a52d6e0259f7bfaae182">m_south</a></td></tr>
+<tr class="memdesc:aac69181b1659a52d6e0259f7bfaae182"><td class="mdescLeft">&#160;</td><td class="mdescRight">true =&gt; Porte Nord Ouverte  <a href="#aac69181b1659a52d6e0259f7bfaae182">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aac69181b1659a52d6e0259f7bfaae182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a645eb7a60abecb39a933f6ddd66c907d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a645eb7a60abecb39a933f6ddd66c907d">m_west</a></td></tr>
+<tr class="memdesc:a645eb7a60abecb39a933f6ddd66c907d"><td class="mdescLeft">&#160;</td><td class="mdescRight">true =&gt; Porte Nord Ouverte  <a href="#a645eb7a60abecb39a933f6ddd66c907d">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a645eb7a60abecb39a933f6ddd66c907d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eef23a19d68165b2afda676156fec0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_room_comportement.html">RoomComportement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a2eef23a19d68165b2afda676156fec0f">m_comp</a></td></tr>
+<tr class="memdesc:a2eef23a19d68165b2afda676156fec0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comportement de la salle.  <a href="#a2eef23a19d68165b2afda676156fec0f">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a2eef23a19d68165b2afda676156fec0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1641c60eea54c1633d3d1b4f04b34d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_room_etat_visited.html">RoomEtatVisited</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#aa1641c60eea54c1633d3d1b4f04b34d0">m_visited</a></td></tr>
+<tr class="memdesc:aa1641c60eea54c1633d3d1b4f04b34d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Etat visité  <a href="#aa1641c60eea54c1633d3d1b4f04b34d0">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aa1641c60eea54c1633d3d1b4f04b34d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa98c341010116cd18d62dc656ea63503"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_room_etat_position.html">RoomEtatPosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#aa98c341010116cd18d62dc656ea63503">m_position</a></td></tr>
+<tr class="memdesc:aa98c341010116cd18d62dc656ea63503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Etat ma position.  <a href="#aa98c341010116cd18d62dc656ea63503">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aa98c341010116cd18d62dc656ea63503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af92789f3d7f8eeee7ee2ab2daebfc5c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_room_etat_unvisited.html">RoomEtatUnvisited</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#af92789f3d7f8eeee7ee2ab2daebfc5c5">m_unvisited</a></td></tr>
+<tr class="memdesc:af92789f3d7f8eeee7ee2ab2daebfc5c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Etat non visité  <a href="#af92789f3d7f8eeee7ee2ab2daebfc5c5">Plus de détails...</a><br/></td></tr>
+<tr class="separator:af92789f3d7f8eeee7ee2ab2daebfc5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef8df1171e7d81b12ad09fe96df7885"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_room_etat.html">RoomEtat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#acef8df1171e7d81b12ad09fe96df7885">m_etat</a></td></tr>
+<tr class="memdesc:acef8df1171e7d81b12ad09fe96df7885"><td class="mdescLeft">&#160;</td><td class="mdescRight">Etat courant.  <a href="#acef8df1171e7d81b12ad09fe96df7885">Plus de détails...</a><br/></td></tr>
+<tr class="separator:acef8df1171e7d81b12ad09fe96df7885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a77d4ea167eb2e32638c4da2f84117873"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a77d4ea167eb2e32638c4da2f84117873">top</a> (std::string &amp;s) const </td></tr>
+<tr class="memdesc:a77d4ea167eb2e32638c4da2f84117873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie le flux de sortie pour afficher le contenue de la salle.  <a href="#a77d4ea167eb2e32638c4da2f84117873">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a77d4ea167eb2e32638c4da2f84117873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a792dfc1df5837f19a485b56e68ca4361"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a792dfc1df5837f19a485b56e68ca4361">center</a> (std::string &amp;s) const </td></tr>
+<tr class="memdesc:a792dfc1df5837f19a485b56e68ca4361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie le flux de sortie pour afficher le contenue de la salle.  <a href="#a792dfc1df5837f19a485b56e68ca4361">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a792dfc1df5837f19a485b56e68ca4361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f54422b1ad4569692927542c9ff6927"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a5f54422b1ad4569692927542c9ff6927">bottom</a> (std::string &amp;s) const </td></tr>
+<tr class="memdesc:a5f54422b1ad4569692927542c9ff6927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie le flux de sortie pour afficher le contenue de la salle.  <a href="#a5f54422b1ad4569692927542c9ff6927">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a5f54422b1ad4569692927542c9ff6927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>gestion de salle </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="ac6ef93a7d9c3e1d624e025058d5f16ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Room::Room </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>constucteur </p>
+
+</div>
+</div>
+<a class="anchor" id="a67d5da09983cc53097807fd43ba5481a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Room::~Room </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>destructeur </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="ab4ada24b6e294afb6f5cd7f012caab83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Room::action </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_personnage.html">Personnage</a> &amp;&#160;</td>
+          <td class="paramname"><em>perso</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Effectue l'action de la salle. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">perso</td><td><a class="el" href="class_personnage.html" title="Gestion du Personnage. ">Personnage</a> qui fait l'action</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>l'action realisé </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5f54422b1ad4569692927542c9ff6927"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Room::bottom </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Modifie le flux de sortie pour afficher le contenue de la salle. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>flux de sortie</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>flux de sortie avec le contenue de la salle </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a792dfc1df5837f19a485b56e68ca4361"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Room::center </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Modifie le flux de sortie pour afficher le contenue de la salle. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>flux de sortie</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>flux de sortie avec le contenue de la salle </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6267518113960cc5fbb40936ea9cbc36"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Room::getContent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Récupère le contenue de la salle. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>contenue de la salle </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4a5d452b159b419bbd6add72bdbe283b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Room::getEast </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Récupère si l'access est possible à l'Est. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>vrai =&gt; on peut aller a l'Est </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a22f38a4beb5db3140082e23da3da9316"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Room::getNorth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Récupère si l'access est possible au Nord. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>vrai =&gt; on peut aller au Nord </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af329dbe45e8790c559361c7e03f135a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Room::getSouth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Récupère si l'access est possible au Sud. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>vrai =&gt; on peut aller au Sud </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae653a070a5eb0598097fcbe949e8b483"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Room::getVisited </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Récupère l'état de la salle. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>vrai =&gt; on l'a déjà visité </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aafd7ca57898b2d8f4123fcd755646987"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Room::getWest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Récupère si l'access est possible à l'Ouest. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>vrai =&gt; on peut aller à l'Ouest </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2d04c2be573b64240139ffa96089d0de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Room::isEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>verifie si c'est la salle de fin </p>
+<dl class="section return"><dt>Renvoie</dt><dd>vrai =&gt; salle de fin </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a621adfd7a12485b67ba9c26882252830"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Room::print </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>godMode</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le contenue de la salle. </p>
+<p>Réalise un affichage sur 3 lignes en fonction de son état (visited, unvisited, position)<br/>
+visited : Affiche le contenue de la salle <br/>
+unvisited : Affiche un brouillard (masque le contenue) <br/>
+position : Indique ma position dans le labyrinthe <br/>
+ </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>flux première ligne </td></tr>
+    <tr><td class="paramname">c</td><td>flux deuxième ligne </td></tr>
+    <tr><td class="paramname">b</td><td>flux troisième ligne </td></tr>
+    <tr><td class="paramname">godMode</td><td>true =&gt; ignore l'état </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a78150061fe95e0d03b8730fb151cc39f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Room::setComportement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_room_comportement.html">RoomComportement</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modifie le comportement de la salle. </p>
+<p>/!\ Destruction de l'ancien comportement</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>nouveau comportement </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a23e731f42c158963da07fd2022163021"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Room::setEast </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ouvre/ferme un access vers la salle Est. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>true =&gt; ouvre, false =&gt; ferme </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1a48c7e2bfa873b36d859eb3471b7400"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Room::setNorth </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ouvre/ferme un access vers la salle North. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>true =&gt; ouvre, false =&gt; ferme </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac5949bc2fb5288c733369ad51af7b084"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Room::setPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Etat de la salle : ma position. </p>
+
+</div>
+</div>
+<a class="anchor" id="a668be12e9202bb38b09c02d880fabdd6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Room::setSouth </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ouvre/ferme un access vers la salle Sud. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>true =&gt; ouvre, false =&gt; ferme </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abcedb8c7a1685089a797805c0567219a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Room::setUnvisited </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Etat de la salle : non visité </p>
+
+</div>
+</div>
+<a class="anchor" id="a50d357cd356b3b1d1bd8e7d9217e5b71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Room::setVisited </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Etat de la salle : visité </p>
+
+</div>
+</div>
+<a class="anchor" id="a035421048480031e0cde52f1e330025c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Room::setWest </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ouvre/ferme un access vers la salle Ouest. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>true =&gt; ouvre, false =&gt; ferme </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a77d4ea167eb2e32638c4da2f84117873"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Room::top </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Modifie le flux de sortie pour afficher le contenue de la salle. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>flux de sortie</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>flux de sortie avec le contenue de la salle </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a2eef23a19d68165b2afda676156fec0f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_room_comportement.html">RoomComportement</a>* Room::m_comp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Comportement de la salle. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab6e6bf0a1168694a27a13a8acf1452a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Room::m_east</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>true =&gt; Porte Nord Ouverte </p>
+
+</div>
+</div>
+<a class="anchor" id="acef8df1171e7d81b12ad09fe96df7885"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_room_etat.html">RoomEtat</a>* Room::m_etat</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Etat courant. </p>
+
+</div>
+</div>
+<a class="anchor" id="aeb245b2ac8baea5fe4aa2b581ce1e4b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Room::m_north</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>true =&gt; Porte Nord Ouverte </p>
+
+</div>
+</div>
+<a class="anchor" id="aa98c341010116cd18d62dc656ea63503"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_room_etat_position.html">RoomEtatPosition</a> Room::m_position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Etat ma position. </p>
+
+</div>
+</div>
+<a class="anchor" id="aac69181b1659a52d6e0259f7bfaae182"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Room::m_south</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>true =&gt; Porte Nord Ouverte </p>
+
+</div>
+</div>
+<a class="anchor" id="af92789f3d7f8eeee7ee2ab2daebfc5c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_room_etat_unvisited.html">RoomEtatUnvisited</a> Room::m_unvisited</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Etat non visité </p>
+
+</div>
+</div>
+<a class="anchor" id="aa1641c60eea54c1633d3d1b4f04b34d0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_room_etat_visited.html">RoomEtatVisited</a> Room::m_visited</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Etat visité </p>
+
+</div>
+</div>
+<a class="anchor" id="a645eb7a60abecb39a933f6ddd66c907d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Room::m_west</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>true =&gt; Porte Nord Ouverte </p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>src/<a class="el" href="_room_8hpp_source.html">Room.hpp</a></li>
+<li>src/<a class="el" href="_room_8cpp.html">Room.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_room.html">Room</a></li>
+    <li class="footer">Généré le Mercredi Novembre 27 2013 13:38:48 pour Labyrinth RPG par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
+</body>
+</html>

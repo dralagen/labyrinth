@@ -1,3 +1,10 @@
+/**
+ * \file RoomEtatUnvisited.hpp
+ *
+ * \author Adrien Garandel & Alexis Ruchaud
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #ifndef ROOMETATUNVISITED_HPP
 #define ROOMETATUNVISITED_HPP
 
@@ -6,6 +13,10 @@
 
 #include "RoomEtat.hpp"
 
+/**
+ * \class RoomEtatUnvisited
+ * \brief Salle jamais visité
+ */
 class RoomEtatUnvisited : public RoomEtat
 {
 	public:

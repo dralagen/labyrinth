@@ -1,3 +1,10 @@
+/**
+ * \file RoomComportement.cpp
+ *
+ * \author Adrien Garandel & Alexis Ruchaud
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "RoomComportement.hpp"
 
 RoomComportement::RoomComportement(int lvl):m_content("  "),m_lvl(lvl) {}
@@ -13,3 +20,4 @@ int RoomComportement::getLvl() {
 }
 
 bool RoomComportement::isEnd() const { return false; }
+

@@ -1,0 +1,7 @@
+<map id="DArme" name="DArme">
+<area shape="rect" id="node3" href="$class_d_arme_c.html" title="Decorator d&#39;arme de Chance, hérite de DArme. " alt="" coords="5,361,91,442"/>
+<area shape="rect" id="node4" href="$class_d_arme_d.html" title="Decorator d&#39;arme de degats, hérite de DArme. " alt="" coords="115,361,201,442"/>
+<area shape="rect" id="node5" href="$class_d_arme_f.html" title="Decorator d&#39;arme de force, hérite de DArme. " alt="" coords="226,361,312,442"/>
+<area shape="rect" id="node6" href="$class_d_arme_v.html" title="Decorator d&#39;arme de vie, hérite de DArme. " alt="" coords="337,361,423,442"/>
+<area shape="rect" id="node2" href="$class_arme.html" title="Gestion des armes. " alt="" coords="170,5,256,147"/>
+</map>

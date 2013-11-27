@@ -99,10 +99,12 @@ breaklines=true
 
 \begin{document}
 
+
   \maketitle{}
   \thispagestyle{empty}
   \newpage
-  \tableofcontents{}
+  \LARGE{\tableofcontents{}}
+  \normalsize{}
   \newpage
   \section{Introduction}
 
@@ -152,7 +154,7 @@ Lorsque le joueur arrive sur une case Monstre, un message lui indique le niveau 
 Si le joueur choisit de ne pas combattre le monstre, il retourne automatiquement à sa position précédente et peu continuer son exploration.
 Dans le cas contraire, si le joueur choisit de se battre, alors le combat contre le monstre débute.
 Le combat est automatique et à tour de rôle le joueur et le monstre vont s'échanger des coups jusqu'à ce que l'un des deux meurs.
-Si le monstre bat le joueur la partie est terminée, sinon, un nouveau message apparaît pour lui proposer d'ouvrir un coffre qui contiendra du butin en fonction du niveau du monstre (avec quand même toujours une composante aléatoire) et continuer la partie.
+Si le monstre bat le joueur la partie est terminée, sinon, un nouveau message apparaît pour lui proposer d'ouvrir un coffre qui contiendra du butin en fonction du niveau du monstre (avec quand même toujours une composante aléatoire) il continue ensuite la partie.
 La case de fin étant toujours accompagnée d'un monstre de niveau maximum, il est vivement recommandé au joueur de tenter d'affronter le plus de monstre avant de s'y confronter afin de récupérer le maximum de butin.
 
   \newpage
@@ -208,6 +210,8 @@ Par exemple une factory de type chance (ChanceFactory) créera un item de type H
 
 L'utilisation de ce pattern pour gérer les équipements et armes permet une bonne encapsulation des classes lors de leur création.
 Cela facilite aussi grandement la création des équipements et des armes en les faisant créer par la factory.
+Dans la mesure ou nous voudrions rajouter des nouvelles armes ou équipements ou même un nouveau type de bonus(Agilité par exemple) le code existant n'aurait pas besoin de beaucoup de modification.
+Le pattern Abstract Factory est donc en parfaite adéquation avec la gestion des équipements pour ce type de jeu et donc pour notre programme.
 
 Sur le diagramme UML (Figure \ref{fig:Factory_UML}), nous n'avons pas mis toutes les classes abstraites et concrètes des Armes et Équipements car cela prenait beaucoup de place.
 Il y a donc Jambe, JambeChance , JambeForce, JambeVie, Torse, TorseChance, TorseForce, TorseVie, Epee, EpeeChance, EpeeForce, EpeeVie, Hache, HacheChance, HacheForce et HacheVie qui manque sur la diagramme, en effet , elles sont très proche de Dague, Casque et leurs classes filles déjà présentes.
@@ -227,20 +231,23 @@ Ainsi un objet "Casque de Vie" donnant +X à la vie du personnage pourra être d
 Tout cela selon les décorations appliquées à l'objet.
 Ce pattern est composé d'une classe DArme qui hérite de la classe abstraite Arme et qui possède un attribut Arme.
 Grâce à celui-ci des bonus sont ajoutés à l'objet lors de sa décoration et son nom change.
-Pour le nom, on ajoute respectivement "de Force", "de Vie", "de Chance", "de Dégât" ou "d'Armure" si l'on décore avec de la force, de la vie, de la chance, du dégât ou de l'armure.
+Pour le nom, on ajoute respectivement "de Force", "de Vie", "de Chance", "de Dégât" ou "Puissante" si l'on décore avec de la force, de la vie, de la chance, du dégât ou de l'armure.
 Ensuite si le nom de l'objet est déjà composé d'une de ces chaînes et que l'on le décore à nouveau l'objet qui devrait devenir par exemple :
-"Casque de Force de Force", il deviendra "Casque de Force+1 " puis "Casque de Force+2" selon le nombre de fois où il est décoré.
+"Epee de Force de Force", il deviendra "Epee de Force+1 " puis "Epee de Force+2" selon le nombre de fois où il est décoré.
 Ses bonus seront aussi modifiés.
+Le décorator d'Equipement fonctionne exactement de la même manière que celui d'Arme mais avec un bonus d'armure plutôt que de dégâts.
 
 L'utilisation de ce pattern nous permet de créer un très grand nombre d'objet différent sans avoir à créer des centaines de classes. Ainsi pas besoin d'avoir une classe spécifique pour créer un objet du genre "Epee Puissante+2 de Force+9 de Vie+2 de Chance+4"
+En effet, il suffit de redécorer l'objet que l'on souhaite pour augmenter ses bonus.
+Comme pour le pattern Abstract Factory, il sera très simple avec ce pattern de rajouter des types d'équipements et des types de bonus sans avoir à trop modifier le code existant. C'est donc un pattern qui colle parfaitement avec ce que nous voulions faire.
+De plus la combinaison de ces deux pattern (Abstract Factory et Decorator) créer une très bonne synergie pour la création de nombreux objets.
 
   \newpage
   \section{Conclusion}
-
-En conclusion, ce projet nous aura permis de voir l'utilité des Design Pattern dans un contexte "réel" et de remarquer que si ils sont bien utilisés ils permettent de gagner énormément de temps. De plus le code est largement simplifié par leur utilisation et un problème que l'on aurait pu résoudre avec de très nombreuses classes se résous finalement en très peu de place.
-De plus, le fait que le projet soit libre, pas de consigne imposée (mis à part l’inclusion des 4 patterns), nous a permis de nous investir plus facilement dans l'implémentation du programme.
-En effet, un sujet imposé et beaucoup moins motivant, celui-ci ne laissant que très peu de place à l'imagination.
-Par contre, il est beaucoup plus difficile de commencer un projet lorsqu'il est libre. Car n'ayant pas de fil directeur il est parfois un peu dur de savoir ce qu'il faut commencer à implémenter et ce qui peut attendre. Surtout lorsque l’on n’a pas encore une idée fixe sur le programme.
+Pour finir même si l'implémentation du jeu c'est plutôt bien déroulé, quelques problèmes nous ont quelques fois ralentis.
+Par exemple, au niveau du pattern Decorator où lorsqu'un objet était décoré 10 fois ou plus, il devenait très long de recréer le nom de cet objet.
+Ce problème venait du fait que la méthode qui reconstruit le nom des objets s'appelait récursivement et amenait à des temps d'exécution extrêmement long.
+Pour régler ce problème nous avons dû calculer le nom de l'objet à la création de l'objet plutôt que de recalculer lors de l'appel de la méthode getNom de l'objet.
 
 Pour la suite du programme et pour l'améliorer, il y a plusieurs choses que nous pourrions faire.
 Tout d'abord, l'implémentation d'une interface graphique pour le labyrinthe et de sprite pour le joueur et les monstres pourraient rendre le jeu beaucoup plus immersif que l'aspect simpliste de la console.
@@ -248,11 +255,16 @@ Ensuite la création d'un inventaire pour le personnage serait envisageable et p
 Les combats pourraient être aussi améliorés afin d'impliquer le joueur qui, ici, doit juste attendre de voir s’il gagne ou s’il perd.
 Enfin, plusieurs niveaux de labyrinthe et des monstres de plus en plus fort permettrait d'améliorer grandement la durée d'une partie.
 
-Pour finir même si l'implémentation du jeu c'est plutôt bien déroulé, quelques problèmes nous ont quelques fois ralentis.
-Par exemple, au niveau du pattern Decorator où lorsqu'un objet était décoré 10 fois ou plus, il devenait très long de recréer le nom de cet objet.
-Ce problème venait du fait que la méthode qui reconstruit le nom des objets s'appelait récursivement et amenait à des temps d'exécution extrêmement long.
-Pour régler ce problème nous avons dû calculer le nom de l'objet à la création de l'objet plutôt que de recalculer lors de l'appel de la méthode getNom de l'objet.
-
+En conclusion, ce projet nous aura permis de voir l'utilité des Design Pattern dans un contexte "réel" et de remarquer que si ils sont bien utilisés ils permettent de gagner énormément de temps. De plus le code est largement simplifié par leur utilisation et un problème que l'on aurait pu résoudre avec de très nombreuses classes se résous finalement en très peu de place.
+De plus, le fait que le projet soit libre, pas de consigne imposée (mis à part l’inclusion des 4 patterns), nous a permis de nous investir plus facilement dans l'implémentation du programme.
+En effet, un sujet imposé et beaucoup moins motivant, celui-ci ne laissant que très peu de place à l'imagination.
+Par contre, il est beaucoup plus difficile de commencer un projet lorsqu'il est libre. Car n'ayant pas de fil directeur il est parfois un peu dur de savoir ce qu'il faut commencer à implémenter et ce qui peut attendre. Surtout lorsque l’on n’a pas encore une idée fixe sur le programme.
+\newpage
+\begin{figure}[h]
+        \centering
+        \includegraphics[angle=90,width=17cm]{./DiagrammeDeClasse.png}
+        \caption{\label{fig:diagClasse}Diagramme de classe}
+      \end{figure}
 
 \end{document}
 

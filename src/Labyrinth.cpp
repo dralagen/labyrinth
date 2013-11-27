@@ -1,3 +1,10 @@
+/**
+ * \file Labyrinth.cpp
+ *
+ * \author Adrien Garandel & Alexis Ruchaud
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "Labyrinth.hpp"
 
 Labyrinth::Labyrinth(int x, int y) : m_tailleX(x), m_tailleY(y), m_gen(false) {
@@ -259,3 +266,4 @@ void Labyrinth::clean() {
 bool Labyrinth::isEnd() const {
 	return m_rooms[position(m_current)].isEnd();
 }
+

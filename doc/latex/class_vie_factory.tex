@@ -1,0 +1,184 @@
+\section{Référence de la classe Vie\-Factory}
+\label{class_vie_factory}\index{Vie\-Factory@{Vie\-Factory}}
+
+
+Factory concrete pour creer des objets de type Vie.  
+
+
+
+
+Graphe d'héritage de Vie\-Factory\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_vie_factory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Vie\-Factory\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_vie_factory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Casque} $\ast$ {\bf Get\-Casque} ()
+\begin{DoxyCompactList}\small\item\em Renvoie un pointeur vers un \doxyref{Casque}{p.}{class_casque} pour que la factory concrete connaisse l'objet a creer. \end{DoxyCompactList}\item 
+{\bf Torse} $\ast$ {\bf Get\-Torse} ()
+\begin{DoxyCompactList}\small\item\em Renvoie un pointeur vers un \doxyref{Torse}{p.}{class_torse} pour que la factory concrete connaisse l'objet a creer. \end{DoxyCompactList}\item 
+{\bf Jambe} $\ast$ {\bf Get\-Jambe} ()
+\begin{DoxyCompactList}\small\item\em Renvoie un pointeur vers \doxyref{Jambe}{p.}{class_jambe} pour que la factory concrete connaisse l'objet a creer. \end{DoxyCompactList}\item 
+{\bf Epee} $\ast$ {\bf Get\-Epee} ()
+\begin{DoxyCompactList}\small\item\em Renvoie un pointeur vers une \doxyref{Epee}{p.}{class_epee} pour que la factory concrete connaisse l'objet a creer. \end{DoxyCompactList}\item 
+{\bf Dague} $\ast$ {\bf Get\-Dague} ()
+\begin{DoxyCompactList}\small\item\em Renvoie un pointeur vers une \doxyref{Dague}{p.}{class_dague} pour que la factory concrete connaisse l'objet a creer. \end{DoxyCompactList}\item 
+{\bf Hache} $\ast$ {\bf Get\-Hache} ()
+\begin{DoxyCompactList}\small\item\em Renvoie un pointeur vers une \doxyref{Hache}{p.}{class_hache} pour que la factory concrete connaisse l'objet a creer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static {\bf Item\-Factory} $\ast$ {\bf Create\-Factory} ({\bf I\-T\-E\-M\-\_\-\-F\-A\-C\-T\-O\-R\-I\-E\-S} factory)
+\begin{DoxyCompactList}\small\item\em Methode qui creer une factory concrete en fonction du type passe en parametre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Factory concrete pour creer des objets de type Vie. 
+
+\subsection{Documentation des fonctions membres}
+\index{Vie\-Factory@{Vie\-Factory}!Create\-Factory@{Create\-Factory}}
+\index{Create\-Factory@{Create\-Factory}!VieFactory@{Vie\-Factory}}
+\subsubsection[{Create\-Factory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Item\-Factory} $\ast$ Item\-Factory\-::\-Create\-Factory (
+\begin{DoxyParamCaption}
+\item[{{\bf I\-T\-E\-M\-\_\-\-F\-A\-C\-T\-O\-R\-I\-E\-S}}]{factory}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [inherited]}}\label{class_item_factory_ab10257decaf2cda946ec482a0dfdfe03}
+
+
+Methode qui creer une factory concrete en fonction du type passe en parametre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em I\-T\-E\-M\-\_\-\-F\-A\-C\-T\-O\-R\-I\-E\-S} & type de la factory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Item\-Factory$\ast$ Pointeur vers une factory concrete 
+\end{DoxyReturn}
+\index{Vie\-Factory@{Vie\-Factory}!Get\-Casque@{Get\-Casque}}
+\index{Get\-Casque@{Get\-Casque}!VieFactory@{Vie\-Factory}}
+\subsubsection[{Get\-Casque}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Casque} $\ast$ Vie\-Factory\-::\-Get\-Casque (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_vie_factory_af45ee6cc4d541d1e52e834466ee52d9f}
+
+
+Renvoie un pointeur vers un \doxyref{Casque}{p.}{class_casque} pour que la factory concrete connaisse l'objet a creer. 
+
+\begin{DoxyReturn}{Renvoie}
+Casque$\ast$ Pointeur vers \doxyref{Casque}{p.}{class_casque} 
+\end{DoxyReturn}
+
+
+Implémente {\bf Item\-Factory} \doxyref{}{p.}{class_item_factory_a89450cf0176a8da74cc5a9b8ef5aaae6}.
+
+\index{Vie\-Factory@{Vie\-Factory}!Get\-Dague@{Get\-Dague}}
+\index{Get\-Dague@{Get\-Dague}!VieFactory@{Vie\-Factory}}
+\subsubsection[{Get\-Dague}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dague} $\ast$ Vie\-Factory\-::\-Get\-Dague (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_vie_factory_a3a7da35eafd5145d4f2460fc49576261}
+
+
+Renvoie un pointeur vers une \doxyref{Dague}{p.}{class_dague} pour que la factory concrete connaisse l'objet a creer. 
+
+\begin{DoxyReturn}{Renvoie}
+\doxyref{Dague}{p.}{class_dague} $\ast$ Pointeur vers \doxyref{Dague}{p.}{class_dague} 
+\end{DoxyReturn}
+
+
+Implémente {\bf Item\-Factory} \doxyref{}{p.}{class_item_factory_a65ed7c9978011812487e6b12b4155fbd}.
+
+\index{Vie\-Factory@{Vie\-Factory}!Get\-Epee@{Get\-Epee}}
+\index{Get\-Epee@{Get\-Epee}!VieFactory@{Vie\-Factory}}
+\subsubsection[{Get\-Epee}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Epee} $\ast$ Vie\-Factory\-::\-Get\-Epee (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_vie_factory_aa2f078f42aa81b1155daeecd4cfaf540}
+
+
+Renvoie un pointeur vers une \doxyref{Epee}{p.}{class_epee} pour que la factory concrete connaisse l'objet a creer. 
+
+\begin{DoxyReturn}{Renvoie}
+\doxyref{Epee}{p.}{class_epee} $\ast$ Pointeur vers \doxyref{Epee}{p.}{class_epee} 
+\end{DoxyReturn}
+
+
+Implémente {\bf Item\-Factory} \doxyref{}{p.}{class_item_factory_a8a413e61bf23ad24a549382e4e4e396f}.
+
+\index{Vie\-Factory@{Vie\-Factory}!Get\-Hache@{Get\-Hache}}
+\index{Get\-Hache@{Get\-Hache}!VieFactory@{Vie\-Factory}}
+\subsubsection[{Get\-Hache}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hache} $\ast$ Vie\-Factory\-::\-Get\-Hache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_vie_factory_a19c1d31519ef2a6d1589fb047ab55244}
+
+
+Renvoie un pointeur vers une \doxyref{Hache}{p.}{class_hache} pour que la factory concrete connaisse l'objet a creer. 
+
+\begin{DoxyReturn}{Renvoie}
+\doxyref{Hache}{p.}{class_hache} $\ast$ Pointeur vers \doxyref{Hache}{p.}{class_hache} 
+\end{DoxyReturn}
+
+
+Implémente {\bf Item\-Factory} \doxyref{}{p.}{class_item_factory_afd402df71468d0a96ea12e92c80a185e}.
+
+\index{Vie\-Factory@{Vie\-Factory}!Get\-Jambe@{Get\-Jambe}}
+\index{Get\-Jambe@{Get\-Jambe}!VieFactory@{Vie\-Factory}}
+\subsubsection[{Get\-Jambe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Jambe} $\ast$ Vie\-Factory\-::\-Get\-Jambe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_vie_factory_a873cc86e5f693e7bcfc4feecceda20a1}
+
+
+Renvoie un pointeur vers \doxyref{Jambe}{p.}{class_jambe} pour que la factory concrete connaisse l'objet a creer. 
+
+\begin{DoxyReturn}{Renvoie}
+\doxyref{Jambe}{p.}{class_jambe} $\ast$ Pointeur vers \doxyref{Jambe}{p.}{class_jambe} 
+\end{DoxyReturn}
+
+
+Implémente {\bf Item\-Factory} \doxyref{}{p.}{class_item_factory_a0a9cc8a72f93f260a61d393d8fb76012}.
+
+\index{Vie\-Factory@{Vie\-Factory}!Get\-Torse@{Get\-Torse}}
+\index{Get\-Torse@{Get\-Torse}!VieFactory@{Vie\-Factory}}
+\subsubsection[{Get\-Torse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Torse} $\ast$ Vie\-Factory\-::\-Get\-Torse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_vie_factory_a11bc6f64be3334f46bd0a9a288eeaeb3}
+
+
+Renvoie un pointeur vers un \doxyref{Torse}{p.}{class_torse} pour que la factory concrete connaisse l'objet a creer. 
+
+\begin{DoxyReturn}{Renvoie}
+\doxyref{Torse}{p.}{class_torse} $\ast$ Pointeur vers \doxyref{Torse}{p.}{class_torse} 
+\end{DoxyReturn}
+
+
+Implémente {\bf Item\-Factory} \doxyref{}{p.}{class_item_factory_ad5f3eb7dffeed5577e05e859775af3dd}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/{\bf Vie\-Factory.\-hpp}\item 
+src/{\bf Vie\-Factory.\-cpp}\end{DoxyCompactItemize}

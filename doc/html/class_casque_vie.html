@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Labyrinth RPG: Référence de la classe CasqueVie</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Labyrinth RPG
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Un labyrinthe en 2D additionné à un Jeu de Rôle</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_casque_vie.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pro-attribs">Attributs protégés</a> &#124;
+<a href="class_casque_vie-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe CasqueVie</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="class_casque_vie.html" title="CasqueVie herite de Casque. ">CasqueVie</a> herite de <a class="el" href="class_casque.html" title="Casque herite de Equipement. ">Casque</a>.  
+ <a href="class_casque_vie.html#details">Plus de détails...</a></p>
+<div class="dynheader">
+Graphe d'héritage de CasqueVie:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_casque_vie__inherit__graph.png" border="0" usemap="#_casque_vie_inherit__map" alt="Inheritance graph"/></div>
+<map name="_casque_vie_inherit__map" id="_casque_vie_inherit__map">
+<area shape="rect" id="node2" href="class_casque.html" title="Casque herite de Equipement. " alt="" coords="15,195,96,288"/><area shape="rect" id="node3" href="class_equipement.html" title="Gestion des equipements. " alt="" coords="5,5,107,147"/></map>
+</div>
+<div class="dynheader">
+Graphe de collaboration de CasqueVie:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_casque_vie__coll__graph.png" border="0" usemap="#_casque_vie_coll__map" alt="Collaboration graph"/></div>
+<map name="_casque_vie_coll__map" id="_casque_vie_coll__map">
+<area shape="rect" id="node2" href="class_casque.html" title="Casque herite de Equipement. " alt="" coords="15,195,96,288"/><area shape="rect" id="node3" href="class_equipement.html" title="Gestion des equipements. " alt="" coords="5,5,107,147"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a7d3982a3fb1b8f72da362b6a3eb687c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_casque_vie.html#a7d3982a3fb1b8f72da362b6a3eb687c1">CasqueVie</a> ()</td></tr>
+<tr class="separator:a7d3982a3fb1b8f72da362b6a3eb687c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb93c4c89d61c945d75ee3d47bede861"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_casque.html#acb93c4c89d61c945d75ee3d47bede861">type</a> ()</td></tr>
+<tr class="memdesc:acb93c4c89d61c945d75ee3d47bede861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie le type de l'equipement.  <a href="#acb93c4c89d61c945d75ee3d47bede861">Plus de détails...</a><br/></td></tr>
+<tr class="separator:acb93c4c89d61c945d75ee3d47bede861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b0426a70bfce6e7c3efac605b75cd8e"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equipement.html#a0b0426a70bfce6e7c3efac605b75cd8e">getNom</a> ()</td></tr>
+<tr class="memdesc:a0b0426a70bfce6e7c3efac605b75cd8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne le nom de l'equipement.  <a href="#a0b0426a70bfce6e7c3efac605b75cd8e">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a0b0426a70bfce6e7c3efac605b75cd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabcf10fd762945fa4a37a9cf8321f463"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equipement.html#aabcf10fd762945fa4a37a9cf8321f463">getBforce</a> ()</td></tr>
+<tr class="memdesc:aabcf10fd762945fa4a37a9cf8321f463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne le bonus de force.  <a href="#aabcf10fd762945fa4a37a9cf8321f463">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aabcf10fd762945fa4a37a9cf8321f463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9fd7528c4f181970b7a0877f4145f89"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equipement.html#ad9fd7528c4f181970b7a0877f4145f89">getBvie</a> ()</td></tr>
+<tr class="memdesc:ad9fd7528c4f181970b7a0877f4145f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne le bonus de vie.  <a href="#ad9fd7528c4f181970b7a0877f4145f89">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ad9fd7528c4f181970b7a0877f4145f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73485135eacdf30d5f49c9e34e5f4d0e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equipement.html#a73485135eacdf30d5f49c9e34e5f4d0e">getBchance</a> ()</td></tr>
+<tr class="memdesc:a73485135eacdf30d5f49c9e34e5f4d0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne le bonus de chance.  <a href="#a73485135eacdf30d5f49c9e34e5f4d0e">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a73485135eacdf30d5f49c9e34e5f4d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8577d49fd00b8effa39388feccb29901"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equipement.html#a8577d49fd00b8effa39388feccb29901">getArmure</a> ()</td></tr>
+<tr class="memdesc:a8577d49fd00b8effa39388feccb29901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne l'armure fournie par l'equipement.  <a href="#a8577d49fd00b8effa39388feccb29901">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a8577d49fd00b8effa39388feccb29901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Attributs protégés</h2></td></tr>
+<tr class="memitem:a930290aac01ecd40c7a646ab8f66d742"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equipement.html#a930290aac01ecd40c7a646ab8f66d742">nom_</a></td></tr>
+<tr class="separator:a930290aac01ecd40c7a646ab8f66d742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69339ce4f1f5fe7e6fcdeda5b74c14a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equipement.html#a69339ce4f1f5fe7e6fcdeda5b74c14a4">armure_</a></td></tr>
+<tr class="separator:a69339ce4f1f5fe7e6fcdeda5b74c14a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa70effa6a8144fe1f4fe874af7139793"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equipement.html#aa70effa6a8144fe1f4fe874af7139793">bchance_</a></td></tr>
+<tr class="separator:aa70effa6a8144fe1f4fe874af7139793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ac5bff40e3f6bf1d8e6f0e524e750f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equipement.html#a73ac5bff40e3f6bf1d8e6f0e524e750f">bvie_</a></td></tr>
+<tr class="separator:a73ac5bff40e3f6bf1d8e6f0e524e750f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87cf3f291386d5401be6994dd8fb8be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equipement.html#af87cf3f291386d5401be6994dd8fb8be">bforce_</a></td></tr>
+<tr class="separator:af87cf3f291386d5401be6994dd8fb8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="class_casque_vie.html" title="CasqueVie herite de Casque. ">CasqueVie</a> herite de <a class="el" href="class_casque.html" title="Casque herite de Equipement. ">Casque</a>. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a7d3982a3fb1b8f72da362b6a3eb687c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CasqueVie::CasqueVie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="a8577d49fd00b8effa39388feccb29901"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Equipement::getArmure </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retourne l'armure fournie par l'equipement. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>armure </dd></dl>
+
+<p>Réimplémentée dans <a class="el" href="class_d_equip.html#a7b2c8227ae884c23ccc8f3a2e5702186">DEquip</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a73485135eacdf30d5f49c9e34e5f4d0e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Equipement::getBchance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retourne le bonus de chance. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Bchance </dd></dl>
+
+<p>Réimplémentée dans <a class="el" href="class_d_equip.html#a39407c92f0de87306a33f57fd22ce997">DEquip</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aabcf10fd762945fa4a37a9cf8321f463"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Equipement::getBforce </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retourne le bonus de force. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Bforce </dd></dl>
+
+<p>Réimplémentée dans <a class="el" href="class_d_equip.html#adb6645ce01c12a4cb3fe0b522ea6b25e">DEquip</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9fd7528c4f181970b7a0877f4145f89"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Equipement::getBvie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retourne le bonus de vie. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Bvie </dd></dl>
+
+<p>Réimplémentée dans <a class="el" href="class_d_equip.html#a085ea4ac21c238d8c147ff4e6d74794f">DEquip</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b0426a70bfce6e7c3efac605b75cd8e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Equipement::getNom </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retourne le nom de l'equipement. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Nom </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acb93c4c89d61c945d75ee3d47bede861"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Casque::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Renvoie le type de l'equipement. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>int </dd></dl>
+
+<p>Implémente <a class="el" href="class_equipement.html#a05b2c9d4cf22b6aefb6603fa4e322aa2">Equipement</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a69339ce4f1f5fe7e6fcdeda5b74c14a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Equipement::armure_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa70effa6a8144fe1f4fe874af7139793"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Equipement::bchance_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af87cf3f291386d5401be6994dd8fb8be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Equipement::bforce_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a73ac5bff40e3f6bf1d8e6f0e524e750f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Equipement::bvie_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a930290aac01ecd40c7a646ab8f66d742"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Equipement::nom_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>src/<a class="el" href="_casque_vie_8hpp_source.html">CasqueVie.hpp</a></li>
+<li>src/<a class="el" href="_casque_vie_8cpp.html">CasqueVie.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_casque_vie.html">CasqueVie</a></li>
+    <li class="footer">Généré le Mercredi Novembre 27 2013 13:38:47 pour Labyrinth RPG par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="Room::print" name="Room::print">
+<area shape="rect" id="node2" href="$class_labyrinth.html#a7c0789decac44992b6baa12613b9109a" title="Affiche le labyrinthe. " alt="" coords="133,5,227,29"/>
+<area shape="rect" id="node3" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie. " alt="" coords="275,5,363,29"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="411,5,456,29"/>
+</map>

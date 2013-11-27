@@ -1,0 +1,4 @@
+<map id="HacheChance" name="HacheChance">
+<area shape="rect" id="node2" href="$class_hache.html" title="Hache herite de Arme. " alt="" coords="23,195,99,277"/>
+<area shape="rect" id="node3" href="$class_arme.html" title="Gestion des armes. " alt="" coords="18,5,104,147"/>
+</map>

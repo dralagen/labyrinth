@@ -1,0 +1,5 @@
+<map id="Room::action" name="Room::action">
+<area shape="rect" id="node2" href="$class_room_comportement.html#ac5b509f405f9e52fea3a9392210fbbdb" title="Execute l&#39;action du comportement. " alt="" coords="139,5,296,29"/>
+<area shape="rect" id="node3" href="$class_room.html#a78150061fe95e0d03b8730fb151cc39f" title="Modifie le comportement de la salle. " alt="" coords="146,53,289,77"/>
+<area shape="rect" id="node4" href="$class_room_comportement.html#a645473f228c0e73532a309ad512456eb" title="Récupère le niveau ou force de la salle. " alt="" coords="139,101,296,125"/>
+</map>
