@@ -229,7 +229,7 @@ void Personnage::trouverArme(Arme * a)
 		std::cin >> choix;
 		if(choix == "y")
 		{
-			delete jambe_;
+			delete arme_;
 			setArme(a);
 			uptoday_ = false;
 		}
