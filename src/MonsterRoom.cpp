@@ -5,7 +5,9 @@
  * \version 1.0
  * \date 27/11/2013
  */
+
 #include "MonsterRoom.hpp"
+#include "ColorTerm.hpp"
 
 MonsterRoom::MonsterRoom(int lvl):RoomComportement(lvl), m_monster(lvl)  {
 	m_content = "Mn";
@@ -38,6 +40,11 @@ int MonsterRoom::action(Personnage &perso) {
 		}
 		if (perso.getVie() > 0) {
 			return RC_CLEAN_MONSTER;
+		}
+		else {
+			ColorTerm::Edit death(ColorTerm::FG_RED);
+			ColorTerm::Edit reset(ColorTerm::FG_DEFAULT);
+			std::cout<<death<<"Vous êtes mort"<<reset<<std::endl;
 		}
 	}
 
