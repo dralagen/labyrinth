@@ -1,7 +1,7 @@
 /**
  * \file Dequip.hpp
  *
- * \author Dralagen
+ * \author Adrien Garandel & Alexis Ruchaud
  * \version 1.0
  * \date 22/11/2013
  */
@@ -55,7 +55,7 @@ class DEquip : public Equipement
 		*/
 		int type();
 
-		
+
 };
 
 #endif /* DEQUIP_HPP */
