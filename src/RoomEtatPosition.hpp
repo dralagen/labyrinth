@@ -1,8 +1,19 @@
+/**
+ * \file RoomEtatPosition.hpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #ifndef ROOMETATPOSITION_HPP
 #define ROOMETATPOSITION_HPP
 
 #include "RoomEtat.hpp"
 
+/**
+ * \class RoomEtatPosition
+ * \brief Salle identifé comme ma position
+ */
 class RoomEtatPosition : public RoomEtat
 {
 	public:

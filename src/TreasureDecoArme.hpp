@@ -1,8 +1,19 @@
+/**
+ * \file TreasureDecoArme.hpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #ifndef TREASUREDECOARME_HPP
 #define TREASUREDECOARME_HPP
 
 #include "Treasure.hpp"
 
+/**
+ * \class TreasureDecoArme
+ * \brief Coffre de salle avec un ou des bonus d'arme aléatoire
+ */
 class TreasureDecoArme : public Treasure
 {
 	public:

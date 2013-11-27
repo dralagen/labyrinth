@@ -1,12 +1,25 @@
+/**
+ * \file Personnage.hpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #ifndef PERSONNAGE_HPP
 #define PERSONNAGE_HPP
+
 #include <string>
 #include <iostream>
+
 #include "Equipement.hpp"
 #include "Arme.hpp"
 
 #include "ItemFactory.hpp"
 
+/**
+ * \class Personnage
+ * \brief Gestion du Personnage
+ */
 class Personnage
 {
 	private :
@@ -16,7 +29,7 @@ class Personnage
 		const int initForce_;   ///< Initialisation de la force du personnage
 		const int initDegat_;   ///< Initialisation des dégâts du personnage
 		const int initArmure_;  ///< Initialisation de l'amure du personnage
-        
+
 		int vieMax_;            ///< Vie max du personnage
 		int vie_;               ///< Vie du personnage
 		int chance_;            ///< Chance du personnage

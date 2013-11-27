@@ -1,8 +1,19 @@
+/**
+ * \file RoomEtatVisited.hpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #ifndef ROOMETATVISITED_HPP
 #define ROOMETATVISITED_HPP
 
 #include "RoomEtat.hpp"
 
+/**
+ * \class RoomEtatVisited
+ * \brief Salle déjà visité
+ */
 class RoomEtatVisited : public RoomEtat
 {
 	public:
