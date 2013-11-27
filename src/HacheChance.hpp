@@ -1,7 +1,7 @@
 /**
  * \file HacheChance.hpp
  *
- * \author Dralagen
+ * \author Adrien Garandel & Alexis Ruchaud
  * \version 1.0
  * \date 22/11/2013
  */

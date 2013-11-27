@@ -1,7 +1,7 @@
 /**
  * \file DArme.cpp
  *
- * \author Dralagen
+ * \author Adrien Garandel & Alexis Ruchaud
  * \version 1.0
  * \date 27/11/2013
  */
@@ -45,7 +45,7 @@ std::string DArme::replace(std::string str) {
 		int i;
 		buff >> i;                                                                  //On convertis cette valeur en entier pour l'imcrémenter
 		i++;
-		std::ostringstream convert;                                            
+		std::ostringstream convert;
 		convert << i;                                                               //On la reconvertis en String pour la remettre dans le nom
 		if (i > 9)
 			nom = e_->getNom().replace(trouve+str.length()+1,2,convert.str());      //Si i>9 on passe a +10

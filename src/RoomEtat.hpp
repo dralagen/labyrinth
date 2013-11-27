@@ -1,7 +1,7 @@
 /**
  * \file RoomEtat.hpp
  *
- * \author Dralagen
+ * \author Adrien Garandel & Alexis Ruchaud
  * \version 1.0
  * \date 27/11/2013
  */
