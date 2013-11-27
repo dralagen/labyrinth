@@ -1,8 +1,18 @@
+/**
+ * \file DequipV.hpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 22/11/2013
+ */
 #ifndef DEQUIPV_HPP
 #define DEQUIPV_HPP
 
 #include "DEquip.hpp"
-
+/**
+*\class DEquipV
+*\brief Decorator d'équipement de vie , hérite de DEquip
+**/
 class DEquipV : public DEquip
 {
 	public:
