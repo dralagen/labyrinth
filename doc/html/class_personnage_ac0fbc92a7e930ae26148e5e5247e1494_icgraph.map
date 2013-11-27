@@ -1,0 +1,6 @@
+<map id="Personnage::getNom" name="Personnage::getNom">
+<area shape="rect" id="node2" href="$class_end_room.html#ad7691b55dcf3ed863c8a774138105900" title="Combat un boss puis fini le jeu. " alt="" coords="357,5,461,29"/>
+<area shape="rect" id="node3" href="$class_monster_room.html#ae69b27248fe57b2043d9653f3e831cb8" title="Combat un montre. " alt="" coords="182,29,306,53"/>
+<area shape="rect" id="node4" href="$class_start_room.html#aae3c5e25ac0742c84ac6596d57bf3edb" title="Ne fait rien. " alt="" coords="190,77,298,101"/>
+<area shape="rect" id="node5" href="$class_treasure_room.html#af2719c053785a2523dcd902820766bea" title="Ouvre un coffre, le Personnage peut reçoit un bonus aleatoire plus ou moins bien. ..." alt="" coords="179,125,309,149"/>
+</map>

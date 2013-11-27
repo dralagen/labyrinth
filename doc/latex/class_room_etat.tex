@@ -1,0 +1,132 @@
+\section{Référence de la classe Room\-Etat}
+\label{class_room_etat}\index{Room\-Etat@{Room\-Etat}}
+
+
+Gestion de l'état de visite de la salle.  
+
+
+
+
+Graphe d'héritage de Room\-Etat\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_room_etat__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Room\-Etat\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_room_etat__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Room\-Etat} ()
+\item 
+{\bf Room\-Etat} ({\bf Room} $\ast$r)
+\item 
+virtual {\bf $\sim$\-Room\-Etat} ()
+\item 
+virtual void {\bf print} (std\-::string \&t, std\-::string \&c, std\-::string \&b) const =0
+\begin{DoxyCompactList}\small\item\em Ajout le contenue sur 3 lignes en fonction de l'etat. \end{DoxyCompactList}\item 
+virtual bool {\bf visited} () const =0
+\begin{DoxyCompactList}\small\item\em Verifie si on a déjà visité cette salle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Room} $\ast$ {\bf m\-\_\-room}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Gestion de l'état de visite de la salle. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Room\-Etat@{Room\-Etat}!Room\-Etat@{Room\-Etat}}
+\index{Room\-Etat@{Room\-Etat}!RoomEtat@{Room\-Etat}}
+\subsubsection[{Room\-Etat}]{\setlength{\rightskip}{0pt plus 5cm}Room\-Etat\-::\-Room\-Etat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_room_etat_af58ed4af42aafb0ccb215f1b8e785b01}
+\index{Room\-Etat@{Room\-Etat}!Room\-Etat@{Room\-Etat}}
+\index{Room\-Etat@{Room\-Etat}!RoomEtat@{Room\-Etat}}
+\subsubsection[{Room\-Etat}]{\setlength{\rightskip}{0pt plus 5cm}Room\-Etat\-::\-Room\-Etat (
+\begin{DoxyParamCaption}
+\item[{{\bf Room} $\ast$}]{r}
+\end{DoxyParamCaption}
+)}\label{class_room_etat_aa92454fa4b9473b0932135b8f582abc7}
+\index{Room\-Etat@{Room\-Etat}!$\sim$\-Room\-Etat@{$\sim$\-Room\-Etat}}
+\index{$\sim$\-Room\-Etat@{$\sim$\-Room\-Etat}!RoomEtat@{Room\-Etat}}
+\subsubsection[{$\sim$\-Room\-Etat}]{\setlength{\rightskip}{0pt plus 5cm}Room\-Etat\-::$\sim$\-Room\-Etat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_room_etat_a33850ef20c63d013475eb5b7d4e17185}
+
+
+\subsection{Documentation des fonctions membres}
+\index{Room\-Etat@{Room\-Etat}!print@{print}}
+\index{print@{print}!RoomEtat@{Room\-Etat}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Room\-Etat\-::print (
+\begin{DoxyParamCaption}
+\item[{std\-::string \&}]{t, }
+\item[{std\-::string \&}]{c, }
+\item[{std\-::string \&}]{b}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_room_etat_a89c60a235c1373e1e7ecf8bbe9a7d3d3}
+
+
+Ajout le contenue sur 3 lignes en fonction de l'etat. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & flux de la première lignes \\
+\hline
+{\em c} & flux de la deuxième lignes \\
+\hline
+{\em b} & flux de la troisième lignes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+
+
+Implémenté dans {\bf Room\-Etat\-Unvisited} \doxyref{}{p.}{class_room_etat_unvisited_a75e40c592f3e75f55b4254abfa8bd8ab}, {\bf Room\-Etat\-Position} \doxyref{}{p.}{class_room_etat_position_a56ac0e9929a77a90ddd776f25f72ea65}, et {\bf Room\-Etat\-Visited} \doxyref{}{p.}{class_room_etat_visited_a5c4482da22bbc5f090c9db7be1eb882d}.
+
+\index{Room\-Etat@{Room\-Etat}!visited@{visited}}
+\index{visited@{visited}!RoomEtat@{Room\-Etat}}
+\subsubsection[{visited}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Room\-Etat\-::visited (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_room_etat_ae02e142515e04ec9ad1219c1a1b99b61}
+
+
+Verifie si on a déjà visité cette salle. 
+
+\begin{DoxyReturn}{Renvoie}
+vrai si l'on déjà visité 
+\end{DoxyReturn}
+
+
+Implémenté dans {\bf Room\-Etat\-Unvisited} \doxyref{}{p.}{class_room_etat_unvisited_aece46ff49588ac0e191cc5f7af6860d9}, {\bf Room\-Etat\-Position} \doxyref{}{p.}{class_room_etat_position_aab1a503a6852677591c061c06513a5a8}, et {\bf Room\-Etat\-Visited} \doxyref{}{p.}{class_room_etat_visited_a7d8f9d29a61c766c879aeff49cd391cc}.
+
+
+
+\subsection{Documentation des données membres}
+\index{Room\-Etat@{Room\-Etat}!m\-\_\-room@{m\-\_\-room}}
+\index{m\-\_\-room@{m\-\_\-room}!RoomEtat@{Room\-Etat}}
+\subsubsection[{m\-\_\-room}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Room}$\ast$ Room\-Etat\-::m\-\_\-room\hspace{0.3cm}{\ttfamily [protected]}}\label{class_room_etat_a5b23317f60b9d268bbe669955b3c4725}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/{\bf Room\-Etat.\-hpp}\item 
+src/{\bf Room\-Etat.\-cpp}\end{DoxyCompactItemize}

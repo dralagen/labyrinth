@@ -1,0 +1,7 @@
+<map id="RoomComportement" name="RoomComportement">
+<area shape="rect" id="node2" href="$class_empty_room.html" title="Salle vide. " alt="" coords="5,177,109,271"/>
+<area shape="rect" id="node3" href="$class_end_room.html" title="Salle de fin du labyrinth. " alt="" coords="133,171,227,277"/>
+<area shape="rect" id="node4" href="$class_monster_room.html" title="Comportement de Salle contenant un monstre. " alt="" coords="251,177,364,271"/>
+<area shape="rect" id="node5" href="$class_start_room.html" title="Salle de début du labyrinth. " alt="" coords="389,177,485,271"/>
+<area shape="rect" id="node6" href="$class_treasure_room.html" title="Salle contenant un trésor. " alt="" coords="510,177,628,271"/>
+</map>

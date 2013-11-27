@@ -1,0 +1,1047 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Labyrinth RPG: Référence de la classe Labyrinth</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Labyrinth RPG
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Un labyrinthe en 2D additionné à un Jeu de Rôle</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_labyrinth.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="class_labyrinth-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Labyrinth</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>gestion de labyrinthe  
+ <a href="class_labyrinth.html#details">Plus de détails...</a></p>
+<div class="dynheader">
+Graphe de collaboration de Labyrinth:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_labyrinth__coll__graph.png" border="0" usemap="#_labyrinth_coll__map" alt="Collaboration graph"/></div>
+<map name="_labyrinth_coll__map" id="_labyrinth_coll__map">
+<area shape="rect" id="node2" href="class_room.html" title="gestion de salle " alt="" coords="210,185,301,362"/><area shape="rect" id="node3" href="class_room_etat.html" title="Gestion de l&#39;état de visite de la salle. " alt="" coords="147,471,240,577"/><area shape="rect" id="node4" href="class_room_etat_unvisited.html" title="Salle jamais visité " alt="" coords="5,665,140,770"/><area shape="rect" id="node5" href="class_room_etat_visited.html" title="Salle déjà visité " alt="" coords="331,665,455,770"/><area shape="rect" id="node7" href="class_room_etat_position.html" title="Salle identifé comme ma position. " alt="" coords="173,665,303,770"/><area shape="rect" id="node6" href="class_room_comportement.html" title="Génère le comportement des salles. " alt="" coords="183,5,329,123"/><area shape="rect" id="node8" href="structpos.html" title="position utilise des coordonnée pour stocker une position " alt="" coords="506,233,544,314"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a13480c96c7e8d937adf6fd0b2dce8b6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a13480c96c7e8d937adf6fd0b2dce8b6d">Labyrinth</a> (int x=<a class="el" href="_labyrinth_8hpp.html#a89a4e38d6f15736bb39cfd01bb95762a">LABYRINTH_TAILLE_X_DEFAULT</a>, int y=<a class="el" href="_labyrinth_8hpp.html#ab7e503f84cf86fe2bbcc0cdf341734e9">LABYRINTH_TAILLE_Y_DEFAULT</a>)</td></tr>
+<tr class="memdesc:a13480c96c7e8d937adf6fd0b2dce8b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">constucteur  <a href="#a13480c96c7e8d937adf6fd0b2dce8b6d">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a13480c96c7e8d937adf6fd0b2dce8b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c955f7eb91e1b1529899a157b410807"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a4c955f7eb91e1b1529899a157b410807">~Labyrinth</a> ()</td></tr>
+<tr class="memdesc:a4c955f7eb91e1b1529899a157b410807"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructeur  <a href="#a4c955f7eb91e1b1529899a157b410807">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a4c955f7eb91e1b1529899a157b410807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c84c73db11482be6b04e35bdb97c28f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_labyrinth.html">Labyrinth</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a1c84c73db11482be6b04e35bdb97c28f">operator=</a> (const <a class="el" href="class_labyrinth.html">Labyrinth</a> &amp;lab)</td></tr>
+<tr class="memdesc:a1c84c73db11482be6b04e35bdb97c28f"><td class="mdescLeft">&#160;</td><td class="mdescRight">surchage opérateur =  <a href="#a1c84c73db11482be6b04e35bdb97c28f">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a1c84c73db11482be6b04e35bdb97c28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c0789decac44992b6baa12613b9109a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a7c0789decac44992b6baa12613b9109a">print</a> (bool godMode=false) const </td></tr>
+<tr class="memdesc:a7c0789decac44992b6baa12613b9109a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le labyrinthe.  <a href="#a7c0789decac44992b6baa12613b9109a">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a7c0789decac44992b6baa12613b9109a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80514a0f6bc2a3a3e68a607ea51a800e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a80514a0f6bc2a3a3e68a607ea51a800e">action</a> (<a class="el" href="class_personnage.html">Personnage</a> &amp;perso)</td></tr>
+<tr class="memdesc:a80514a0f6bc2a3a3e68a607ea51a800e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actionne la salle courante.  <a href="#a80514a0f6bc2a3a3e68a607ea51a800e">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a80514a0f6bc2a3a3e68a607ea51a800e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab22fb393c8f6d844096ce6548dff2164"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#ab22fb393c8f6d844096ce6548dff2164">hasNorth</a> () const </td></tr>
+<tr class="memdesc:ab22fb393c8f6d844096ce6548dff2164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifie si il y a une porte au nord.  <a href="#ab22fb393c8f6d844096ce6548dff2164">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ab22fb393c8f6d844096ce6548dff2164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0008c659d5e512f805ddaff2620912c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#aa0008c659d5e512f805ddaff2620912c">hasEast</a> () const </td></tr>
+<tr class="memdesc:aa0008c659d5e512f805ddaff2620912c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifie si il y a une porte a l'est.  <a href="#aa0008c659d5e512f805ddaff2620912c">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aa0008c659d5e512f805ddaff2620912c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeb5d81ef6beccdb0360e3c5bdab9f51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#adeb5d81ef6beccdb0360e3c5bdab9f51">hasSouth</a> () const </td></tr>
+<tr class="memdesc:adeb5d81ef6beccdb0360e3c5bdab9f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifie si il y a une porte au sud.  <a href="#adeb5d81ef6beccdb0360e3c5bdab9f51">Plus de détails...</a><br/></td></tr>
+<tr class="separator:adeb5d81ef6beccdb0360e3c5bdab9f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5ffa83a10d415f1f635a58bc25254ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#ae5ffa83a10d415f1f635a58bc25254ba">hasWest</a> () const </td></tr>
+<tr class="memdesc:ae5ffa83a10d415f1f635a58bc25254ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifie si il y a une porte a l'ouest.  <a href="#ae5ffa83a10d415f1f635a58bc25254ba">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ae5ffa83a10d415f1f635a58bc25254ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6759f031dd720443786e52d946d3b95a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a6759f031dd720443786e52d946d3b95a">goNorth</a> ()</td></tr>
+<tr class="memdesc:a6759f031dd720443786e52d946d3b95a"><td class="mdescLeft">&#160;</td><td class="mdescRight">va au nord  <a href="#a6759f031dd720443786e52d946d3b95a">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a6759f031dd720443786e52d946d3b95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23a37ea3383534c6206d5d09cc1d1cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#ad23a37ea3383534c6206d5d09cc1d1cb">goEast</a> ()</td></tr>
+<tr class="memdesc:ad23a37ea3383534c6206d5d09cc1d1cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">va a l'est  <a href="#ad23a37ea3383534c6206d5d09cc1d1cb">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ad23a37ea3383534c6206d5d09cc1d1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7fa660f6f3ce459b80e661603f4c20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a5b7fa660f6f3ce459b80e661603f4c20">goSouth</a> ()</td></tr>
+<tr class="memdesc:a5b7fa660f6f3ce459b80e661603f4c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">va au sud  <a href="#a5b7fa660f6f3ce459b80e661603f4c20">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a5b7fa660f6f3ce459b80e661603f4c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e673608e72a1b69cc91c85f882b477"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a28e673608e72a1b69cc91c85f882b477">goWest</a> ()</td></tr>
+<tr class="memdesc:a28e673608e72a1b69cc91c85f882b477"><td class="mdescLeft">&#160;</td><td class="mdescRight">va a l'ouest  <a href="#a28e673608e72a1b69cc91c85f882b477">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a28e673608e72a1b69cc91c85f882b477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50cf7950f97a0d701b1f41125566883"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#ad50cf7950f97a0d701b1f41125566883">isEnd</a> () const </td></tr>
+<tr class="memdesc:ad50cf7950f97a0d701b1f41125566883"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie la fin.  <a href="#ad50cf7950f97a0d701b1f41125566883">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ad50cf7950f97a0d701b1f41125566883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a417eadea0ab0a5df9bb5e9951e166590"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a417eadea0ab0a5df9bb5e9951e166590">clean</a> ()</td></tr>
+<tr class="memdesc:a417eadea0ab0a5df9bb5e9951e166590"><td class="mdescLeft">&#160;</td><td class="mdescRight">la salle a été vidé  <a href="#a417eadea0ab0a5df9bb5e9951e166590">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a417eadea0ab0a5df9bb5e9951e166590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f94ffe9a0097abea1657b8b3d8d85a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a4f94ffe9a0097abea1657b8b3d8d85a6">gen</a> ()</td></tr>
+<tr class="memdesc:a4f94ffe9a0097abea1657b8b3d8d85a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">génére qu'une fois le labyrinth  <a href="#a4f94ffe9a0097abea1657b8b3d8d85a6">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a4f94ffe9a0097abea1657b8b3d8d85a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6bbe37a3dae3799c0557c8c92a88f06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#aa6bbe37a3dae3799c0557c8c92a88f06">undo</a> ()</td></tr>
+<tr class="memdesc:aa6bbe37a3dae3799c0557c8c92a88f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">retourne a la position précédente position courante == position précédente  <a href="#aa6bbe37a3dae3799c0557c8c92a88f06">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aa6bbe37a3dae3799c0557c8c92a88f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ffc879951c809634eb07cffbf5cfd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a85ffc879951c809634eb07cffbf5cfd1">setStart</a> (<a class="el" href="structpos.html">pos</a> p)</td></tr>
+<tr class="memdesc:a85ffc879951c809634eb07cffbf5cfd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">définie la salle de départ si le labyrinth n'a pas été généré  <a href="#a85ffc879951c809634eb07cffbf5cfd1">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a85ffc879951c809634eb07cffbf5cfd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3693e9bea996fc9083b880ab69cce138"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a3693e9bea996fc9083b880ab69cce138">setStart</a> (int x, int y)</td></tr>
+<tr class="separator:a3693e9bea996fc9083b880ab69cce138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:ac586bb4db152210ed424f77d68505502"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#ac586bb4db152210ed424f77d68505502">position</a> (int x, int y) const </td></tr>
+<tr class="memdesc:ac586bb4db152210ed424f77d68505502"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule la position de la salle dans le tableau.  <a href="#ac586bb4db152210ed424f77d68505502">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ac586bb4db152210ed424f77d68505502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4400fc1f603dd48146be8108050bec4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#ac4400fc1f603dd48146be8108050bec4">position</a> (<a class="el" href="structpos.html">pos</a> p) const </td></tr>
+<tr class="memdesc:ac4400fc1f603dd48146be8108050bec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule la position de la salle dans le tableau.  <a href="#ac4400fc1f603dd48146be8108050bec4">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ac4400fc1f603dd48146be8108050bec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775a1d628f1179dfca9655dbca6a43f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a775a1d628f1179dfca9655dbca6a43f3">newPosition</a> ()</td></tr>
+<tr class="memdesc:a775a1d628f1179dfca9655dbca6a43f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">actualise ma position courante  <a href="#a775a1d628f1179dfca9655dbca6a43f3">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a775a1d628f1179dfca9655dbca6a43f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc29f7969b11105584bf51c616740bce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#afc29f7969b11105584bf51c616740bce">_gen</a> ()</td></tr>
+<tr class="memdesc:afc29f7969b11105584bf51c616740bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère le labyrinthe.  <a href="#afc29f7969b11105584bf51c616740bce">Plus de détails...</a><br/></td></tr>
+<tr class="separator:afc29f7969b11105584bf51c616740bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1589aae4f56635fd38d4704196571646"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a1589aae4f56635fd38d4704196571646">init</a> (<a class="el" href="structpos.html">pos</a> p)</td></tr>
+<tr class="memdesc:a1589aae4f56635fd38d4704196571646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ouvre les chemins a partir de la position p.  <a href="#a1589aae4f56635fd38d4704196571646">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a1589aae4f56635fd38d4704196571646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c81f6ddf4749788d5e97774c6970411"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a1c81f6ddf4749788d5e97774c6970411">openDoor</a> (<a class="el" href="structpos.html">pos</a> p1, <a class="el" href="structpos.html">pos</a> p2)</td></tr>
+<tr class="memdesc:a1c81f6ddf4749788d5e97774c6970411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Créer une porte entre la salle s1 et s2 s1 et s2 adjacent.  <a href="#a1c81f6ddf4749788d5e97774c6970411">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a1c81f6ddf4749788d5e97774c6970411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45c69cdcafe3665bd76db8e854b6e506"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a45c69cdcafe3665bd76db8e854b6e506">hasAdjacent</a> (<a class="el" href="structpos.html">pos</a> p) const </td></tr>
+<tr class="memdesc:a45c69cdcafe3665bd76db8e854b6e506"><td class="mdescLeft">&#160;</td><td class="mdescRight">cherche une salle adjacente non visité  <a href="#a45c69cdcafe3665bd76db8e854b6e506">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a45c69cdcafe3665bd76db8e854b6e506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46038c2605eadda50894b070a012eb12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpos.html">pos</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a46038c2605eadda50894b070a012eb12">oneAdjacent</a> (<a class="el" href="structpos.html">pos</a> p) const </td></tr>
+<tr class="memdesc:a46038c2605eadda50894b070a012eb12"><td class="mdescLeft">&#160;</td><td class="mdescRight">prend une salle adjacente  <a href="#a46038c2605eadda50894b070a012eb12">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a46038c2605eadda50894b070a012eb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a0547ee29aa3f3c8987922f8305e26569"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a0547ee29aa3f3c8987922f8305e26569">m_tailleX</a></td></tr>
+<tr class="memdesc:a0547ee29aa3f3c8987922f8305e26569"><td class="mdescLeft">&#160;</td><td class="mdescRight">largeur du labyrinthe  <a href="#a0547ee29aa3f3c8987922f8305e26569">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a0547ee29aa3f3c8987922f8305e26569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae656bd00c1402e153c89611b374a9567"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#ae656bd00c1402e153c89611b374a9567">m_tailleY</a></td></tr>
+<tr class="memdesc:ae656bd00c1402e153c89611b374a9567"><td class="mdescLeft">&#160;</td><td class="mdescRight">hauteur du labyrinthe  <a href="#ae656bd00c1402e153c89611b374a9567">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ae656bd00c1402e153c89611b374a9567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ed73d5e4ea2843c3c58f2d7915bd792"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpos.html">pos</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a4ed73d5e4ea2843c3c58f2d7915bd792">m_current</a></td></tr>
+<tr class="memdesc:a4ed73d5e4ea2843c3c58f2d7915bd792"><td class="mdescLeft">&#160;</td><td class="mdescRight">position courante  <a href="#a4ed73d5e4ea2843c3c58f2d7915bd792">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a4ed73d5e4ea2843c3c58f2d7915bd792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f5c4ed0cdb9a64556fd7a81fe09d8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpos.html">pos</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#af2f5c4ed0cdb9a64556fd7a81fe09d8d">m_precedent</a></td></tr>
+<tr class="memdesc:af2f5c4ed0cdb9a64556fd7a81fe09d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">position précédente  <a href="#af2f5c4ed0cdb9a64556fd7a81fe09d8d">Plus de détails...</a><br/></td></tr>
+<tr class="separator:af2f5c4ed0cdb9a64556fd7a81fe09d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ec79c2423fe66a3fae33093320f52c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_room.html">Room</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a69ec79c2423fe66a3fae33093320f52c">m_rooms</a></td></tr>
+<tr class="memdesc:a69ec79c2423fe66a3fae33093320f52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">liste des salles du labyrinthe  <a href="#a69ec79c2423fe66a3fae33093320f52c">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a69ec79c2423fe66a3fae33093320f52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc4ede85f831118e70dadf5866dda09d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#afc4ede85f831118e70dadf5866dda09d">m_gen</a></td></tr>
+<tr class="memdesc:afc4ede85f831118e70dadf5866dda09d"><td class="mdescLeft">&#160;</td><td class="mdescRight">labyrinthe généré  <a href="#afc4ede85f831118e70dadf5866dda09d">Plus de détails...</a><br/></td></tr>
+<tr class="separator:afc4ede85f831118e70dadf5866dda09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>gestion de labyrinthe </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a13480c96c7e8d937adf6fd0b2dce8b6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Labyrinth::Labyrinth </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em> = <code><a class="el" href="_labyrinth_8hpp.html#a89a4e38d6f15736bb39cfd01bb95762a">LABYRINTH_TAILLE_X_DEFAULT</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em> = <code><a class="el" href="_labyrinth_8hpp.html#ab7e503f84cf86fe2bbcc0cdf341734e9">LABYRINTH_TAILLE_Y_DEFAULT</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>constucteur </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>lageur </td></tr>
+    <tr><td class="paramname">y</td><td>hauteur </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4c955f7eb91e1b1529899a157b410807"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Labyrinth::~Labyrinth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>destructeur </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="afc29f7969b11105584bf51c616740bce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Labyrinth::_gen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Génère le labyrinthe. </p>
+
+</div>
+</div>
+<a class="anchor" id="a80514a0f6bc2a3a3e68a607ea51a800e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Labyrinth::action </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_personnage.html">Personnage</a> &amp;&#160;</td>
+          <td class="paramname"><em>perso</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Actionne la salle courante. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">perso</td><td>personnage qui ouvre la salle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a417eadea0ab0a5df9bb5e9951e166590"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Labyrinth::clean </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>la salle a été vidé </p>
+
+</div>
+</div>
+<a class="anchor" id="a4f94ffe9a0097abea1657b8b3d8d85a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Labyrinth::gen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>génére qu'une fois le labyrinth </p>
+
+</div>
+</div>
+<a class="anchor" id="ad23a37ea3383534c6206d5d09cc1d1cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Labyrinth::goEast </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>va a l'est </p>
+
+</div>
+</div>
+<a class="anchor" id="a6759f031dd720443786e52d946d3b95a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Labyrinth::goNorth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>va au nord </p>
+
+</div>
+</div>
+<a class="anchor" id="a5b7fa660f6f3ce459b80e661603f4c20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Labyrinth::goSouth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>va au sud </p>
+
+</div>
+</div>
+<a class="anchor" id="a28e673608e72a1b69cc91c85f882b477"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Labyrinth::goWest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>va a l'ouest </p>
+
+</div>
+</div>
+<a class="anchor" id="a45c69cdcafe3665bd76db8e854b6e506"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Labyrinth::hasAdjacent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpos.html">pos</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cherche une salle adjacente non visité </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>position de recherche</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>vrai si une des quatres salle n'as pas était visité </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa0008c659d5e512f805ddaff2620912c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Labyrinth::hasEast </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifie si il y a une porte a l'est. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>vrai si c'est une porte faux si c'est un mur </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab22fb393c8f6d844096ce6548dff2164"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Labyrinth::hasNorth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifie si il y a une porte au nord. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>vrai si c'est une porte faux si c'est un mur </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adeb5d81ef6beccdb0360e3c5bdab9f51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Labyrinth::hasSouth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifie si il y a une porte au sud. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>vrai si c'est une porte faux si c'est un mur </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae5ffa83a10d415f1f635a58bc25254ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Labyrinth::hasWest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifie si il y a une porte a l'ouest. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>vrai si c'est une porte faux si c'est un mur </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1589aae4f56635fd38d4704196571646"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Labyrinth::init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpos.html">pos</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ouvre les chemins a partir de la position p. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>position de départ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad50cf7950f97a0d701b1f41125566883"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Labyrinth::isEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie la fin. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>vrai si on est sur la salle de fin </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a775a1d628f1179dfca9655dbca6a43f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Labyrinth::newPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>actualise ma position courante </p>
+
+</div>
+</div>
+<a class="anchor" id="a46038c2605eadda50894b070a012eb12"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpos.html">pos</a> Labyrinth::oneAdjacent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpos.html">pos</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>prend une salle adjacente </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>position de recherche</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>position d'une des salle adjacente non visité </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1c81f6ddf4749788d5e97774c6970411"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Labyrinth::openDoor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpos.html">pos</a>&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpos.html">pos</a>&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Créer une porte entre la salle s1 et s2 s1 et s2 adjacent. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p1</td><td>position de la salle s1 </td></tr>
+    <tr><td class="paramname">p2</td><td>position de la salle s2 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1c84c73db11482be6b04e35bdb97c28f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_labyrinth.html">Labyrinth</a> &amp; Labyrinth::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_labyrinth.html">Labyrinth</a> &amp;&#160;</td>
+          <td class="paramname"><em>lab</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>surchage opérateur = </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lab</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un labyrinthe identique </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac586bb4db152210ed424f77d68505502"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Labyrinth::position </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calcule la position de la salle dans le tableau. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Abscisse </td></tr>
+    <tr><td class="paramname">y</td><td>Ordonnée</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>indice dans le tableau m_rooms </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac4400fc1f603dd48146be8108050bec4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Labyrinth::position </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpos.html">pos</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calcule la position de la salle dans le tableau. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>position par rapport à X et Y</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>indice dans le tableau m_rooms </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7c0789decac44992b6baa12613b9109a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Labyrinth::print </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>godMode</em> = <code>false</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le labyrinthe. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">godMode</td><td>true affiche le contenue des salles même non visité </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a85ffc879951c809634eb07cffbf5cfd1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Labyrinth::setStart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpos.html">pos</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>définie la salle de départ si le labyrinth n'a pas été généré </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>position de départ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3693e9bea996fc9083b880ab69cce138"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Labyrinth::setStart </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>position en abscisse </td></tr>
+    <tr><td class="paramname">y</td><td>position en ordonnée </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa6bbe37a3dae3799c0557c8c92a88f06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Labyrinth::undo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retourne a la position précédente position courante == position précédente </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a4ed73d5e4ea2843c3c58f2d7915bd792"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpos.html">pos</a> Labyrinth::m_current</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>position courante </p>
+
+</div>
+</div>
+<a class="anchor" id="afc4ede85f831118e70dadf5866dda09d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Labyrinth::m_gen</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>labyrinthe généré </p>
+
+</div>
+</div>
+<a class="anchor" id="af2f5c4ed0cdb9a64556fd7a81fe09d8d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpos.html">pos</a> Labyrinth::m_precedent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>position précédente </p>
+
+</div>
+</div>
+<a class="anchor" id="a69ec79c2423fe66a3fae33093320f52c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_room.html">Room</a>* Labyrinth::m_rooms</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>liste des salles du labyrinthe </p>
+
+</div>
+</div>
+<a class="anchor" id="a0547ee29aa3f3c8987922f8305e26569"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Labyrinth::m_tailleX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>largeur du labyrinthe </p>
+
+</div>
+</div>
+<a class="anchor" id="ae656bd00c1402e153c89611b374a9567"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Labyrinth::m_tailleY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>hauteur du labyrinthe </p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>src/<a class="el" href="_labyrinth_8hpp_source.html">Labyrinth.hpp</a></li>
+<li>src/<a class="el" href="_labyrinth_8cpp.html">Labyrinth.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_labyrinth.html">Labyrinth</a></li>
+    <li class="footer">Généré le Mercredi Novembre 27 2013 13:38:48 pour Labyrinth RPG par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
+</body>
+</html>

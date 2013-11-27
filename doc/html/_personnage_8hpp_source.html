@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Labyrinth RPG:  Fichier source de src/Personnage.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Labyrinth RPG
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Un labyrinthe en 2D additionné à un Jeu de Rôle</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_personnage_8hpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Personnage.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_personnage_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef PERSONNAGE_HPP</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PERSONNAGE_HPP</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_equipement_8hpp.html">Equipement.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_arme_8hpp.html">Arme.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_item_factory_8hpp.html">ItemFactory.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_personnage.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_personnage.html">Personnage</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">private</span> :</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_personnage.html#a30b730a6908d2a27a3313a33fca2f2d0">   26</a></span>&#160;        <span class="keyword">const</span> std::string <a class="code" href="class_personnage.html#a30b730a6908d2a27a3313a33fca2f2d0">nom_</a>; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_personnage.html#a08047c5570ab1a943e5222d468bc04e4">   27</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_personnage.html#a08047c5570ab1a943e5222d468bc04e4">initVieMax_</a>;  </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_personnage.html#adbcab4e3e65e3413733c785c446ac3de">   28</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_personnage.html#adbcab4e3e65e3413733c785c446ac3de">initChance_</a>;  </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_personnage.html#a6e27cb04f9c27188eca2dcf85e52c46b">   29</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_personnage.html#a6e27cb04f9c27188eca2dcf85e52c46b">initForce_</a>;   </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_personnage.html#a588652816fc2e5646dea893786ebe1a2">   30</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_personnage.html#a588652816fc2e5646dea893786ebe1a2">initDegat_</a>;   </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_personnage.html#a8865af571ab1b0ba6493e855304dbce0">   31</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_personnage.html#a8865af571ab1b0ba6493e855304dbce0">initArmure_</a>;  </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_personnage.html#aca50034f2dfacb9f575e2bc9802ce283">   33</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_personnage.html#aca50034f2dfacb9f575e2bc9802ce283">vieMax_</a>;            </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_personnage.html#ab73c27e86ff1ad20b8702320f7db36e4">   34</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_personnage.html#ab73c27e86ff1ad20b8702320f7db36e4">vie_</a>;               </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_personnage.html#a383168e6874a1dee5d50fb5c539ccd5e">   35</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_personnage.html#a383168e6874a1dee5d50fb5c539ccd5e">chance_</a>;            </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_personnage.html#a43cb0829b230d9281adc847fb8218ca7">   36</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_personnage.html#a43cb0829b230d9281adc847fb8218ca7">force_</a>;             </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_personnage.html#a07cf7fee80e4550e0aeec5f1fce6ae3d">   37</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_personnage.html#a07cf7fee80e4550e0aeec5f1fce6ae3d">degat_</a>;             </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_personnage.html#adc9faad1d30de099542f716096a32a3b">   38</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_personnage.html#adc9faad1d30de099542f716096a32a3b">armure_</a>;            </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_personnage.html#a605a9b8a91b42ceb77632446cb1d24a1">   39</a></span>&#160;        <a class="code" href="class_equipement.html">Equipement</a> *<a class="code" href="class_personnage.html#a605a9b8a91b42ceb77632446cb1d24a1">casque_</a>;    </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_personnage.html#a1f149feed4bebb34eef01785a5528b67">   40</a></span>&#160;        <a class="code" href="class_equipement.html">Equipement</a> *<a class="code" href="class_personnage.html#a1f149feed4bebb34eef01785a5528b67">torse_</a>;     </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_personnage.html#ab0c4cf4c9854ea6537cef5d1bf22aa19">   41</a></span>&#160;        <a class="code" href="class_equipement.html">Equipement</a> *<a class="code" href="class_personnage.html#ab0c4cf4c9854ea6537cef5d1bf22aa19">jambe_</a>;     </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_personnage.html#a533d049b89eea9c730cb5baeebf3d1ae">   42</a></span>&#160;        <a class="code" href="class_arme.html">Arme</a> *<a class="code" href="class_personnage.html#a533d049b89eea9c730cb5baeebf3d1ae">arme_</a>;            </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_personnage.html#ac76efe3ade8ad20f13cfd304d261d2ef">   44</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_personnage.html#ac76efe3ade8ad20f13cfd304d261d2ef">uptoday_</a>;          </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="class_personnage.html#a7b67c1690f8588ad97a445692ffb49fd">Personnage</a>(std::string nom);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="class_personnage.html#a05bdf2a469885bb1fbb6c2e8f98972ab">~Personnage</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_personnage.html#a9362a76b5b3219916d68697e0606bf2c">modifierVie</a>(<span class="keywordtype">int</span> vie);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_personnage.html#ade3579c11cd6e6c535ff7290c5248ff5">modifierForce</a>(<span class="keywordtype">int</span> f);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_personnage.html#a9ebc2089ffd538189715e3cc58bab4e0">modifierChance</a>(<span class="keywordtype">int</span> c);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_personnage.html#a540b4f0590d9ee6f11e10c335ff740a8">actuStat</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_personnage.html#a960d6680688c5bee1868ef7238849e7b">afficheStat</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_personnage.html#abfa0fbd5f6c38c7297964046de26db0a">afficheEquip</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        std::string <a class="code" href="class_personnage.html#ac0fbc92a7e930ae26148e5e5247e1494">getNom</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_personnage.html#a261cbb9bb3b23a147d0f88b10eaa1857">getVie</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_personnage.html#a96cd651889938e58eafd48373f4c36c4">getVieMax</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_personnage.html#aa5eabf95d3d0d31385bda9ae8427d57e">getChance</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_personnage.html#a40de0ba95f25eb6f1653b6a4183763ae">getForce</a>();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_personnage.html#a311a98a60b751f7bb63897c29f57cd1c">setEquipement</a>(<a class="code" href="class_equipement.html">Equipement</a> *e);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_personnage.html#a6008154c7725bf6309cba8eb63cf2a94">setCasque</a>(<a class="code" href="class_equipement.html">Equipement</a> *casque);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_personnage.html#aa4cb28bb5fcd125cdbc632a51fb87b7d">setTorse</a>(<a class="code" href="class_equipement.html">Equipement</a> *torse);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_personnage.html#ac63bee6c81c929308bf36d14253a43e2">setJambe</a>(<a class="code" href="class_equipement.html">Equipement</a> *jambe);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_personnage.html#ac24d31489cc986e870e60f257a9d0849">setArme</a>(<a class="code" href="class_arme.html">Arme</a> *arme);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <a class="code" href="class_equipement.html">Equipement</a>* <a class="code" href="class_personnage.html#a6be6e0b23a90c362ddd6d8a3493193b8">getCasque</a>();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="class_equipement.html">Equipement</a>* <a class="code" href="class_personnage.html#a28565caaccdf1f8bc5fe76bf00b10311">getTorse</a>();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <a class="code" href="class_equipement.html">Equipement</a>* <a class="code" href="class_personnage.html#af94423c768e960a49d04ad8514bf1b78">getJambe</a>();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <a class="code" href="class_arme.html">Arme</a>* <a class="code" href="class_personnage.html#ac399a7dff2285dabcd75efb85a72e0fd">getArme</a>();</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_personnage.html#a039ce12768debca443459af1eb3ca176">trouverEquipement</a>(<a class="code" href="class_equipement.html">Equipement</a> * e);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_personnage.html#a020576cc14d815a1f4ebb9afe677e4c7">trouverArme</a>(<a class="code" href="class_arme.html">Arme</a> * a);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_personnage.html#aedf77fe983813e2cdfcf2581379432a1">recoitDegat</a>(<span class="keywordtype">int</span> pv);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_personnage.html#acbaafe5c61c924b5a4b3698d05fc365b">envoieDegat</a>();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_personnage.html#a0dfc3d986a2c53e5f5f3e0f3138ade5b">isAlive</a>();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;};</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* Personnage.hpp */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="class_personnage_html_a6e27cb04f9c27188eca2dcf85e52c46b"><div class="ttname"><a href="class_personnage.html#a6e27cb04f9c27188eca2dcf85e52c46b">Personnage::initForce_</a></div><div class="ttdeci">const int initForce_</div><div class="ttdoc">Initialisation de la force du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:29</div></div>
+<div class="ttc" id="class_equipement_html"><div class="ttname"><a href="class_equipement.html">Equipement</a></div><div class="ttdoc">Gestion des equipements. </div><div class="ttdef"><b>Definition:</b> Equipement.hpp:23</div></div>
+<div class="ttc" id="class_personnage_html_a0dfc3d986a2c53e5f5f3e0f3138ade5b"><div class="ttname"><a href="class_personnage.html#a0dfc3d986a2c53e5f5f3e0f3138ade5b">Personnage::isAlive</a></div><div class="ttdeci">bool isAlive()</div><div class="ttdoc">Test si le personnage est vivant. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:364</div></div>
+<div class="ttc" id="class_personnage_html_aa5eabf95d3d0d31385bda9ae8427d57e"><div class="ttname"><a href="class_personnage.html#aa5eabf95d3d0d31385bda9ae8427d57e">Personnage::getChance</a></div><div class="ttdeci">int getChance()</div><div class="ttdoc">Chance du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:279</div></div>
+<div class="ttc" id="class_personnage_html_a960d6680688c5bee1868ef7238849e7b"><div class="ttname"><a href="class_personnage.html#a960d6680688c5bee1868ef7238849e7b">Personnage::afficheStat</a></div><div class="ttdeci">void afficheStat()</div><div class="ttdoc">Affichage des stats du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:113</div></div>
+<div class="ttc" id="class_personnage_html_a383168e6874a1dee5d50fb5c539ccd5e"><div class="ttname"><a href="class_personnage.html#a383168e6874a1dee5d50fb5c539ccd5e">Personnage::chance_</a></div><div class="ttdeci">int chance_</div><div class="ttdoc">Chance du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:35</div></div>
+<div class="ttc" id="class_personnage_html_a261cbb9bb3b23a147d0f88b10eaa1857"><div class="ttname"><a href="class_personnage.html#a261cbb9bb3b23a147d0f88b10eaa1857">Personnage::getVie</a></div><div class="ttdeci">int getVie()</div><div class="ttdoc">Vie du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:260</div></div>
+<div class="ttc" id="class_personnage_html_a6be6e0b23a90c362ddd6d8a3493193b8"><div class="ttname"><a href="class_personnage.html#a6be6e0b23a90c362ddd6d8a3493193b8">Personnage::getCasque</a></div><div class="ttdeci">Equipement * getCasque()</div><div class="ttdoc">Casque du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:324</div></div>
+<div class="ttc" id="class_personnage_html_a07cf7fee80e4550e0aeec5f1fce6ae3d"><div class="ttname"><a href="class_personnage.html#a07cf7fee80e4550e0aeec5f1fce6ae3d">Personnage::degat_</a></div><div class="ttdeci">int degat_</div><div class="ttdoc">Dégâts du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:37</div></div>
+<div class="ttc" id="class_personnage_html_adbcab4e3e65e3413733c785c446ac3de"><div class="ttname"><a href="class_personnage.html#adbcab4e3e65e3413733c785c446ac3de">Personnage::initChance_</a></div><div class="ttdeci">const int initChance_</div><div class="ttdoc">Initialisation de la chance du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:28</div></div>
+<div class="ttc" id="class_personnage_html_a605a9b8a91b42ceb77632446cb1d24a1"><div class="ttname"><a href="class_personnage.html#a605a9b8a91b42ceb77632446cb1d24a1">Personnage::casque_</a></div><div class="ttdeci">Equipement * casque_</div><div class="ttdoc">Emplacement de casque du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:39</div></div>
+<div class="ttc" id="class_personnage_html_ac76efe3ade8ad20f13cfd304d261d2ef"><div class="ttname"><a href="class_personnage.html#ac76efe3ade8ad20f13cfd304d261d2ef">Personnage::uptoday_</a></div><div class="ttdeci">bool uptoday_</div><div class="ttdoc">Booleen pour l&amp;#39;actualisation des statistiques du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:44</div></div>
+<div class="ttc" id="class_personnage_html_adc9faad1d30de099542f716096a32a3b"><div class="ttname"><a href="class_personnage.html#adc9faad1d30de099542f716096a32a3b">Personnage::armure_</a></div><div class="ttdeci">int armure_</div><div class="ttdoc">Armure du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:38</div></div>
+<div class="ttc" id="class_personnage_html_a533d049b89eea9c730cb5baeebf3d1ae"><div class="ttname"><a href="class_personnage.html#a533d049b89eea9c730cb5baeebf3d1ae">Personnage::arme_</a></div><div class="ttdeci">Arme * arme_</div><div class="ttdoc">Emplacement de l&amp;#39;arme du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:42</div></div>
+<div class="ttc" id="class_personnage_html_a28565caaccdf1f8bc5fe76bf00b10311"><div class="ttname"><a href="class_personnage.html#a28565caaccdf1f8bc5fe76bf00b10311">Personnage::getTorse</a></div><div class="ttdeci">Equipement * getTorse()</div><div class="ttdoc">Torse du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:329</div></div>
+<div class="ttc" id="_arme_8hpp_html"><div class="ttname"><a href="_arme_8hpp.html">Arme.hpp</a></div></div>
+<div class="ttc" id="class_personnage_html_a311a98a60b751f7bb63897c29f57cd1c"><div class="ttname"><a href="class_personnage.html#a311a98a60b751f7bb63897c29f57cd1c">Personnage::setEquipement</a></div><div class="ttdeci">void setEquipement(Equipement *e)</div><div class="ttdoc">Equipe un équipement au personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:285</div></div>
+<div class="ttc" id="class_personnage_html_a9ebc2089ffd538189715e3cc58bab4e0"><div class="ttname"><a href="class_personnage.html#a9ebc2089ffd538189715e3cc58bab4e0">Personnage::modifierChance</a></div><div class="ttdeci">void modifierChance(int c)</div><div class="ttdoc">Modifie la chance du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:62</div></div>
+<div class="ttc" id="class_personnage_html_ac399a7dff2285dabcd75efb85a72e0fd"><div class="ttname"><a href="class_personnage.html#ac399a7dff2285dabcd75efb85a72e0fd">Personnage::getArme</a></div><div class="ttdeci">Arme * getArme()</div><div class="ttdoc">Arme du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:339</div></div>
+<div class="ttc" id="class_personnage_html_ab0c4cf4c9854ea6537cef5d1bf22aa19"><div class="ttname"><a href="class_personnage.html#ab0c4cf4c9854ea6537cef5d1bf22aa19">Personnage::jambe_</a></div><div class="ttdeci">Equipement * jambe_</div><div class="ttdoc">Emplacement des jambes du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:41</div></div>
+<div class="ttc" id="class_personnage_html_a08047c5570ab1a943e5222d468bc04e4"><div class="ttname"><a href="class_personnage.html#a08047c5570ab1a943e5222d468bc04e4">Personnage::initVieMax_</a></div><div class="ttdeci">const int initVieMax_</div><div class="ttdoc">Initialisation de la vie max du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:27</div></div>
+<div class="ttc" id="class_personnage_html_a43cb0829b230d9281adc847fb8218ca7"><div class="ttname"><a href="class_personnage.html#a43cb0829b230d9281adc847fb8218ca7">Personnage::force_</a></div><div class="ttdeci">int force_</div><div class="ttdoc">Force du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:36</div></div>
+<div class="ttc" id="class_personnage_html_ac63bee6c81c929308bf36d14253a43e2"><div class="ttname"><a href="class_personnage.html#ac63bee6c81c929308bf36d14253a43e2">Personnage::setJambe</a></div><div class="ttdeci">void setJambe(Equipement *jambe)</div><div class="ttdoc">Equipe des Jambes au personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:312</div></div>
+<div class="ttc" id="class_personnage_html_a020576cc14d815a1f4ebb9afe677e4c7"><div class="ttname"><a href="class_personnage.html#a020576cc14d815a1f4ebb9afe677e4c7">Personnage::trouverArme</a></div><div class="ttdeci">void trouverArme(Arme *a)</div><div class="ttdoc">Propose au personnage d&amp;#39;équiper une Arme. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:225</div></div>
+<div class="ttc" id="class_personnage_html_a588652816fc2e5646dea893786ebe1a2"><div class="ttname"><a href="class_personnage.html#a588652816fc2e5646dea893786ebe1a2">Personnage::initDegat_</a></div><div class="ttdeci">const int initDegat_</div><div class="ttdoc">Initialisation des dégâts du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:30</div></div>
+<div class="ttc" id="class_personnage_html_ac0fbc92a7e930ae26148e5e5247e1494"><div class="ttname"><a href="class_personnage.html#ac0fbc92a7e930ae26148e5e5247e1494">Personnage::getNom</a></div><div class="ttdeci">std::string getNom()</div><div class="ttdoc">Nom du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:254</div></div>
+<div class="ttc" id="class_personnage_html_a96cd651889938e58eafd48373f4c36c4"><div class="ttname"><a href="class_personnage.html#a96cd651889938e58eafd48373f4c36c4">Personnage::getVieMax</a></div><div class="ttdeci">int getVieMax()</div><div class="ttdoc">Vie max du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:267</div></div>
+<div class="ttc" id="class_arme_html"><div class="ttname"><a href="class_arme.html">Arme</a></div><div class="ttdoc">Gestion des armes. </div><div class="ttdef"><b>Definition:</b> Arme.hpp:18</div></div>
+<div class="ttc" id="class_personnage_html_ac24d31489cc986e870e60f257a9d0849"><div class="ttname"><a href="class_personnage.html#ac24d31489cc986e870e60f257a9d0849">Personnage::setArme</a></div><div class="ttdeci">void setArme(Arme *arme)</div><div class="ttdoc">Equipe une arme au personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:318</div></div>
+<div class="ttc" id="class_personnage_html_a6008154c7725bf6309cba8eb63cf2a94"><div class="ttname"><a href="class_personnage.html#a6008154c7725bf6309cba8eb63cf2a94">Personnage::setCasque</a></div><div class="ttdeci">void setCasque(Equipement *casque)</div><div class="ttdoc">Equipe un casque au personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:300</div></div>
+<div class="ttc" id="class_personnage_html_aa4cb28bb5fcd125cdbc632a51fb87b7d"><div class="ttname"><a href="class_personnage.html#aa4cb28bb5fcd125cdbc632a51fb87b7d">Personnage::setTorse</a></div><div class="ttdeci">void setTorse(Equipement *torse)</div><div class="ttdoc">Equipe un Torse au personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:306</div></div>
+<div class="ttc" id="class_personnage_html_a1f149feed4bebb34eef01785a5528b67"><div class="ttname"><a href="class_personnage.html#a1f149feed4bebb34eef01785a5528b67">Personnage::torse_</a></div><div class="ttdeci">Equipement * torse_</div><div class="ttdoc">Emplacement du torse du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:40</div></div>
+<div class="ttc" id="_equipement_8hpp_html"><div class="ttname"><a href="_equipement_8hpp.html">Equipement.hpp</a></div></div>
+<div class="ttc" id="class_personnage_html_a540b4f0590d9ee6f11e10c335ff740a8"><div class="ttname"><a href="class_personnage.html#a540b4f0590d9ee6f11e10c335ff740a8">Personnage::actuStat</a></div><div class="ttdeci">void actuStat()</div><div class="ttdoc">Actualisation des stats du personnage selon son équipement. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:73</div></div>
+<div class="ttc" id="class_personnage_html_a039ce12768debca443459af1eb3ca176"><div class="ttname"><a href="class_personnage.html#a039ce12768debca443459af1eb3ca176">Personnage::trouverEquipement</a></div><div class="ttdeci">void trouverEquipement(Equipement *e)</div><div class="ttdoc">Propose au personnage d&amp;#39;équiper un Equipement. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:137</div></div>
+<div class="ttc" id="class_personnage_html_ade3579c11cd6e6c535ff7290c5248ff5"><div class="ttname"><a href="class_personnage.html#ade3579c11cd6e6c535ff7290c5248ff5">Personnage::modifierForce</a></div><div class="ttdeci">void modifierForce(int f)</div><div class="ttdoc">Modifie la force du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:52</div></div>
+<div class="ttc" id="class_personnage_html_abfa0fbd5f6c38c7297964046de26db0a"><div class="ttname"><a href="class_personnage.html#abfa0fbd5f6c38c7297964046de26db0a">Personnage::afficheEquip</a></div><div class="ttdeci">void afficheEquip()</div><div class="ttdoc">Affichage de l&amp;#39;équipement du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:126</div></div>
+<div class="ttc" id="class_personnage_html_a40de0ba95f25eb6f1653b6a4183763ae"><div class="ttname"><a href="class_personnage.html#a40de0ba95f25eb6f1653b6a4183763ae">Personnage::getForce</a></div><div class="ttdeci">int getForce()</div><div class="ttdoc">Force du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:273</div></div>
+<div class="ttc" id="class_personnage_html_a8865af571ab1b0ba6493e855304dbce0"><div class="ttname"><a href="class_personnage.html#a8865af571ab1b0ba6493e855304dbce0">Personnage::initArmure_</a></div><div class="ttdeci">const int initArmure_</div><div class="ttdoc">Initialisation de l&amp;#39;amure du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:31</div></div>
+<div class="ttc" id="class_personnage_html_ab73c27e86ff1ad20b8702320f7db36e4"><div class="ttname"><a href="class_personnage.html#ab73c27e86ff1ad20b8702320f7db36e4">Personnage::vie_</a></div><div class="ttdeci">int vie_</div><div class="ttdoc">Vie du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:34</div></div>
+<div class="ttc" id="class_personnage_html_a9362a76b5b3219916d68697e0606bf2c"><div class="ttname"><a href="class_personnage.html#a9362a76b5b3219916d68697e0606bf2c">Personnage::modifierVie</a></div><div class="ttdeci">void modifierVie(int vie)</div><div class="ttdoc">Modifie la vie du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:36</div></div>
+<div class="ttc" id="class_personnage_html_a30b730a6908d2a27a3313a33fca2f2d0"><div class="ttname"><a href="class_personnage.html#a30b730a6908d2a27a3313a33fca2f2d0">Personnage::nom_</a></div><div class="ttdeci">const std::string nom_</div><div class="ttdoc">Initialisation du nom du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:26</div></div>
+<div class="ttc" id="class_personnage_html_aedf77fe983813e2cdfcf2581379432a1"><div class="ttname"><a href="class_personnage.html#aedf77fe983813e2cdfcf2581379432a1">Personnage::recoitDegat</a></div><div class="ttdeci">int recoitDegat(int pv)</div><div class="ttdoc">Méthode qui calcule le nombre de dégâts à infliger au personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:344</div></div>
+<div class="ttc" id="_item_factory_8hpp_html"><div class="ttname"><a href="_item_factory_8hpp.html">ItemFactory.hpp</a></div></div>
+<div class="ttc" id="class_personnage_html_a7b67c1690f8588ad97a445692ffb49fd"><div class="ttname"><a href="class_personnage.html#a7b67c1690f8588ad97a445692ffb49fd">Personnage::Personnage</a></div><div class="ttdeci">Personnage(std::string nom)</div><div class="ttdef"><b>Definition:</b> Personnage.cpp:13</div></div>
+<div class="ttc" id="class_personnage_html"><div class="ttname"><a href="class_personnage.html">Personnage</a></div><div class="ttdoc">Gestion du Personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:23</div></div>
+<div class="ttc" id="class_personnage_html_acbaafe5c61c924b5a4b3698d05fc365b"><div class="ttname"><a href="class_personnage.html#acbaafe5c61c924b5a4b3698d05fc365b">Personnage::envoieDegat</a></div><div class="ttdeci">int envoieDegat()</div><div class="ttdoc">Méthode qui calcule le nombre de dégâts infligé par le personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:359</div></div>
+<div class="ttc" id="class_personnage_html_a05bdf2a469885bb1fbb6c2e8f98972ab"><div class="ttname"><a href="class_personnage.html#a05bdf2a469885bb1fbb6c2e8f98972ab">Personnage::~Personnage</a></div><div class="ttdeci">~Personnage()</div><div class="ttdef"><b>Definition:</b> Personnage.cpp:28</div></div>
+<div class="ttc" id="class_personnage_html_af94423c768e960a49d04ad8514bf1b78"><div class="ttname"><a href="class_personnage.html#af94423c768e960a49d04ad8514bf1b78">Personnage::getJambe</a></div><div class="ttdeci">Equipement * getJambe()</div><div class="ttdoc">Jambe du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.cpp:334</div></div>
+<div class="ttc" id="class_personnage_html_aca50034f2dfacb9f575e2bc9802ce283"><div class="ttname"><a href="class_personnage.html#aca50034f2dfacb9f575e2bc9802ce283">Personnage::vieMax_</a></div><div class="ttdeci">int vieMax_</div><div class="ttdoc">Vie max du personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:33</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_personnage_8hpp.html">Personnage.hpp</a></li>
+    <li class="footer">Généré le Mercredi Novembre 27 2013 13:38:46 pour Labyrinth RPG par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
+</body>
+</html>

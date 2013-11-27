@@ -1,0 +1,10 @@
+<map id="TreasureArme::open" name="TreasureArme::open">
+<area shape="rect" id="node2" href="$class_treasure.html#ab3a8e251ac3ce8524e142e7f93979eb6" title="Creer une factory de Chance , Vie ou Force aléatoirement. " alt="" coords="188,5,311,29"/>
+<area shape="rect" id="node4" href="$class_item_factory.html#a8a413e61bf23ad24a549382e4e4e396f" title="Renvoie un pointeur vers une Epee pour que la factory concrete connaisse l&#39;objet a creer..." alt="" coords="186,53,313,77"/>
+<area shape="rect" id="node5" href="$class_item_factory.html#a65ed7c9978011812487e6b12b4155fbd" title="Renvoie un pointeur vers une Dague pour que la factory concrete connaisse l&#39;objet a creer..." alt="" coords="182,101,317,125"/>
+<area shape="rect" id="node6" href="$class_item_factory.html#afd402df71468d0a96ea12e92c80a185e" title="Renvoie un pointeur vers une Hache pour que la factory concrete connaisse l&#39;objet a creer..." alt="" coords="183,149,316,173"/>
+<area shape="rect" id="node7" href="$class_personnage.html#a020576cc14d815a1f4ebb9afe677e4c7" title="Propose au personnage d&#39;équiper une Arme. " alt="" coords="176,197,323,221"/>
+<area shape="rect" id="node3" href="$class_item_factory.html#ab10257decaf2cda946ec482a0dfdfe03" title="Methode qui creer une factory concrete en fonction du type passe en parametre. " alt="" coords="371,5,525,29"/>
+<area shape="rect" id="node8" href="$class_arme.html#ab1b18cfa41fac19fccedf2165b9ff33c" title="Retourne le nom de l&#39;arme. " alt="" coords="402,173,494,197"/>
+<area shape="rect" id="node9" href="$class_personnage.html#ac24d31489cc986e870e60f257a9d0849" title="Equipe une arme au personnage. " alt="" coords="385,221,511,245"/>
+</map>

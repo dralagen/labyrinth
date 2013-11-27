@@ -1,0 +1,241 @@
+\section{Référence de la classe D\-Arme\-C}
+\label{class_d_arme_c}\index{D\-Arme\-C@{D\-Arme\-C}}
+
+
+Decorator d'arme de Chance, hérite de \doxyref{D\-Arme}{p.}{class_d_arme}.  
+
+
+
+
+Graphe d'héritage de D\-Arme\-C\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{class_d_arme_c__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de D\-Arme\-C\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{class_d_arme_c__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf D\-Arme\-C} ({\bf Arme} $\ast$e)
+\item 
+{\bf $\sim$\-D\-Arme\-C} ()
+\item 
+int {\bf get\-Bforce} ()
+\begin{DoxyCompactList}\small\item\em Renvoie le bonus de force. \end{DoxyCompactList}\item 
+int {\bf get\-Bvie} ()
+\begin{DoxyCompactList}\small\item\em Renvoie le bonus de vie. \end{DoxyCompactList}\item 
+int {\bf get\-Bchance} ()
+\begin{DoxyCompactList}\small\item\em Renvoie le bonus de chance. \end{DoxyCompactList}\item 
+int {\bf get\-Degat} ()
+\begin{DoxyCompactList}\small\item\em Renvoie les dégâts. \end{DoxyCompactList}\item 
+virtual std\-::string {\bf get\-Nom} ()
+\begin{DoxyCompactList}\small\item\em Retourne le nom de l'arme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf replace} (std\-::string str)
+\begin{DoxyCompactList}\small\item\em Retourne le nom de l'arme modifié \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Arme} $\ast$ {\bf e\-\_\-}
+\begin{DoxyCompactList}\small\item\em \doxyref{Arme}{p.}{class_arme} pour les decorations. \end{DoxyCompactList}\item 
+std\-::string {\bf nom\-\_\-}
+\begin{DoxyCompactList}\small\item\em Nom de l'arme. \end{DoxyCompactList}\item 
+int {\bf degat\-\_\-}
+\begin{DoxyCompactList}\small\item\em Bonus de dégat. \end{DoxyCompactList}\item 
+int {\bf bchance\-\_\-}
+\begin{DoxyCompactList}\small\item\em Bonus de chance. \end{DoxyCompactList}\item 
+int {\bf bvie\-\_\-}
+\begin{DoxyCompactList}\small\item\em Bonus de vie. \end{DoxyCompactList}\item 
+int {\bf bforce\-\_\-}
+\begin{DoxyCompactList}\small\item\em Bonus de force. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Decorator d'arme de Chance, hérite de \doxyref{D\-Arme}{p.}{class_d_arme}. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{D\-Arme\-C@{D\-Arme\-C}!D\-Arme\-C@{D\-Arme\-C}}
+\index{D\-Arme\-C@{D\-Arme\-C}!DArmeC@{D\-Arme\-C}}
+\subsubsection[{D\-Arme\-C}]{\setlength{\rightskip}{0pt plus 5cm}D\-Arme\-C\-::\-D\-Arme\-C (
+\begin{DoxyParamCaption}
+\item[{{\bf Arme} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\label{class_d_arme_c_a955ace5c3e5610479dedc8fd9511c77e}
+\index{D\-Arme\-C@{D\-Arme\-C}!$\sim$\-D\-Arme\-C@{$\sim$\-D\-Arme\-C}}
+\index{$\sim$\-D\-Arme\-C@{$\sim$\-D\-Arme\-C}!DArmeC@{D\-Arme\-C}}
+\subsubsection[{$\sim$\-D\-Arme\-C}]{\setlength{\rightskip}{0pt plus 5cm}D\-Arme\-C\-::$\sim$\-D\-Arme\-C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_d_arme_c_a74bd85082699a5d3b534efcdcd8bb096}
+
+
+\subsection{Documentation des fonctions membres}
+\index{D\-Arme\-C@{D\-Arme\-C}!get\-Bchance@{get\-Bchance}}
+\index{get\-Bchance@{get\-Bchance}!DArmeC@{D\-Arme\-C}}
+\subsubsection[{get\-Bchance}]{\setlength{\rightskip}{0pt plus 5cm}int D\-Arme\-::get\-Bchance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_d_arme_ad50d376b08d62276b7cf50d2cd59d619}
+
+
+Renvoie le bonus de chance. 
+
+\begin{DoxyReturn}{Renvoie}
+bchance Bonus de chance 
+\end{DoxyReturn}
+
+
+Réimplémentée à partir de {\bf Arme} \doxyref{}{p.}{class_arme_a6cb83d15008174152e424bebd0921069}.
+
+\index{D\-Arme\-C@{D\-Arme\-C}!get\-Bforce@{get\-Bforce}}
+\index{get\-Bforce@{get\-Bforce}!DArmeC@{D\-Arme\-C}}
+\subsubsection[{get\-Bforce}]{\setlength{\rightskip}{0pt plus 5cm}int D\-Arme\-::get\-Bforce (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_d_arme_a76075bcbe61b20bd0e21e2d06fe33ab7}
+
+
+Renvoie le bonus de force. 
+
+\begin{DoxyReturn}{Renvoie}
+bforce Bonus de force 
+\end{DoxyReturn}
+
+
+Réimplémentée à partir de {\bf Arme} \doxyref{}{p.}{class_arme_a3939e914a9ccc898de76db26bc8c24e7}.
+
+\index{D\-Arme\-C@{D\-Arme\-C}!get\-Bvie@{get\-Bvie}}
+\index{get\-Bvie@{get\-Bvie}!DArmeC@{D\-Arme\-C}}
+\subsubsection[{get\-Bvie}]{\setlength{\rightskip}{0pt plus 5cm}int D\-Arme\-::get\-Bvie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_d_arme_a91b3a3100969a568a8408ba098668398}
+
+
+Renvoie le bonus de vie. 
+
+\begin{DoxyReturn}{Renvoie}
+bvie Bonus de vie 
+\end{DoxyReturn}
+
+
+Réimplémentée à partir de {\bf Arme} \doxyref{}{p.}{class_arme_a479453fea0d6789e34ccaf193b3098ce}.
+
+\index{D\-Arme\-C@{D\-Arme\-C}!get\-Degat@{get\-Degat}}
+\index{get\-Degat@{get\-Degat}!DArmeC@{D\-Arme\-C}}
+\subsubsection[{get\-Degat}]{\setlength{\rightskip}{0pt plus 5cm}int D\-Arme\-::get\-Degat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_d_arme_a7396e865674067f4f21a28e6babc0fad}
+
+
+Renvoie les dégâts. 
+
+\begin{DoxyReturn}{Renvoie}
+degat Dégâts 
+\end{DoxyReturn}
+
+
+Réimplémentée à partir de {\bf Arme} \doxyref{}{p.}{class_arme_a06ced3532b0e60cc900674a94c0cf29b}.
+
+\index{D\-Arme\-C@{D\-Arme\-C}!get\-Nom@{get\-Nom}}
+\index{get\-Nom@{get\-Nom}!DArmeC@{D\-Arme\-C}}
+\subsubsection[{get\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Arme\-::get\-Nom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_arme_ab1b18cfa41fac19fccedf2165b9ff33c}
+
+
+Retourne le nom de l'arme. 
+
+\begin{DoxyReturn}{Renvoie}
+Nom 
+\end{DoxyReturn}
+\index{D\-Arme\-C@{D\-Arme\-C}!replace@{replace}}
+\index{replace@{replace}!DArmeC@{D\-Arme\-C}}
+\subsubsection[{replace}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string D\-Arme\-::replace (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_d_arme_a604caa7ee656dab58d15b7cf86863e3d}
+
+
+Retourne le nom de l'arme modifié 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Chaine} & de caractère à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+nom nom modifié 
+\end{DoxyReturn}
+
+
+\subsection{Documentation des données membres}
+\index{D\-Arme\-C@{D\-Arme\-C}!bchance\-\_\-@{bchance\-\_\-}}
+\index{bchance\-\_\-@{bchance\-\_\-}!DArmeC@{D\-Arme\-C}}
+\subsubsection[{bchance\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Arme\-::bchance\-\_\-\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_arme_a688792d4393f9e690aa103a8e68c541c}
+
+
+Bonus de chance. 
+
+\index{D\-Arme\-C@{D\-Arme\-C}!bforce\-\_\-@{bforce\-\_\-}}
+\index{bforce\-\_\-@{bforce\-\_\-}!DArmeC@{D\-Arme\-C}}
+\subsubsection[{bforce\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Arme\-::bforce\-\_\-\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_arme_a779e9838aa9c50d948f58b593fc5954b}
+
+
+Bonus de force. 
+
+\index{D\-Arme\-C@{D\-Arme\-C}!bvie\-\_\-@{bvie\-\_\-}}
+\index{bvie\-\_\-@{bvie\-\_\-}!DArmeC@{D\-Arme\-C}}
+\subsubsection[{bvie\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Arme\-::bvie\-\_\-\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_arme_a4606c075b38ef49f6ed2ed06d6185173}
+
+
+Bonus de vie. 
+
+\index{D\-Arme\-C@{D\-Arme\-C}!degat\-\_\-@{degat\-\_\-}}
+\index{degat\-\_\-@{degat\-\_\-}!DArmeC@{D\-Arme\-C}}
+\subsubsection[{degat\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Arme\-::degat\-\_\-\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_arme_a15f99a8b95c2d6f5beb9f473df79e399}
+
+
+Bonus de dégat. 
+
+\index{D\-Arme\-C@{D\-Arme\-C}!e\-\_\-@{e\-\_\-}}
+\index{e\-\_\-@{e\-\_\-}!DArmeC@{D\-Arme\-C}}
+\subsubsection[{e\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Arme}$\ast$ D\-Arme\-::e\-\_\-\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_d_arme_a03856c36a22fe5bb49f6479d0b864df2}
+
+
+\doxyref{Arme}{p.}{class_arme} pour les decorations. 
+
+\index{D\-Arme\-C@{D\-Arme\-C}!nom\-\_\-@{nom\-\_\-}}
+\index{nom\-\_\-@{nom\-\_\-}!DArmeC@{D\-Arme\-C}}
+\subsubsection[{nom\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Arme\-::nom\-\_\-\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_arme_a347394a5ab5c3230259c1b7117f3e8d6}
+
+
+Nom de l'arme. 
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/{\bf D\-Arme\-C.\-hpp}\item 
+src/{\bf D\-Arme\-C.\-cpp}\end{DoxyCompactItemize}

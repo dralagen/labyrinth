@@ -1,0 +1,8 @@
+<map id="Labyrinth::goWest" name="Labyrinth::goWest">
+<area shape="rect" id="node2" href="$class_labyrinth.html#ae5ffa83a10d415f1f635a58bc25254ba" title="Verifie si il y a une porte a l&#39;ouest. " alt="" coords="171,53,285,77"/>
+<area shape="rect" id="node5" href="$class_labyrinth.html#a775a1d628f1179dfca9655dbca6a43f3" title="actualise ma position courante " alt="" coords="163,101,293,125"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#ac586bb4db152210ed424f77d68505502" title="Calcule la position de la salle dans le tableau. " alt="" coords="342,53,450,77"/>
+<area shape="rect" id="node4" href="$class_room.html#aafd7ca57898b2d8f4123fcd755646987" title="Récupère si l&#39;access est possible à l&#39;Ouest. " alt="" coords="348,5,444,29"/>
+<area shape="rect" id="node6" href="$class_room.html#a50d357cd356b3b1d1bd8e7d9217e5b71" title="Etat de la salle : visité " alt="" coords="345,101,447,125"/>
+<area shape="rect" id="node7" href="$class_room.html#ac5949bc2fb5288c733369ad51af7b084" title="Etat de la salle : ma position. " alt="" coords="342,149,450,173"/>
+</map>

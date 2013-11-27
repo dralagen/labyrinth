@@ -1,0 +1,6 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_item_factory.html" title="Factory abstraite pour la creation des factory concretes. " alt="" coords="6,53,85,77"/>
+<area shape="rect" id="node2" href="$class_chance_factory.html" title="Factory concrete pour creer des objets de type Chance. " alt="" coords="134,5,229,29"/>
+<area shape="rect" id="node3" href="$class_force_factory.html" title="Factory concrete pour creer des objets de type Force. " alt="" coords="138,53,225,77"/>
+<area shape="rect" id="node4" href="$class_vie_factory.html" title="Factory concrete pour creer des objets de type Vie. " alt="" coords="145,101,218,125"/>
+</map>
