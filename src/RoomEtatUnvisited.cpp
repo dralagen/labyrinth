@@ -1,3 +1,10 @@
+/**
+ * \file RoomEtatUnvisited.cpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "RoomEtatUnvisited.hpp"
 #include "Room.hpp"
 
@@ -16,3 +23,4 @@ void RoomEtatUnvisited::print(std::string &t,
 }
 
 bool RoomEtatUnvisited::visited() const { return false; }
+

@@ -1,3 +1,10 @@
+/**
+ * \file Personnage.cpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "Personnage.hpp"
 
 Personnage::Personnage(std::string nom): nom_(nom), initVieMax_(100), initChance_(10), initForce_(20), initDegat_(0), initArmure_(0)

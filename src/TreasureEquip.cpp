@@ -1,3 +1,10 @@
+/**
+ * \file TreasureEquip.cpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "TreasureEquip.hpp"
 #include "DEquipA.hpp"
 #include "DEquipC.hpp"
@@ -50,3 +57,4 @@ void TreasureEquip::open(Personnage &p) {
 	p.trouverEquipement(e);
 
 }
+

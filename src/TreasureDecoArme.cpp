@@ -1,3 +1,10 @@
+/**
+ * \file TreasureDecoArme.cpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "TreasureDecoArme.hpp"
 #include "DArme.hpp"
 #include "DArmeD.hpp"
@@ -42,3 +49,4 @@ void TreasureDecoArme::open(Personnage &p) {
 	}
 	sleep(1);
 }
+
