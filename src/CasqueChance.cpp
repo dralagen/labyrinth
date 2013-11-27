@@ -1,3 +1,10 @@
+/**
+ * \file CasqueChance.cpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "CasqueChance.hpp"
 
 CasqueChance::CasqueChance():Casque()

@@ -1,3 +1,10 @@
+/**
+ * \file Monster.cpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "Monster.hpp"
 
 Monster::Monster(int lvl): m_life(MONSTER_LIFE_MAX*lvl), m_damage(5*lvl), m_lvl(lvl){
@@ -35,3 +42,4 @@ std::string Monster::getName() {
 bool Monster::isAlive() {
 	return (m_life > 0);
 }
+

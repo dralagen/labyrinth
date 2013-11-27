@@ -1,3 +1,10 @@
+/**
+ * \file TreasureDecoEquip.cpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "TreasureDecoEquip.hpp"
 
 #include <unistd.h>

@@ -1,3 +1,10 @@
+/**
+ * \file DEquip.cpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "DEquip.hpp"
 
 #include <iostream>

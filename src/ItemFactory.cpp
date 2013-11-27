@@ -1,3 +1,10 @@
+/**
+ * \file ItemFactory.cpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "ItemFactory.hpp"
 
 ItemFactory* ItemFactory::CreateFactory(ITEM_FACTORIES factory)
@@ -16,3 +23,4 @@ ItemFactory* ItemFactory::CreateFactory(ITEM_FACTORIES factory)
 	}
 
 }
+

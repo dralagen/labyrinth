@@ -1,3 +1,10 @@
+/**
+ * \file MonsterRoom.cpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "MonsterRoom.hpp"
 
 MonsterRoom::MonsterRoom(int lvl):RoomComportement(lvl), m_monster(lvl)  {
@@ -37,3 +44,4 @@ int MonsterRoom::action(Personnage &perso) {
 	return RC_UNDO;
 
 }
+

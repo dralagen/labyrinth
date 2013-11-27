@@ -1,3 +1,10 @@
+/**
+ * \file Equipement.cpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "Equipement.hpp"
 
 Equipement::Equipement():nom_(""), armure_(0), bchance_(0), bvie_(0), bforce_(0) {
