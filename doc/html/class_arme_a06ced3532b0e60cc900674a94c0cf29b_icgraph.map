@@ -1,0 +1,22 @@
+<map id="Arme::getDegat" name="Arme::getDegat">
+<area shape="rect" id="node2" href="$class_d_arme.html#a7396e865674067f4f21a28e6babc0fad" title="Renvoie les dégâts. " alt="" coords="161,210,268,234"/>
+<area shape="rect" id="node3" href="$class_personnage.html#a540b4f0590d9ee6f11e10c335ff740a8" title="Actualisation des stats du personnage selon son équipement. " alt="" coords="152,258,277,282"/>
+<area shape="rect" id="node4" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie. " alt="" coords="557,14,645,38"/>
+<area shape="rect" id="node6" href="$class_personnage.html#ade3579c11cd6e6c535ff7290c5248ff5" title="Modifie la force du personnage. " alt="" coords="525,110,677,134"/>
+<area shape="rect" id="node7" href="$class_personnage.html#a9ebc2089ffd538189715e3cc58bab4e0" title="Modifie la chance du personnage. " alt="" coords="521,159,682,183"/>
+<area shape="rect" id="node8" href="$class_personnage.html#a960d6680688c5bee1868ef7238849e7b" title="Affichage des stats du personnage. " alt="" coords="331,60,467,84"/>
+<area shape="rect" id="node11" href="$class_personnage.html#ac0fbc92a7e930ae26148e5e5247e1494" title="Nom du personnage. " alt="" coords="337,354,461,378"/>
+<area shape="rect" id="node16" href="$class_personnage.html#a261cbb9bb3b23a147d0f88b10eaa1857" title="Vie du personnage. " alt="" coords="341,210,457,234"/>
+<area shape="rect" id="node17" href="$class_personnage.html#a96cd651889938e58eafd48373f4c36c4" title="Vie max du personnage. " alt="" coords="331,402,467,426"/>
+<area shape="rect" id="node18" href="$class_personnage.html#a40de0ba95f25eb6f1653b6a4183763ae" title="Force du personnage. " alt="" coords="334,450,463,474"/>
+<area shape="rect" id="node19" href="$class_personnage.html#aa5eabf95d3d0d31385bda9ae8427d57e" title="Chance du personnage. " alt="" coords="329,498,468,522"/>
+<area shape="rect" id="node20" href="$class_personnage.html#aedf77fe983813e2cdfcf2581379432a1" title="Méthode qui calcule le nombre de dégâts à infliger au personnage. " alt="" coords="328,306,469,330"/>
+<area shape="rect" id="node21" href="$class_personnage.html#acbaafe5c61c924b5a4b3698d05fc365b" title="Méthode qui calcule le nombre de dégâts infligé par le personnage. " alt="" coords="325,258,472,282"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="765,14,811,38"/>
+<area shape="rect" id="node9" href="$class_personnage.html#a9362a76b5b3219916d68697e0606bf2c" title="Modifie la vie du personnage. " alt="" coords="532,62,671,86"/>
+<area shape="rect" id="node10" href="$class_empty_room.html#a31fdcab2da18636773d28f393e48cd7b" title="Redonne un petit peu de points de vie au joueur. " alt="" coords="731,62,845,86"/>
+<area shape="rect" id="node12" href="$class_end_room.html#ad7691b55dcf3ed863c8a774138105900" title="Combat un boss puis fini le jeu. " alt="" coords="736,282,840,306"/>
+<area shape="rect" id="node13" href="$class_monster_room.html#ae69b27248fe57b2043d9653f3e831cb8" title="Combat un montre. " alt="" coords="539,258,663,282"/>
+<area shape="rect" id="node14" href="$class_start_room.html#aae3c5e25ac0742c84ac6596d57bf3edb" title="Ne fait rien. " alt="" coords="547,356,655,380"/>
+<area shape="rect" id="node15" href="$class_treasure_room.html#af2719c053785a2523dcd902820766bea" title="Ouvre un coffre, le Personnage peut reçoit un bonus aleatoire plus ou moins bien. ..." alt="" coords="537,404,666,428"/>
+</map>

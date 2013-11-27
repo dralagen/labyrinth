@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Labyrinth RPG:  Fichier source de src/Game.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Labyrinth RPG
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Un labyrinthe en 2D additionné à un Jeu de Rôle</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_game_8hpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Game.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_game_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef GAME_HPP</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GAME_HPP</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_labyrinth_8hpp.html">Labyrinth.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_personnage_8hpp.html">Personnage.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_item_factory_8hpp.html">ItemFactory.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_equipement_8hpp.html">Equipement.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_equip_a_8hpp.html">DEquipA.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_equip_c_8hpp.html">DEquipC.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_equip_v_8hpp.html">DEquipV.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_equip_f_8hpp.html">DEquipF.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_arme_d_8hpp.html">DArmeD.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_arme_f_8hpp.html">DArmeF.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_arme_c_8hpp.html">DArmeC.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_arme_v_8hpp.html">DArmeV.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_game.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_game.html">Game</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="class_game.html#af7c8b29a2938f3881bfd598e4e156d3d">Game</a>(std::string name,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                 <span class="keywordtype">int</span> x = <a class="code" href="_labyrinth_8hpp.html#a89a4e38d6f15736bb39cfd01bb95762a">LABYRINTH_TAILLE_X_DEFAULT</a>,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                 <span class="keywordtype">int</span> y = <a class="code" href="_labyrinth_8hpp.html#ab7e503f84cf86fe2bbcc0cdf341734e9">LABYRINTH_TAILLE_Y_DEFAULT</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_game.html#a35c46e76cde7773850820233754e0bc0">launch</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_game.html#a70b3d987f25dd5e1aeb6ab18cfedc387">chooseRoom</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_game.html#ae650b8abcc603580654b9aa375dc260a">help</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_game.html#ae240b11d8e568e768097735d85794d32">   64</a></span>&#160;        <a class="code" href="class_labyrinth.html">Labyrinth</a> <a class="code" href="class_game.html#ae240b11d8e568e768097735d85794d32">m_labyrinth</a>; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_game.html#aa61c11c5da4f4b2e977c230d8db13578">   65</a></span>&#160;        <a class="code" href="class_personnage.html">Personnage</a> <a class="code" href="class_game.html#aa61c11c5da4f4b2e977c230d8db13578">m_perso</a>; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GAME_HPP */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="_d_equip_f_8hpp_html"><div class="ttname"><a href="_d_equip_f_8hpp.html">DEquipF.hpp</a></div></div>
+<div class="ttc" id="_labyrinth_8hpp_html_ab7e503f84cf86fe2bbcc0cdf341734e9"><div class="ttname"><a href="_labyrinth_8hpp.html#ab7e503f84cf86fe2bbcc0cdf341734e9">LABYRINTH_TAILLE_Y_DEFAULT</a></div><div class="ttdeci">#define LABYRINTH_TAILLE_Y_DEFAULT</div><div class="ttdef"><b>Definition:</b> Labyrinth.hpp:27</div></div>
+<div class="ttc" id="class_labyrinth_html"><div class="ttname"><a href="class_labyrinth.html">Labyrinth</a></div><div class="ttdoc">gestion de labyrinthe </div><div class="ttdef"><b>Definition:</b> Labyrinth.hpp:44</div></div>
+<div class="ttc" id="class_game_html_aa61c11c5da4f4b2e977c230d8db13578"><div class="ttname"><a href="class_game.html#aa61c11c5da4f4b2e977c230d8db13578">Game::m_perso</a></div><div class="ttdeci">Personnage m_perso</div><div class="ttdoc">le personnage </div><div class="ttdef"><b>Definition:</b> Game.hpp:65</div></div>
+<div class="ttc" id="_personnage_8hpp_html"><div class="ttname"><a href="_personnage_8hpp.html">Personnage.hpp</a></div></div>
+<div class="ttc" id="_d_arme_d_8hpp_html"><div class="ttname"><a href="_d_arme_d_8hpp.html">DArmeD.hpp</a></div></div>
+<div class="ttc" id="_d_arme_f_8hpp_html"><div class="ttname"><a href="_d_arme_f_8hpp.html">DArmeF.hpp</a></div></div>
+<div class="ttc" id="class_game_html_af7c8b29a2938f3881bfd598e4e156d3d"><div class="ttname"><a href="class_game.html#af7c8b29a2938f3881bfd598e4e156d3d">Game::Game</a></div><div class="ttdeci">Game(std::string name, int x=LABYRINTH_TAILLE_X_DEFAULT, int y=LABYRINTH_TAILLE_Y_DEFAULT)</div><div class="ttdoc">constucteur </div><div class="ttdef"><b>Definition:</b> Game.cpp:12</div></div>
+<div class="ttc" id="class_game_html_a70b3d987f25dd5e1aeb6ab18cfedc387"><div class="ttname"><a href="class_game.html#a70b3d987f25dd5e1aeb6ab18cfedc387">Game::chooseRoom</a></div><div class="ttdeci">void chooseRoom()</div><div class="ttdoc">Choisie une direction et execute l&amp;#39;action de la salle. </div><div class="ttdef"><b>Definition:</b> Game.cpp:30</div></div>
+<div class="ttc" id="_d_equip_a_8hpp_html"><div class="ttname"><a href="_d_equip_a_8hpp.html">DEquipA.hpp</a></div></div>
+<div class="ttc" id="_d_arme_v_8hpp_html"><div class="ttname"><a href="_d_arme_v_8hpp.html">DArmeV.hpp</a></div></div>
+<div class="ttc" id="class_game_html"><div class="ttname"><a href="class_game.html">Game</a></div><div class="ttdoc">Gère une partie manage un labyrinth avec un joueur. </div><div class="ttdef"><b>Definition:</b> Game.hpp:33</div></div>
+<div class="ttc" id="_equipement_8hpp_html"><div class="ttname"><a href="_equipement_8hpp.html">Equipement.hpp</a></div></div>
+<div class="ttc" id="_d_equip_v_8hpp_html"><div class="ttname"><a href="_d_equip_v_8hpp.html">DEquipV.hpp</a></div></div>
+<div class="ttc" id="_labyrinth_8hpp_html"><div class="ttname"><a href="_labyrinth_8hpp.html">Labyrinth.hpp</a></div></div>
+<div class="ttc" id="class_game_html_a35c46e76cde7773850820233754e0bc0"><div class="ttname"><a href="class_game.html#a35c46e76cde7773850820233754e0bc0">Game::launch</a></div><div class="ttdeci">void launch()</div><div class="ttdoc">Débute le déroulement d&amp;#39;une partie. </div><div class="ttdef"><b>Definition:</b> Game.cpp:14</div></div>
+<div class="ttc" id="class_game_html_ae240b11d8e568e768097735d85794d32"><div class="ttname"><a href="class_game.html#ae240b11d8e568e768097735d85794d32">Game::m_labyrinth</a></div><div class="ttdeci">Labyrinth m_labyrinth</div><div class="ttdoc">le labyrinthe </div><div class="ttdef"><b>Definition:</b> Game.hpp:64</div></div>
+<div class="ttc" id="_item_factory_8hpp_html"><div class="ttname"><a href="_item_factory_8hpp.html">ItemFactory.hpp</a></div></div>
+<div class="ttc" id="_d_equip_c_8hpp_html"><div class="ttname"><a href="_d_equip_c_8hpp.html">DEquipC.hpp</a></div></div>
+<div class="ttc" id="_labyrinth_8hpp_html_a89a4e38d6f15736bb39cfd01bb95762a"><div class="ttname"><a href="_labyrinth_8hpp.html#a89a4e38d6f15736bb39cfd01bb95762a">LABYRINTH_TAILLE_X_DEFAULT</a></div><div class="ttdeci">#define LABYRINTH_TAILLE_X_DEFAULT</div><div class="ttdef"><b>Definition:</b> Labyrinth.hpp:26</div></div>
+<div class="ttc" id="class_personnage_html"><div class="ttname"><a href="class_personnage.html">Personnage</a></div><div class="ttdoc">Gestion du Personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:23</div></div>
+<div class="ttc" id="_d_arme_c_8hpp_html"><div class="ttname"><a href="_d_arme_c_8hpp.html">DArmeC.hpp</a></div></div>
+<div class="ttc" id="class_game_html_ae650b8abcc603580654b9aa375dc260a"><div class="ttname"><a href="class_game.html#ae650b8abcc603580654b9aa375dc260a">Game::help</a></div><div class="ttdeci">void help()</div><div class="ttdoc">Affiche les commandes. </div><div class="ttdef"><b>Definition:</b> Game.cpp:73</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_game_8hpp.html">Game.hpp</a></li>
+    <li class="footer">Généré le Mercredi Novembre 27 2013 13:38:46 pour Labyrinth RPG par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
+</body>
+</html>

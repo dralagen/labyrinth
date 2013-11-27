@@ -1,0 +1,123 @@
+\section{Référence de la classe Room\-Etat\-Position}
+\label{class_room_etat_position}\index{Room\-Etat\-Position@{Room\-Etat\-Position}}
+
+
+Salle identifé comme ma position.  
+
+
+
+
+Graphe d'héritage de Room\-Etat\-Position\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_room_etat_position__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Room\-Etat\-Position\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_room_etat_position__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Room\-Etat\-Position} ({\bf Room} $\ast$r)
+\item 
+virtual {\bf $\sim$\-Room\-Etat\-Position} ()
+\item 
+virtual void {\bf print} (std\-::string \&t, std\-::string \&c, std\-::string \&b) const 
+\begin{DoxyCompactList}\small\item\em Ajout le contenue sur 3 lignes en fonction de l'etat. \end{DoxyCompactList}\item 
+virtual bool {\bf visited} () const 
+\begin{DoxyCompactList}\small\item\em Verifie si on a déjà visité cette salle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Room} $\ast$ {\bf m\-\_\-room}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Salle identifé comme ma position. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Room\-Etat\-Position@{Room\-Etat\-Position}!Room\-Etat\-Position@{Room\-Etat\-Position}}
+\index{Room\-Etat\-Position@{Room\-Etat\-Position}!RoomEtatPosition@{Room\-Etat\-Position}}
+\subsubsection[{Room\-Etat\-Position}]{\setlength{\rightskip}{0pt plus 5cm}Room\-Etat\-Position\-::\-Room\-Etat\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf Room} $\ast$}]{r}
+\end{DoxyParamCaption}
+)}\label{class_room_etat_position_a3633a62802450527044e6301e1bae887}
+\index{Room\-Etat\-Position@{Room\-Etat\-Position}!$\sim$\-Room\-Etat\-Position@{$\sim$\-Room\-Etat\-Position}}
+\index{$\sim$\-Room\-Etat\-Position@{$\sim$\-Room\-Etat\-Position}!RoomEtatPosition@{Room\-Etat\-Position}}
+\subsubsection[{$\sim$\-Room\-Etat\-Position}]{\setlength{\rightskip}{0pt plus 5cm}Room\-Etat\-Position\-::$\sim$\-Room\-Etat\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_room_etat_position_ae6c55ec8bc7a969143e5e2f5cd80ca9c}
+
+
+\subsection{Documentation des fonctions membres}
+\index{Room\-Etat\-Position@{Room\-Etat\-Position}!print@{print}}
+\index{print@{print}!RoomEtatPosition@{Room\-Etat\-Position}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void Room\-Etat\-Position\-::print (
+\begin{DoxyParamCaption}
+\item[{std\-::string \&}]{t, }
+\item[{std\-::string \&}]{c, }
+\item[{std\-::string \&}]{b}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_room_etat_position_a56ac0e9929a77a90ddd776f25f72ea65}
+
+
+Ajout le contenue sur 3 lignes en fonction de l'etat. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & flux de la première lignes \\
+\hline
+{\em c} & flux de la deuxième lignes \\
+\hline
+{\em b} & flux de la troisième lignes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+
+
+Implémente {\bf Room\-Etat} \doxyref{}{p.}{class_room_etat_a89c60a235c1373e1e7ecf8bbe9a7d3d3}.
+
+\index{Room\-Etat\-Position@{Room\-Etat\-Position}!visited@{visited}}
+\index{visited@{visited}!RoomEtatPosition@{Room\-Etat\-Position}}
+\subsubsection[{visited}]{\setlength{\rightskip}{0pt plus 5cm}bool Room\-Etat\-Position\-::visited (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_room_etat_position_aab1a503a6852677591c061c06513a5a8}
+
+
+Verifie si on a déjà visité cette salle. 
+
+\begin{DoxyReturn}{Renvoie}
+vrai si l'on déjà visité 
+\end{DoxyReturn}
+
+
+Implémente {\bf Room\-Etat} \doxyref{}{p.}{class_room_etat_ae02e142515e04ec9ad1219c1a1b99b61}.
+
+
+
+\subsection{Documentation des données membres}
+\index{Room\-Etat\-Position@{Room\-Etat\-Position}!m\-\_\-room@{m\-\_\-room}}
+\index{m\-\_\-room@{m\-\_\-room}!RoomEtatPosition@{Room\-Etat\-Position}}
+\subsubsection[{m\-\_\-room}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Room}$\ast$ Room\-Etat\-::m\-\_\-room\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_room_etat_a5b23317f60b9d268bbe669955b3c4725}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/{\bf Room\-Etat\-Position.\-hpp}\item 
+src/{\bf Room\-Etat\-Position.\-cpp}\end{DoxyCompactItemize}
