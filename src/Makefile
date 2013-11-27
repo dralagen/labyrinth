@@ -35,6 +35,6 @@ clean:
 	@rm -rf *.o
 
 mrproper: clean
-	@echo "Delete Binary
+	@echo "Delete Binary"
 	@rm -rf $(EXEC)
 
