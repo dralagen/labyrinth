@@ -1,3 +1,10 @@
+/**
+ * \file TreasureEquip.hpp
+ *
+ * \author Dralagen
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #ifndef TREASUREEQUIP_HPP
 #define TREASUREEQUIP_HPP
 
@@ -5,10 +12,14 @@
 #include "Equipement.hpp"
 #include "ItemFactory.hpp"
 
+/**
+ * \class TreasureEquip
+ * \brief Coffre de salle contenant un équipements aléatoir
+ */
 class TreasureEquip : public Treasure
 {
 	public:
-	    /**
+	   /**
 		 * \brief Constructeur
 		 *
 		 * Construit un coffre contenant un equipement de type Casque , Torse ou Jambe avec un ou plusieurs bonus

@@ -21,6 +21,16 @@ class MonsterRoom : public RoomComportement
 		MonsterRoom (int lvl=1);
 		virtual ~MonsterRoom ();
 
+		/**
+		 * \brief Combat un montre
+		 *
+		 * Si le joueur gagne il peut ouvire un coffre (TreasureRoom)
+		 * sinon la partie se fini
+		 *
+		 * \param p Personnage qui l'éxecute
+		 *
+		 * \return l'action realisé
+		 */
 		virtual int action(Personnage &perso);
 	private:
 		Monster m_monster; ///< Monstre à combattre

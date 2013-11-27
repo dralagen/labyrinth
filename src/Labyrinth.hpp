@@ -28,7 +28,8 @@
 
 
 /**
- * \struct position utilise des coordonnée pour stocker une position
+ * \struct pos
+ * \brief position utilise des coordonnée pour stocker une position
  *
  */
 struct pos {
@@ -225,3 +226,4 @@ class Labyrinth
 };
 
 #endif // LABYRINTH_HPP
+
