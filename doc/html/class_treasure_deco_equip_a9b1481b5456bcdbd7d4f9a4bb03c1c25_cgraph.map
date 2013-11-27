@@ -1,0 +1,13 @@
+<map id="TreasureDecoEquip::open" name="TreasureDecoEquip::open">
+<area shape="rect" id="node2" href="$class_personnage.html#abfa0fbd5f6c38c7297964046de26db0a" title="Affichage de l&#39;équipement du personnage. " alt="" coords="209,29,353,53"/>
+<area shape="rect" id="node5" href="$class_personnage.html#a6be6e0b23a90c362ddd6d8a3493193b8" title="Casque du personnage. " alt="" coords="212,77,351,101"/>
+<area shape="rect" id="node6" href="$class_personnage.html#a28565caaccdf1f8bc5fe76bf00b10311" title="Torse du personnage. " alt="" coords="217,125,346,149"/>
+<area shape="rect" id="node7" href="$class_personnage.html#af94423c768e960a49d04ad8514bf1b78" title="Jambe du personnage. " alt="" coords="215,173,348,197"/>
+<area shape="rect" id="node8" href="$class_personnage.html#a311a98a60b751f7bb63897c29f57cd1c" title="Equipe un équipement au personnage. " alt="" coords="203,221,360,245"/>
+<area shape="rect" id="node3" href="$class_equipement.html#a0b0426a70bfce6e7c3efac605b75cd8e" title="Retourne le nom de l&#39;equipement. " alt="" coords="416,5,539,29"/>
+<area shape="rect" id="node4" href="$class_arme.html#ab1b18cfa41fac19fccedf2165b9ff33c" title="Retourne le nom de l&#39;arme. " alt="" coords="431,53,523,77"/>
+<area shape="rect" id="node9" href="$class_equipement.html#a05b2c9d4cf22b6aefb6603fa4e322aa2" title="Renvoie le type de l&#39;equipement. " alt="" coords="425,149,530,173"/>
+<area shape="rect" id="node10" href="$class_personnage.html#a6008154c7725bf6309cba8eb63cf2a94" title="Equipe un casque au personnage. " alt="" coords="409,197,546,221"/>
+<area shape="rect" id="node11" href="$class_personnage.html#aa4cb28bb5fcd125cdbc632a51fb87b7d" title="Equipe un Torse au personnage. " alt="" coords="413,245,541,269"/>
+<area shape="rect" id="node12" href="$class_personnage.html#ac63bee6c81c929308bf36d14253a43e2" title="Equipe des Jambes au personnage. " alt="" coords="411,293,543,317"/>
+</map>

@@ -1,0 +1,241 @@
+\section{Référence de la classe D\-Equip\-V}
+\label{class_d_equip_v}\index{D\-Equip\-V@{D\-Equip\-V}}
+
+
+Decorator d'équipement de vie , hérite de \doxyref{D\-Equip}{p.}{class_d_equip}.  
+
+
+
+
+Graphe d'héritage de D\-Equip\-V\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{class_d_equip_v__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de D\-Equip\-V\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{class_d_equip_v__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf D\-Equip\-V} ({\bf Equipement} $\ast$e)
+\item 
+{\bf $\sim$\-D\-Equip\-V} ()
+\item 
+int {\bf get\-Bforce} ()
+\begin{DoxyCompactList}\small\item\em Renvoie le bonus de force. \end{DoxyCompactList}\item 
+int {\bf get\-Bvie} ()
+\begin{DoxyCompactList}\small\item\em Renvoie le bonus de vie. \end{DoxyCompactList}\item 
+int {\bf get\-Bchance} ()
+\begin{DoxyCompactList}\small\item\em Renvoie le bonus de chance. \end{DoxyCompactList}\item 
+int {\bf get\-Armure} ()
+\begin{DoxyCompactList}\small\item\em Renvoie le bonus d'armure. \end{DoxyCompactList}\item 
+int {\bf type} ()
+\begin{DoxyCompactList}\small\item\em Renvoie le type de l'\doxyref{Equipement}{p.}{class_equipement}. \end{DoxyCompactList}\item 
+virtual std\-::string {\bf get\-Nom} ()
+\begin{DoxyCompactList}\small\item\em Retourne le nom de l'equipement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string {\bf replace} (std\-::string str)
+\begin{DoxyCompactList}\small\item\em Retourne le nom de l'équipement modifié \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Equipement} $\ast$ {\bf e\-\_\-}
+\begin{DoxyCompactList}\small\item\em \doxyref{Equipement}{p.}{class_equipement} e pour la décoration. \end{DoxyCompactList}\item 
+std\-::string {\bf nom\-\_\-}
+\item 
+int {\bf armure\-\_\-}
+\item 
+int {\bf bchance\-\_\-}
+\item 
+int {\bf bvie\-\_\-}
+\item 
+int {\bf bforce\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Decorator d'équipement de vie , hérite de \doxyref{D\-Equip}{p.}{class_d_equip}. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{D\-Equip\-V@{D\-Equip\-V}!D\-Equip\-V@{D\-Equip\-V}}
+\index{D\-Equip\-V@{D\-Equip\-V}!DEquipV@{D\-Equip\-V}}
+\subsubsection[{D\-Equip\-V}]{\setlength{\rightskip}{0pt plus 5cm}D\-Equip\-V\-::\-D\-Equip\-V (
+\begin{DoxyParamCaption}
+\item[{{\bf Equipement} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\label{class_d_equip_v_acf6d9090ca81524f3c8118e4ff405416}
+\index{D\-Equip\-V@{D\-Equip\-V}!$\sim$\-D\-Equip\-V@{$\sim$\-D\-Equip\-V}}
+\index{$\sim$\-D\-Equip\-V@{$\sim$\-D\-Equip\-V}!DEquipV@{D\-Equip\-V}}
+\subsubsection[{$\sim$\-D\-Equip\-V}]{\setlength{\rightskip}{0pt plus 5cm}D\-Equip\-V\-::$\sim$\-D\-Equip\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_d_equip_v_a65412bd8e4ee5b08b2b6a9a0e915b844}
+
+
+\subsection{Documentation des fonctions membres}
+\index{D\-Equip\-V@{D\-Equip\-V}!get\-Armure@{get\-Armure}}
+\index{get\-Armure@{get\-Armure}!DEquipV@{D\-Equip\-V}}
+\subsubsection[{get\-Armure}]{\setlength{\rightskip}{0pt plus 5cm}int D\-Equip\-::get\-Armure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_d_equip_a7b2c8227ae884c23ccc8f3a2e5702186}
+
+
+Renvoie le bonus d'armure. 
+
+\begin{DoxyReturn}{Renvoie}
+armure Bonus d'armure 
+\end{DoxyReturn}
+
+
+Réimplémentée à partir de {\bf Equipement} \doxyref{}{p.}{class_equipement_a8577d49fd00b8effa39388feccb29901}.
+
+\index{D\-Equip\-V@{D\-Equip\-V}!get\-Bchance@{get\-Bchance}}
+\index{get\-Bchance@{get\-Bchance}!DEquipV@{D\-Equip\-V}}
+\subsubsection[{get\-Bchance}]{\setlength{\rightskip}{0pt plus 5cm}int D\-Equip\-::get\-Bchance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_d_equip_a39407c92f0de87306a33f57fd22ce997}
+
+
+Renvoie le bonus de chance. 
+
+\begin{DoxyReturn}{Renvoie}
+bchance Bonus de chance 
+\end{DoxyReturn}
+
+
+Réimplémentée à partir de {\bf Equipement} \doxyref{}{p.}{class_equipement_a73485135eacdf30d5f49c9e34e5f4d0e}.
+
+\index{D\-Equip\-V@{D\-Equip\-V}!get\-Bforce@{get\-Bforce}}
+\index{get\-Bforce@{get\-Bforce}!DEquipV@{D\-Equip\-V}}
+\subsubsection[{get\-Bforce}]{\setlength{\rightskip}{0pt plus 5cm}int D\-Equip\-::get\-Bforce (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_d_equip_adb6645ce01c12a4cb3fe0b522ea6b25e}
+
+
+Renvoie le bonus de force. 
+
+\begin{DoxyReturn}{Renvoie}
+bforce Bonus de force 
+\end{DoxyReturn}
+
+
+Réimplémentée à partir de {\bf Equipement} \doxyref{}{p.}{class_equipement_aabcf10fd762945fa4a37a9cf8321f463}.
+
+\index{D\-Equip\-V@{D\-Equip\-V}!get\-Bvie@{get\-Bvie}}
+\index{get\-Bvie@{get\-Bvie}!DEquipV@{D\-Equip\-V}}
+\subsubsection[{get\-Bvie}]{\setlength{\rightskip}{0pt plus 5cm}int D\-Equip\-::get\-Bvie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_d_equip_a085ea4ac21c238d8c147ff4e6d74794f}
+
+
+Renvoie le bonus de vie. 
+
+\begin{DoxyReturn}{Renvoie}
+bvie Bonus de vie 
+\end{DoxyReturn}
+
+
+Réimplémentée à partir de {\bf Equipement} \doxyref{}{p.}{class_equipement_ad9fd7528c4f181970b7a0877f4145f89}.
+
+\index{D\-Equip\-V@{D\-Equip\-V}!get\-Nom@{get\-Nom}}
+\index{get\-Nom@{get\-Nom}!DEquipV@{D\-Equip\-V}}
+\subsubsection[{get\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Equipement\-::get\-Nom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_equipement_a0b0426a70bfce6e7c3efac605b75cd8e}
+
+
+Retourne le nom de l'equipement. 
+
+\begin{DoxyReturn}{Renvoie}
+Nom 
+\end{DoxyReturn}
+\index{D\-Equip\-V@{D\-Equip\-V}!replace@{replace}}
+\index{replace@{replace}!DEquipV@{D\-Equip\-V}}
+\subsubsection[{replace}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string D\-Equip\-::replace (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_d_equip_af8a7e83f36094af1f34f5c81df6e3900}
+
+
+Retourne le nom de l'équipement modifié 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Chaine} & de caractère à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+nom nom modifié 
+\end{DoxyReturn}
+\index{D\-Equip\-V@{D\-Equip\-V}!type@{type}}
+\index{type@{type}!DEquipV@{D\-Equip\-V}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}int D\-Equip\-::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_d_equip_a7c31f807517e5940e899780ac6d7a5c3}
+
+
+Renvoie le type de l'\doxyref{Equipement}{p.}{class_equipement}. 
+
+\begin{DoxyReturn}{Renvoie}
+entier type de l'\doxyref{Equipement}{p.}{class_equipement} 
+\end{DoxyReturn}
+
+
+Implémente {\bf Equipement} \doxyref{}{p.}{class_equipement_a05b2c9d4cf22b6aefb6603fa4e322aa2}.
+
+
+
+\subsection{Documentation des données membres}
+\index{D\-Equip\-V@{D\-Equip\-V}!armure\-\_\-@{armure\-\_\-}}
+\index{armure\-\_\-@{armure\-\_\-}!DEquipV@{D\-Equip\-V}}
+\subsubsection[{armure\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Equipement\-::armure\-\_\-\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_equipement_a69339ce4f1f5fe7e6fcdeda5b74c14a4}
+\index{D\-Equip\-V@{D\-Equip\-V}!bchance\-\_\-@{bchance\-\_\-}}
+\index{bchance\-\_\-@{bchance\-\_\-}!DEquipV@{D\-Equip\-V}}
+\subsubsection[{bchance\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Equipement\-::bchance\-\_\-\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_equipement_aa70effa6a8144fe1f4fe874af7139793}
+\index{D\-Equip\-V@{D\-Equip\-V}!bforce\-\_\-@{bforce\-\_\-}}
+\index{bforce\-\_\-@{bforce\-\_\-}!DEquipV@{D\-Equip\-V}}
+\subsubsection[{bforce\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Equipement\-::bforce\-\_\-\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_equipement_af87cf3f291386d5401be6994dd8fb8be}
+\index{D\-Equip\-V@{D\-Equip\-V}!bvie\-\_\-@{bvie\-\_\-}}
+\index{bvie\-\_\-@{bvie\-\_\-}!DEquipV@{D\-Equip\-V}}
+\subsubsection[{bvie\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Equipement\-::bvie\-\_\-\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_equipement_a73ac5bff40e3f6bf1d8e6f0e524e750f}
+\index{D\-Equip\-V@{D\-Equip\-V}!e\-\_\-@{e\-\_\-}}
+\index{e\-\_\-@{e\-\_\-}!DEquipV@{D\-Equip\-V}}
+\subsubsection[{e\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Equipement}$\ast$ D\-Equip\-::e\-\_\-\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_d_equip_a0243fb57df463a3d0a7c57e6e7980210}
+
+
+\doxyref{Equipement}{p.}{class_equipement} e pour la décoration. 
+
+\index{D\-Equip\-V@{D\-Equip\-V}!nom\-\_\-@{nom\-\_\-}}
+\index{nom\-\_\-@{nom\-\_\-}!DEquipV@{D\-Equip\-V}}
+\subsubsection[{nom\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Equipement\-::nom\-\_\-\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_equipement_a930290aac01ecd40c7a646ab8f66d742}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/{\bf D\-Equip\-V.\-hpp}\item 
+src/{\bf D\-Equip\-V.\-cpp}\end{DoxyCompactItemize}

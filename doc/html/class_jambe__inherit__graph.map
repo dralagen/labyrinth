@@ -1,0 +1,6 @@
+<map id="Jambe" name="Jambe">
+<area shape="rect" id="node3" href="$class_jambe_chance.html" title="JambeChance herite de Jambe. " alt="" coords="5,337,120,418"/>
+<area shape="rect" id="node4" href="$class_jambe_force.html" title="JambeForce herite de Jambe. " alt="" coords="145,337,249,418"/>
+<area shape="rect" id="node5" href="$class_jambe_vie.html" title="JambeVie herite de Jambe. " alt="" coords="274,337,365,418"/>
+<area shape="rect" id="node2" href="$class_equipement.html" title="Gestion des equipements. " alt="" coords="146,5,248,147"/>
+</map>

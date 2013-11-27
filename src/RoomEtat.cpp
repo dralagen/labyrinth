@@ -1,3 +1,10 @@
+/**
+ * \file RoomEtat.cpp
+ *
+ * \author Adrien Garandel & Alexis Ruchaud
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "RoomEtat.hpp"
 #include "Room.hpp"
 

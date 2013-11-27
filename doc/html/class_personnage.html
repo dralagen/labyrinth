@@ -1,0 +1,1203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Labyrinth RPG: Référence de la classe Personnage</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Labyrinth RPG
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Un labyrinthe en 2D additionné à un Jeu de Rôle</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_personnage.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="class_personnage-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Personnage</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Gestion du <a class="el" href="class_personnage.html" title="Gestion du Personnage. ">Personnage</a>.  
+ <a href="class_personnage.html#details">Plus de détails...</a></p>
+<div class="dynheader">
+Graphe de collaboration de Personnage:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_personnage__coll__graph.png" border="0" usemap="#_personnage_coll__map" alt="Collaboration graph"/></div>
+<map name="_personnage_coll__map" id="_personnage_coll__map">
+<area shape="rect" id="node2" href="class_arme.html" title="Gestion des armes. " alt="" coords="5,5,91,147"/><area shape="rect" id="node3" href="class_equipement.html" title="Gestion des equipements. " alt="" coords="115,5,217,147"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a7b67c1690f8588ad97a445692ffb49fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a7b67c1690f8588ad97a445692ffb49fd">Personnage</a> (std::string nom)</td></tr>
+<tr class="separator:a7b67c1690f8588ad97a445692ffb49fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05bdf2a469885bb1fbb6c2e8f98972ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a05bdf2a469885bb1fbb6c2e8f98972ab">~Personnage</a> ()</td></tr>
+<tr class="separator:a05bdf2a469885bb1fbb6c2e8f98972ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9362a76b5b3219916d68697e0606bf2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a9362a76b5b3219916d68697e0606bf2c">modifierVie</a> (int vie)</td></tr>
+<tr class="memdesc:a9362a76b5b3219916d68697e0606bf2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie la vie du personnage.  <a href="#a9362a76b5b3219916d68697e0606bf2c">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a9362a76b5b3219916d68697e0606bf2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade3579c11cd6e6c535ff7290c5248ff5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#ade3579c11cd6e6c535ff7290c5248ff5">modifierForce</a> (int f)</td></tr>
+<tr class="memdesc:ade3579c11cd6e6c535ff7290c5248ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie la force du personnage.  <a href="#ade3579c11cd6e6c535ff7290c5248ff5">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ade3579c11cd6e6c535ff7290c5248ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ebc2089ffd538189715e3cc58bab4e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a9ebc2089ffd538189715e3cc58bab4e0">modifierChance</a> (int c)</td></tr>
+<tr class="memdesc:a9ebc2089ffd538189715e3cc58bab4e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie la chance du personnage.  <a href="#a9ebc2089ffd538189715e3cc58bab4e0">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a9ebc2089ffd538189715e3cc58bab4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a540b4f0590d9ee6f11e10c335ff740a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a540b4f0590d9ee6f11e10c335ff740a8">actuStat</a> ()</td></tr>
+<tr class="memdesc:a540b4f0590d9ee6f11e10c335ff740a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualisation des stats du personnage selon son équipement.  <a href="#a540b4f0590d9ee6f11e10c335ff740a8">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a540b4f0590d9ee6f11e10c335ff740a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a960d6680688c5bee1868ef7238849e7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a960d6680688c5bee1868ef7238849e7b">afficheStat</a> ()</td></tr>
+<tr class="memdesc:a960d6680688c5bee1868ef7238849e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affichage des stats du personnage.  <a href="#a960d6680688c5bee1868ef7238849e7b">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a960d6680688c5bee1868ef7238849e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa0fbd5f6c38c7297964046de26db0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#abfa0fbd5f6c38c7297964046de26db0a">afficheEquip</a> ()</td></tr>
+<tr class="memdesc:abfa0fbd5f6c38c7297964046de26db0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affichage de l'équipement du personnage.  <a href="#abfa0fbd5f6c38c7297964046de26db0a">Plus de détails...</a><br/></td></tr>
+<tr class="separator:abfa0fbd5f6c38c7297964046de26db0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fbc92a7e930ae26148e5e5247e1494"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#ac0fbc92a7e930ae26148e5e5247e1494">getNom</a> ()</td></tr>
+<tr class="memdesc:ac0fbc92a7e930ae26148e5e5247e1494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nom du personnage.  <a href="#ac0fbc92a7e930ae26148e5e5247e1494">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ac0fbc92a7e930ae26148e5e5247e1494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a261cbb9bb3b23a147d0f88b10eaa1857"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a261cbb9bb3b23a147d0f88b10eaa1857">getVie</a> ()</td></tr>
+<tr class="memdesc:a261cbb9bb3b23a147d0f88b10eaa1857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vie du personnage.  <a href="#a261cbb9bb3b23a147d0f88b10eaa1857">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a261cbb9bb3b23a147d0f88b10eaa1857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96cd651889938e58eafd48373f4c36c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a96cd651889938e58eafd48373f4c36c4">getVieMax</a> ()</td></tr>
+<tr class="memdesc:a96cd651889938e58eafd48373f4c36c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vie max du personnage.  <a href="#a96cd651889938e58eafd48373f4c36c4">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a96cd651889938e58eafd48373f4c36c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5eabf95d3d0d31385bda9ae8427d57e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#aa5eabf95d3d0d31385bda9ae8427d57e">getChance</a> ()</td></tr>
+<tr class="memdesc:aa5eabf95d3d0d31385bda9ae8427d57e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Chance du personnage.  <a href="#aa5eabf95d3d0d31385bda9ae8427d57e">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aa5eabf95d3d0d31385bda9ae8427d57e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40de0ba95f25eb6f1653b6a4183763ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a40de0ba95f25eb6f1653b6a4183763ae">getForce</a> ()</td></tr>
+<tr class="memdesc:a40de0ba95f25eb6f1653b6a4183763ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force du personnage.  <a href="#a40de0ba95f25eb6f1653b6a4183763ae">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a40de0ba95f25eb6f1653b6a4183763ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311a98a60b751f7bb63897c29f57cd1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a311a98a60b751f7bb63897c29f57cd1c">setEquipement</a> (<a class="el" href="class_equipement.html">Equipement</a> *e)</td></tr>
+<tr class="memdesc:a311a98a60b751f7bb63897c29f57cd1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equipe un équipement au personnage.  <a href="#a311a98a60b751f7bb63897c29f57cd1c">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a311a98a60b751f7bb63897c29f57cd1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6008154c7725bf6309cba8eb63cf2a94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a6008154c7725bf6309cba8eb63cf2a94">setCasque</a> (<a class="el" href="class_equipement.html">Equipement</a> *casque)</td></tr>
+<tr class="memdesc:a6008154c7725bf6309cba8eb63cf2a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equipe un casque au personnage.  <a href="#a6008154c7725bf6309cba8eb63cf2a94">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a6008154c7725bf6309cba8eb63cf2a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4cb28bb5fcd125cdbc632a51fb87b7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#aa4cb28bb5fcd125cdbc632a51fb87b7d">setTorse</a> (<a class="el" href="class_equipement.html">Equipement</a> *torse)</td></tr>
+<tr class="memdesc:aa4cb28bb5fcd125cdbc632a51fb87b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equipe un <a class="el" href="class_torse.html" title="Torse herite de Equipement. ">Torse</a> au personnage.  <a href="#aa4cb28bb5fcd125cdbc632a51fb87b7d">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aa4cb28bb5fcd125cdbc632a51fb87b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63bee6c81c929308bf36d14253a43e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#ac63bee6c81c929308bf36d14253a43e2">setJambe</a> (<a class="el" href="class_equipement.html">Equipement</a> *jambe)</td></tr>
+<tr class="memdesc:ac63bee6c81c929308bf36d14253a43e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equipe des Jambes au personnage.  <a href="#ac63bee6c81c929308bf36d14253a43e2">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ac63bee6c81c929308bf36d14253a43e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac24d31489cc986e870e60f257a9d0849"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#ac24d31489cc986e870e60f257a9d0849">setArme</a> (<a class="el" href="class_arme.html">Arme</a> *arme)</td></tr>
+<tr class="memdesc:ac24d31489cc986e870e60f257a9d0849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equipe une arme au personnage.  <a href="#ac24d31489cc986e870e60f257a9d0849">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ac24d31489cc986e870e60f257a9d0849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6be6e0b23a90c362ddd6d8a3493193b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_equipement.html">Equipement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a6be6e0b23a90c362ddd6d8a3493193b8">getCasque</a> ()</td></tr>
+<tr class="memdesc:a6be6e0b23a90c362ddd6d8a3493193b8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_casque.html" title="Casque herite de Equipement. ">Casque</a> du personnage.  <a href="#a6be6e0b23a90c362ddd6d8a3493193b8">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a6be6e0b23a90c362ddd6d8a3493193b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28565caaccdf1f8bc5fe76bf00b10311"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_equipement.html">Equipement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a28565caaccdf1f8bc5fe76bf00b10311">getTorse</a> ()</td></tr>
+<tr class="memdesc:a28565caaccdf1f8bc5fe76bf00b10311"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_torse.html" title="Torse herite de Equipement. ">Torse</a> du personnage.  <a href="#a28565caaccdf1f8bc5fe76bf00b10311">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a28565caaccdf1f8bc5fe76bf00b10311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af94423c768e960a49d04ad8514bf1b78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_equipement.html">Equipement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#af94423c768e960a49d04ad8514bf1b78">getJambe</a> ()</td></tr>
+<tr class="memdesc:af94423c768e960a49d04ad8514bf1b78"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_jambe.html" title="Jambe herite de Equipement. ">Jambe</a> du personnage.  <a href="#af94423c768e960a49d04ad8514bf1b78">Plus de détails...</a><br/></td></tr>
+<tr class="separator:af94423c768e960a49d04ad8514bf1b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac399a7dff2285dabcd75efb85a72e0fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_arme.html">Arme</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#ac399a7dff2285dabcd75efb85a72e0fd">getArme</a> ()</td></tr>
+<tr class="memdesc:ac399a7dff2285dabcd75efb85a72e0fd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_arme.html" title="Gestion des armes. ">Arme</a> du personnage.  <a href="#ac399a7dff2285dabcd75efb85a72e0fd">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ac399a7dff2285dabcd75efb85a72e0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039ce12768debca443459af1eb3ca176"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a039ce12768debca443459af1eb3ca176">trouverEquipement</a> (<a class="el" href="class_equipement.html">Equipement</a> *e)</td></tr>
+<tr class="memdesc:a039ce12768debca443459af1eb3ca176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propose au personnage d'équiper un <a class="el" href="class_equipement.html" title="Gestion des equipements. ">Equipement</a>.  <a href="#a039ce12768debca443459af1eb3ca176">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a039ce12768debca443459af1eb3ca176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a020576cc14d815a1f4ebb9afe677e4c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a020576cc14d815a1f4ebb9afe677e4c7">trouverArme</a> (<a class="el" href="class_arme.html">Arme</a> *a)</td></tr>
+<tr class="memdesc:a020576cc14d815a1f4ebb9afe677e4c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propose au personnage d'équiper une <a class="el" href="class_arme.html" title="Gestion des armes. ">Arme</a>.  <a href="#a020576cc14d815a1f4ebb9afe677e4c7">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a020576cc14d815a1f4ebb9afe677e4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf77fe983813e2cdfcf2581379432a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#aedf77fe983813e2cdfcf2581379432a1">recoitDegat</a> (int pv)</td></tr>
+<tr class="memdesc:aedf77fe983813e2cdfcf2581379432a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode qui calcule le nombre de dégâts à infliger au personnage.  <a href="#aedf77fe983813e2cdfcf2581379432a1">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aedf77fe983813e2cdfcf2581379432a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbaafe5c61c924b5a4b3698d05fc365b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#acbaafe5c61c924b5a4b3698d05fc365b">envoieDegat</a> ()</td></tr>
+<tr class="memdesc:acbaafe5c61c924b5a4b3698d05fc365b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode qui calcule le nombre de dégâts infligé par le personnage.  <a href="#acbaafe5c61c924b5a4b3698d05fc365b">Plus de détails...</a><br/></td></tr>
+<tr class="separator:acbaafe5c61c924b5a4b3698d05fc365b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dfc3d986a2c53e5f5f3e0f3138ade5b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a0dfc3d986a2c53e5f5f3e0f3138ade5b">isAlive</a> ()</td></tr>
+<tr class="memdesc:a0dfc3d986a2c53e5f5f3e0f3138ade5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test si le personnage est vivant.  <a href="#a0dfc3d986a2c53e5f5f3e0f3138ade5b">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a0dfc3d986a2c53e5f5f3e0f3138ade5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a30b730a6908d2a27a3313a33fca2f2d0"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a30b730a6908d2a27a3313a33fca2f2d0">nom_</a></td></tr>
+<tr class="memdesc:a30b730a6908d2a27a3313a33fca2f2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation du nom du personnage.  <a href="#a30b730a6908d2a27a3313a33fca2f2d0">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a30b730a6908d2a27a3313a33fca2f2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08047c5570ab1a943e5222d468bc04e4"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a08047c5570ab1a943e5222d468bc04e4">initVieMax_</a></td></tr>
+<tr class="memdesc:a08047c5570ab1a943e5222d468bc04e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation de la vie max du personnage.  <a href="#a08047c5570ab1a943e5222d468bc04e4">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a08047c5570ab1a943e5222d468bc04e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbcab4e3e65e3413733c785c446ac3de"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#adbcab4e3e65e3413733c785c446ac3de">initChance_</a></td></tr>
+<tr class="memdesc:adbcab4e3e65e3413733c785c446ac3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation de la chance du personnage.  <a href="#adbcab4e3e65e3413733c785c446ac3de">Plus de détails...</a><br/></td></tr>
+<tr class="separator:adbcab4e3e65e3413733c785c446ac3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e27cb04f9c27188eca2dcf85e52c46b"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a6e27cb04f9c27188eca2dcf85e52c46b">initForce_</a></td></tr>
+<tr class="memdesc:a6e27cb04f9c27188eca2dcf85e52c46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation de la force du personnage.  <a href="#a6e27cb04f9c27188eca2dcf85e52c46b">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a6e27cb04f9c27188eca2dcf85e52c46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a588652816fc2e5646dea893786ebe1a2"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a588652816fc2e5646dea893786ebe1a2">initDegat_</a></td></tr>
+<tr class="memdesc:a588652816fc2e5646dea893786ebe1a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation des dégâts du personnage.  <a href="#a588652816fc2e5646dea893786ebe1a2">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a588652816fc2e5646dea893786ebe1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8865af571ab1b0ba6493e855304dbce0"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a8865af571ab1b0ba6493e855304dbce0">initArmure_</a></td></tr>
+<tr class="memdesc:a8865af571ab1b0ba6493e855304dbce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation de l'amure du personnage.  <a href="#a8865af571ab1b0ba6493e855304dbce0">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a8865af571ab1b0ba6493e855304dbce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca50034f2dfacb9f575e2bc9802ce283"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#aca50034f2dfacb9f575e2bc9802ce283">vieMax_</a></td></tr>
+<tr class="memdesc:aca50034f2dfacb9f575e2bc9802ce283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vie max du personnage.  <a href="#aca50034f2dfacb9f575e2bc9802ce283">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aca50034f2dfacb9f575e2bc9802ce283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab73c27e86ff1ad20b8702320f7db36e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#ab73c27e86ff1ad20b8702320f7db36e4">vie_</a></td></tr>
+<tr class="memdesc:ab73c27e86ff1ad20b8702320f7db36e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vie du personnage.  <a href="#ab73c27e86ff1ad20b8702320f7db36e4">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ab73c27e86ff1ad20b8702320f7db36e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a383168e6874a1dee5d50fb5c539ccd5e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a383168e6874a1dee5d50fb5c539ccd5e">chance_</a></td></tr>
+<tr class="memdesc:a383168e6874a1dee5d50fb5c539ccd5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Chance du personnage.  <a href="#a383168e6874a1dee5d50fb5c539ccd5e">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a383168e6874a1dee5d50fb5c539ccd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43cb0829b230d9281adc847fb8218ca7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a43cb0829b230d9281adc847fb8218ca7">force_</a></td></tr>
+<tr class="memdesc:a43cb0829b230d9281adc847fb8218ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force du personnage.  <a href="#a43cb0829b230d9281adc847fb8218ca7">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a43cb0829b230d9281adc847fb8218ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07cf7fee80e4550e0aeec5f1fce6ae3d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a07cf7fee80e4550e0aeec5f1fce6ae3d">degat_</a></td></tr>
+<tr class="memdesc:a07cf7fee80e4550e0aeec5f1fce6ae3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dégâts du personnage.  <a href="#a07cf7fee80e4550e0aeec5f1fce6ae3d">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a07cf7fee80e4550e0aeec5f1fce6ae3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc9faad1d30de099542f716096a32a3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#adc9faad1d30de099542f716096a32a3b">armure_</a></td></tr>
+<tr class="memdesc:adc9faad1d30de099542f716096a32a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Armure du personnage.  <a href="#adc9faad1d30de099542f716096a32a3b">Plus de détails...</a><br/></td></tr>
+<tr class="separator:adc9faad1d30de099542f716096a32a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a605a9b8a91b42ceb77632446cb1d24a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_equipement.html">Equipement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a605a9b8a91b42ceb77632446cb1d24a1">casque_</a></td></tr>
+<tr class="memdesc:a605a9b8a91b42ceb77632446cb1d24a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emplacement de casque du personnage.  <a href="#a605a9b8a91b42ceb77632446cb1d24a1">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a605a9b8a91b42ceb77632446cb1d24a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f149feed4bebb34eef01785a5528b67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_equipement.html">Equipement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a1f149feed4bebb34eef01785a5528b67">torse_</a></td></tr>
+<tr class="memdesc:a1f149feed4bebb34eef01785a5528b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emplacement du torse du personnage.  <a href="#a1f149feed4bebb34eef01785a5528b67">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a1f149feed4bebb34eef01785a5528b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c4cf4c9854ea6537cef5d1bf22aa19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_equipement.html">Equipement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#ab0c4cf4c9854ea6537cef5d1bf22aa19">jambe_</a></td></tr>
+<tr class="memdesc:ab0c4cf4c9854ea6537cef5d1bf22aa19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emplacement des jambes du personnage.  <a href="#ab0c4cf4c9854ea6537cef5d1bf22aa19">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ab0c4cf4c9854ea6537cef5d1bf22aa19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a533d049b89eea9c730cb5baeebf3d1ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_arme.html">Arme</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#a533d049b89eea9c730cb5baeebf3d1ae">arme_</a></td></tr>
+<tr class="memdesc:a533d049b89eea9c730cb5baeebf3d1ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emplacement de l'arme du personnage.  <a href="#a533d049b89eea9c730cb5baeebf3d1ae">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a533d049b89eea9c730cb5baeebf3d1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac76efe3ade8ad20f13cfd304d261d2ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_personnage.html#ac76efe3ade8ad20f13cfd304d261d2ef">uptoday_</a></td></tr>
+<tr class="memdesc:ac76efe3ade8ad20f13cfd304d261d2ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Booleen pour l'actualisation des statistiques du personnage.  <a href="#ac76efe3ade8ad20f13cfd304d261d2ef">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ac76efe3ade8ad20f13cfd304d261d2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Gestion du <a class="el" href="class_personnage.html" title="Gestion du Personnage. ">Personnage</a>. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a7b67c1690f8588ad97a445692ffb49fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Personnage::Personnage </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>nom</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a05bdf2a469885bb1fbb6c2e8f98972ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Personnage::~Personnage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="a540b4f0590d9ee6f11e10c335ff740a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personnage::actuStat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Actualisation des stats du personnage selon son équipement. </p>
+
+</div>
+</div>
+<a class="anchor" id="abfa0fbd5f6c38c7297964046de26db0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personnage::afficheEquip </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affichage de l'équipement du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="a960d6680688c5bee1868ef7238849e7b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personnage::afficheStat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affichage des stats du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="acbaafe5c61c924b5a4b3698d05fc365b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Personnage::envoieDegat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Méthode qui calcule le nombre de dégâts infligé par le personnage. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>degat Dégâts aprés prise en compte des dégâts de la chance et de la force du personnage </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac399a7dff2285dabcd75efb85a72e0fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_arme.html">Arme</a> * Personnage::getArme </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_arme.html" title="Gestion des armes. ">Arme</a> du personnage. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>arme <a class="el" href="class_arme.html" title="Gestion des armes. ">Arme</a> équipé sur le personnage </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6be6e0b23a90c362ddd6d8a3493193b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_equipement.html">Equipement</a> * Personnage::getCasque </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_casque.html" title="Casque herite de Equipement. ">Casque</a> du personnage. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>casque <a class="el" href="class_casque.html" title="Casque herite de Equipement. ">Casque</a> équipé sur le personnage </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa5eabf95d3d0d31385bda9ae8427d57e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Personnage::getChance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Chance du personnage. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>chance Retourne la chance du personnage </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a40de0ba95f25eb6f1653b6a4183763ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Personnage::getForce </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Force du personnage. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>force Retourne la force du personnage </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af94423c768e960a49d04ad8514bf1b78"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_equipement.html">Equipement</a> * Personnage::getJambe </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_jambe.html" title="Jambe herite de Equipement. ">Jambe</a> du personnage. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>jambe <a class="el" href="class_jambe.html" title="Jambe herite de Equipement. ">Jambe</a> équipé sur le personnage </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac0fbc92a7e930ae26148e5e5247e1494"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Personnage::getNom </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nom du personnage. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>nom Retourne le nom du personnage </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a28565caaccdf1f8bc5fe76bf00b10311"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_equipement.html">Equipement</a> * Personnage::getTorse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_torse.html" title="Torse herite de Equipement. ">Torse</a> du personnage. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>torse <a class="el" href="class_torse.html" title="Torse herite de Equipement. ">Torse</a> équipé sur le personnage </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a261cbb9bb3b23a147d0f88b10eaa1857"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Personnage::getVie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vie du personnage. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>vie Retourne la vie du personnage </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a96cd651889938e58eafd48373f4c36c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Personnage::getVieMax </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vie max du personnage. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>vieMax Retourne la vie max du personnage </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0dfc3d986a2c53e5f5f3e0f3138ade5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Personnage::isAlive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test si le personnage est vivant. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>bool Vrai si le personnage est toujours vivant </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9ebc2089ffd538189715e3cc58bab4e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personnage::modifierChance </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modifie la chance du personnage. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Entier positif ou negatif, chance à ajouter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ade3579c11cd6e6c535ff7290c5248ff5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personnage::modifierForce </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modifie la force du personnage. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>Entier positif ou negatif, force à ajouter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9362a76b5b3219916d68697e0606bf2c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personnage::modifierVie </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vie</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modifie la vie du personnage. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vie</td><td>Entier positif ou negatif, vie à ajouter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aedf77fe983813e2cdfcf2581379432a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Personnage::recoitDegat </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Méthode qui calcule le nombre de dégâts à infliger au personnage. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pv</td><td>Nombre de dégâts à infliger </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>degat Dégâts réel après prise en compte de l'armure </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac24d31489cc986e870e60f257a9d0849"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personnage::setArme </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_arme.html">Arme</a> *&#160;</td>
+          <td class="paramname"><em>arme</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Equipe une arme au personnage. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arme</td><td><a class="el" href="class_arme.html" title="Gestion des armes. ">Arme</a> à équiper au personnage </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6008154c7725bf6309cba8eb63cf2a94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personnage::setCasque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_equipement.html">Equipement</a> *&#160;</td>
+          <td class="paramname"><em>casque</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Equipe un casque au personnage. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">casque</td><td><a class="el" href="class_casque.html" title="Casque herite de Equipement. ">Casque</a> à équiper au personnage </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a311a98a60b751f7bb63897c29f57cd1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personnage::setEquipement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_equipement.html">Equipement</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Equipe un équipement au personnage. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td><a class="el" href="class_equipement.html" title="Gestion des equipements. ">Equipement</a> à équiper au personnage </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac63bee6c81c929308bf36d14253a43e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personnage::setJambe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_equipement.html">Equipement</a> *&#160;</td>
+          <td class="paramname"><em>jambe</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Equipe des Jambes au personnage. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jambe</td><td><a class="el" href="class_jambe.html" title="Jambe herite de Equipement. ">Jambe</a> à équiper au personnage </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa4cb28bb5fcd125cdbc632a51fb87b7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personnage::setTorse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_equipement.html">Equipement</a> *&#160;</td>
+          <td class="paramname"><em>torse</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Equipe un <a class="el" href="class_torse.html" title="Torse herite de Equipement. ">Torse</a> au personnage. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">torse</td><td><a class="el" href="class_torse.html" title="Torse herite de Equipement. ">Torse</a> à équiper au personnage </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a020576cc14d815a1f4ebb9afe677e4c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personnage::trouverArme </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_arme.html">Arme</a> *&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Propose au personnage d'équiper une <a class="el" href="class_arme.html" title="Gestion des armes. ">Arme</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td><a class="el" href="class_arme.html" title="Gestion des armes. ">Arme</a> proposée </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a039ce12768debca443459af1eb3ca176"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personnage::trouverEquipement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_equipement.html">Equipement</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Propose au personnage d'équiper un <a class="el" href="class_equipement.html" title="Gestion des equipements. ">Equipement</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td><a class="el" href="class_equipement.html" title="Gestion des equipements. ">Equipement</a> proposé </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a533d049b89eea9c730cb5baeebf3d1ae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_arme.html">Arme</a>* Personnage::arme_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emplacement de l'arme du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="adc9faad1d30de099542f716096a32a3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Personnage::armure_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Armure du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="a605a9b8a91b42ceb77632446cb1d24a1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_equipement.html">Equipement</a>* Personnage::casque_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emplacement de casque du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="a383168e6874a1dee5d50fb5c539ccd5e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Personnage::chance_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Chance du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="a07cf7fee80e4550e0aeec5f1fce6ae3d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Personnage::degat_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dégâts du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="a43cb0829b230d9281adc847fb8218ca7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Personnage::force_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Force du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8865af571ab1b0ba6493e855304dbce0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Personnage::initArmure_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialisation de l'amure du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="adbcab4e3e65e3413733c785c446ac3de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Personnage::initChance_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialisation de la chance du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="a588652816fc2e5646dea893786ebe1a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Personnage::initDegat_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialisation des dégâts du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6e27cb04f9c27188eca2dcf85e52c46b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Personnage::initForce_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialisation de la force du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="a08047c5570ab1a943e5222d468bc04e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Personnage::initVieMax_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialisation de la vie max du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab0c4cf4c9854ea6537cef5d1bf22aa19"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_equipement.html">Equipement</a>* Personnage::jambe_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emplacement des jambes du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="a30b730a6908d2a27a3313a33fca2f2d0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string Personnage::nom_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialisation du nom du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1f149feed4bebb34eef01785a5528b67"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_equipement.html">Equipement</a>* Personnage::torse_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emplacement du torse du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac76efe3ade8ad20f13cfd304d261d2ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Personnage::uptoday_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Booleen pour l'actualisation des statistiques du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab73c27e86ff1ad20b8702320f7db36e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Personnage::vie_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vie du personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="aca50034f2dfacb9f575e2bc9802ce283"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Personnage::vieMax_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vie max du personnage. </p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>src/<a class="el" href="_personnage_8hpp_source.html">Personnage.hpp</a></li>
+<li>src/<a class="el" href="_personnage_8cpp.html">Personnage.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_personnage.html">Personnage</a></li>
+    <li class="footer">Généré le Mercredi Novembre 27 2013 13:38:48 pour Labyrinth RPG par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
+</body>
+</html>

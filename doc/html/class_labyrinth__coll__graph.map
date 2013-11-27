@@ -1,0 +1,9 @@
+<map id="Labyrinth" name="Labyrinth">
+<area shape="rect" id="node2" href="$class_room.html" title="gestion de salle " alt="" coords="210,185,301,362"/>
+<area shape="rect" id="node3" href="$class_room_etat.html" title="Gestion de l&#39;état de visite de la salle. " alt="" coords="147,471,240,577"/>
+<area shape="rect" id="node4" href="$class_room_etat_unvisited.html" title="Salle jamais visité " alt="" coords="5,665,140,770"/>
+<area shape="rect" id="node5" href="$class_room_etat_visited.html" title="Salle déjà visité " alt="" coords="331,665,455,770"/>
+<area shape="rect" id="node7" href="$class_room_etat_position.html" title="Salle identifé comme ma position. " alt="" coords="173,665,303,770"/>
+<area shape="rect" id="node6" href="$class_room_comportement.html" title="Génère le comportement des salles. " alt="" coords="183,5,329,123"/>
+<area shape="rect" id="node8" href="$structpos.html" title="position utilise des coordonnée pour stocker une position " alt="" coords="506,233,544,314"/>
+</map>

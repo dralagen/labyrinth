@@ -1,0 +1,6 @@
+<map id="Dague" name="Dague">
+<area shape="rect" id="node3" href="$class_dague_chance.html" title="DagueChance herite de Dague. " alt="" coords="5,326,120,407"/>
+<area shape="rect" id="node4" href="$class_dague_force.html" title="DagueForce herite de Dague. " alt="" coords="145,326,249,407"/>
+<area shape="rect" id="node5" href="$class_dague_vie.html" title="DagueVie herite de Dague. " alt="" coords="274,326,365,407"/>
+<area shape="rect" id="node2" href="$class_arme.html" title="Gestion des armes. " alt="" coords="154,5,240,147"/>
+</map>

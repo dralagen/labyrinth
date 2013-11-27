@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Labyrinth RPG:  Fichier source de src/ItemFactory.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Labyrinth RPG
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Un labyrinthe en 2D additionné à un Jeu de Rôle</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_item_factory_8hpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ItemFactory.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_item_factory_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef ITEMFACTORY_HPP</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ITEMFACTORY_HPP</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_casque_8hpp.html">Casque.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_dague_8hpp.html">Dague.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_epee_8hpp.html">Epee.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_hache_8hpp.html">Hache.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_jambe_8hpp.html">Jambe.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_torse_8hpp.html">Torse.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="_item_factory_8hpp.html#a2aad577c94e878bfb80e87df2cda5052">   20</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_item_factory_8hpp.html#a2aad577c94e878bfb80e87df2cda5052">ITEM_FACTORIES</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_item_factory_8hpp.html#a2aad577c94e878bfb80e87df2cda5052a1740b2c6468f651a11ec6c55cebe290a">   22</a></span>&#160;    <a class="code" href="_item_factory_8hpp.html#a2aad577c94e878bfb80e87df2cda5052a1740b2c6468f651a11ec6c55cebe290a">FORCEF</a>,</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="_item_factory_8hpp.html#a2aad577c94e878bfb80e87df2cda5052a640c1c32f6e4e39717198efd7a181ca1">   23</a></span>&#160;    <a class="code" href="_item_factory_8hpp.html#a2aad577c94e878bfb80e87df2cda5052a640c1c32f6e4e39717198efd7a181ca1">VIEF</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="_item_factory_8hpp.html#a2aad577c94e878bfb80e87df2cda5052afad2f8bdbb15726793de2d3aa5fee9f7">   24</a></span>&#160;    <a class="code" href="_item_factory_8hpp.html#a2aad577c94e878bfb80e87df2cda5052afad2f8bdbb15726793de2d3aa5fee9f7">CHANCEF</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_item_factory.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_item_factory.html">ItemFactory</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_item_factory.html#a4a60b3a16d648161403ee0f1431c8a5b">   33</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_item_factory.html#a4a60b3a16d648161403ee0f1431c8a5b">~ItemFactory</a>() {}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_casque.html">Casque</a> *<a class="code" href="class_item_factory.html#a89450cf0176a8da74cc5a9b8ef5aaae6">GetCasque</a>() = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_torse.html">Torse</a>  *<a class="code" href="class_item_factory.html#ad5f3eb7dffeed5577e05e859775af3dd">GetTorse</a>()  = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_jambe.html">Jambe</a>  *<a class="code" href="class_item_factory.html#a0a9cc8a72f93f260a61d393d8fb76012">GetJambe</a>()  = 0;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_epee.html">Epee</a>   *<a class="code" href="class_item_factory.html#a8a413e61bf23ad24a549382e4e4e396f">GetEpee</a>()   = 0;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_dague.html">Dague</a>  *<a class="code" href="class_item_factory.html#a65ed7c9978011812487e6b12b4155fbd">GetDague</a>()  = 0;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_hache.html">Hache</a>  *<a class="code" href="class_item_factory.html#afd402df71468d0a96ea12e92c80a185e">GetHache</a>()  = 0;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_item_factory.html">ItemFactory</a>* <a class="code" href="class_item_factory.html#ab10257decaf2cda946ec482a0dfdfe03">CreateFactory</a>(<a class="code" href="_item_factory_8hpp.html#a2aad577c94e878bfb80e87df2cda5052">ITEM_FACTORIES</a> factory);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_force_factory_8hpp.html">ForceFactory.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_vie_factory_8hpp.html">VieFactory.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_chance_factory_8hpp.html">ChanceFactory.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ITEMFACTORY_HPP */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="_hache_8hpp_html"><div class="ttname"><a href="_hache_8hpp.html">Hache.hpp</a></div></div>
+<div class="ttc" id="class_item_factory_html_a0a9cc8a72f93f260a61d393d8fb76012"><div class="ttname"><a href="class_item_factory.html#a0a9cc8a72f93f260a61d393d8fb76012">ItemFactory::GetJambe</a></div><div class="ttdeci">virtual Jambe * GetJambe()=0</div><div class="ttdoc">Renvoie un pointeur vers Jambe pour que la factory concrete connaisse l&amp;#39;objet a creer. </div></div>
+<div class="ttc" id="class_item_factory_html"><div class="ttname"><a href="class_item_factory.html">ItemFactory</a></div><div class="ttdoc">Factory abstraite pour la creation des factory concretes. </div><div class="ttdef"><b>Definition:</b> ItemFactory.hpp:30</div></div>
+<div class="ttc" id="class_item_factory_html_a8a413e61bf23ad24a549382e4e4e396f"><div class="ttname"><a href="class_item_factory.html#a8a413e61bf23ad24a549382e4e4e396f">ItemFactory::GetEpee</a></div><div class="ttdeci">virtual Epee * GetEpee()=0</div><div class="ttdoc">Renvoie un pointeur vers une Epee pour que la factory concrete connaisse l&amp;#39;objet a creer...</div></div>
+<div class="ttc" id="class_jambe_html"><div class="ttname"><a href="class_jambe.html">Jambe</a></div><div class="ttdoc">Jambe herite de Equipement. </div><div class="ttdef"><b>Definition:</b> Jambe.hpp:20</div></div>
+<div class="ttc" id="_torse_8hpp_html"><div class="ttname"><a href="_torse_8hpp.html">Torse.hpp</a></div></div>
+<div class="ttc" id="_jambe_8hpp_html"><div class="ttname"><a href="_jambe_8hpp.html">Jambe.hpp</a></div></div>
+<div class="ttc" id="class_item_factory_html_a89450cf0176a8da74cc5a9b8ef5aaae6"><div class="ttname"><a href="class_item_factory.html#a89450cf0176a8da74cc5a9b8ef5aaae6">ItemFactory::GetCasque</a></div><div class="ttdeci">virtual Casque * GetCasque()=0</div><div class="ttdoc">Renvoie un pointeur vers un Casque pour que la factory concrete connaisse l&amp;#39;objet a creer...</div></div>
+<div class="ttc" id="class_item_factory_html_ab10257decaf2cda946ec482a0dfdfe03"><div class="ttname"><a href="class_item_factory.html#ab10257decaf2cda946ec482a0dfdfe03">ItemFactory::CreateFactory</a></div><div class="ttdeci">static ItemFactory * CreateFactory(ITEM_FACTORIES factory)</div><div class="ttdoc">Methode qui creer une factory concrete en fonction du type passe en parametre. </div><div class="ttdef"><b>Definition:</b> ItemFactory.cpp:10</div></div>
+<div class="ttc" id="class_epee_html"><div class="ttname"><a href="class_epee.html">Epee</a></div><div class="ttdoc">Epee herite de Arme. </div><div class="ttdef"><b>Definition:</b> Epee.hpp:16</div></div>
+<div class="ttc" id="_vie_factory_8hpp_html"><div class="ttname"><a href="_vie_factory_8hpp.html">VieFactory.hpp</a></div></div>
+<div class="ttc" id="_casque_8hpp_html"><div class="ttname"><a href="_casque_8hpp.html">Casque.hpp</a></div></div>
+<div class="ttc" id="class_item_factory_html_ad5f3eb7dffeed5577e05e859775af3dd"><div class="ttname"><a href="class_item_factory.html#ad5f3eb7dffeed5577e05e859775af3dd">ItemFactory::GetTorse</a></div><div class="ttdeci">virtual Torse * GetTorse()=0</div><div class="ttdoc">Renvoie un pointeur vers un Torse pour que la factory concrete connaisse l&amp;#39;objet a creer...</div></div>
+<div class="ttc" id="class_casque_html"><div class="ttname"><a href="class_casque.html">Casque</a></div><div class="ttdoc">Casque herite de Equipement. </div><div class="ttdef"><b>Definition:</b> Casque.hpp:16</div></div>
+<div class="ttc" id="class_dague_html"><div class="ttname"><a href="class_dague.html">Dague</a></div><div class="ttdoc">Dague herite de Arme. </div><div class="ttdef"><b>Definition:</b> Dague.hpp:16</div></div>
+<div class="ttc" id="class_hache_html"><div class="ttname"><a href="class_hache.html">Hache</a></div><div class="ttdoc">Hache herite de Arme. </div><div class="ttdef"><b>Definition:</b> Hache.hpp:17</div></div>
+<div class="ttc" id="_epee_8hpp_html"><div class="ttname"><a href="_epee_8hpp.html">Epee.hpp</a></div></div>
+<div class="ttc" id="_item_factory_8hpp_html_a2aad577c94e878bfb80e87df2cda5052afad2f8bdbb15726793de2d3aa5fee9f7"><div class="ttname"><a href="_item_factory_8hpp.html#a2aad577c94e878bfb80e87df2cda5052afad2f8bdbb15726793de2d3aa5fee9f7">CHANCEF</a></div><div class="ttdef"><b>Definition:</b> ItemFactory.hpp:24</div></div>
+<div class="ttc" id="class_torse_html"><div class="ttname"><a href="class_torse.html">Torse</a></div><div class="ttdoc">Torse herite de Equipement. </div><div class="ttdef"><b>Definition:</b> Torse.hpp:20</div></div>
+<div class="ttc" id="_item_factory_8hpp_html_a2aad577c94e878bfb80e87df2cda5052a1740b2c6468f651a11ec6c55cebe290a"><div class="ttname"><a href="_item_factory_8hpp.html#a2aad577c94e878bfb80e87df2cda5052a1740b2c6468f651a11ec6c55cebe290a">FORCEF</a></div><div class="ttdef"><b>Definition:</b> ItemFactory.hpp:22</div></div>
+<div class="ttc" id="class_item_factory_html_afd402df71468d0a96ea12e92c80a185e"><div class="ttname"><a href="class_item_factory.html#afd402df71468d0a96ea12e92c80a185e">ItemFactory::GetHache</a></div><div class="ttdeci">virtual Hache * GetHache()=0</div><div class="ttdoc">Renvoie un pointeur vers une Hache pour que la factory concrete connaisse l&amp;#39;objet a creer...</div></div>
+<div class="ttc" id="_dague_8hpp_html"><div class="ttname"><a href="_dague_8hpp.html">Dague.hpp</a></div></div>
+<div class="ttc" id="_item_factory_8hpp_html_a2aad577c94e878bfb80e87df2cda5052a640c1c32f6e4e39717198efd7a181ca1"><div class="ttname"><a href="_item_factory_8hpp.html#a2aad577c94e878bfb80e87df2cda5052a640c1c32f6e4e39717198efd7a181ca1">VIEF</a></div><div class="ttdef"><b>Definition:</b> ItemFactory.hpp:23</div></div>
+<div class="ttc" id="_chance_factory_8hpp_html"><div class="ttname"><a href="_chance_factory_8hpp.html">ChanceFactory.hpp</a></div></div>
+<div class="ttc" id="class_item_factory_html_a65ed7c9978011812487e6b12b4155fbd"><div class="ttname"><a href="class_item_factory.html#a65ed7c9978011812487e6b12b4155fbd">ItemFactory::GetDague</a></div><div class="ttdeci">virtual Dague * GetDague()=0</div><div class="ttdoc">Renvoie un pointeur vers une Dague pour que la factory concrete connaisse l&amp;#39;objet a creer...</div></div>
+<div class="ttc" id="_item_factory_8hpp_html_a2aad577c94e878bfb80e87df2cda5052"><div class="ttname"><a href="_item_factory_8hpp.html#a2aad577c94e878bfb80e87df2cda5052">ITEM_FACTORIES</a></div><div class="ttdeci">ITEM_FACTORIES</div><div class="ttdoc">Type des differentes factory concretes. </div><div class="ttdef"><b>Definition:</b> ItemFactory.hpp:20</div></div>
+<div class="ttc" id="_force_factory_8hpp_html"><div class="ttname"><a href="_force_factory_8hpp.html">ForceFactory.hpp</a></div></div>
+<div class="ttc" id="class_item_factory_html_a4a60b3a16d648161403ee0f1431c8a5b"><div class="ttname"><a href="class_item_factory.html#a4a60b3a16d648161403ee0f1431c8a5b">ItemFactory::~ItemFactory</a></div><div class="ttdeci">virtual ~ItemFactory()</div><div class="ttdef"><b>Definition:</b> ItemFactory.hpp:33</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_item_factory_8hpp.html">ItemFactory.hpp</a></li>
+    <li class="footer">Généré le Mercredi Novembre 27 2013 13:38:46 pour Labyrinth RPG par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
+</body>
+</html>

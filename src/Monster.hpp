@@ -1,3 +1,10 @@
+/**
+ * \file Monster.hpp
+ *
+ * \author Adrien Garandel & Alexis Ruchaud
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #ifndef MONSTER_HPP
 #define MONSTER_HPP
 
@@ -8,6 +15,10 @@
 
 #define MONSTER_LIFE_MAX 100
 
+/**
+ * \class Monster
+ * \brief Gestion d'un monstre
+ */
 class Monster
 {
 	public:

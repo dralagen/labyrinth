@@ -1,3 +1,10 @@
+/**
+ * \file Treasure.cpp
+ *
+ * \author Adrien Garandel & Alexis Ruchaud
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "Treasure.hpp"
 
 Treasure::Treasure(int lvl): m_lvl(lvl) {
@@ -16,3 +23,4 @@ ItemFactory* Treasure::getFactory(int i) {
 			return ItemFactory::CreateFactory(VIEF);
 	}
 }
+

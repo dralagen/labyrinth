@@ -1,0 +1,4 @@
+<map id="TreasureRoom" name="TreasureRoom">
+<area shape="rect" id="node2" href="$class_room_comportement.html" title="Génère le comportement des salles. " alt="" coords="5,5,152,123"/>
+<area shape="rect" id="node3" href="$class_treasure.html" title="Coffre de salle. " alt="" coords="176,11,267,117"/>
+</map>

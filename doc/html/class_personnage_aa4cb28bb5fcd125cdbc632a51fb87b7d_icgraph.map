@@ -1,0 +1,6 @@
+<map id="Personnage::setTorse" name="Personnage::setTorse">
+<area shape="rect" id="node2" href="$class_personnage.html#a039ce12768debca443459af1eb3ca176" title="Propose au personnage d&#39;équiper un Equipement. " alt="" coords="182,5,359,29"/>
+<area shape="rect" id="node4" href="$class_personnage.html#a311a98a60b751f7bb63897c29f57cd1c" title="Equipe un équipement au personnage. " alt="" coords="192,53,349,77"/>
+<area shape="rect" id="node3" href="$class_treasure_equip.html#a187762eb0e25641cde7a2b15d94af4ed" title="ouvre le coffre pour le Personnage " alt="" coords="421,5,544,29"/>
+<area shape="rect" id="node5" href="$class_treasure_deco_equip.html#a9b1481b5456bcdbd7d4f9a4bb03c1c25" title="ouvre le coffre pour le Personnage " alt="" coords="409,53,557,77"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="EndRoom" name="EndRoom">
+<area shape="rect" id="node2" href="$class_room_comportement.html" title="Génère le comportement des salles. " alt="" coords="5,17,152,135"/>
+<area shape="rect" id="node3" href="$class_monster_room.html" title="Comportement de Salle contenant un monstre. " alt="" coords="117,208,229,301"/>
+<area shape="rect" id="node4" href="$class_monster.html" title="Gestion d&#39;un monstre. " alt="" coords="176,5,275,147"/>
+</map>

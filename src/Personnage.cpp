@@ -1,4 +1,14 @@
+/**
+ * \file Personnage.cpp
+ *
+ * \author Adrien Garandel & Alexis Ruchaud
+ * \version 1.0
+ * \date 27/11/2013
+ */
+
 #include "Personnage.hpp"
+
+#include "ColorTerm.hpp"
 
 Personnage::Personnage(std::string nom): nom_(nom), initVieMax_(100), initChance_(10), initForce_(20), initDegat_(0), initArmure_(0)
 {
@@ -25,6 +35,8 @@ Personnage::~Personnage()
 
 void Personnage::modifierVie(int v)
 {
+	ColorTerm::Edit death(ColorTerm::FG_RED);
+	ColorTerm::Edit reset(ColorTerm::FG_DEFAULT);
 	vie_ = vie_ + v;
 	if(vie_ > vieMax_)
 	{
@@ -33,7 +45,7 @@ void Personnage::modifierVie(int v)
 	if(vie_ <= 0)
 	{
 		vie_ = 0;
-		std::cout<<"Vous êtes mort"<<std::endl;
+		std::cout<<death<<"Vous êtes mort"<<reset<<std::endl;
 	}
 	Personnage::afficheStat();
 }
@@ -222,7 +234,7 @@ void Personnage::trouverArme(Arme * a)
 		std::cin >> choix;
 		if(choix == "y")
 		{
-			delete jambe_;
+			delete arme_;
 			setArme(a);
 			uptoday_ = false;
 		}

@@ -1,3 +1,10 @@
+/**
+ * \file Room.cpp
+ *
+ * \author Adrien Garandel & Alexis Ruchaud
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "Room.hpp"
 
 Room::Room(): m_north(false),	m_east(false), m_south(false), m_west(false), m_comp(0), m_visited(this), m_position(this), m_unvisited(this) {
@@ -81,5 +88,4 @@ bool Room::getVisited  ( ) const { return m_etat->visited(); }
 bool Room::isEnd() const { return m_comp->isEnd(); }
 
 std::string Room::getContent() const { return m_comp->getContent(); }
-
 

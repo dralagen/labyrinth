@@ -1,0 +1,546 @@
+\section{Référence de la classe Labyrinth}
+\label{class_labyrinth}\index{Labyrinth@{Labyrinth}}
+
+
+gestion de labyrinthe  
+
+
+
+
+Graphe de collaboration de Labyrinth\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_labyrinth__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Labyrinth} (int x={\bf L\-A\-B\-Y\-R\-I\-N\-T\-H\-\_\-\-T\-A\-I\-L\-L\-E\-\_\-\-X\-\_\-\-D\-E\-F\-A\-U\-L\-T}, int y={\bf L\-A\-B\-Y\-R\-I\-N\-T\-H\-\_\-\-T\-A\-I\-L\-L\-E\-\_\-\-Y\-\_\-\-D\-E\-F\-A\-U\-L\-T})
+\begin{DoxyCompactList}\small\item\em constucteur \end{DoxyCompactList}\item 
+{\bf $\sim$\-Labyrinth} ()
+\begin{DoxyCompactList}\small\item\em destructeur \end{DoxyCompactList}\item 
+{\bf Labyrinth} \& {\bf operator=} (const {\bf Labyrinth} \&lab)
+\begin{DoxyCompactList}\small\item\em surchage opérateur = \end{DoxyCompactList}\item 
+void {\bf print} (bool god\-Mode=false) const 
+\begin{DoxyCompactList}\small\item\em Affiche le labyrinthe. \end{DoxyCompactList}\item 
+void {\bf action} ({\bf Personnage} \&perso)
+\begin{DoxyCompactList}\small\item\em Actionne la salle courante. \end{DoxyCompactList}\item 
+bool {\bf has\-North} () const 
+\begin{DoxyCompactList}\small\item\em Verifie si il y a une porte au nord. \end{DoxyCompactList}\item 
+bool {\bf has\-East} () const 
+\begin{DoxyCompactList}\small\item\em Verifie si il y a une porte a l'est. \end{DoxyCompactList}\item 
+bool {\bf has\-South} () const 
+\begin{DoxyCompactList}\small\item\em Verifie si il y a une porte au sud. \end{DoxyCompactList}\item 
+bool {\bf has\-West} () const 
+\begin{DoxyCompactList}\small\item\em Verifie si il y a une porte a l'ouest. \end{DoxyCompactList}\item 
+void {\bf go\-North} ()
+\begin{DoxyCompactList}\small\item\em va au nord \end{DoxyCompactList}\item 
+void {\bf go\-East} ()
+\begin{DoxyCompactList}\small\item\em va a l'est \end{DoxyCompactList}\item 
+void {\bf go\-South} ()
+\begin{DoxyCompactList}\small\item\em va au sud \end{DoxyCompactList}\item 
+void {\bf go\-West} ()
+\begin{DoxyCompactList}\small\item\em va a l'ouest \end{DoxyCompactList}\item 
+bool {\bf is\-End} () const 
+\begin{DoxyCompactList}\small\item\em Vérifie la fin. \end{DoxyCompactList}\item 
+void {\bf clean} ()
+\begin{DoxyCompactList}\small\item\em la salle a été vidé \end{DoxyCompactList}\item 
+void {\bf gen} ()
+\begin{DoxyCompactList}\small\item\em génére qu'une fois le labyrinth \end{DoxyCompactList}\item 
+void {\bf undo} ()
+\begin{DoxyCompactList}\small\item\em retourne a la position précédente position courante == position précédente \end{DoxyCompactList}\item 
+void {\bf set\-Start} ({\bf pos} p)
+\begin{DoxyCompactList}\small\item\em définie la salle de départ si le labyrinth n'a pas été généré \end{DoxyCompactList}\item 
+void {\bf set\-Start} (int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf position} (int x, int y) const 
+\begin{DoxyCompactList}\small\item\em Calcule la position de la salle dans le tableau. \end{DoxyCompactList}\item 
+int {\bf position} ({\bf pos} p) const 
+\begin{DoxyCompactList}\small\item\em Calcule la position de la salle dans le tableau. \end{DoxyCompactList}\item 
+void {\bf new\-Position} ()
+\begin{DoxyCompactList}\small\item\em actualise ma position courante \end{DoxyCompactList}\item 
+void {\bf \-\_\-gen} ()
+\begin{DoxyCompactList}\small\item\em Génère le labyrinthe. \end{DoxyCompactList}\item 
+void {\bf init} ({\bf pos} p)
+\begin{DoxyCompactList}\small\item\em Ouvre les chemins a partir de la position p. \end{DoxyCompactList}\item 
+void {\bf open\-Door} ({\bf pos} p1, {\bf pos} p2)
+\begin{DoxyCompactList}\small\item\em Créer une porte entre la salle s1 et s2 s1 et s2 adjacent. \end{DoxyCompactList}\item 
+bool {\bf has\-Adjacent} ({\bf pos} p) const 
+\begin{DoxyCompactList}\small\item\em cherche une salle adjacente non visité \end{DoxyCompactList}\item 
+{\bf pos} {\bf one\-Adjacent} ({\bf pos} p) const 
+\begin{DoxyCompactList}\small\item\em prend une salle adjacente \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+const int {\bf m\-\_\-taille\-X}
+\begin{DoxyCompactList}\small\item\em largeur du labyrinthe \end{DoxyCompactList}\item 
+const int {\bf m\-\_\-taille\-Y}
+\begin{DoxyCompactList}\small\item\em hauteur du labyrinthe \end{DoxyCompactList}\item 
+{\bf pos} {\bf m\-\_\-current}
+\begin{DoxyCompactList}\small\item\em position courante \end{DoxyCompactList}\item 
+{\bf pos} {\bf m\-\_\-precedent}
+\begin{DoxyCompactList}\small\item\em position précédente \end{DoxyCompactList}\item 
+{\bf Room} $\ast$ {\bf m\-\_\-rooms}
+\begin{DoxyCompactList}\small\item\em liste des salles du labyrinthe \end{DoxyCompactList}\item 
+bool {\bf m\-\_\-gen}
+\begin{DoxyCompactList}\small\item\em labyrinthe généré \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+gestion de labyrinthe 
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Labyrinth@{Labyrinth}!Labyrinth@{Labyrinth}}
+\index{Labyrinth@{Labyrinth}!Labyrinth@{Labyrinth}}
+\subsubsection[{Labyrinth}]{\setlength{\rightskip}{0pt plus 5cm}Labyrinth\-::\-Labyrinth (
+\begin{DoxyParamCaption}
+\item[{int}]{x = {\ttfamily {\bf L\-A\-B\-Y\-R\-I\-N\-T\-H\-\_\-\-T\-A\-I\-L\-L\-E\-\_\-\-X\-\_\-\-D\-E\-F\-A\-U\-L\-T}}, }
+\item[{int}]{y = {\ttfamily {\bf L\-A\-B\-Y\-R\-I\-N\-T\-H\-\_\-\-T\-A\-I\-L\-L\-E\-\_\-\-Y\-\_\-\-D\-E\-F\-A\-U\-L\-T}}}
+\end{DoxyParamCaption}
+)}\label{class_labyrinth_a13480c96c7e8d937adf6fd0b2dce8b6d}
+
+
+constucteur 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & lageur \\
+\hline
+{\em y} & hauteur \\
+\hline
+\end{DoxyParams}
+\index{Labyrinth@{Labyrinth}!$\sim$\-Labyrinth@{$\sim$\-Labyrinth}}
+\index{$\sim$\-Labyrinth@{$\sim$\-Labyrinth}!Labyrinth@{Labyrinth}}
+\subsubsection[{$\sim$\-Labyrinth}]{\setlength{\rightskip}{0pt plus 5cm}Labyrinth\-::$\sim$\-Labyrinth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_labyrinth_a4c955f7eb91e1b1529899a157b410807}
+
+
+destructeur 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Labyrinth@{Labyrinth}!\-\_\-gen@{\-\_\-gen}}
+\index{\-\_\-gen@{\-\_\-gen}!Labyrinth@{Labyrinth}}
+\subsubsection[{\-\_\-gen}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::\-\_\-gen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_labyrinth_afc29f7969b11105584bf51c616740bce}
+
+
+Génère le labyrinthe. 
+
+\index{Labyrinth@{Labyrinth}!action@{action}}
+\index{action@{action}!Labyrinth@{Labyrinth}}
+\subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::action (
+\begin{DoxyParamCaption}
+\item[{{\bf Personnage} \&}]{perso}
+\end{DoxyParamCaption}
+)}\label{class_labyrinth_a80514a0f6bc2a3a3e68a607ea51a800e}
+
+
+Actionne la salle courante. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em perso} & personnage qui ouvre la salle \\
+\hline
+\end{DoxyParams}
+\index{Labyrinth@{Labyrinth}!clean@{clean}}
+\index{clean@{clean}!Labyrinth@{Labyrinth}}
+\subsubsection[{clean}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::clean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_labyrinth_a417eadea0ab0a5df9bb5e9951e166590}
+
+
+la salle a été vidé 
+
+\index{Labyrinth@{Labyrinth}!gen@{gen}}
+\index{gen@{gen}!Labyrinth@{Labyrinth}}
+\subsubsection[{gen}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::gen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_labyrinth_a4f94ffe9a0097abea1657b8b3d8d85a6}
+
+
+génére qu'une fois le labyrinth 
+
+\index{Labyrinth@{Labyrinth}!go\-East@{go\-East}}
+\index{go\-East@{go\-East}!Labyrinth@{Labyrinth}}
+\subsubsection[{go\-East}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::go\-East (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_labyrinth_ad23a37ea3383534c6206d5d09cc1d1cb}
+
+
+va a l'est 
+
+\index{Labyrinth@{Labyrinth}!go\-North@{go\-North}}
+\index{go\-North@{go\-North}!Labyrinth@{Labyrinth}}
+\subsubsection[{go\-North}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::go\-North (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_labyrinth_a6759f031dd720443786e52d946d3b95a}
+
+
+va au nord 
+
+\index{Labyrinth@{Labyrinth}!go\-South@{go\-South}}
+\index{go\-South@{go\-South}!Labyrinth@{Labyrinth}}
+\subsubsection[{go\-South}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::go\-South (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_labyrinth_a5b7fa660f6f3ce459b80e661603f4c20}
+
+
+va au sud 
+
+\index{Labyrinth@{Labyrinth}!go\-West@{go\-West}}
+\index{go\-West@{go\-West}!Labyrinth@{Labyrinth}}
+\subsubsection[{go\-West}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::go\-West (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_labyrinth_a28e673608e72a1b69cc91c85f882b477}
+
+
+va a l'ouest 
+
+\index{Labyrinth@{Labyrinth}!has\-Adjacent@{has\-Adjacent}}
+\index{has\-Adjacent@{has\-Adjacent}!Labyrinth@{Labyrinth}}
+\subsubsection[{has\-Adjacent}]{\setlength{\rightskip}{0pt plus 5cm}bool Labyrinth\-::has\-Adjacent (
+\begin{DoxyParamCaption}
+\item[{{\bf pos}}]{p}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\label{class_labyrinth_a45c69cdcafe3665bd76db8e854b6e506}
+
+
+cherche une salle adjacente non visité 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & position de recherche\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+vrai si une des quatres salle n'as pas était visité 
+\end{DoxyReturn}
+\index{Labyrinth@{Labyrinth}!has\-East@{has\-East}}
+\index{has\-East@{has\-East}!Labyrinth@{Labyrinth}}
+\subsubsection[{has\-East}]{\setlength{\rightskip}{0pt plus 5cm}bool Labyrinth\-::has\-East (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_labyrinth_aa0008c659d5e512f805ddaff2620912c}
+
+
+Verifie si il y a une porte a l'est. 
+
+\begin{DoxyReturn}{Renvoie}
+vrai si c'est une porte faux si c'est un mur 
+\end{DoxyReturn}
+\index{Labyrinth@{Labyrinth}!has\-North@{has\-North}}
+\index{has\-North@{has\-North}!Labyrinth@{Labyrinth}}
+\subsubsection[{has\-North}]{\setlength{\rightskip}{0pt plus 5cm}bool Labyrinth\-::has\-North (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_labyrinth_ab22fb393c8f6d844096ce6548dff2164}
+
+
+Verifie si il y a une porte au nord. 
+
+\begin{DoxyReturn}{Renvoie}
+vrai si c'est une porte faux si c'est un mur 
+\end{DoxyReturn}
+\index{Labyrinth@{Labyrinth}!has\-South@{has\-South}}
+\index{has\-South@{has\-South}!Labyrinth@{Labyrinth}}
+\subsubsection[{has\-South}]{\setlength{\rightskip}{0pt plus 5cm}bool Labyrinth\-::has\-South (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_labyrinth_adeb5d81ef6beccdb0360e3c5bdab9f51}
+
+
+Verifie si il y a une porte au sud. 
+
+\begin{DoxyReturn}{Renvoie}
+vrai si c'est une porte faux si c'est un mur 
+\end{DoxyReturn}
+\index{Labyrinth@{Labyrinth}!has\-West@{has\-West}}
+\index{has\-West@{has\-West}!Labyrinth@{Labyrinth}}
+\subsubsection[{has\-West}]{\setlength{\rightskip}{0pt plus 5cm}bool Labyrinth\-::has\-West (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_labyrinth_ae5ffa83a10d415f1f635a58bc25254ba}
+
+
+Verifie si il y a une porte a l'ouest. 
+
+\begin{DoxyReturn}{Renvoie}
+vrai si c'est une porte faux si c'est un mur 
+\end{DoxyReturn}
+\index{Labyrinth@{Labyrinth}!init@{init}}
+\index{init@{init}!Labyrinth@{Labyrinth}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::init (
+\begin{DoxyParamCaption}
+\item[{{\bf pos}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_labyrinth_a1589aae4f56635fd38d4704196571646}
+
+
+Ouvre les chemins a partir de la position p. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & position de départ \\
+\hline
+\end{DoxyParams}
+\index{Labyrinth@{Labyrinth}!is\-End@{is\-End}}
+\index{is\-End@{is\-End}!Labyrinth@{Labyrinth}}
+\subsubsection[{is\-End}]{\setlength{\rightskip}{0pt plus 5cm}bool Labyrinth\-::is\-End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_labyrinth_ad50cf7950f97a0d701b1f41125566883}
+
+
+Vérifie la fin. 
+
+\begin{DoxyReturn}{Renvoie}
+vrai si on est sur la salle de fin 
+\end{DoxyReturn}
+\index{Labyrinth@{Labyrinth}!new\-Position@{new\-Position}}
+\index{new\-Position@{new\-Position}!Labyrinth@{Labyrinth}}
+\subsubsection[{new\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::new\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_labyrinth_a775a1d628f1179dfca9655dbca6a43f3}
+
+
+actualise ma position courante 
+
+\index{Labyrinth@{Labyrinth}!one\-Adjacent@{one\-Adjacent}}
+\index{one\-Adjacent@{one\-Adjacent}!Labyrinth@{Labyrinth}}
+\subsubsection[{one\-Adjacent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pos} Labyrinth\-::one\-Adjacent (
+\begin{DoxyParamCaption}
+\item[{{\bf pos}}]{p}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\label{class_labyrinth_a46038c2605eadda50894b070a012eb12}
+
+
+prend une salle adjacente 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & position de recherche\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+position d'une des salle adjacente non visité 
+\end{DoxyReturn}
+\index{Labyrinth@{Labyrinth}!open\-Door@{open\-Door}}
+\index{open\-Door@{open\-Door}!Labyrinth@{Labyrinth}}
+\subsubsection[{open\-Door}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::open\-Door (
+\begin{DoxyParamCaption}
+\item[{{\bf pos}}]{p1, }
+\item[{{\bf pos}}]{p2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_labyrinth_a1c81f6ddf4749788d5e97774c6970411}
+
+
+Créer une porte entre la salle s1 et s2 s1 et s2 adjacent. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p1} & position de la salle s1 \\
+\hline
+{\em p2} & position de la salle s2 \\
+\hline
+\end{DoxyParams}
+\index{Labyrinth@{Labyrinth}!operator=@{operator=}}
+\index{operator=@{operator=}!Labyrinth@{Labyrinth}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Labyrinth} \& Labyrinth\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Labyrinth} \&}]{lab}
+\end{DoxyParamCaption}
+)}\label{class_labyrinth_a1c84c73db11482be6b04e35bdb97c28f}
+
+
+surchage opérateur = 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em lab} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+un labyrinthe identique 
+\end{DoxyReturn}
+\index{Labyrinth@{Labyrinth}!position@{position}}
+\index{position@{position}!Labyrinth@{Labyrinth}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}int Labyrinth\-::position (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\label{class_labyrinth_ac586bb4db152210ed424f77d68505502}
+
+
+Calcule la position de la salle dans le tableau. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & Abscisse \\
+\hline
+{\em y} & Ordonnée\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+indice dans le tableau m\-\_\-rooms 
+\end{DoxyReturn}
+\index{Labyrinth@{Labyrinth}!position@{position}}
+\index{position@{position}!Labyrinth@{Labyrinth}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}int Labyrinth\-::position (
+\begin{DoxyParamCaption}
+\item[{{\bf pos}}]{p}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\label{class_labyrinth_ac4400fc1f603dd48146be8108050bec4}
+
+
+Calcule la position de la salle dans le tableau. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & position par rapport à X et Y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+indice dans le tableau m\-\_\-rooms 
+\end{DoxyReturn}
+\index{Labyrinth@{Labyrinth}!print@{print}}
+\index{print@{print}!Labyrinth@{Labyrinth}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::print (
+\begin{DoxyParamCaption}
+\item[{bool}]{god\-Mode = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const}\label{class_labyrinth_a7c0789decac44992b6baa12613b9109a}
+
+
+Affiche le labyrinthe. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em god\-Mode} & true affiche le contenue des salles même non visité \\
+\hline
+\end{DoxyParams}
+\index{Labyrinth@{Labyrinth}!set\-Start@{set\-Start}}
+\index{set\-Start@{set\-Start}!Labyrinth@{Labyrinth}}
+\subsubsection[{set\-Start}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::set\-Start (
+\begin{DoxyParamCaption}
+\item[{{\bf pos}}]{p}
+\end{DoxyParamCaption}
+)}\label{class_labyrinth_a85ffc879951c809634eb07cffbf5cfd1}
+
+
+définie la salle de départ si le labyrinth n'a pas été généré 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & position de départ \\
+\hline
+\end{DoxyParams}
+\index{Labyrinth@{Labyrinth}!set\-Start@{set\-Start}}
+\index{set\-Start@{set\-Start}!Labyrinth@{Labyrinth}}
+\subsubsection[{set\-Start}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::set\-Start (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{class_labyrinth_a3693e9bea996fc9083b880ab69cce138}
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & position en abscisse \\
+\hline
+{\em y} & position en ordonnée \\
+\hline
+\end{DoxyParams}
+\index{Labyrinth@{Labyrinth}!undo@{undo}}
+\index{undo@{undo}!Labyrinth@{Labyrinth}}
+\subsubsection[{undo}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::undo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_labyrinth_aa6bbe37a3dae3799c0557c8c92a88f06}
+
+
+retourne a la position précédente position courante == position précédente 
+
+
+
+\subsection{Documentation des données membres}
+\index{Labyrinth@{Labyrinth}!m\-\_\-current@{m\-\_\-current}}
+\index{m\-\_\-current@{m\-\_\-current}!Labyrinth@{Labyrinth}}
+\subsubsection[{m\-\_\-current}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pos} Labyrinth\-::m\-\_\-current\hspace{0.3cm}{\ttfamily [private]}}\label{class_labyrinth_a4ed73d5e4ea2843c3c58f2d7915bd792}
+
+
+position courante 
+
+\index{Labyrinth@{Labyrinth}!m\-\_\-gen@{m\-\_\-gen}}
+\index{m\-\_\-gen@{m\-\_\-gen}!Labyrinth@{Labyrinth}}
+\subsubsection[{m\-\_\-gen}]{\setlength{\rightskip}{0pt plus 5cm}bool Labyrinth\-::m\-\_\-gen\hspace{0.3cm}{\ttfamily [private]}}\label{class_labyrinth_afc4ede85f831118e70dadf5866dda09d}
+
+
+labyrinthe généré 
+
+\index{Labyrinth@{Labyrinth}!m\-\_\-precedent@{m\-\_\-precedent}}
+\index{m\-\_\-precedent@{m\-\_\-precedent}!Labyrinth@{Labyrinth}}
+\subsubsection[{m\-\_\-precedent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pos} Labyrinth\-::m\-\_\-precedent\hspace{0.3cm}{\ttfamily [private]}}\label{class_labyrinth_af2f5c4ed0cdb9a64556fd7a81fe09d8d}
+
+
+position précédente 
+
+\index{Labyrinth@{Labyrinth}!m\-\_\-rooms@{m\-\_\-rooms}}
+\index{m\-\_\-rooms@{m\-\_\-rooms}!Labyrinth@{Labyrinth}}
+\subsubsection[{m\-\_\-rooms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Room}$\ast$ Labyrinth\-::m\-\_\-rooms\hspace{0.3cm}{\ttfamily [private]}}\label{class_labyrinth_a69ec79c2423fe66a3fae33093320f52c}
+
+
+liste des salles du labyrinthe 
+
+\index{Labyrinth@{Labyrinth}!m\-\_\-taille\-X@{m\-\_\-taille\-X}}
+\index{m\-\_\-taille\-X@{m\-\_\-taille\-X}!Labyrinth@{Labyrinth}}
+\subsubsection[{m\-\_\-taille\-X}]{\setlength{\rightskip}{0pt plus 5cm}const int Labyrinth\-::m\-\_\-taille\-X\hspace{0.3cm}{\ttfamily [private]}}\label{class_labyrinth_a0547ee29aa3f3c8987922f8305e26569}
+
+
+largeur du labyrinthe 
+
+\index{Labyrinth@{Labyrinth}!m\-\_\-taille\-Y@{m\-\_\-taille\-Y}}
+\index{m\-\_\-taille\-Y@{m\-\_\-taille\-Y}!Labyrinth@{Labyrinth}}
+\subsubsection[{m\-\_\-taille\-Y}]{\setlength{\rightskip}{0pt plus 5cm}const int Labyrinth\-::m\-\_\-taille\-Y\hspace{0.3cm}{\ttfamily [private]}}\label{class_labyrinth_ae656bd00c1402e153c89611b374a9567}
+
+
+hauteur du labyrinthe 
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/{\bf Labyrinth.\-hpp}\item 
+src/{\bf Labyrinth.\-cpp}\end{DoxyCompactItemize}

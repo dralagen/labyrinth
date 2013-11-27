@@ -1,3 +1,10 @@
+/**
+ * \file TreasureRoom.cpp
+ *
+ * \author Adrien Garandel & Alexis Ruchaud
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "TreasureRoom.hpp"
 #include "TreasureEquip.hpp"
 #include "TreasureArme.hpp"
@@ -41,3 +48,4 @@ int TreasureRoom::action(Personnage &perso) {
 
 	return RC_NOTHING;
 }
+

@@ -1,0 +1,4 @@
+<map id="CasqueVie" name="CasqueVie">
+<area shape="rect" id="node2" href="$class_casque.html" title="Casque herite de Equipement. " alt="" coords="15,195,96,288"/>
+<area shape="rect" id="node3" href="$class_equipement.html" title="Gestion des equipements. " alt="" coords="5,5,107,147"/>
+</map>

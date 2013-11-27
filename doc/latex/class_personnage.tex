@@ -1,0 +1,627 @@
+\section{Référence de la classe Personnage}
+\label{class_personnage}\index{Personnage@{Personnage}}
+
+
+Gestion du \doxyref{Personnage}{p.}{class_personnage}.  
+
+
+
+
+Graphe de collaboration de Personnage\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{class_personnage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Personnage} (std\-::string nom)
+\item 
+{\bf $\sim$\-Personnage} ()
+\item 
+void {\bf modifier\-Vie} (int vie)
+\begin{DoxyCompactList}\small\item\em Modifie la vie du personnage. \end{DoxyCompactList}\item 
+void {\bf modifier\-Force} (int f)
+\begin{DoxyCompactList}\small\item\em Modifie la force du personnage. \end{DoxyCompactList}\item 
+void {\bf modifier\-Chance} (int c)
+\begin{DoxyCompactList}\small\item\em Modifie la chance du personnage. \end{DoxyCompactList}\item 
+void {\bf actu\-Stat} ()
+\begin{DoxyCompactList}\small\item\em Actualisation des stats du personnage selon son équipement. \end{DoxyCompactList}\item 
+void {\bf affiche\-Stat} ()
+\begin{DoxyCompactList}\small\item\em Affichage des stats du personnage. \end{DoxyCompactList}\item 
+void {\bf affiche\-Equip} ()
+\begin{DoxyCompactList}\small\item\em Affichage de l'équipement du personnage. \end{DoxyCompactList}\item 
+std\-::string {\bf get\-Nom} ()
+\begin{DoxyCompactList}\small\item\em Nom du personnage. \end{DoxyCompactList}\item 
+int {\bf get\-Vie} ()
+\begin{DoxyCompactList}\small\item\em Vie du personnage. \end{DoxyCompactList}\item 
+int {\bf get\-Vie\-Max} ()
+\begin{DoxyCompactList}\small\item\em Vie max du personnage. \end{DoxyCompactList}\item 
+int {\bf get\-Chance} ()
+\begin{DoxyCompactList}\small\item\em Chance du personnage. \end{DoxyCompactList}\item 
+int {\bf get\-Force} ()
+\begin{DoxyCompactList}\small\item\em Force du personnage. \end{DoxyCompactList}\item 
+void {\bf set\-Equipement} ({\bf Equipement} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Equipe un équipement au personnage. \end{DoxyCompactList}\item 
+void {\bf set\-Casque} ({\bf Equipement} $\ast$casque)
+\begin{DoxyCompactList}\small\item\em Equipe un casque au personnage. \end{DoxyCompactList}\item 
+void {\bf set\-Torse} ({\bf Equipement} $\ast$torse)
+\begin{DoxyCompactList}\small\item\em Equipe un \doxyref{Torse}{p.}{class_torse} au personnage. \end{DoxyCompactList}\item 
+void {\bf set\-Jambe} ({\bf Equipement} $\ast$jambe)
+\begin{DoxyCompactList}\small\item\em Equipe des Jambes au personnage. \end{DoxyCompactList}\item 
+void {\bf set\-Arme} ({\bf Arme} $\ast$arme)
+\begin{DoxyCompactList}\small\item\em Equipe une arme au personnage. \end{DoxyCompactList}\item 
+{\bf Equipement} $\ast$ {\bf get\-Casque} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{Casque}{p.}{class_casque} du personnage. \end{DoxyCompactList}\item 
+{\bf Equipement} $\ast$ {\bf get\-Torse} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{Torse}{p.}{class_torse} du personnage. \end{DoxyCompactList}\item 
+{\bf Equipement} $\ast$ {\bf get\-Jambe} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{Jambe}{p.}{class_jambe} du personnage. \end{DoxyCompactList}\item 
+{\bf Arme} $\ast$ {\bf get\-Arme} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{Arme}{p.}{class_arme} du personnage. \end{DoxyCompactList}\item 
+void {\bf trouver\-Equipement} ({\bf Equipement} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Propose au personnage d'équiper un \doxyref{Equipement}{p.}{class_equipement}. \end{DoxyCompactList}\item 
+void {\bf trouver\-Arme} ({\bf Arme} $\ast$a)
+\begin{DoxyCompactList}\small\item\em Propose au personnage d'équiper une \doxyref{Arme}{p.}{class_arme}. \end{DoxyCompactList}\item 
+int {\bf recoit\-Degat} (int pv)
+\begin{DoxyCompactList}\small\item\em Méthode qui calcule le nombre de dégâts à infliger au personnage. \end{DoxyCompactList}\item 
+int {\bf envoie\-Degat} ()
+\begin{DoxyCompactList}\small\item\em Méthode qui calcule le nombre de dégâts infligé par le personnage. \end{DoxyCompactList}\item 
+bool {\bf is\-Alive} ()
+\begin{DoxyCompactList}\small\item\em Test si le personnage est vivant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+const std\-::string {\bf nom\-\_\-}
+\begin{DoxyCompactList}\small\item\em Initialisation du nom du personnage. \end{DoxyCompactList}\item 
+const int {\bf init\-Vie\-Max\-\_\-}
+\begin{DoxyCompactList}\small\item\em Initialisation de la vie max du personnage. \end{DoxyCompactList}\item 
+const int {\bf init\-Chance\-\_\-}
+\begin{DoxyCompactList}\small\item\em Initialisation de la chance du personnage. \end{DoxyCompactList}\item 
+const int {\bf init\-Force\-\_\-}
+\begin{DoxyCompactList}\small\item\em Initialisation de la force du personnage. \end{DoxyCompactList}\item 
+const int {\bf init\-Degat\-\_\-}
+\begin{DoxyCompactList}\small\item\em Initialisation des dégâts du personnage. \end{DoxyCompactList}\item 
+const int {\bf init\-Armure\-\_\-}
+\begin{DoxyCompactList}\small\item\em Initialisation de l'amure du personnage. \end{DoxyCompactList}\item 
+int {\bf vie\-Max\-\_\-}
+\begin{DoxyCompactList}\small\item\em Vie max du personnage. \end{DoxyCompactList}\item 
+int {\bf vie\-\_\-}
+\begin{DoxyCompactList}\small\item\em Vie du personnage. \end{DoxyCompactList}\item 
+int {\bf chance\-\_\-}
+\begin{DoxyCompactList}\small\item\em Chance du personnage. \end{DoxyCompactList}\item 
+int {\bf force\-\_\-}
+\begin{DoxyCompactList}\small\item\em Force du personnage. \end{DoxyCompactList}\item 
+int {\bf degat\-\_\-}
+\begin{DoxyCompactList}\small\item\em Dégâts du personnage. \end{DoxyCompactList}\item 
+int {\bf armure\-\_\-}
+\begin{DoxyCompactList}\small\item\em Armure du personnage. \end{DoxyCompactList}\item 
+{\bf Equipement} $\ast$ {\bf casque\-\_\-}
+\begin{DoxyCompactList}\small\item\em Emplacement de casque du personnage. \end{DoxyCompactList}\item 
+{\bf Equipement} $\ast$ {\bf torse\-\_\-}
+\begin{DoxyCompactList}\small\item\em Emplacement du torse du personnage. \end{DoxyCompactList}\item 
+{\bf Equipement} $\ast$ {\bf jambe\-\_\-}
+\begin{DoxyCompactList}\small\item\em Emplacement des jambes du personnage. \end{DoxyCompactList}\item 
+{\bf Arme} $\ast$ {\bf arme\-\_\-}
+\begin{DoxyCompactList}\small\item\em Emplacement de l'arme du personnage. \end{DoxyCompactList}\item 
+bool {\bf uptoday\-\_\-}
+\begin{DoxyCompactList}\small\item\em Booleen pour l'actualisation des statistiques du personnage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Gestion du \doxyref{Personnage}{p.}{class_personnage}. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Personnage@{Personnage}!Personnage@{Personnage}}
+\index{Personnage@{Personnage}!Personnage@{Personnage}}
+\subsubsection[{Personnage}]{\setlength{\rightskip}{0pt plus 5cm}Personnage\-::\-Personnage (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{nom}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a7b67c1690f8588ad97a445692ffb49fd}
+\index{Personnage@{Personnage}!$\sim$\-Personnage@{$\sim$\-Personnage}}
+\index{$\sim$\-Personnage@{$\sim$\-Personnage}!Personnage@{Personnage}}
+\subsubsection[{$\sim$\-Personnage}]{\setlength{\rightskip}{0pt plus 5cm}Personnage\-::$\sim$\-Personnage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a05bdf2a469885bb1fbb6c2e8f98972ab}
+
+
+\subsection{Documentation des fonctions membres}
+\index{Personnage@{Personnage}!actu\-Stat@{actu\-Stat}}
+\index{actu\-Stat@{actu\-Stat}!Personnage@{Personnage}}
+\subsubsection[{actu\-Stat}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::actu\-Stat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a540b4f0590d9ee6f11e10c335ff740a8}
+
+
+Actualisation des stats du personnage selon son équipement. 
+
+\index{Personnage@{Personnage}!affiche\-Equip@{affiche\-Equip}}
+\index{affiche\-Equip@{affiche\-Equip}!Personnage@{Personnage}}
+\subsubsection[{affiche\-Equip}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::affiche\-Equip (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_abfa0fbd5f6c38c7297964046de26db0a}
+
+
+Affichage de l'équipement du personnage. 
+
+\index{Personnage@{Personnage}!affiche\-Stat@{affiche\-Stat}}
+\index{affiche\-Stat@{affiche\-Stat}!Personnage@{Personnage}}
+\subsubsection[{affiche\-Stat}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::affiche\-Stat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a960d6680688c5bee1868ef7238849e7b}
+
+
+Affichage des stats du personnage. 
+
+\index{Personnage@{Personnage}!envoie\-Degat@{envoie\-Degat}}
+\index{envoie\-Degat@{envoie\-Degat}!Personnage@{Personnage}}
+\subsubsection[{envoie\-Degat}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::envoie\-Degat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_acbaafe5c61c924b5a4b3698d05fc365b}
+
+
+Méthode qui calcule le nombre de dégâts infligé par le personnage. 
+
+\begin{DoxyReturn}{Renvoie}
+degat Dégâts aprés prise en compte des dégâts de la chance et de la force du personnage 
+\end{DoxyReturn}
+\index{Personnage@{Personnage}!get\-Arme@{get\-Arme}}
+\index{get\-Arme@{get\-Arme}!Personnage@{Personnage}}
+\subsubsection[{get\-Arme}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Arme} $\ast$ Personnage\-::get\-Arme (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_ac399a7dff2285dabcd75efb85a72e0fd}
+
+
+\doxyref{Arme}{p.}{class_arme} du personnage. 
+
+\begin{DoxyReturn}{Renvoie}
+arme \doxyref{Arme}{p.}{class_arme} équipé sur le personnage 
+\end{DoxyReturn}
+\index{Personnage@{Personnage}!get\-Casque@{get\-Casque}}
+\index{get\-Casque@{get\-Casque}!Personnage@{Personnage}}
+\subsubsection[{get\-Casque}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Equipement} $\ast$ Personnage\-::get\-Casque (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a6be6e0b23a90c362ddd6d8a3493193b8}
+
+
+\doxyref{Casque}{p.}{class_casque} du personnage. 
+
+\begin{DoxyReturn}{Renvoie}
+casque \doxyref{Casque}{p.}{class_casque} équipé sur le personnage 
+\end{DoxyReturn}
+\index{Personnage@{Personnage}!get\-Chance@{get\-Chance}}
+\index{get\-Chance@{get\-Chance}!Personnage@{Personnage}}
+\subsubsection[{get\-Chance}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::get\-Chance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_aa5eabf95d3d0d31385bda9ae8427d57e}
+
+
+Chance du personnage. 
+
+\begin{DoxyReturn}{Renvoie}
+chance Retourne la chance du personnage 
+\end{DoxyReturn}
+\index{Personnage@{Personnage}!get\-Force@{get\-Force}}
+\index{get\-Force@{get\-Force}!Personnage@{Personnage}}
+\subsubsection[{get\-Force}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::get\-Force (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a40de0ba95f25eb6f1653b6a4183763ae}
+
+
+Force du personnage. 
+
+\begin{DoxyReturn}{Renvoie}
+force Retourne la force du personnage 
+\end{DoxyReturn}
+\index{Personnage@{Personnage}!get\-Jambe@{get\-Jambe}}
+\index{get\-Jambe@{get\-Jambe}!Personnage@{Personnage}}
+\subsubsection[{get\-Jambe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Equipement} $\ast$ Personnage\-::get\-Jambe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_af94423c768e960a49d04ad8514bf1b78}
+
+
+\doxyref{Jambe}{p.}{class_jambe} du personnage. 
+
+\begin{DoxyReturn}{Renvoie}
+jambe \doxyref{Jambe}{p.}{class_jambe} équipé sur le personnage 
+\end{DoxyReturn}
+\index{Personnage@{Personnage}!get\-Nom@{get\-Nom}}
+\index{get\-Nom@{get\-Nom}!Personnage@{Personnage}}
+\subsubsection[{get\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Personnage\-::get\-Nom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_ac0fbc92a7e930ae26148e5e5247e1494}
+
+
+Nom du personnage. 
+
+\begin{DoxyReturn}{Renvoie}
+nom Retourne le nom du personnage 
+\end{DoxyReturn}
+\index{Personnage@{Personnage}!get\-Torse@{get\-Torse}}
+\index{get\-Torse@{get\-Torse}!Personnage@{Personnage}}
+\subsubsection[{get\-Torse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Equipement} $\ast$ Personnage\-::get\-Torse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a28565caaccdf1f8bc5fe76bf00b10311}
+
+
+\doxyref{Torse}{p.}{class_torse} du personnage. 
+
+\begin{DoxyReturn}{Renvoie}
+torse \doxyref{Torse}{p.}{class_torse} équipé sur le personnage 
+\end{DoxyReturn}
+\index{Personnage@{Personnage}!get\-Vie@{get\-Vie}}
+\index{get\-Vie@{get\-Vie}!Personnage@{Personnage}}
+\subsubsection[{get\-Vie}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::get\-Vie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a261cbb9bb3b23a147d0f88b10eaa1857}
+
+
+Vie du personnage. 
+
+\begin{DoxyReturn}{Renvoie}
+vie Retourne la vie du personnage 
+\end{DoxyReturn}
+\index{Personnage@{Personnage}!get\-Vie\-Max@{get\-Vie\-Max}}
+\index{get\-Vie\-Max@{get\-Vie\-Max}!Personnage@{Personnage}}
+\subsubsection[{get\-Vie\-Max}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::get\-Vie\-Max (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a96cd651889938e58eafd48373f4c36c4}
+
+
+Vie max du personnage. 
+
+\begin{DoxyReturn}{Renvoie}
+vie\-Max Retourne la vie max du personnage 
+\end{DoxyReturn}
+\index{Personnage@{Personnage}!is\-Alive@{is\-Alive}}
+\index{is\-Alive@{is\-Alive}!Personnage@{Personnage}}
+\subsubsection[{is\-Alive}]{\setlength{\rightskip}{0pt plus 5cm}bool Personnage\-::is\-Alive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a0dfc3d986a2c53e5f5f3e0f3138ade5b}
+
+
+Test si le personnage est vivant. 
+
+\begin{DoxyReturn}{Renvoie}
+bool Vrai si le personnage est toujours vivant 
+\end{DoxyReturn}
+\index{Personnage@{Personnage}!modifier\-Chance@{modifier\-Chance}}
+\index{modifier\-Chance@{modifier\-Chance}!Personnage@{Personnage}}
+\subsubsection[{modifier\-Chance}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::modifier\-Chance (
+\begin{DoxyParamCaption}
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a9ebc2089ffd538189715e3cc58bab4e0}
+
+
+Modifie la chance du personnage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em c} & Entier positif ou negatif, chance à ajouter \\
+\hline
+\end{DoxyParams}
+\index{Personnage@{Personnage}!modifier\-Force@{modifier\-Force}}
+\index{modifier\-Force@{modifier\-Force}!Personnage@{Personnage}}
+\subsubsection[{modifier\-Force}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::modifier\-Force (
+\begin{DoxyParamCaption}
+\item[{int}]{f}
+\end{DoxyParamCaption}
+)}\label{class_personnage_ade3579c11cd6e6c535ff7290c5248ff5}
+
+
+Modifie la force du personnage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em f} & Entier positif ou negatif, force à ajouter \\
+\hline
+\end{DoxyParams}
+\index{Personnage@{Personnage}!modifier\-Vie@{modifier\-Vie}}
+\index{modifier\-Vie@{modifier\-Vie}!Personnage@{Personnage}}
+\subsubsection[{modifier\-Vie}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::modifier\-Vie (
+\begin{DoxyParamCaption}
+\item[{int}]{vie}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a9362a76b5b3219916d68697e0606bf2c}
+
+
+Modifie la vie du personnage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em vie} & Entier positif ou negatif, vie à ajouter \\
+\hline
+\end{DoxyParams}
+\index{Personnage@{Personnage}!recoit\-Degat@{recoit\-Degat}}
+\index{recoit\-Degat@{recoit\-Degat}!Personnage@{Personnage}}
+\subsubsection[{recoit\-Degat}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::recoit\-Degat (
+\begin{DoxyParamCaption}
+\item[{int}]{pv}
+\end{DoxyParamCaption}
+)}\label{class_personnage_aedf77fe983813e2cdfcf2581379432a1}
+
+
+Méthode qui calcule le nombre de dégâts à infliger au personnage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em pv} & Nombre de dégâts à infliger \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+degat Dégâts réel après prise en compte de l'armure 
+\end{DoxyReturn}
+\index{Personnage@{Personnage}!set\-Arme@{set\-Arme}}
+\index{set\-Arme@{set\-Arme}!Personnage@{Personnage}}
+\subsubsection[{set\-Arme}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::set\-Arme (
+\begin{DoxyParamCaption}
+\item[{{\bf Arme} $\ast$}]{arme}
+\end{DoxyParamCaption}
+)}\label{class_personnage_ac24d31489cc986e870e60f257a9d0849}
+
+
+Equipe une arme au personnage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em arme} & \doxyref{Arme}{p.}{class_arme} à équiper au personnage \\
+\hline
+\end{DoxyParams}
+\index{Personnage@{Personnage}!set\-Casque@{set\-Casque}}
+\index{set\-Casque@{set\-Casque}!Personnage@{Personnage}}
+\subsubsection[{set\-Casque}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::set\-Casque (
+\begin{DoxyParamCaption}
+\item[{{\bf Equipement} $\ast$}]{casque}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a6008154c7725bf6309cba8eb63cf2a94}
+
+
+Equipe un casque au personnage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em casque} & \doxyref{Casque}{p.}{class_casque} à équiper au personnage \\
+\hline
+\end{DoxyParams}
+\index{Personnage@{Personnage}!set\-Equipement@{set\-Equipement}}
+\index{set\-Equipement@{set\-Equipement}!Personnage@{Personnage}}
+\subsubsection[{set\-Equipement}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::set\-Equipement (
+\begin{DoxyParamCaption}
+\item[{{\bf Equipement} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a311a98a60b751f7bb63897c29f57cd1c}
+
+
+Equipe un équipement au personnage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em e} & \doxyref{Equipement}{p.}{class_equipement} à équiper au personnage \\
+\hline
+\end{DoxyParams}
+\index{Personnage@{Personnage}!set\-Jambe@{set\-Jambe}}
+\index{set\-Jambe@{set\-Jambe}!Personnage@{Personnage}}
+\subsubsection[{set\-Jambe}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::set\-Jambe (
+\begin{DoxyParamCaption}
+\item[{{\bf Equipement} $\ast$}]{jambe}
+\end{DoxyParamCaption}
+)}\label{class_personnage_ac63bee6c81c929308bf36d14253a43e2}
+
+
+Equipe des Jambes au personnage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em jambe} & \doxyref{Jambe}{p.}{class_jambe} à équiper au personnage \\
+\hline
+\end{DoxyParams}
+\index{Personnage@{Personnage}!set\-Torse@{set\-Torse}}
+\index{set\-Torse@{set\-Torse}!Personnage@{Personnage}}
+\subsubsection[{set\-Torse}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::set\-Torse (
+\begin{DoxyParamCaption}
+\item[{{\bf Equipement} $\ast$}]{torse}
+\end{DoxyParamCaption}
+)}\label{class_personnage_aa4cb28bb5fcd125cdbc632a51fb87b7d}
+
+
+Equipe un \doxyref{Torse}{p.}{class_torse} au personnage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em torse} & \doxyref{Torse}{p.}{class_torse} à équiper au personnage \\
+\hline
+\end{DoxyParams}
+\index{Personnage@{Personnage}!trouver\-Arme@{trouver\-Arme}}
+\index{trouver\-Arme@{trouver\-Arme}!Personnage@{Personnage}}
+\subsubsection[{trouver\-Arme}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::trouver\-Arme (
+\begin{DoxyParamCaption}
+\item[{{\bf Arme} $\ast$}]{a}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a020576cc14d815a1f4ebb9afe677e4c7}
+
+
+Propose au personnage d'équiper une \doxyref{Arme}{p.}{class_arme}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em a} & \doxyref{Arme}{p.}{class_arme} proposée \\
+\hline
+\end{DoxyParams}
+\index{Personnage@{Personnage}!trouver\-Equipement@{trouver\-Equipement}}
+\index{trouver\-Equipement@{trouver\-Equipement}!Personnage@{Personnage}}
+\subsubsection[{trouver\-Equipement}]{\setlength{\rightskip}{0pt plus 5cm}void Personnage\-::trouver\-Equipement (
+\begin{DoxyParamCaption}
+\item[{{\bf Equipement} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\label{class_personnage_a039ce12768debca443459af1eb3ca176}
+
+
+Propose au personnage d'équiper un \doxyref{Equipement}{p.}{class_equipement}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em e} & \doxyref{Equipement}{p.}{class_equipement} proposé \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des données membres}
+\index{Personnage@{Personnage}!arme\-\_\-@{arme\-\_\-}}
+\index{arme\-\_\-@{arme\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{arme\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Arme}$\ast$ Personnage\-::arme\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_a533d049b89eea9c730cb5baeebf3d1ae}
+
+
+Emplacement de l'arme du personnage. 
+
+\index{Personnage@{Personnage}!armure\-\_\-@{armure\-\_\-}}
+\index{armure\-\_\-@{armure\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{armure\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::armure\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_adc9faad1d30de099542f716096a32a3b}
+
+
+Armure du personnage. 
+
+\index{Personnage@{Personnage}!casque\-\_\-@{casque\-\_\-}}
+\index{casque\-\_\-@{casque\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{casque\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Equipement}$\ast$ Personnage\-::casque\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_a605a9b8a91b42ceb77632446cb1d24a1}
+
+
+Emplacement de casque du personnage. 
+
+\index{Personnage@{Personnage}!chance\-\_\-@{chance\-\_\-}}
+\index{chance\-\_\-@{chance\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{chance\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::chance\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_a383168e6874a1dee5d50fb5c539ccd5e}
+
+
+Chance du personnage. 
+
+\index{Personnage@{Personnage}!degat\-\_\-@{degat\-\_\-}}
+\index{degat\-\_\-@{degat\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{degat\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::degat\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_a07cf7fee80e4550e0aeec5f1fce6ae3d}
+
+
+Dégâts du personnage. 
+
+\index{Personnage@{Personnage}!force\-\_\-@{force\-\_\-}}
+\index{force\-\_\-@{force\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{force\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::force\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_a43cb0829b230d9281adc847fb8218ca7}
+
+
+Force du personnage. 
+
+\index{Personnage@{Personnage}!init\-Armure\-\_\-@{init\-Armure\-\_\-}}
+\index{init\-Armure\-\_\-@{init\-Armure\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{init\-Armure\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}const int Personnage\-::init\-Armure\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_a8865af571ab1b0ba6493e855304dbce0}
+
+
+Initialisation de l'amure du personnage. 
+
+\index{Personnage@{Personnage}!init\-Chance\-\_\-@{init\-Chance\-\_\-}}
+\index{init\-Chance\-\_\-@{init\-Chance\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{init\-Chance\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}const int Personnage\-::init\-Chance\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_adbcab4e3e65e3413733c785c446ac3de}
+
+
+Initialisation de la chance du personnage. 
+
+\index{Personnage@{Personnage}!init\-Degat\-\_\-@{init\-Degat\-\_\-}}
+\index{init\-Degat\-\_\-@{init\-Degat\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{init\-Degat\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}const int Personnage\-::init\-Degat\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_a588652816fc2e5646dea893786ebe1a2}
+
+
+Initialisation des dégâts du personnage. 
+
+\index{Personnage@{Personnage}!init\-Force\-\_\-@{init\-Force\-\_\-}}
+\index{init\-Force\-\_\-@{init\-Force\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{init\-Force\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}const int Personnage\-::init\-Force\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_a6e27cb04f9c27188eca2dcf85e52c46b}
+
+
+Initialisation de la force du personnage. 
+
+\index{Personnage@{Personnage}!init\-Vie\-Max\-\_\-@{init\-Vie\-Max\-\_\-}}
+\index{init\-Vie\-Max\-\_\-@{init\-Vie\-Max\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{init\-Vie\-Max\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}const int Personnage\-::init\-Vie\-Max\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_a08047c5570ab1a943e5222d468bc04e4}
+
+
+Initialisation de la vie max du personnage. 
+
+\index{Personnage@{Personnage}!jambe\-\_\-@{jambe\-\_\-}}
+\index{jambe\-\_\-@{jambe\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{jambe\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Equipement}$\ast$ Personnage\-::jambe\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_ab0c4cf4c9854ea6537cef5d1bf22aa19}
+
+
+Emplacement des jambes du personnage. 
+
+\index{Personnage@{Personnage}!nom\-\_\-@{nom\-\_\-}}
+\index{nom\-\_\-@{nom\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{nom\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string Personnage\-::nom\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_a30b730a6908d2a27a3313a33fca2f2d0}
+
+
+Initialisation du nom du personnage. 
+
+\index{Personnage@{Personnage}!torse\-\_\-@{torse\-\_\-}}
+\index{torse\-\_\-@{torse\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{torse\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Equipement}$\ast$ Personnage\-::torse\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_a1f149feed4bebb34eef01785a5528b67}
+
+
+Emplacement du torse du personnage. 
+
+\index{Personnage@{Personnage}!uptoday\-\_\-@{uptoday\-\_\-}}
+\index{uptoday\-\_\-@{uptoday\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{uptoday\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}bool Personnage\-::uptoday\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_ac76efe3ade8ad20f13cfd304d261d2ef}
+
+
+Booleen pour l'actualisation des statistiques du personnage. 
+
+\index{Personnage@{Personnage}!vie\-\_\-@{vie\-\_\-}}
+\index{vie\-\_\-@{vie\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{vie\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::vie\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_ab73c27e86ff1ad20b8702320f7db36e4}
+
+
+Vie du personnage. 
+
+\index{Personnage@{Personnage}!vie\-Max\-\_\-@{vie\-Max\-\_\-}}
+\index{vie\-Max\-\_\-@{vie\-Max\-\_\-}!Personnage@{Personnage}}
+\subsubsection[{vie\-Max\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int Personnage\-::vie\-Max\-\_\-\hspace{0.3cm}{\ttfamily [private]}}\label{class_personnage_aca50034f2dfacb9f575e2bc9802ce283}
+
+
+Vie max du personnage. 
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+src/{\bf Personnage.\-hpp}\item 
+src/{\bf Personnage.\-cpp}\end{DoxyCompactItemize}

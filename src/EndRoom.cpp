@@ -1,3 +1,10 @@
+/**
+ * \file EndRoom.cpp
+ *
+ * \author Adrien Garandel & Alexis Ruchaud
+ * \version 1.0
+ * \date 27/11/2013
+ */
 #include "EndRoom.hpp"
 
 EndRoom::EndRoom(int lvl): RoomComportement(lvl), m_boss(lvl) {
@@ -16,3 +23,4 @@ int EndRoom::action(Personnage &perso) {
 	}
 	return RC_UNDO;
 }
+

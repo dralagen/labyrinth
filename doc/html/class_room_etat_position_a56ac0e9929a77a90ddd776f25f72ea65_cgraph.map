@@ -1,0 +1,6 @@
+<map id="RoomEtatPosition::print" name="RoomEtatPosition::print">
+<area shape="rect" id="node2" href="$class_room.html#a22f38a4beb5db3140082e23da3da9316" title="Récupère si l&#39;access est possible au Nord. " alt="" coords="191,5,289,29"/>
+<area shape="rect" id="node3" href="$class_room.html#aafd7ca57898b2d8f4123fcd755646987" title="Récupère si l&#39;access est possible à l&#39;Ouest. " alt="" coords="192,53,288,77"/>
+<area shape="rect" id="node4" href="$class_room.html#a4a5d452b159b419bbd6add72bdbe283b" title="Récupère si l&#39;access est possible à l&#39;Est. " alt="" coords="193,101,287,125"/>
+<area shape="rect" id="node5" href="$class_room.html#af329dbe45e8790c559361c7e03f135a7" title="Récupère si l&#39;access est possible au Sud. " alt="" coords="190,149,290,173"/>
+</map>
