@@ -49,7 +49,7 @@ void TreasureDecoEquip::open(Personnage &p) {
 
 	if (e != NULL) {
 		for (int i = 0; i < (rand()%m_lvl)+1; ++i) {
-			std::cout << "Amélioration d'équipement ";
+			std::cout << COLOR_IMPROVEMENT << "Amélioration d'équipement ";
 
 			switch (rand()%4) {
 				case 0:
@@ -68,13 +68,13 @@ void TreasureDecoEquip::open(Personnage &p) {
 					std::cout << "de Vie";
 					e = new DEquipV(e);
 			}
-			std::cout << std::endl;
+			std::cout << COLOR_RESET << std::endl;
 			p.setEquipement(e);
 		}
 		sleep(1);
 	}
 	else {
-		std::cout << "Objet non utilisable" << std::endl;
+		std::cout << COLOR_ERROR << "Objet non utilisable" << COLOR_ERROR << std::endl;
 	}
 
 }

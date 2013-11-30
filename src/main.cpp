@@ -7,8 +7,6 @@
  */
 #include <iostream>
 
-#include "ColorTerm.hpp"
-
 #include "Labyrinth.hpp"
 #include "Game.hpp"
 
@@ -21,10 +19,6 @@ int main(int argc, char **argv)
 	int tailleX,tailleY;
 	string name;
 
-	ColorTerm::Edit blue(ColorTerm::FG_BLUE);
-	ColorTerm::Edit reset(ColorTerm::FG_DEFAULT);
-
-	cout << blue;
 	if (argc == 3) {
 		tailleX = stoi(argv[1]);
 		tailleY = stoi(argv[2]);
@@ -48,7 +42,6 @@ int main(int argc, char **argv)
 		cout << "Nom du personnage : ";
 		cin >> name;
 	}
-	cout << reset;
 	Game g(name, tailleX, tailleY);
 
 	g.launch();

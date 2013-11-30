@@ -13,8 +13,8 @@
 
 #include "Equipement.hpp"
 #include "Arme.hpp"
-
 #include "ItemFactory.hpp"
+#include "ColorTerm.hpp"
 
 /**
  * \class Personnage
@@ -41,7 +41,8 @@ class Personnage
 		Equipement *jambe_;     ///< Emplacement des jambes du personnage
 		Arme *arme_;            ///< Emplacement de l'arme du personnage
 
-		bool uptoday_;          ///< Booleen pour l'actualisation des statistiques du personnage
+		bool uptoday_;          ///< Booleen pour l'actualisation des statistiques du Personnage
+
 	public:
 		Personnage(std::string nom);
 		~Personnage();

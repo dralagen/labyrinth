@@ -44,7 +44,11 @@ void Labyrinth::print(bool godMode) const {
 		{
 			m_rooms[position(x,y)].print(top,center,bottom, godMode);
 		}
-		std::cout << top << std::endl << center << std::endl << bottom << std::endl;
+		std::cout << COLOR_MAP_DEFAULT;
+		std::cout << top << std::endl;
+		std::cout << center << std::endl;
+		std::cout	<< bottom << std::endl;
+		std::cout << COLOR_RESET;
 	}
 }
 

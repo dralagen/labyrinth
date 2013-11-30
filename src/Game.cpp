@@ -14,7 +14,7 @@ Game::Game(std::string name, int x, int y): m_labyrinth(x,y), m_perso(name) {}
 void Game::launch() {
 	help();
 	m_labyrinth.gen();
-	// sleep(3);
+	sleep(3);
 	do {
 		m_labyrinth.print();
 		m_perso.actuStat();
@@ -24,6 +24,7 @@ void Game::launch() {
 		m_labyrinth.action(m_perso);
 	} while(!m_labyrinth.isEnd() && m_perso.getVie() > 0);
 
+	sleep(3);
 	m_labyrinth.print(true);
 }
 

@@ -8,13 +8,13 @@
 #include "StartRoom.hpp"
 
 StartRoom::StartRoom(int lvl):RoomComportement(lvl) {
-	m_content = "St";
+	m_content = COLOR_MAP_START "St" COLOR_MAP_DEFAULT;
 }
 
 StartRoom::~StartRoom() {}
 
 int StartRoom::action(Personnage &perso) {
-	std::cout << perso.getNom()<< " à vous de trouver la sortie" << std::endl;
+	std::cout << COLOR_PLAYER << perso.getNom()<< COLOR_RESET " à vous de trouver la sortie" << std::endl;
 	return RC_NOTHING;
 }
 
