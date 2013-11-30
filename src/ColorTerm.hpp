@@ -28,45 +28,92 @@ color : "\033[`CODE`m"
 
 */
 
-/************
- *  Global  *
- ************/
+// Uncoment for no color compatibility
+// #define NO_COLOR
 
-#define COLOR_RESET "\033[0m"
-#define COLOR_ERROR "\033[31m"
+#ifndef NO_COLOR
 
-/****************
- *  Personnage  *
- ****************/
+	/************
+	 *  Global  *
+	 ************/
 
-#define COLOR_PLAYER "\033[36m" // cyan
-#define COLOR_STAT   "\033[32m" // green
-#define COLOR_EQUIP  "\033[33m" // yellow
-#define COLOR_DEAD   "\033[31m" // red
+#define COLOR_RESET        "\033[0m"
+#define COLOR_ERROR        "\033[31m"
 
-/************
- *  Combat  *
- ************/
-#define COLOR_MONSTER    "\033[1m" // bold
-#define COLOR_DAMAGE     "\033[31m" // red
-#define COLOR_MONSTER_HP "\033[1;31m" // bold red
-#define COLOR_PLAYER_HP  "\033[1;32m" // bold gree
+	/****************
+	*  Personnage  *
+	****************/
+
+#define COLOR_PLAYER       "\033[36m"   // cyan
+#define COLOR_STAT         "\033[32m"   // green
+#define COLOR_EQUIP        "\033[33m"   // yellow
+#define COLOR_DEAD         "\033[31m"   // red
+
+	/************
+	*  Combat  *
+	************/
+#define COLOR_MONSTER      "\033[1m"    // bold
+#define COLOR_DAMAGE       "\033[31m"   // red
+#define COLOR_MONSTER_HP   "\033[1;31m" // bold red
+#define COLOR_PLAYER_HP    "\033[1;32m" // bold gree
 
 
-/**********
- *  Loot  *
- **********/
-#define COLOR_IMPROVEMENT "\033[34m" // bleu
+	/**********
+	*  Loot  *
+	**********/
+#define COLOR_IMPROVEMENT  "\033[34m"   // bleu
 
-/*********
- *  Map  *
- *********/
-#define COLOR_MAP_DEFAULT "\033[1;39m" // bold
-#define COLOR_MAP_TREASURE "\033[33m" // yellow
-#define COLOR_MAP_MONSTER "\033[31m" // red
-#define COLOR_MAP_END "\033[35m" // magenta
-#define COLOR_MAP_START "\033[34m" // bleu
+	/*********
+	*  Map  *
+	*********/
+#define COLOR_MAP_DEFAULT  "\033[1;39m" // bold
+#define COLOR_MAP_TREASURE "\033[33m"   // yellow
+#define COLOR_MAP_MONSTER  "\033[31m"   // red
+#define COLOR_MAP_END      "\033[35m"   // magenta
+#define COLOR_MAP_START    "\033[34m"   // bleu
 
+#else
+
+	/************
+	 *  Global  *
+	 ************/
+
+#define COLOR_RESET        ""
+#define COLOR_ERROR        ""
+
+	/****************
+	*  Personnage  *
+	****************/
+
+#define COLOR_PLAYER       "" // cyan
+#define COLOR_STAT         "" // green
+#define COLOR_EQUIP        "" // yellow
+#define COLOR_DEAD         "" // red
+
+	/************
+	*  Combat  *
+	************/
+#define COLOR_MONSTER      "" // bold
+#define COLOR_DAMAGE       "" // red
+#define COLOR_MONSTER_HP   "" // bold red
+#define COLOR_PLAYER_HP    "" // bold gree
+
+
+	/**********
+	*  Loot  *
+	**********/
+#define COLOR_IMPROVEMENT  "" // bleu
+
+	/*********
+	*  Map  *
+	*********/
+#define COLOR_MAP_DEFAULT  "" // bold
+#define COLOR_MAP_TREASURE "" // yellow
+#define COLOR_MAP_MONSTER  "" // red
+#define COLOR_MAP_END      "" // agenta
+#define COLOR_MAP_START    "" // bleu
+
+#endif
 
 #endif /* COLORTERM_HPP */
 
