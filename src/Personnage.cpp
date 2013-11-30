@@ -8,9 +8,13 @@
 
 #include "Personnage.hpp"
 
-#include "ColorTerm.hpp"
-
-Personnage::Personnage(std::string nom): nom_(nom), initVieMax_(100), initChance_(10), initForce_(20), initDegat_(0), initArmure_(0)
+Personnage::Personnage(std::string nom):
+	nom_(nom),
+ 	initVieMax_(100),
+ 	initChance_(10),
+ 	initForce_(20),
+ 	initDegat_(0),
+ 	initArmure_(0)
 {
 	vieMax_ = initVieMax_;
 	vie_    = vieMax_;
@@ -35,8 +39,6 @@ Personnage::~Personnage()
 
 void Personnage::modifierVie(int v)
 {
-	ColorTerm::Edit death(ColorTerm::FG_RED);
-	ColorTerm::Edit reset(ColorTerm::FG_DEFAULT);
 	vie_ = vie_ + v;
 	if(vie_ > vieMax_)
 	{
@@ -45,7 +47,7 @@ void Personnage::modifierVie(int v)
 	if(vie_ <= 0)
 	{
 		vie_ = 0;
-		std::cout<<death<<"Vous êtes mort"<<reset<<std::endl;
+		std::cout<< COLOR_DEAD "Vous êtes mort" COLOR_RESET<<std::endl;
 	}
 	Personnage::afficheStat();
 }
@@ -113,24 +115,27 @@ void Personnage::actuStat()
 void Personnage::afficheStat()
 {
 	actuStat();
+	std::cout<<std::endl;
 	std::cout<<"*************************************"<<std::endl;
-	std::cout<<"Statistiques de "<< nom_ <<  std::endl;
-	std::cout<<" Vie : " << vie_ << " / " << vieMax_ << std::endl;
-	std::cout<<" Force : " << force_ << std::endl;
-	std::cout<<" Dégat : " << degat_ << std::endl;
-	std::cout<<" Chance : " << chance_ << std::endl;
-	std::cout<<" Armure : " << armure_ << std::endl;
+	std::cout<<"Statistiques de "<< COLOR_PLAYER << nom_ << COLOR_RESET  <<  std::endl;
+	std::cout<<" Vie    : " << COLOR_STAT << vie_ << COLOR_RESET << " / " << vieMax_ << std::endl;
+	std::cout<<" Force  : " << COLOR_STAT << force_ << COLOR_RESET  << std::endl;
+	std::cout<<" Dégat  : " << COLOR_STAT << degat_ << COLOR_RESET  << std::endl;
+	std::cout<<" Chance : " << COLOR_STAT << chance_ << COLOR_RESET  << std::endl;
+	std::cout<<" Armure : " << COLOR_STAT << armure_ << COLOR_RESET  << std::endl;
 	std::cout<<"*************************************"<<std::endl;
+	std::cout<<COLOR_RESET;
 }
 
 void Personnage::afficheEquip()
 {
+	std::cout<<std::endl;
 	std::cout<<"*************************************"<<std::endl;
-	std::cout<<"Equipement de "<< nom_ << std::endl;
-	if(casque_) {std::cout<<"Casque : " << casque_->getNom() << std::endl;}
-	if(torse_)  {std::cout<<"Torse : " << torse_->getNom() << std::endl;}
-	if(jambe_)  {std::cout<<"Jambe : " << jambe_->getNom() << std::endl;}
-	if(arme_)   {std::cout<<"Arme : " << arme_->getNom() << std::endl;}
+	std::cout<<"Equipement de "<< COLOR_PLAYER << nom_ << COLOR_RESET << std::endl;
+	if(casque_) {std::cout<<" Casque : " << COLOR_EQUIP << casque_->getNom() << COLOR_RESET << std::endl;}
+	if(torse_)  {std::cout<<" Torse  : " << COLOR_EQUIP << torse_->getNom() << COLOR_RESET << std::endl;}
+	if(jambe_)  {std::cout<<" Jambe  : " << COLOR_EQUIP << jambe_->getNom() << COLOR_RESET << std::endl;}
+	if(arme_)   {std::cout<<" Arme   : " << COLOR_EQUIP << arme_->getNom() << COLOR_RESET << std::endl;}
 	std::cout<<"*************************************"<<std::endl;
 }
 
@@ -143,9 +148,9 @@ void Personnage::trouverEquipement(Equipement * e)
 			if(casque_)
 			{
 				std::cout<< " Voulez vous remplacer : "<<std::endl;
-				std::cout<<casque_->getNom()<<std::endl;
+				std::cout<< COLOR_EQUIP << casque_->getNom() << COLOR_RESET << std::endl;
 				std::cout<< "Par : " <<std::endl;
-				std::cout<<e->getNom()<< " ?   y/n "<< std::endl;
+				std::cout<< COLOR_EQUIP << e->getNom()<< COLOR_RESET <<" ?   y/n "<< std::endl;
 				std::cin >> choix;
 				if(choix == "y")
 				{
@@ -160,7 +165,7 @@ void Personnage::trouverEquipement(Equipement * e)
 			}
 			else
 			{
-				std::cout<<"Vous équipez : " << e->getNom() <<std::endl;
+				std::cout<<"Vous équipez : " << COLOR_EQUIP << e->getNom() << COLOR_RESET << std::endl;
 				setCasque(e);
 				uptoday_ = false;
 			}
@@ -169,9 +174,9 @@ void Personnage::trouverEquipement(Equipement * e)
 			if(torse_)
 			{
 				std::cout<< " Voulez vous remplacer : "<<std::endl;
-				std::cout<<torse_->getNom()<<std::endl;
+				std::cout<< COLOR_EQUIP << torse_->getNom() << COLOR_RESET << std::endl;
 				std::cout<< "Par : " <<std::endl;
-				std::cout<<e->getNom()<< " ?   y/n "<< std::endl;
+				std::cout<< COLOR_EQUIP << e->getNom()<< COLOR_RESET << " ?   y/n "<< std::endl;
 				std::cin >> choix;
 				if(choix == "y")
 				{
@@ -187,7 +192,7 @@ void Personnage::trouverEquipement(Equipement * e)
 			}
 			else
 			{
-				std::cout<<"Vous équipez : " << e->getNom() <<std::endl;
+				std::cout<<"Vous équipez : " << COLOR_EQUIP << e->getNom() << COLOR_RESET <<std::endl;
 				setTorse(e);
 				uptoday_ = false;
 			}
@@ -196,9 +201,9 @@ void Personnage::trouverEquipement(Equipement * e)
 			if(jambe_)
 			{
 				std::cout<< " Voulez vous remplacer : "<<std::endl;
-				std::cout<<jambe_->getNom()<<std::endl;
+				std::cout<< COLOR_EQUIP << jambe_->getNom() << COLOR_RESET <<std::endl;
 				std::cout<< "Par : " <<std::endl;
-				std::cout<<e->getNom()<< " ?   y/n "<< std::endl;
+				std::cout<< COLOR_EQUIP << e->getNom()<< COLOR_RESET << " ?   y/n "<< std::endl;
 				std::cin >> choix;
 				if(choix == "y")
 				{
@@ -213,7 +218,7 @@ void Personnage::trouverEquipement(Equipement * e)
 			}
 			else
 			{
-				std::cout<<"Vous équipez : " << e->getNom() <<std::endl;
+				std::cout<<"Vous équipez : " << COLOR_EQUIP << e->getNom() << COLOR_RESET << std::endl;
 				setJambe(e);
 				uptoday_ = false;
 			}
@@ -228,9 +233,9 @@ void Personnage::trouverArme(Arme * a)
 	if(arme_)
 	{
 		std::cout<< " Voulez vous remplacer : "<<std::endl;
-		std::cout<<arme_->getNom()<<std::endl;
+		std::cout<< COLOR_EQUIP << arme_->getNom() << COLOR_RESET << std::endl;
 		std::cout<< "Par : " <<std::endl;
-		std::cout<<a->getNom()<< " ?   y/n "<< std::endl;
+		std::cout<< COLOR_EQUIP << a->getNom() << COLOR_RESET << " ?   y/n "<< std::endl;
 		std::cin >> choix;
 		if(choix == "y")
 		{
@@ -245,7 +250,7 @@ void Personnage::trouverArme(Arme * a)
 	}
 	else
 	{
-		std::cout<<"Vous équipez : " << a->getNom() <<std::endl;
+		std::cout<<"Vous équipez : " << COLOR_EQUIP << a->getNom() << COLOR_RESET << std::endl;
 		setArme(a);
 		uptoday_ = false;
 	}

@@ -11,8 +11,10 @@
 #include "TreasureDecoArme.hpp"
 #include "TreasureDecoEquip.hpp"
 
+#include <unistd.h>
+
 TreasureRoom::TreasureRoom(int lvl):RoomComportement(lvl) {
-	m_content = "Tr";
+	m_content = COLOR_MAP_TREASURE "Tr" COLOR_MAP_DEFAULT;
 
 	int random = rand()%100;
 	if (random < 15) {
@@ -34,7 +36,7 @@ TreasureRoom::~TreasureRoom() {
 }
 
 int TreasureRoom::action(Personnage &perso) {
-	std::cout << perso.getNom() << " Vous avez trouvé un coffre" << std::endl;
+	std::cout << COLOR_PLAYER << perso.getNom() << COLOR_RESET " Vous avez trouvé un coffre" << std::endl;
 	std::string buff;
 	do {
 		std::cout << "Voulez-vous l'ouvrir ?(y or n)" << std::endl;
@@ -43,6 +45,7 @@ int TreasureRoom::action(Personnage &perso) {
 
 	if (buff[0] == 'y') {
 		m_treasure->open(perso);
+		sleep(1);
 		return RC_OPEN_TREASURE;
 	}
 

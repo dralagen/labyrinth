@@ -23,7 +23,7 @@ TreasureDecoArme::~TreasureDecoArme(){
 void TreasureDecoArme::open(Personnage &p) {
 	if (p.getArme() != NULL) {
 		for (int i = 0; i < (rand()%m_lvl)+1 ; ++i) {
-		std::cout << "Amélioration d'arme de ";
+		std::cout << COLOR_IMPROVEMENT << "Amélioration d'arme de ";
 		switch (rand()%4) {
 				case 0:
 					std::cout << "Dégat";
@@ -41,11 +41,11 @@ void TreasureDecoArme::open(Personnage &p) {
 					std::cout << "Vie";
 					p.setArme(new DArmeV(p.getArme()));
 		}
-		std::cout << std::endl;
+		std::cout << COLOR_RESET << std::endl;
 		}
 	}
 	else {
-		std::cout << "Objet non utilisable" << std::endl;
+		std::cout << COLOR_ERROR << "Objet non utilisable" << COLOR_RESET << std::endl;
 	}
 	sleep(1);
 }
