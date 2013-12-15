@@ -9,7 +9,7 @@
 
 DEquipA::DEquipA(Equipement * e):DEquip(e)
 {
-	nom_ = replace(" de Armure");
+	nom_ = replace(" d'Armure");
 	armure_ = 2;
 }
 
