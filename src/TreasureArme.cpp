@@ -11,6 +11,8 @@
 #include "DArmeF.hpp"
 #include "DArmeV.hpp"
 
+#include "Random.hpp"
+
 TreasureArme::TreasureArme(int lvl) {
 	if (lvl > 10)
 		m_lvl = 10;
@@ -22,10 +24,11 @@ TreasureArme::~TreasureArme() {
 }
 
 void TreasureArme::open(Personnage &p) {
-	ItemFactory *f = getFactory(rand());
+	Random *r = Random::getInstance();
+	ItemFactory *f = getFactory(r->getRand());
 	Arme *a;
 
-	switch (rand()%3) {
+	switch (r->getRand()%3) {
 		case 1:
 			a = f->GetEpee();
 			break;
@@ -37,7 +40,7 @@ void TreasureArme::open(Personnage &p) {
 	}
 
 	for (int i = 0; i < m_lvl; ++i) {
-		switch (rand()%6) {
+		switch (r->getRand()%6) {
 			case 0:
 				a = new DArmeD(a);
 				break;

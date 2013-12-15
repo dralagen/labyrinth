@@ -11,12 +11,10 @@ Labyrinth::Labyrinth(int x, int y) : m_tailleX(x), m_tailleY(y), m_gen(false) {
 	if (x < 2 || y < 2)
 		exit(1);
 
-	srand(time(NULL));
-
 	m_rooms = new Room[m_tailleX*m_tailleY];
 
-	m_current.x = (rand()%m_tailleX);
-	m_current.y = (rand()%m_tailleY);
+	m_current.x = (Random::getRandom()%m_tailleX);
+	m_current.y = (Random::getRandom()%m_tailleY);
 	m_precedent = m_current;
 }
 
@@ -91,21 +89,21 @@ void Labyrinth::_gen() {
 
 	int random;
 	for (int i = 0; i < m_tailleX*m_tailleY; ++i) {
-		random = rand()%100;
+		random = Random::getRandom()%100;
 		if (random < 60) {
 			m_rooms[i].setComportement(new EmptyRoom(0));
 		} else if (random < 70) {
-			m_rooms[i].setComportement(new TreasureRoom(rand()%10+1));
+			m_rooms[i].setComportement(new TreasureRoom(Random::getRandom()%10+1));
 		}	else {
-			m_rooms[i].setComportement(new MonsterRoom(rand()%10+1));
+			m_rooms[i].setComportement(new MonsterRoom(Random::getRandom()%10+1));
 		}
 	}
 	m_rooms[position(m_current)].setComportement(new StartRoom(0));
 
 	pos p;
 	do {
-		p.x = (rand()%m_tailleX);
-		p.y = (rand()%m_tailleY);
+		p.x = (Random::getRandom()%m_tailleX);
+		p.y = (Random::getRandom()%m_tailleY);
 	} while (p.x == m_current.x && p.y == m_current.y);
 	m_rooms[position(p)].setComportement(new EndRoom(15));
 
@@ -168,7 +166,7 @@ bool Labyrinth::hasAdjacent(pos p) const {
 
 pos Labyrinth::oneAdjacent(pos p) const {
 	pos np = p;
-	int random = rand() % 4;
+	int random = Random::getRandom() % 4;
 	do {
 		switch (random) {
 			case 1:

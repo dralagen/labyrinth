@@ -11,6 +11,8 @@
 #include "DEquipF.hpp"
 #include "DEquipV.hpp"
 
+#include "Random.hpp"
+
 TreasureEquip::TreasureEquip(int lvl) {
 	if (lvl > 10)
 		m_lvl = 10;
@@ -23,10 +25,10 @@ TreasureEquip::~TreasureEquip() {
 }
 
 void TreasureEquip::open(Personnage &p) {
-	ItemFactory *f = getFactory(rand());
+	Random *r = Random::getInstance();
+	ItemFactory *f = getFactory(r->getRand());
 	Equipement *e;
-
-	switch (rand()%3) {
+	switch (r->getRand()%3) {
 		case 1:
 			e = f->GetCasque();
 			break;
@@ -38,7 +40,7 @@ void TreasureEquip::open(Personnage &p) {
 	}
 
 	for (int i = 0; i < m_lvl ; ++i)  {
-		switch (rand()%6) {
+		switch (r->getRand()%6) {
 			case 0:
 				e = new DEquipA(e);
 				break;
@@ -55,6 +57,5 @@ void TreasureEquip::open(Personnage &p) {
 	}
 	delete f;
 	p.trouverEquipement(e);
-
 }
 

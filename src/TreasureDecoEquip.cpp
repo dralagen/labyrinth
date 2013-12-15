@@ -8,6 +8,7 @@
 #include "TreasureDecoEquip.hpp"
 
 #include <unistd.h>
+#include "Random.hpp"
 
 #include "DEquipA.hpp"
 #include "DEquipC.hpp"
@@ -48,10 +49,11 @@ void TreasureDecoEquip::open(Personnage &p) {
 	} while (!find);
 
 	if (e != NULL) {
-		for (int i = 0; i < (rand()%m_lvl)+1; ++i) {
+		Random *r = Random::getInstance();
+		for (int i = 0; i < (r->getRand()%m_lvl)+1; ++i) {
 			std::cout << COLOR_IMPROVEMENT << "Amélioration d'équipement ";
 
-			switch (rand()%4) {
+			switch (r->getRand()%4) {
 				case 0:
 					std::cout << "d'Armure";
 					e = new DEquipA(e);

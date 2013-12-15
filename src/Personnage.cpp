@@ -7,6 +7,7 @@
  */
 
 #include "Personnage.hpp"
+#include "Random.hpp"
 
 Personnage::Personnage(std::string nom):
 	nom_(nom),
@@ -374,7 +375,7 @@ int Personnage::recoitDegat(int pv){
 	if (armure_ == 0)
 		degat = pv;
 	else
-		degat = pv - rand()%(armure_);
+		degat = pv - Random::getRandom()%(armure_);
 
 	if (degat < 0)
 		degat = 0;
@@ -385,7 +386,7 @@ int Personnage::recoitDegat(int pv){
 
 int Personnage::envoieDegat() {
 	actuStat();
-	return  3*degat_ + force_ + force_*(rand()%(chance_));
+	return  3*degat_ + force_ + force_*(Random::getRandom()%(chance_));
 }
 
 bool Personnage::isAlive() {

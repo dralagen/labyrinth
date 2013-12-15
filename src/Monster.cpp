@@ -6,6 +6,7 @@
  * \date 27/11/2013
  */
 #include "Monster.hpp"
+#include "Random.hpp"
 
 Monster::Monster(int lvl): m_life(MONSTER_LIFE_MAX*lvl), m_damage(5*lvl), m_lvl(lvl){
 	std::ostringstream name;
@@ -16,11 +17,11 @@ Monster::Monster(int lvl): m_life(MONSTER_LIFE_MAX*lvl), m_damage(5*lvl), m_lvl(
 Monster::~Monster() {}
 
 int Monster::giveDamage() {
-	return m_damage+(rand()%(2*m_lvl));
+	return m_damage+(Random::getRandom()%(2*m_lvl));
 }
 
 int Monster::receiveDamage(int life) {
-	int damage = life - rand()%(2*m_lvl);
+	int damage = life - Random::getRandom()%(2*m_lvl);
 	if (damage < 0)
 		damage = 0;
 

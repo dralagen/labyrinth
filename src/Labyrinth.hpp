@@ -18,9 +18,9 @@
 #include "MonsterRoom.hpp"
 #include "TreasureRoom.hpp"
 
+#include "Random.hpp"
+
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
 
 
 #define LABYRINTH_TAILLE_X_DEFAULT 8

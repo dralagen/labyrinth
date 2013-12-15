@@ -12,6 +12,7 @@
 #include "DArmeF.hpp"
 #include "DArmeV.hpp"
 
+#include "Random.hpp"
 #include <unistd.h>
 
 TreasureDecoArme::TreasureDecoArme(int lvl):Treasure(lvl) {
@@ -22,9 +23,10 @@ TreasureDecoArme::~TreasureDecoArme(){
 
 void TreasureDecoArme::open(Personnage &p) {
 	if (p.getArme() != NULL) {
-		for (int i = 0; i < (rand()%m_lvl)+1 ; ++i) {
+		Random *r = Random::getInstance();
+		for (int i = 0; i < (r->getRand()%m_lvl)+1 ; ++i) {
 			std::cout << COLOR_IMPROVEMENT << "Amélioration d'arme de ";
-			switch (rand()%4) {
+			switch (r->getRand()%4) {
 				case 0:
 					std::cout << "Dégat";
 					p.setArme(new DArmeD(p.getArme()));

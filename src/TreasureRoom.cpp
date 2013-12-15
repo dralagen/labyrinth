@@ -11,6 +11,7 @@
 #include "TreasureDecoArme.hpp"
 #include "TreasureDecoEquip.hpp"
 
+#include "Random.hpp"
 #include <unistd.h>
 
 TreasureRoom::TreasureRoom(int lvl):RoomComportement(lvl) {
@@ -24,14 +25,14 @@ TreasureRoom::~TreasureRoom() {
 
 int TreasureRoom::action(Personnage &perso) {
 	if (m_treasure == 0) {
-		int random = rand()%100;
+		int random = Random::getRandom()%100;
 		if (random < 25 - 15*perso.getNbArme()) {
 			m_treasure = new TreasureArme(m_lvl);
 		}
 		else if (random < 25) {
 			m_treasure = new TreasureDecoArme(m_lvl);
 		}
-		else if (random < 100- 20*perso.getNbEquip()){
+		else if (random < 100 - 20*perso.getNbEquip()){
 				m_treasure = new TreasureEquip(m_lvl);
 		}
 		else {
