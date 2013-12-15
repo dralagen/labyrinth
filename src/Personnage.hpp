@@ -139,10 +139,21 @@ class Personnage
 		 * */
 		Equipement* getJambe();
 		/**
+		 * \brief Compte le nombre d'équipement que possède le personnage
+		 * \return nombre d'équipement du personnage
+		 */
+		int getNbEquip();
+
+		/**
 		 *\brief Arme du personnage
 		 *\return arme Arme équipé sur le personnage
 		 * */
 		Arme* getArme();
+		/**
+		 * \brief Compte les arme du personnage
+		 * \return nombre d'arme du personnage
+		 */
+		int getNbArme();
 		/**
 		 *\brief Propose au personnage d'équiper un Equipement
 		 *\param e Equipement proposé

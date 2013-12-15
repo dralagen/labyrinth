@@ -341,9 +341,31 @@ Equipement* Personnage::getJambe()
 	return jambe_;
 }
 
+int Personnage::getNbEquip() {
+	int nbEquip = 0;
+	if (casque_ != 0)
+		nbEquip++;
+
+	if (torse_ != 0)
+		nbEquip++;
+
+	if (jambe_ != 0)
+		nbEquip++;
+
+	return nbEquip;
+}
+
 Arme* Personnage::getArme()
 {
 	return arme_;
+}
+
+int Personnage::getNbArme() {
+	int nbArme = 0;
+	if (armure_ != 0)
+		nbArme++;
+
+	return nbArme;
 }
 
 int Personnage::recoitDegat(int pv){

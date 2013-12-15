@@ -15,20 +15,7 @@
 
 TreasureRoom::TreasureRoom(int lvl):RoomComportement(lvl) {
 	m_content = COLOR_MAP_TREASURE "Tr" COLOR_MAP_DEFAULT;
-
-	int random = rand()%100;
-	if (random < 15) {
-		m_treasure = new TreasureArme(lvl);
-	}
-	else if (random < 25) {
-		m_treasure = new TreasureDecoArme(lvl);
-	}
-	else if (random < 80 ){
-			m_treasure = new TreasureEquip(lvl);
-	}
-	else {
-		m_treasure = new TreasureDecoEquip(lvl);
-	}
+	m_treasure = 0;
 }
 
 TreasureRoom::~TreasureRoom() {
@@ -36,6 +23,21 @@ TreasureRoom::~TreasureRoom() {
 }
 
 int TreasureRoom::action(Personnage &perso) {
+	if (m_treasure == 0) {
+		int random = rand()%100;
+		if (random < 25 - 15*perso.getNbArme()) {
+			m_treasure = new TreasureArme(m_lvl);
+		}
+		else if (random < 25) {
+			m_treasure = new TreasureDecoArme(m_lvl);
+		}
+		else if (random < 100- 20*perso.getNbEquip()){
+				m_treasure = new TreasureEquip(m_lvl);
+		}
+		else {
+			m_treasure = new TreasureDecoEquip(m_lvl);
+		}
+	}
 	std::cout << COLOR_PLAYER << perso.getNom() << COLOR_RESET " Vous avez trouvé un coffre" << std::endl;
 	std::string buff;
 	do {
