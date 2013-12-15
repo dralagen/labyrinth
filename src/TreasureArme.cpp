@@ -13,11 +13,7 @@
 
 #include "Random.hpp"
 
-TreasureArme::TreasureArme(int lvl) {
-	if (lvl > 10)
-		m_lvl = 10;
-	else
-		m_lvl = lvl;
+TreasureArme::TreasureArme(int lvl): Treasure(lvl) {
 }
 
 TreasureArme::~TreasureArme() {

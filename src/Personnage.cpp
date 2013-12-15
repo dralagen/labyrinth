@@ -363,7 +363,7 @@ Arme* Personnage::getArme()
 
 int Personnage::getNbArme() {
 	int nbArme = 0;
-	if (armure_ != 0)
+	if (arme_ != 0)
 		nbArme++;
 
 	return nbArme;
