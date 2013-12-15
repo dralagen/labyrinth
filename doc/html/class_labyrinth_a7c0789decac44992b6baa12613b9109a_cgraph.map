@@ -1,9 +1,0 @@
-<map id="Labyrinth::print" name="Labyrinth::print">
-<area shape="rect" id="node2" href="$class_labyrinth.html#ac586bb4db152210ed424f77d68505502" title="Calcule la position de la salle dans le tableau. " alt="" coords="147,29,255,53"/>
-<area shape="rect" id="node3" href="$class_room.html#a621adfd7a12485b67ba9c26882252830" title="Affiche le contenue de la salle. " alt="" coords="162,77,241,101"/>
-<area shape="rect" id="node4" href="$class_room.html#a77d4ea167eb2e32638c4da2f84117873" title="Modifie le flux de sortie pour afficher le contenue de la salle. " alt="" coords="317,5,389,29"/>
-<area shape="rect" id="node5" href="$class_room.html#a792dfc1df5837f19a485b56e68ca4361" title="Modifie le flux de sortie pour afficher le contenue de la salle. " alt="" coords="310,53,397,77"/>
-<area shape="rect" id="node7" href="$class_room.html#a5f54422b1ad4569692927542c9ff6927" title="Modifie le flux de sortie pour afficher le contenue de la salle. " alt="" coords="308,101,399,125"/>
-<area shape="rect" id="node8" href="$class_room_etat.html#a89c60a235c1373e1e7ecf8bbe9a7d3d3" title="Ajout le contenue sur 3 lignes en fonction de l&#39;etat. " alt="" coords="305,149,402,173"/>
-<area shape="rect" id="node6" href="$class_room_comportement.html#a6927d638d17858a303d77b449c7552b4" title="Récupère le contenue de la salle. " alt="" coords="451,53,634,77"/>
-</map>

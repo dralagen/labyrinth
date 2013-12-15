@@ -4,9 +4,7 @@ var searchData=
   ['actustat',['actuStat',['../class_personnage.html#a540b4f0590d9ee6f11e10c335ff740a8',1,'Personnage']]],
   ['afficheequip',['afficheEquip',['../class_personnage.html#abfa0fbd5f6c38c7297964046de26db0a',1,'Personnage']]],
   ['affichestat',['afficheStat',['../class_personnage.html#a960d6680688c5bee1868ef7238849e7b',1,'Personnage']]],
-  ['arme',['Arme',['../class_arme.html',1,'Arme'],['../class_arme.html#afb975397e0624d374e759ef586f6a785',1,'Arme::Arme()']]],
-  ['arme_2ecpp',['Arme.cpp',['../_arme_8cpp.html',1,'']]],
-  ['arme_2ehpp',['Arme.hpp',['../_arme_8hpp.html',1,'']]],
+  ['arme',['Arme',['../class_arme.html',1,'']]],
   ['arme_5f',['arme_',['../class_personnage.html#a533d049b89eea9c730cb5baeebf3d1ae',1,'Personnage']]],
-  ['armure_5f',['armure_',['../class_equipement.html#a69339ce4f1f5fe7e6fcdeda5b74c14a4',1,'Equipement::armure_()'],['../class_personnage.html#adc9faad1d30de099542f716096a32a3b',1,'Personnage::armure_()']]]
+  ['armure_5f',['armure_',['../class_personnage.html#adc9faad1d30de099542f716096a32a3b',1,'Personnage']]]
 ];

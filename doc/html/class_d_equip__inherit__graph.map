@@ -1,7 +1,7 @@
 <map id="DEquip" name="DEquip">
-<area shape="rect" id="node3" href="$class_d_equip_a.html" title="Decorator d&#39;équipement d&#39;armure , hérite de DEquip. " alt="" coords="5,361,91,442"/>
-<area shape="rect" id="node4" href="$class_d_equip_c.html" title="Decorator d&#39;équipement de chance , hérite de DEquip. " alt="" coords="116,361,204,442"/>
-<area shape="rect" id="node5" href="$class_d_equip_f.html" title="Decorator d&#39;équipement de force , hérite de DEquip. " alt="" coords="229,361,315,442"/>
-<area shape="rect" id="node6" href="$class_d_equip_v.html" title="Decorator d&#39;équipement de vie , hérite de DEquip. " alt="" coords="339,361,425,442"/>
-<area shape="rect" id="node2" href="$class_equipement.html" title="Gestion des equipements. " alt="" coords="165,5,267,147"/>
+<area shape="rect" id="node5" href="$class_d_equip_a.html" title="Decorator d&#39;équipement d&#39;armure , hérite de DEquip." alt="" coords="5,427,91,525"/>
+<area shape="rect" id="node7" href="$class_d_equip_c.html" title="Decorator d&#39;équipement de chance , hérite de DEquip." alt="" coords="115,427,203,525"/>
+<area shape="rect" id="node9" href="$class_d_equip_f.html" title="Decorator d&#39;équipement de force , hérite de DEquip." alt="" coords="227,427,312,525"/>
+<area shape="rect" id="node11" href="$class_d_equip_v.html" title="Decorator d&#39;équipement de vie , hérite de DEquip." alt="" coords="336,427,421,525"/>
+<area shape="rect" id="node2" href="$class_equipement.html" title="Gestion des equipements." alt="" coords="163,6,264,183"/>
 </map>

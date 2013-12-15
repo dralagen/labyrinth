@@ -3,7 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.5"/>
 <title>Labyrinth RPG:  Fichier source de src/DEquip.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -13,7 +12,6 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +28,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Labyrinth RPG
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
    <div id="projectbrief">Un labyrinthe en 2D additionné à un Jeu de Rôle</div>
   </td>
@@ -39,16 +37,14 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.8.5 -->
+<!-- Généré par Doxygen 1.8.1.2 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
-      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -65,12 +61,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
-      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -93,7 +83,7 @@ $(document).ready(function(){initNavTree('_d_equip_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,52 +97,40 @@ $(document).ready(function(){initNavTree('_d_equip_8hpp_source.html','');});
 <div class="title">DEquip.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_d_equip_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef DEQUIP_HPP</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEQUIP_HPP</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_equipement_8hpp.html">Equipement.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_d_equip.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_d_equip.html">DEquip</a> : <span class="keyword">public</span> <a class="code" href="class_equipement.html">Equipement</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;Equipement.hpp&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="class_d_equip.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_d_equip.html" title="Decorator d&#39;équipement , hérite de Equipement.">DEquip</a> : <span class="keyword">public</span> <a class="code" href="class_equipement.html" title="Gestion des equipements.">Equipement</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_d_equip.html#a0243fb57df463a3d0a7c57e6e7980210">   19</a></span>&#160;        <a class="code" href="class_equipement.html">Equipement</a> * <a class="code" href="class_d_equip.html#a0243fb57df463a3d0a7c57e6e7980210">e_</a>;    </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="class_d_equip.html#a0243fb57df463a3d0a7c57e6e7980210">   19</a></span>&#160;        <a class="code" href="class_equipement.html" title="Gestion des equipements.">Equipement</a> * <a class="code" href="class_d_equip.html#a0243fb57df463a3d0a7c57e6e7980210" title="Equipement e pour la décoration.">e_</a>;    </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        std::string <a class="code" href="class_d_equip.html#af8a7e83f36094af1f34f5c81df6e3900">replace</a>(std::string str);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        std::string <a class="code" href="class_d_equip.html#af8a7e83f36094af1f34f5c81df6e3900" title="Retourne le nom de l&#39;équipement modifié">replace</a>(std::string str);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="class_d_equip.html#a1e7c01de5a65a38e5699b6d4679e8422">DEquip</a>(<a class="code" href="class_equipement.html">Equipement</a> *e);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="class_d_equip.html#a52a73a6b6cbd9bca7523eedafd90f3ef">~DEquip</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_d_equip.html#adb6645ce01c12a4cb3fe0b522ea6b25e">getBforce</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_d_equip.html#a085ea4ac21c238d8c147ff4e6d74794f">getBvie</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_d_equip.html#a39407c92f0de87306a33f57fd22ce997">getBchance</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_d_equip.html#a7b2c8227ae884c23ccc8f3a2e5702186">getArmure</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_d_equip.html#a7c31f807517e5940e899780ac6d7a5c3">type</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="class_d_equip.html#a1e7c01de5a65a38e5699b6d4679e8422" title="Constructeur du décorator d&#39;Equipement.">DEquip</a>(<a class="code" href="class_equipement.html" title="Gestion des equipements.">Equipement</a> *e);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        ~<a class="code" href="class_d_equip.html" title="Decorator d&#39;équipement , hérite de Equipement.">DEquip</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_d_equip.html#adb6645ce01c12a4cb3fe0b522ea6b25e" title="Renvoie le bonus de force.">getBforce</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_d_equip.html#a085ea4ac21c238d8c147ff4e6d74794f" title="Renvoie le bonus de vie.">getBvie</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_d_equip.html#a39407c92f0de87306a33f57fd22ce997" title="Renvoie le bonus de chance.">getBchance</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_d_equip.html#a7b2c8227ae884c23ccc8f3a2e5702186" title="Renvoie le bonus d&#39;armure.">getArmure</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_d_equip.html#a7c31f807517e5940e899780ac6d7a5c3" title="Renvoie le type de l&#39;Equipement.">type</a>();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DEQUIP_HPP */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="class_d_equip_html_a7b2c8227ae884c23ccc8f3a2e5702186"><div class="ttname"><a href="class_d_equip.html#a7b2c8227ae884c23ccc8f3a2e5702186">DEquip::getArmure</a></div><div class="ttdeci">int getArmure()</div><div class="ttdoc">Renvoie le bonus d&amp;#39;armure. </div><div class="ttdef"><b>Definition:</b> DEquip.cpp:27</div></div>
-<div class="ttc" id="class_equipement_html"><div class="ttname"><a href="class_equipement.html">Equipement</a></div><div class="ttdoc">Gestion des equipements. </div><div class="ttdef"><b>Definition:</b> Equipement.hpp:23</div></div>
-<div class="ttc" id="class_d_equip_html"><div class="ttname"><a href="class_d_equip.html">DEquip</a></div><div class="ttdoc">Decorator d&amp;#39;équipement , hérite de Equipement. </div><div class="ttdef"><b>Definition:</b> DEquip.hpp:16</div></div>
-<div class="ttc" id="class_d_equip_html_a0243fb57df463a3d0a7c57e6e7980210"><div class="ttname"><a href="class_d_equip.html#a0243fb57df463a3d0a7c57e6e7980210">DEquip::e_</a></div><div class="ttdeci">Equipement * e_</div><div class="ttdoc">Equipement e pour la décoration. </div><div class="ttdef"><b>Definition:</b> DEquip.hpp:19</div></div>
-<div class="ttc" id="class_d_equip_html_af8a7e83f36094af1f34f5c81df6e3900"><div class="ttname"><a href="class_d_equip.html#af8a7e83f36094af1f34f5c81df6e3900">DEquip::replace</a></div><div class="ttdeci">std::string replace(std::string str)</div><div class="ttdoc">Retourne le nom de l&amp;#39;équipement modifié </div><div class="ttdef"><b>Definition:</b> DEquip.cpp:50</div></div>
-<div class="ttc" id="class_d_equip_html_a39407c92f0de87306a33f57fd22ce997"><div class="ttname"><a href="class_d_equip.html#a39407c92f0de87306a33f57fd22ce997">DEquip::getBchance</a></div><div class="ttdeci">int getBchance()</div><div class="ttdoc">Renvoie le bonus de chance. </div><div class="ttdef"><b>Definition:</b> DEquip.cpp:22</div></div>
-<div class="ttc" id="class_d_equip_html_a7c31f807517e5940e899780ac6d7a5c3"><div class="ttname"><a href="class_d_equip.html#a7c31f807517e5940e899780ac6d7a5c3">DEquip::type</a></div><div class="ttdeci">int type()</div><div class="ttdoc">Renvoie le type de l&amp;#39;Equipement. </div><div class="ttdef"><b>Definition:</b> DEquip.cpp:42</div></div>
-<div class="ttc" id="class_d_equip_html_a085ea4ac21c238d8c147ff4e6d74794f"><div class="ttname"><a href="class_d_equip.html#a085ea4ac21c238d8c147ff4e6d74794f">DEquip::getBvie</a></div><div class="ttdeci">int getBvie()</div><div class="ttdoc">Renvoie le bonus de vie. </div><div class="ttdef"><b>Definition:</b> DEquip.cpp:37</div></div>
-<div class="ttc" id="_equipement_8hpp_html"><div class="ttname"><a href="_equipement_8hpp.html">Equipement.hpp</a></div></div>
-<div class="ttc" id="class_d_equip_html_a1e7c01de5a65a38e5699b6d4679e8422"><div class="ttname"><a href="class_d_equip.html#a1e7c01de5a65a38e5699b6d4679e8422">DEquip::DEquip</a></div><div class="ttdeci">DEquip(Equipement *e)</div><div class="ttdoc">Constructeur du décorator d&amp;#39;Equipement. </div><div class="ttdef"><b>Definition:</b> DEquip.cpp:14</div></div>
-<div class="ttc" id="class_d_equip_html_a52a73a6b6cbd9bca7523eedafd90f3ef"><div class="ttname"><a href="class_d_equip.html#a52a73a6b6cbd9bca7523eedafd90f3ef">DEquip::~DEquip</a></div><div class="ttdeci">~DEquip()</div><div class="ttdef"><b>Definition:</b> DEquip.cpp:18</div></div>
-<div class="ttc" id="class_d_equip_html_adb6645ce01c12a4cb3fe0b522ea6b25e"><div class="ttname"><a href="class_d_equip.html#adb6645ce01c12a4cb3fe0b522ea6b25e">DEquip::getBforce</a></div><div class="ttdeci">int getBforce()</div><div class="ttdoc">Renvoie le bonus de force. </div><div class="ttdef"><b>Definition:</b> DEquip.cpp:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_d_equip_8hpp.html">DEquip.hpp</a></li>
-    <li class="footer">Généré le Mercredi Novembre 27 2013 13:38:46 pour Labyrinth RPG par
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>DEquip.hpp</b></li>
+    <li class="footer">Généré le Dimanche Décembre 15 2013 18:25:35 pour Labyrinth RPG par
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>
 </div>
 </body>

@@ -1,6 +1,6 @@
 <map id="Hache" name="Hache">
-<area shape="rect" id="node3" href="$class_hache_chance.html" title="HacheChance herite de Hache. " alt="" coords="5,326,117,407"/>
-<area shape="rect" id="node4" href="$class_hache_force.html" title="HacheForce herite de Hache. " alt="" coords="143,326,247,407"/>
-<area shape="rect" id="node5" href="$class_hache_vie.html" title="HacheVie herite de Hache. " alt="" coords="271,326,361,407"/>
-<area shape="rect" id="node2" href="$class_arme.html" title="Gestion des armes. " alt="" coords="151,5,237,147"/>
+<area shape="rect" id="node5" href="$class_hache_chance.html" title="HacheChance herite de Hache." alt="" coords="5,379,117,477"/>
+<area shape="rect" id="node7" href="$class_hache_force.html" title="HacheForce herite de Hache." alt="" coords="141,379,245,477"/>
+<area shape="rect" id="node9" href="$class_hache_vie.html" title="HacheVie herite de Hache." alt="" coords="269,379,360,477"/>
+<area shape="rect" id="node2" href="$class_arme.html" title="Gestion des armes." alt="" coords="151,6,236,183"/>
 </map>

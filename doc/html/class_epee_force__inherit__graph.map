@@ -1,4 +1,4 @@
 <map id="EpeeForce" name="EpeeForce">
-<area shape="rect" id="node2" href="$class_epee.html" title="Epee herite de Arme. " alt="" coords="19,195,89,277"/>
-<area shape="rect" id="node3" href="$class_arme.html" title="Gestion des armes. " alt="" coords="11,5,97,147"/>
+<area shape="rect" id="node2" href="$class_epee.html" title="Epee herite de Arme." alt="" coords="20,233,89,330"/>
+<area shape="rect" id="node4" href="$class_arme.html" title="Gestion des armes." alt="" coords="12,6,97,183"/>
 </map>

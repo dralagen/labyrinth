@@ -1,4 +1,0 @@
-<map id="Personnage::recoitDegat" name="Personnage::recoitDegat">
-<area shape="rect" id="node2" href="$class_monster_room.html#ae69b27248fe57b2043d9653f3e831cb8" title="Combat un montre. " alt="" coords="195,5,319,29"/>
-<area shape="rect" id="node3" href="$class_end_room.html#ad7691b55dcf3ed863c8a774138105900" title="Combat un boss puis fini le jeu. " alt="" coords="368,5,472,29"/>
-</map>

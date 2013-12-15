@@ -1,6 +1,7 @@
 var class_item_factory =
 [
     [ "~ItemFactory", "class_item_factory.html#a4a60b3a16d648161403ee0f1431c8a5b", null ],
+    [ "CreateFactory", "class_item_factory.html#ab10257decaf2cda946ec482a0dfdfe03", null ],
     [ "GetCasque", "class_item_factory.html#a89450cf0176a8da74cc5a9b8ef5aaae6", null ],
     [ "GetDague", "class_item_factory.html#a65ed7c9978011812487e6b12b4155fbd", null ],
     [ "GetEpee", "class_item_factory.html#a8a413e61bf23ad24a549382e4e4e396f", null ],

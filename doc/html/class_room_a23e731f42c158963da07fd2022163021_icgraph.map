@@ -1,8 +1,0 @@
-<map id="Room::setEast" name="Room::setEast">
-<area shape="rect" id="node2" href="$class_labyrinth.html#a1c81f6ddf4749788d5e97774c6970411" title="Créer une porte entre la salle s1 et s2 s1 et s2 adjacent. " alt="" coords="147,5,267,29"/>
-<area shape="rect" id="node3" href="$class_labyrinth.html#a1589aae4f56635fd38d4704196571646" title="Ouvre les chemins a partir de la position p. " alt="" coords="315,5,400,29"/>
-<area shape="rect" id="node4" href="$class_labyrinth.html#afc29f7969b11105584bf51c616740bce" title="Génère le labyrinthe. " alt="" coords="448,5,544,29"/>
-<area shape="rect" id="node5" href="$class_labyrinth.html#a4f94ffe9a0097abea1657b8b3d8d85a6" title="génére qu&#39;une fois le labyrinth " alt="" coords="592,5,683,29"/>
-<area shape="rect" id="node6" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie. " alt="" coords="731,5,819,29"/>
-<area shape="rect" id="node7" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="867,5,912,29"/>
-</map>

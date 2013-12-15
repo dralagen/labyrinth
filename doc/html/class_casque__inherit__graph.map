@@ -1,6 +1,6 @@
 <map id="Casque" name="Casque">
-<area shape="rect" id="node3" href="$class_casque_chance.html" title="CasqueChance herite de Casque. " alt="" coords="5,336,117,405"/>
-<area shape="rect" id="node4" href="$class_casque_force.html" title="CasqueForce herite de Casque. " alt="" coords="143,336,247,405"/>
-<area shape="rect" id="node5" href="$class_casque_vie.html" title="CasqueVie herite de Casque. " alt="" coords="271,336,361,405"/>
-<area shape="rect" id="node2" href="$class_equipement.html" title="Gestion des equipements. " alt="" coords="143,5,245,147"/>
+<area shape="rect" id="node5" href="$class_casque_chance.html" title="CasqueChance herite de Casque." alt="" coords="5,395,117,477"/>
+<area shape="rect" id="node7" href="$class_casque_force.html" title="CasqueForce herite de Casque." alt="" coords="141,395,245,477"/>
+<area shape="rect" id="node9" href="$class_casque_vie.html" title="CasqueVie herite de Casque." alt="" coords="269,395,360,477"/>
+<area shape="rect" id="node2" href="$class_equipement.html" title="Gestion des equipements." alt="" coords="143,6,244,183"/>
 </map>

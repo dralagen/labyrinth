@@ -3,7 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.5"/>
 <title>Labyrinth RPG:  Fichier source de src/TreasureRoom.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -13,7 +12,6 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +28,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Labyrinth RPG
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
    <div id="projectbrief">Un labyrinthe en 2D additionné à un Jeu de Rôle</div>
   </td>
@@ -39,16 +37,14 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.8.5 -->
+<!-- Généré par Doxygen 1.8.1.2 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
-      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -65,12 +61,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
-      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -93,7 +83,7 @@ $(document).ready(function(){initNavTree('_treasure_room_8hpp_source.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,45 +97,35 @@ $(document).ready(function(){initNavTree('_treasure_room_8hpp_source.html','');}
 <div class="title">TreasureRoom.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_treasure_room_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef TREASUREROOM_HPP</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TREASUREROOM_HPP</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_room_comportement_8hpp.html">RoomComportement.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_treasure_8hpp.html">Treasure.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;RoomComportement.hpp&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;Treasure.hpp&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_treasure_room.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_treasure_room.html">TreasureRoom</a> : <span class="keyword">public</span> <a class="code" href="class_room_comportement.html">RoomComportement</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="class_treasure_room.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_treasure_room.html" title="Salle contenant un trésor.">TreasureRoom</a> : <span class="keyword">public</span> <a class="code" href="class_room_comportement.html" title="Génère le comportement des salles.">RoomComportement</a></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="class_treasure_room.html#a1a670b1d1e5d0f7f40861bac17e89de2">TreasureRoom</a> (<span class="keywordtype">int</span> lvl = 0);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_treasure_room.html#a1d78be9429d5b2bc82b1c1d5d1f9b11a">~TreasureRoom</a> ();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="class_treasure_room.html" title="Salle contenant un trésor.">TreasureRoom</a> (<span class="keywordtype">int</span> lvl = 0);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="class_treasure_room.html" title="Salle contenant un trésor.">TreasureRoom</a> ();</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_treasure_room.html#af2719c053785a2523dcd902820766bea">action</a>(<a class="code" href="class_personnage.html">Personnage</a> &amp;perso);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_treasure_room.html#af2719c053785a2523dcd902820766bea" title="Ouvre un coffre, le Personnage peut reçoit un bonus aleatoire plus ou moins bien.">action</a>(<a class="code" href="class_personnage.html" title="Gestion du Personnage.">Personnage</a> &amp;perso);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_treasure_room.html#a60623664a3a1bac1d3a0431269dc740b">   34</a></span>&#160;        <a class="code" href="class_treasure.html">Treasure</a> *<a class="code" href="class_treasure_room.html#a60623664a3a1bac1d3a0431269dc740b">m_treasure</a>; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="class_treasure_room.html#a60623664a3a1bac1d3a0431269dc740b">   34</a></span>&#160;        <a class="code" href="class_treasure.html" title="Coffre de salle.">Treasure</a> *<a class="code" href="class_treasure_room.html#a60623664a3a1bac1d3a0431269dc740b" title="le trésor de la salle">m_treasure</a>; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TREASUREROOM_HPP */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="class_treasure_room_html_a60623664a3a1bac1d3a0431269dc740b"><div class="ttname"><a href="class_treasure_room.html#a60623664a3a1bac1d3a0431269dc740b">TreasureRoom::m_treasure</a></div><div class="ttdeci">Treasure * m_treasure</div><div class="ttdoc">le trésor de la salle </div><div class="ttdef"><b>Definition:</b> TreasureRoom.hpp:34</div></div>
-<div class="ttc" id="class_treasure_room_html"><div class="ttname"><a href="class_treasure_room.html">TreasureRoom</a></div><div class="ttdoc">Salle contenant un trésor. </div><div class="ttdef"><b>Definition:</b> TreasureRoom.hpp:18</div></div>
-<div class="ttc" id="_room_comportement_8hpp_html"><div class="ttname"><a href="_room_comportement_8hpp.html">RoomComportement.hpp</a></div></div>
-<div class="ttc" id="class_room_comportement_html"><div class="ttname"><a href="class_room_comportement.html">RoomComportement</a></div><div class="ttdoc">Génère le comportement des salles. </div><div class="ttdef"><b>Definition:</b> RoomComportement.hpp:25</div></div>
-<div class="ttc" id="class_treasure_room_html_a1d78be9429d5b2bc82b1c1d5d1f9b11a"><div class="ttname"><a href="class_treasure_room.html#a1d78be9429d5b2bc82b1c1d5d1f9b11a">TreasureRoom::~TreasureRoom</a></div><div class="ttdeci">virtual ~TreasureRoom()</div><div class="ttdef"><b>Definition:</b> TreasureRoom.cpp:32</div></div>
-<div class="ttc" id="class_treasure_html"><div class="ttname"><a href="class_treasure.html">Treasure</a></div><div class="ttdoc">Coffre de salle. </div><div class="ttdef"><b>Definition:</b> Treasure.hpp:20</div></div>
-<div class="ttc" id="class_treasure_room_html_a1a670b1d1e5d0f7f40861bac17e89de2"><div class="ttname"><a href="class_treasure_room.html#a1a670b1d1e5d0f7f40861bac17e89de2">TreasureRoom::TreasureRoom</a></div><div class="ttdeci">TreasureRoom(int lvl=0)</div><div class="ttdef"><b>Definition:</b> TreasureRoom.cpp:14</div></div>
-<div class="ttc" id="_treasure_8hpp_html"><div class="ttname"><a href="_treasure_8hpp.html">Treasure.hpp</a></div></div>
-<div class="ttc" id="class_treasure_room_html_af2719c053785a2523dcd902820766bea"><div class="ttname"><a href="class_treasure_room.html#af2719c053785a2523dcd902820766bea">TreasureRoom::action</a></div><div class="ttdeci">virtual int action(Personnage &amp;perso)</div><div class="ttdoc">Ouvre un coffre, le Personnage peut reçoit un bonus aleatoire plus ou moins bien. ...</div><div class="ttdef"><b>Definition:</b> TreasureRoom.cpp:36</div></div>
-<div class="ttc" id="class_personnage_html"><div class="ttname"><a href="class_personnage.html">Personnage</a></div><div class="ttdoc">Gestion du Personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_treasure_room_8hpp.html">TreasureRoom.hpp</a></li>
-    <li class="footer">Généré le Mercredi Novembre 27 2013 13:38:46 pour Labyrinth RPG par
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>TreasureRoom.hpp</b></li>
+    <li class="footer">Généré le Dimanche Décembre 15 2013 18:25:35 pour Labyrinth RPG par
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>
 </div>
 </body>

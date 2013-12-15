@@ -1,8 +1,0 @@
-<map id="Personnage::afficheStat" name="Personnage::afficheStat">
-<area shape="rect" id="node2" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie. " alt="" coords="227,5,315,29"/>
-<area shape="rect" id="node4" href="$class_personnage.html#a9362a76b5b3219916d68697e0606bf2c" title="Modifie la vie du personnage. " alt="" coords="201,53,340,77"/>
-<area shape="rect" id="node6" href="$class_personnage.html#ade3579c11cd6e6c535ff7290c5248ff5" title="Modifie la force du personnage. " alt="" coords="195,101,347,125"/>
-<area shape="rect" id="node7" href="$class_personnage.html#a9ebc2089ffd538189715e3cc58bab4e0" title="Modifie la chance du personnage. " alt="" coords="190,149,351,173"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="435,5,480,29"/>
-<area shape="rect" id="node5" href="$class_empty_room.html#a31fdcab2da18636773d28f393e48cd7b" title="Redonne un petit peu de points de vie au joueur. " alt="" coords="400,53,515,77"/>
-</map>

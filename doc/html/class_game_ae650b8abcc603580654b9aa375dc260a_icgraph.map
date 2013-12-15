@@ -1,5 +1,0 @@
-<map id="Game::help" name="Game::help">
-<area shape="rect" id="node2" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie. " alt="" coords="299,5,387,29"/>
-<area shape="rect" id="node4" href="$class_game.html#a70b3d987f25dd5e1aeb6ab18cfedc387" title="Choisie une direction et execute l&#39;action de la salle. " alt="" coords="131,29,251,53"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="435,5,480,29"/>
-</map>

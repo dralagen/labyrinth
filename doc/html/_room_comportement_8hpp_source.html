@@ -3,7 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.5"/>
 <title>Labyrinth RPG:  Fichier source de src/RoomComportement.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -13,7 +12,6 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +28,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Labyrinth RPG
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
    <div id="projectbrief">Un labyrinthe en 2D additionné à un Jeu de Rôle</div>
   </td>
@@ -39,16 +37,14 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.8.5 -->
+<!-- Généré par Doxygen 1.8.1.2 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
-      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -65,12 +61,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
-      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -93,7 +83,7 @@ $(document).ready(function(){initNavTree('_room_comportement_8hpp_source.html','
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,60 +97,49 @@ $(document).ready(function(){initNavTree('_room_comportement_8hpp_source.html','
 <div class="title">RoomComportement.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_room_comportement_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef ROOMCOMPORTEMENT_HPP</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ROOMCOMPORTEMENT_HPP</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_personnage_8hpp.html">Personnage.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;Personnage.hpp&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_room_comportement_8hpp.html#a228594fd04a7ab543e68f1ac28ea8eac">   16</a></span>&#160;<span class="preprocessor">#define RC_NOTHING 0</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="_room_comportement_8hpp.html#a27ea370fd969a1396086bf2f8c0dd0e4">   17</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define RC_OPEN_TREASURE  1</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="_room_comportement_8hpp.html#aea7f8ee3f3c4fd264c4764bf0ae57ad9">   18</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define RC_CLEAN_MONSTER  2</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="_room_comportement_8hpp.html#ac3db03f2d6ce0b6242e263cba9cba86e">   19</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define RC_UNDO -1</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define RC_NOTHING 0</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define RC_OPEN_TREASURE  1</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define RC_CLEAN_MONSTER  2</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define RC_UNDO -1</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_room_comportement.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_room_comportement.html">RoomComportement</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="class_room_comportement.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_room_comportement.html" title="Génère le comportement des salles.">RoomComportement</a></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="class_room_comportement.html#ad73012620d96a614fa9eb481227ad239">RoomComportement</a> (<span class="keywordtype">int</span> lvl = 10);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_room_comportement.html#a3ca1154569822e1a717cd14a849658ae">~RoomComportement</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="class_room_comportement.html#ad73012620d96a614fa9eb481227ad239" title="Constructeur.">RoomComportement</a> (<span class="keywordtype">int</span> lvl = 10);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_room_comportement.html#a3ca1154569822e1a717cd14a849658ae" title="Destructeur.">~RoomComportement</a>();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_room_comportement.html#ac5b509f405f9e52fea3a9392210fbbdb">action</a>(<a class="code" href="class_personnage.html">Personnage</a> &amp;p) = 0;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_room_comportement.html#a240991f90b07c35e0e9114e6a203ba88">isEnd</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_room_comportement.html#ac5b509f405f9e52fea3a9392210fbbdb" title="Execute l&#39;action du comportement.">action</a>(<a class="code" href="class_personnage.html" title="Gestion du Personnage.">Personnage</a> &amp;p) = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_room_comportement.html#a240991f90b07c35e0e9114e6a203ba88" title="Vérifie la fin.">isEnd</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_room_comportement.html#a645473f228c0e73532a309ad512456eb">getLvl</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_room_comportement.html#a645473f228c0e73532a309ad512456eb" title="Récupère le niveau ou force de la salle.">getLvl</a>();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        std::string <a class="code" href="class_room_comportement.html#a6927d638d17858a303d77b449c7552b4">getContent</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        std::string <a class="code" href="class_room_comportement.html#a6927d638d17858a303d77b449c7552b4" title="Récupère le contenue de la salle.">getContent</a>();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_room_comportement.html#a48186371372d14465faffc7734e89fdc">   68</a></span>&#160;        std::string <a class="code" href="class_room_comportement.html#a48186371372d14465faffc7734e89fdc">m_content</a>;   </div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_room_comportement.html#acfc0d0c3c7dbcd88235e8c615f7290a3">   69</a></span>&#160;        <span class="keywordtype">int</span>         <a class="code" href="class_room_comportement.html#acfc0d0c3c7dbcd88235e8c615f7290a3">m_lvl</a>;       </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="class_room_comportement.html#a48186371372d14465faffc7734e89fdc">   68</a></span>&#160;        std::string <a class="code" href="class_room_comportement.html#a48186371372d14465faffc7734e89fdc" title="Valeur du contenue a afficher.">m_content</a>;   </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="class_room_comportement.html#acfc0d0c3c7dbcd88235e8c615f7290a3">   69</a></span>&#160;        <span class="keywordtype">int</span>         <a class="code" href="class_room_comportement.html#acfc0d0c3c7dbcd88235e8c615f7290a3" title="stock le niveau de la salle">m_lvl</a>;       </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ROOMCOMPORTEMENT_HPP */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="class_room_comportement_html_a240991f90b07c35e0e9114e6a203ba88"><div class="ttname"><a href="class_room_comportement.html#a240991f90b07c35e0e9114e6a203ba88">RoomComportement::isEnd</a></div><div class="ttdeci">virtual bool isEnd() const </div><div class="ttdoc">Vérifie la fin. </div><div class="ttdef"><b>Definition:</b> RoomComportement.cpp:22</div></div>
-<div class="ttc" id="class_room_comportement_html_acfc0d0c3c7dbcd88235e8c615f7290a3"><div class="ttname"><a href="class_room_comportement.html#acfc0d0c3c7dbcd88235e8c615f7290a3">RoomComportement::m_lvl</a></div><div class="ttdeci">int m_lvl</div><div class="ttdoc">stock le niveau de la salle </div><div class="ttdef"><b>Definition:</b> RoomComportement.hpp:69</div></div>
-<div class="ttc" id="_personnage_8hpp_html"><div class="ttname"><a href="_personnage_8hpp.html">Personnage.hpp</a></div></div>
-<div class="ttc" id="class_room_comportement_html_ad73012620d96a614fa9eb481227ad239"><div class="ttname"><a href="class_room_comportement.html#ad73012620d96a614fa9eb481227ad239">RoomComportement::RoomComportement</a></div><div class="ttdeci">RoomComportement(int lvl=10)</div><div class="ttdoc">Constructeur. </div><div class="ttdef"><b>Definition:</b> RoomComportement.cpp:10</div></div>
-<div class="ttc" id="class_room_comportement_html"><div class="ttname"><a href="class_room_comportement.html">RoomComportement</a></div><div class="ttdoc">Génère le comportement des salles. </div><div class="ttdef"><b>Definition:</b> RoomComportement.hpp:25</div></div>
-<div class="ttc" id="class_room_comportement_html_a645473f228c0e73532a309ad512456eb"><div class="ttname"><a href="class_room_comportement.html#a645473f228c0e73532a309ad512456eb">RoomComportement::getLvl</a></div><div class="ttdeci">int getLvl()</div><div class="ttdoc">Récupère le niveau ou force de la salle. </div><div class="ttdef"><b>Definition:</b> RoomComportement.cpp:18</div></div>
-<div class="ttc" id="class_room_comportement_html_a48186371372d14465faffc7734e89fdc"><div class="ttname"><a href="class_room_comportement.html#a48186371372d14465faffc7734e89fdc">RoomComportement::m_content</a></div><div class="ttdeci">std::string m_content</div><div class="ttdoc">Valeur du contenue a afficher. </div><div class="ttdef"><b>Definition:</b> RoomComportement.hpp:68</div></div>
-<div class="ttc" id="class_room_comportement_html_ac5b509f405f9e52fea3a9392210fbbdb"><div class="ttname"><a href="class_room_comportement.html#ac5b509f405f9e52fea3a9392210fbbdb">RoomComportement::action</a></div><div class="ttdeci">virtual int action(Personnage &amp;p)=0</div><div class="ttdoc">Execute l&amp;#39;action du comportement. </div></div>
-<div class="ttc" id="class_room_comportement_html_a6927d638d17858a303d77b449c7552b4"><div class="ttname"><a href="class_room_comportement.html#a6927d638d17858a303d77b449c7552b4">RoomComportement::getContent</a></div><div class="ttdeci">std::string getContent()</div><div class="ttdoc">Récupère le contenue de la salle. </div><div class="ttdef"><b>Definition:</b> RoomComportement.cpp:14</div></div>
-<div class="ttc" id="class_room_comportement_html_a3ca1154569822e1a717cd14a849658ae"><div class="ttname"><a href="class_room_comportement.html#a3ca1154569822e1a717cd14a849658ae">RoomComportement::~RoomComportement</a></div><div class="ttdeci">virtual ~RoomComportement()</div><div class="ttdoc">Destructeur. </div><div class="ttdef"><b>Definition:</b> RoomComportement.cpp:12</div></div>
-<div class="ttc" id="class_personnage_html"><div class="ttname"><a href="class_personnage.html">Personnage</a></div><div class="ttdoc">Gestion du Personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_room_comportement_8hpp.html">RoomComportement.hpp</a></li>
-    <li class="footer">Généré le Mercredi Novembre 27 2013 13:38:46 pour Labyrinth RPG par
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>RoomComportement.hpp</b></li>
+    <li class="footer">Généré le Dimanche Décembre 15 2013 18:25:35 pour Labyrinth RPG par
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>
 </div>
 </body>

@@ -3,7 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.5"/>
 <title>Labyrinth RPG:  Fichier source de src/RoomEtat.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -13,7 +12,6 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +28,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Labyrinth RPG
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
    <div id="projectbrief">Un labyrinthe en 2D additionné à un Jeu de Rôle</div>
   </td>
@@ -39,16 +37,14 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.8.5 -->
+<!-- Généré par Doxygen 1.8.1.2 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
-      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -65,12 +61,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
-      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -93,7 +83,7 @@ $(document).ready(function(){initNavTree('_room_etat_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,7 +97,7 @@ $(document).ready(function(){initNavTree('_room_etat_8hpp_source.html','');});
 <div class="title">RoomEtat.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_room_etat_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef ROOMETAT_HPP</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ROOMETAT_HPP</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
@@ -115,42 +105,35 @@ $(document).ready(function(){initNavTree('_room_etat_8hpp_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="class_room.html">Room</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_room_etat.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_room_etat.html">RoomEtat</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="class_room.html" title="gestion de salle">Room</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="class_room_etat.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_room_etat.html" title="Gestion de l&#39;état de visite de la salle.">RoomEtat</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="class_room_etat.html#af58ed4af42aafb0ccb215f1b8e785b01">RoomEtat</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="class_room_etat.html#af58ed4af42aafb0ccb215f1b8e785b01">RoomEtat</a>(<a class="code" href="class_room.html">Room</a> *r);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_room_etat.html#a33850ef20c63d013475eb5b7d4e17185">~RoomEtat</a> ();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="class_room_etat.html" title="Gestion de l&#39;état de visite de la salle.">RoomEtat</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="class_room_etat.html" title="Gestion de l&#39;état de visite de la salle.">RoomEtat</a>(<a class="code" href="class_room.html" title="gestion de salle">Room</a> *r);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="class_room_etat.html" title="Gestion de l&#39;état de visite de la salle.">RoomEtat</a> ();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_room_etat.html#a89c60a235c1373e1e7ecf8bbe9a7d3d3">print</a>  (std::string &amp;t,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_room_etat.html#a89c60a235c1373e1e7ecf8bbe9a7d3d3" title="Ajout le contenue sur 3 lignes en fonction de l&#39;etat.">print</a>  (std::string &amp;t,</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                 std::string &amp;c,</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                                 std::string &amp;b) <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_room_etat.html#ae02e142515e04ec9ad1219c1a1b99b61">visited</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_room_etat.html#ae02e142515e04ec9ad1219c1a1b99b61" title="Verifie si on a déjà visité cette salle.">visited</a>() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_room_etat.html#a5b23317f60b9d268bbe669955b3c4725">   48</a></span>&#160;        <a class="code" href="class_room.html">Room</a> *<a class="code" href="class_room_etat.html#a5b23317f60b9d268bbe669955b3c4725">m_room</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_room.html" title="gestion de salle">Room</a> *m_room;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ROOMETAT_HPP */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="class_room_etat_html_a33850ef20c63d013475eb5b7d4e17185"><div class="ttname"><a href="class_room_etat.html#a33850ef20c63d013475eb5b7d4e17185">RoomEtat::~RoomEtat</a></div><div class="ttdeci">virtual ~RoomEtat()</div><div class="ttdef"><b>Definition:</b> RoomEtat.cpp:17</div></div>
-<div class="ttc" id="class_room_etat_html_a89c60a235c1373e1e7ecf8bbe9a7d3d3"><div class="ttname"><a href="class_room_etat.html#a89c60a235c1373e1e7ecf8bbe9a7d3d3">RoomEtat::print</a></div><div class="ttdeci">virtual void print(std::string &amp;t, std::string &amp;c, std::string &amp;b) const =0</div><div class="ttdoc">Ajout le contenue sur 3 lignes en fonction de l&amp;#39;etat. </div></div>
-<div class="ttc" id="class_room_etat_html"><div class="ttname"><a href="class_room_etat.html">RoomEtat</a></div><div class="ttdoc">Gestion de l&amp;#39;état de visite de la salle. </div><div class="ttdef"><b>Definition:</b> RoomEtat.hpp:20</div></div>
-<div class="ttc" id="class_room_etat_html_ae02e142515e04ec9ad1219c1a1b99b61"><div class="ttname"><a href="class_room_etat.html#ae02e142515e04ec9ad1219c1a1b99b61">RoomEtat::visited</a></div><div class="ttdeci">virtual bool visited() const =0</div><div class="ttdoc">Verifie si on a déjà visité cette salle. </div></div>
-<div class="ttc" id="class_room_html"><div class="ttname"><a href="class_room.html">Room</a></div><div class="ttdoc">gestion de salle </div><div class="ttdef"><b>Definition:</b> Room.hpp:43</div></div>
-<div class="ttc" id="class_room_etat_html_a5b23317f60b9d268bbe669955b3c4725"><div class="ttname"><a href="class_room_etat.html#a5b23317f60b9d268bbe669955b3c4725">RoomEtat::m_room</a></div><div class="ttdeci">Room * m_room</div><div class="ttdef"><b>Definition:</b> RoomEtat.hpp:48</div></div>
-<div class="ttc" id="class_room_etat_html_af58ed4af42aafb0ccb215f1b8e785b01"><div class="ttname"><a href="class_room_etat.html#af58ed4af42aafb0ccb215f1b8e785b01">RoomEtat::RoomEtat</a></div><div class="ttdeci">RoomEtat()</div><div class="ttdef"><b>Definition:</b> RoomEtat.cpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_room_etat_8hpp.html">RoomEtat.hpp</a></li>
-    <li class="footer">Généré le Mercredi Novembre 27 2013 13:38:46 pour Labyrinth RPG par
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>RoomEtat.hpp</b></li>
+    <li class="footer">Généré le Dimanche Décembre 15 2013 18:25:35 pour Labyrinth RPG par
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>
 </div>
 </body>

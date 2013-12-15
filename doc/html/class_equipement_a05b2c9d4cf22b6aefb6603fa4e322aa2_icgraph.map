@@ -1,7 +1,0 @@
-<map id="Equipement::type" name="Equipement::type">
-<area shape="rect" id="node2" href="$class_d_equip.html#a7c31f807517e5940e899780ac6d7a5c3" title="Renvoie le type de l&#39;Equipement. " alt="" coords="208,5,291,29"/>
-<area shape="rect" id="node3" href="$class_personnage.html#a039ce12768debca443459af1eb3ca176" title="Propose au personnage d&#39;équiper un Equipement. " alt="" coords="161,53,338,77"/>
-<area shape="rect" id="node5" href="$class_personnage.html#a311a98a60b751f7bb63897c29f57cd1c" title="Equipe un équipement au personnage. " alt="" coords="171,101,328,125"/>
-<area shape="rect" id="node4" href="$class_treasure_equip.html#a187762eb0e25641cde7a2b15d94af4ed" title="ouvre le coffre pour le Personnage " alt="" coords="400,53,523,77"/>
-<area shape="rect" id="node6" href="$class_treasure_deco_equip.html#a9b1481b5456bcdbd7d4f9a4bb03c1c25" title="ouvre le coffre pour le Personnage " alt="" coords="387,101,535,125"/>
-</map>

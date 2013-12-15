@@ -13,6 +13,5 @@ var searchData=
   ['settorse',['setTorse',['../class_personnage.html#aa4cb28bb5fcd125cdbc632a51fb87b7d',1,'Personnage']]],
   ['setunvisited',['setUnvisited',['../class_room.html#abcedb8c7a1685089a797805c0567219a',1,'Room']]],
   ['setvisited',['setVisited',['../class_room.html#a50d357cd356b3b1d1bd8e7d9217e5b71',1,'Room']]],
-  ['setwest',['setWest',['../class_room.html#a035421048480031e0cde52f1e330025c',1,'Room']]],
-  ['startroom',['StartRoom',['../class_start_room.html#ac92cf89ae4fac37b88a708fb762314d8',1,'StartRoom']]]
+  ['setwest',['setWest',['../class_room.html#a035421048480031e0cde52f1e330025c',1,'Room']]]
 ];

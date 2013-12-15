@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['edit',['Edit',['../class_color_term_1_1_edit.html',1,'ColorTerm']]],
   ['emptyroom',['EmptyRoom',['../class_empty_room.html',1,'']]],
   ['endroom',['EndRoom',['../class_end_room.html',1,'']]],
   ['epee',['Epee',['../class_epee.html',1,'']]],

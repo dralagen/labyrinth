@@ -1,5 +1,6 @@
-\section{Référence de la classe Treasure\-Equip}
+\hypertarget{class_treasure_equip}{\section{Référence de la classe Treasure\-Equip}
 \label{class_treasure_equip}\index{Treasure\-Equip@{Treasure\-Equip}}
+}
 
 
 Coffre de salle contenant un équipements aléatoir.  
@@ -7,7 +8,8 @@ Coffre de salle contenant un équipements aléatoir.
 
 
 
-Graphe d'héritage de Treasure\-Equip\-:\nopagebreak
+Graphe d'héritage de Treasure\-Equip\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,7 +18,8 @@ Graphe d'héritage de Treasure\-Equip\-:\nopagebreak
 \end{figure}
 
 
-Graphe de collaboration de Treasure\-Equip\-:\nopagebreak
+Graphe de collaboration de Treasure\-Equip\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -26,21 +29,20 @@ Graphe de collaboration de Treasure\-Equip\-:\nopagebreak
 \subsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-{\bf Treasure\-Equip} (int lvl=0)
+\hyperlink{class_treasure_equip_a690b46e0b0f10d6568a9220b5f320f0f}{Treasure\-Equip} (int lvl=0)
 \begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
-virtual {\bf $\sim$\-Treasure\-Equip} ()
-\item 
-void {\bf open} ({\bf Personnage} \&p)
-\begin{DoxyCompactList}\small\item\em ouvre le coffre pour le \doxyref{Personnage}{p.}{class_personnage} \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \hyperlink{class_treasure_equip_a187762eb0e25641cde7a2b15d94af4ed}{open} (\hyperlink{class_personnage}{Personnage} \&p)
+\begin{DoxyCompactList}\small\item\em ouvre le coffre pour le \hyperlink{class_personnage}{Personnage} \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Fonctions membres protégées}
 \begin{DoxyCompactItemize}
 \item 
-{\bf Item\-Factory} $\ast$ {\bf get\-Factory} (int i)
+\hyperlink{class_item_factory}{Item\-Factory} $\ast$ \hyperlink{class_treasure_ab3a8e251ac3ce8524e142e7f93979eb6}{get\-Factory} (int i)
 \begin{DoxyCompactList}\small\item\em Creer une factory de Chance , Vie ou Force aléatoirement. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Attributs protégés}
 \begin{DoxyCompactItemize}
 \item 
-int {\bf m\-\_\-lvl}
+\hypertarget{class_treasure_a51144d1fb776d1c0612b87d3d8006aa8}{int \hyperlink{class_treasure_a51144d1fb776d1c0612b87d3d8006aa8}{m\-\_\-lvl}}\label{class_treasure_a51144d1fb776d1c0612b87d3d8006aa8}
+
 \begin{DoxyCompactList}\small\item\em niveau du coffre; \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -48,41 +50,34 @@ int {\bf m\-\_\-lvl}
 Coffre de salle contenant un équipements aléatoir. 
 
 \subsection{Documentation des constructeurs et destructeur}
-\index{Treasure\-Equip@{Treasure\-Equip}!Treasure\-Equip@{Treasure\-Equip}}
+\hypertarget{class_treasure_equip_a690b46e0b0f10d6568a9220b5f320f0f}{\index{Treasure\-Equip@{Treasure\-Equip}!Treasure\-Equip@{Treasure\-Equip}}
 \index{Treasure\-Equip@{Treasure\-Equip}!TreasureEquip@{Treasure\-Equip}}
 \subsubsection[{Treasure\-Equip}]{\setlength{\rightskip}{0pt plus 5cm}Treasure\-Equip\-::\-Treasure\-Equip (
 \begin{DoxyParamCaption}
 \item[{int}]{lvl = {\ttfamily 0}}
 \end{DoxyParamCaption}
-)}\label{class_treasure_equip_a690b46e0b0f10d6568a9220b5f320f0f}
+)}}\label{class_treasure_equip_a690b46e0b0f10d6568a9220b5f320f0f}
 
 
 Constructeur. 
 
-Construit un coffre contenant un equipement de type \doxyref{Casque}{p.}{class_casque} , \doxyref{Torse}{p.}{class_torse} ou \doxyref{Jambe}{p.}{class_jambe} avec un ou plusieurs bonus
+Construit un coffre contenant un equipement de type \hyperlink{class_casque}{Casque} , \hyperlink{class_torse}{Torse} ou \hyperlink{class_jambe}{Jambe} avec un ou plusieurs bonus
 
 
 \begin{DoxyParams}{Paramètres}
 {\em lvl} & niveau du coffre plus c'est grand mieux sera l'objet \\
 \hline
 \end{DoxyParams}
-\index{Treasure\-Equip@{Treasure\-Equip}!$\sim$\-Treasure\-Equip@{$\sim$\-Treasure\-Equip}}
-\index{$\sim$\-Treasure\-Equip@{$\sim$\-Treasure\-Equip}!TreasureEquip@{Treasure\-Equip}}
-\subsubsection[{$\sim$\-Treasure\-Equip}]{\setlength{\rightskip}{0pt plus 5cm}Treasure\-Equip\-::$\sim$\-Treasure\-Equip (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_treasure_equip_a395da02d1d5f64d20eb2c71e7082b47e}
 
 
 \subsection{Documentation des fonctions membres}
-\index{Treasure\-Equip@{Treasure\-Equip}!get\-Factory@{get\-Factory}}
+\hypertarget{class_treasure_ab3a8e251ac3ce8524e142e7f93979eb6}{\index{Treasure\-Equip@{Treasure\-Equip}!get\-Factory@{get\-Factory}}
 \index{get\-Factory@{get\-Factory}!TreasureEquip@{Treasure\-Equip}}
 \subsubsection[{get\-Factory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Item\-Factory} $\ast$ Treasure\-::get\-Factory (
 \begin{DoxyParamCaption}
 \item[{int}]{i}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_treasure_ab3a8e251ac3ce8524e142e7f93979eb6}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{class_treasure_ab3a8e251ac3ce8524e142e7f93979eb6}
 
 
 Creer une factory de Chance , Vie ou Force aléatoirement. 
@@ -90,41 +85,25 @@ Creer une factory de Chance , Vie ou Force aléatoirement.
 \begin{DoxyReturn}{Renvoie}
 factory Factory concrète de chance,vie ou force 
 \end{DoxyReturn}
-\index{Treasure\-Equip@{Treasure\-Equip}!open@{open}}
+\hypertarget{class_treasure_equip_a187762eb0e25641cde7a2b15d94af4ed}{\index{Treasure\-Equip@{Treasure\-Equip}!open@{open}}
 \index{open@{open}!TreasureEquip@{Treasure\-Equip}}
 \subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}void Treasure\-Equip\-::open (
 \begin{DoxyParamCaption}
 \item[{{\bf Personnage} \&}]{p}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_treasure_equip_a187762eb0e25641cde7a2b15d94af4ed}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_treasure_equip_a187762eb0e25641cde7a2b15d94af4ed}
 
 
-ouvre le coffre pour le \doxyref{Personnage}{p.}{class_personnage} 
+ouvre le coffre pour le \hyperlink{class_personnage}{Personnage} 
 
-Ajout l'objet au personnage, le \doxyref{Personnage}{p.}{class_personnage} demande s'il veut l'équipé ou non
+Ajout l'objet au personnage, le \hyperlink{class_personnage}{Personnage} demande s'il veut l'équipé ou non
 
 
 \begin{DoxyParams}{Paramètres}
-{\em p} & \doxyref{Personnage}{p.}{class_personnage} qui ouvre le coffre \\
+{\em p} & \hyperlink{class_personnage}{Personnage} qui ouvre le coffre \\
 \hline
 \end{DoxyParams}
 
 
-Implémente {\bf Treasure} \doxyref{}{p.}{class_treasure_ad30552aacaaf7ddab86f0c88147945fd}.
+Implémente \hyperlink{class_treasure_ad30552aacaaf7ddab86f0c88147945fd}{Treasure}.
 
-
-
-\subsection{Documentation des données membres}
-\index{Treasure\-Equip@{Treasure\-Equip}!m\-\_\-lvl@{m\-\_\-lvl}}
-\index{m\-\_\-lvl@{m\-\_\-lvl}!TreasureEquip@{Treasure\-Equip}}
-\subsubsection[{m\-\_\-lvl}]{\setlength{\rightskip}{0pt plus 5cm}int Treasure\-::m\-\_\-lvl\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_treasure_a51144d1fb776d1c0612b87d3d8006aa8}
-
-
-niveau du coffre; 
-
-
-
-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
-\item 
-src/{\bf Treasure\-Equip.\-hpp}\item 
-src/{\bf Treasure\-Equip.\-cpp}\end{DoxyCompactItemize}

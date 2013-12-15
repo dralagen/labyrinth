@@ -1,4 +1,4 @@
 <map id="HacheForce" name="HacheForce">
-<area shape="rect" id="node2" href="$class_hache.html" title="Hache herite de Arme. " alt="" coords="19,195,95,277"/>
-<area shape="rect" id="node3" href="$class_arme.html" title="Gestion des armes. " alt="" coords="14,5,100,147"/>
+<area shape="rect" id="node2" href="$class_hache.html" title="Hache herite de Arme." alt="" coords="20,233,95,330"/>
+<area shape="rect" id="node4" href="$class_arme.html" title="Gestion des armes." alt="" coords="15,6,100,183"/>
 </map>

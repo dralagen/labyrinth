@@ -1,4 +1,0 @@
-<map id="Labyrinth::clean" name="Labyrinth::clean">
-<area shape="rect" id="node2" href="$class_labyrinth.html#ac586bb4db152210ed424f77d68505502" title="Calcule la position de la salle dans le tableau. " alt="" coords="170,5,278,29"/>
-<area shape="rect" id="node3" href="$class_room.html#a78150061fe95e0d03b8730fb151cc39f" title="Modifie le comportement de la salle. " alt="" coords="153,53,295,77"/>
-</map>

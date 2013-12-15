@@ -1,7 +1,7 @@
 <map id="RoomEtat" name="RoomEtat">
-<area shape="rect" id="node2" href="$class_room.html" title="gestion de salle " alt="" coords="324,342,415,519"/>
-<area shape="rect" id="node3" href="$class_room_etat_unvisited.html" title="Salle jamais visité " alt="" coords="82,169,217,274"/>
-<area shape="rect" id="node4" href="$class_room_etat_visited.html" title="Salle déjà visité " alt="" coords="241,169,365,274"/>
-<area shape="rect" id="node6" href="$class_room_etat_position.html" title="Salle identifé comme ma position. " alt="" coords="389,169,518,274"/>
-<area shape="rect" id="node5" href="$class_room_comportement.html" title="Génère le comportement des salles. " alt="" coords="641,163,787,280"/>
+<area shape="rect" id="node2" href="$class_room.html" title="gestion de salle" alt="" coords="322,398,413,623"/>
+<area shape="rect" id="node5" href="$class_room_etat_unvisited.html" title="Salle jamais visité" alt="" coords="81,195,217,325"/>
+<area shape="rect" id="node8" href="$class_room_etat_visited.html" title="Salle déjà visité" alt="" coords="241,195,364,325"/>
+<area shape="rect" id="node13" href="$class_room_etat_position.html" title="Salle identifé comme ma position." alt="" coords="388,195,518,325"/>
+<area shape="rect" id="node11" href="$class_room_comportement.html" title="Génère le comportement des salles." alt="" coords="634,187,781,333"/>
 </map>

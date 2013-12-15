@@ -1,5 +1,6 @@
-\section{Référence de la classe Game}
+\hypertarget{class_game}{\section{Référence de la classe Game}
 \label{class_game}\index{Game@{Game}}
+}
 
 
 Gère une partie manage un labyrinth avec un joueur.  
@@ -7,7 +8,8 @@ Gère une partie manage un labyrinth avec un joueur.
 
 
 
-Graphe de collaboration de Game\-:\nopagebreak
+Graphe de collaboration de Game\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -17,20 +19,25 @@ Graphe de collaboration de Game\-:\nopagebreak
 \subsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-{\bf Game} (std\-::string name, int x={\bf L\-A\-B\-Y\-R\-I\-N\-T\-H\-\_\-\-T\-A\-I\-L\-L\-E\-\_\-\-X\-\_\-\-D\-E\-F\-A\-U\-L\-T}, int y={\bf L\-A\-B\-Y\-R\-I\-N\-T\-H\-\_\-\-T\-A\-I\-L\-L\-E\-\_\-\-Y\-\_\-\-D\-E\-F\-A\-U\-L\-T})
+\hyperlink{class_game_af7c8b29a2938f3881bfd598e4e156d3d}{Game} (std\-::string name, int x=L\-A\-B\-Y\-R\-I\-N\-T\-H\-\_\-\-T\-A\-I\-L\-L\-E\-\_\-\-X\-\_\-\-D\-E\-F\-A\-U\-L\-T, int y=L\-A\-B\-Y\-R\-I\-N\-T\-H\-\_\-\-T\-A\-I\-L\-L\-E\-\_\-\-Y\-\_\-\-D\-E\-F\-A\-U\-L\-T)
 \begin{DoxyCompactList}\small\item\em constucteur \end{DoxyCompactList}\item 
-void {\bf launch} ()
+\hypertarget{class_game_a35c46e76cde7773850820233754e0bc0}{void \hyperlink{class_game_a35c46e76cde7773850820233754e0bc0}{launch} ()}\label{class_game_a35c46e76cde7773850820233754e0bc0}
+
 \begin{DoxyCompactList}\small\item\em Débute le déroulement d'une partie. \end{DoxyCompactList}\item 
-void {\bf choose\-Room} ()
+\hypertarget{class_game_a70b3d987f25dd5e1aeb6ab18cfedc387}{void \hyperlink{class_game_a70b3d987f25dd5e1aeb6ab18cfedc387}{choose\-Room} ()}\label{class_game_a70b3d987f25dd5e1aeb6ab18cfedc387}
+
 \begin{DoxyCompactList}\small\item\em Choisie une direction et execute l'action de la salle. \end{DoxyCompactList}\item 
-void {\bf help} ()
+\hypertarget{class_game_ae650b8abcc603580654b9aa375dc260a}{void \hyperlink{class_game_ae650b8abcc603580654b9aa375dc260a}{help} ()}\label{class_game_ae650b8abcc603580654b9aa375dc260a}
+
 \begin{DoxyCompactList}\small\item\em Affiche les commandes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
-{\bf Labyrinth} {\bf m\-\_\-labyrinth}
+\hypertarget{class_game_ae240b11d8e568e768097735d85794d32}{\hyperlink{class_labyrinth}{Labyrinth} \hyperlink{class_game_ae240b11d8e568e768097735d85794d32}{m\-\_\-labyrinth}}\label{class_game_ae240b11d8e568e768097735d85794d32}
+
 \begin{DoxyCompactList}\small\item\em le labyrinthe \end{DoxyCompactList}\item 
-{\bf Personnage} {\bf m\-\_\-perso}
+\hypertarget{class_game_aa61c11c5da4f4b2e977c230d8db13578}{\hyperlink{class_personnage}{Personnage} \hyperlink{class_game_aa61c11c5da4f4b2e977c230d8db13578}{m\-\_\-perso}}\label{class_game_aa61c11c5da4f4b2e977c230d8db13578}
+
 \begin{DoxyCompactList}\small\item\em le personnage \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -38,15 +45,15 @@ void {\bf help} ()
 Gère une partie manage un labyrinth avec un joueur. 
 
 \subsection{Documentation des constructeurs et destructeur}
-\index{Game@{Game}!Game@{Game}}
+\hypertarget{class_game_af7c8b29a2938f3881bfd598e4e156d3d}{\index{Game@{Game}!Game@{Game}}
 \index{Game@{Game}!Game@{Game}}
 \subsubsection[{Game}]{\setlength{\rightskip}{0pt plus 5cm}Game\-::\-Game (
 \begin{DoxyParamCaption}
 \item[{std\-::string}]{name, }
-\item[{int}]{x = {\ttfamily {\bf L\-A\-B\-Y\-R\-I\-N\-T\-H\-\_\-\-T\-A\-I\-L\-L\-E\-\_\-\-X\-\_\-\-D\-E\-F\-A\-U\-L\-T}}, }
-\item[{int}]{y = {\ttfamily {\bf L\-A\-B\-Y\-R\-I\-N\-T\-H\-\_\-\-T\-A\-I\-L\-L\-E\-\_\-\-Y\-\_\-\-D\-E\-F\-A\-U\-L\-T}}}
+\item[{int}]{x = {\ttfamily LABYRINTH\-\_\-TAILLE\-\_\-X\-\_\-DEFAULT}, }
+\item[{int}]{y = {\ttfamily LABYRINTH\-\_\-TAILLE\-\_\-Y\-\_\-DEFAULT}}
 \end{DoxyParamCaption}
-)}\label{class_game_af7c8b29a2938f3881bfd598e4e156d3d}
+)}}\label{class_game_af7c8b29a2938f3881bfd598e4e156d3d}
 
 
 constucteur 
@@ -60,62 +67,3 @@ constucteur
 {\em y} & hauteur \\
 \hline
 \end{DoxyParams}
-
-
-\subsection{Documentation des fonctions membres}
-\index{Game@{Game}!choose\-Room@{choose\-Room}}
-\index{choose\-Room@{choose\-Room}!Game@{Game}}
-\subsubsection[{choose\-Room}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::choose\-Room (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\label{class_game_a70b3d987f25dd5e1aeb6ab18cfedc387}
-
-
-Choisie une direction et execute l'action de la salle. 
-
-\index{Game@{Game}!help@{help}}
-\index{help@{help}!Game@{Game}}
-\subsubsection[{help}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::help (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\label{class_game_ae650b8abcc603580654b9aa375dc260a}
-
-
-Affiche les commandes. 
-
-\index{Game@{Game}!launch@{launch}}
-\index{launch@{launch}!Game@{Game}}
-\subsubsection[{launch}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::launch (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\label{class_game_a35c46e76cde7773850820233754e0bc0}
-
-
-Débute le déroulement d'une partie. 
-
-
-
-\subsection{Documentation des données membres}
-\index{Game@{Game}!m\-\_\-labyrinth@{m\-\_\-labyrinth}}
-\index{m\-\_\-labyrinth@{m\-\_\-labyrinth}!Game@{Game}}
-\subsubsection[{m\-\_\-labyrinth}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Labyrinth} Game\-::m\-\_\-labyrinth\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_ae240b11d8e568e768097735d85794d32}
-
-
-le labyrinthe 
-
-\index{Game@{Game}!m\-\_\-perso@{m\-\_\-perso}}
-\index{m\-\_\-perso@{m\-\_\-perso}!Game@{Game}}
-\subsubsection[{m\-\_\-perso}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Personnage} Game\-::m\-\_\-perso\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_aa61c11c5da4f4b2e977c230d8db13578}
-
-
-le personnage 
-
-
-
-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
-\item 
-src/{\bf Game.\-hpp}\item 
-src/{\bf Game.\-cpp}\end{DoxyCompactItemize}

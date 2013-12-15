@@ -1,6 +1,6 @@
 <map id="Epee" name="Epee">
-<area shape="rect" id="node3" href="$class_epee_chance.html" title="EpeeChance herite de Epee. " alt="" coords="5,326,112,407"/>
-<area shape="rect" id="node4" href="$class_epee_force.html" title="EpeeForce herite de Epee. " alt="" coords="136,326,235,407"/>
-<area shape="rect" id="node5" href="$class_epee_vie.html" title="EpeeVie herite de Epee. " alt="" coords="259,326,344,407"/>
-<area shape="rect" id="node2" href="$class_arme.html" title="Gestion des armes. " alt="" coords="142,5,228,147"/>
+<area shape="rect" id="node5" href="$class_epee_chance.html" title="EpeeChance herite de Epee." alt="" coords="5,379,112,477"/>
+<area shape="rect" id="node7" href="$class_epee_force.html" title="EpeeForce herite de Epee." alt="" coords="136,379,235,477"/>
+<area shape="rect" id="node9" href="$class_epee_vie.html" title="EpeeVie herite de Epee." alt="" coords="259,379,344,477"/>
+<area shape="rect" id="node2" href="$class_arme.html" title="Gestion des armes." alt="" coords="143,6,228,183"/>
 </map>

@@ -1,19 +1,19 @@
 <map id="Arme" name="Arme">
-<area shape="rect" id="node2" href="$class_dague.html" title="Dague herite de Arme. " alt="" coords="220,213,296,294"/>
-<area shape="rect" id="node6" href="$class_d_arme.html" title="Decorator d&#39;arme, hérite de Arme. " alt="" coords="611,195,697,312"/>
-<area shape="rect" id="node11" href="$class_epee.html" title="Epee herite de Arme. " alt="" coords="914,213,984,294"/>
-<area shape="rect" id="node15" href="$class_hache.html" title="Hache herite de Arme. " alt="" coords="1282,213,1357,294"/>
-<area shape="rect" id="node3" href="$class_dague_chance.html" title="DagueChance herite de Dague. " alt="" coords="5,361,120,442"/>
-<area shape="rect" id="node4" href="$class_dague_force.html" title="DagueForce herite de Dague. " alt="" coords="145,361,249,442"/>
-<area shape="rect" id="node5" href="$class_dague_vie.html" title="DagueVie herite de Dague. " alt="" coords="274,361,365,442"/>
-<area shape="rect" id="node7" href="$class_d_arme_c.html" title="Decorator d&#39;arme de Chance, hérite de DArme. " alt="" coords="390,361,476,442"/>
-<area shape="rect" id="node8" href="$class_d_arme_d.html" title="Decorator d&#39;arme de degats, hérite de DArme. " alt="" coords="501,361,587,442"/>
-<area shape="rect" id="node9" href="$class_d_arme_f.html" title="Decorator d&#39;arme de force, hérite de DArme. " alt="" coords="611,361,697,442"/>
-<area shape="rect" id="node10" href="$class_d_arme_v.html" title="Decorator d&#39;arme de vie, hérite de DArme. " alt="" coords="722,361,808,442"/>
-<area shape="rect" id="node12" href="$class_epee_chance.html" title="EpeeChance herite de Epee. " alt="" coords="833,361,940,442"/>
-<area shape="rect" id="node13" href="$class_epee_force.html" title="EpeeForce herite de Epee. " alt="" coords="964,361,1063,442"/>
-<area shape="rect" id="node14" href="$class_epee_vie.html" title="EpeeVie herite de Epee. " alt="" coords="1087,361,1172,442"/>
-<area shape="rect" id="node16" href="$class_hache_chance.html" title="HacheChance herite de Hache. " alt="" coords="1197,361,1309,442"/>
-<area shape="rect" id="node17" href="$class_hache_force.html" title="HacheForce herite de Hache. " alt="" coords="1335,361,1439,442"/>
-<area shape="rect" id="node18" href="$class_hache_vie.html" title="HacheVie herite de Hache. " alt="" coords="1463,361,1553,442"/>
+<area shape="rect" id="node3" href="$class_dague.html" title="Dague herite de Arme." alt="" coords="219,257,296,354"/>
+<area shape="rect" id="node11" href="$class_d_arme.html" title="Decorator d&#39;arme, hérite de Arme." alt="" coords="605,233,691,378"/>
+<area shape="rect" id="node21" href="$class_epee.html" title="Epee herite de Arme." alt="" coords="905,257,975,354"/>
+<area shape="rect" id="node29" href="$class_hache.html" title="Hache herite de Arme." alt="" coords="1271,257,1345,354"/>
+<area shape="rect" id="node5" href="$class_dague_chance.html" title="DagueChance herite de Dague." alt="" coords="5,427,120,525"/>
+<area shape="rect" id="node7" href="$class_dague_force.html" title="DagueForce herite de Dague." alt="" coords="144,427,248,525"/>
+<area shape="rect" id="node9" href="$class_dague_vie.html" title="DagueVie herite de Dague." alt="" coords="272,427,363,525"/>
+<area shape="rect" id="node13" href="$class_d_arme_c.html" title="Decorator d&#39;arme de Chance, hérite de DArme." alt="" coords="387,427,472,525"/>
+<area shape="rect" id="node15" href="$class_d_arme_d.html" title="Decorator d&#39;arme de degats, hérite de DArme." alt="" coords="496,427,581,525"/>
+<area shape="rect" id="node17" href="$class_d_arme_f.html" title="Decorator d&#39;arme de force, hérite de DArme." alt="" coords="605,427,691,525"/>
+<area shape="rect" id="node19" href="$class_d_arme_v.html" title="Decorator d&#39;arme de vie, hérite de DArme." alt="" coords="715,427,800,525"/>
+<area shape="rect" id="node23" href="$class_epee_chance.html" title="EpeeChance herite de Epee." alt="" coords="824,427,931,525"/>
+<area shape="rect" id="node25" href="$class_epee_force.html" title="EpeeForce herite de Epee." alt="" coords="955,427,1053,525"/>
+<area shape="rect" id="node27" href="$class_epee_vie.html" title="EpeeVie herite de Epee." alt="" coords="1077,427,1163,525"/>
+<area shape="rect" id="node31" href="$class_hache_chance.html" title="HacheChance herite de Hache." alt="" coords="1187,427,1299,525"/>
+<area shape="rect" id="node33" href="$class_hache_force.html" title="HacheForce herite de Hache." alt="" coords="1323,427,1427,525"/>
+<area shape="rect" id="node35" href="$class_hache_vie.html" title="HacheVie herite de Hache." alt="" coords="1451,427,1541,525"/>
 </map>

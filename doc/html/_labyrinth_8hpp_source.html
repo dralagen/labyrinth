@@ -3,7 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.5"/>
 <title>Labyrinth RPG:  Fichier source de src/Labyrinth.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -13,7 +12,6 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +28,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Labyrinth RPG
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
    <div id="projectbrief">Un labyrinthe en 2D additionné à un Jeu de Rôle</div>
   </td>
@@ -39,16 +37,14 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.8.5 -->
+<!-- Généré par Doxygen 1.8.1.2 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
-      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -65,12 +61,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
-      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -93,7 +83,7 @@ $(document).ready(function(){initNavTree('_labyrinth_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,140 +97,94 @@ $(document).ready(function(){initNavTree('_labyrinth_8hpp_source.html','');});
 <div class="title">Labyrinth.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_labyrinth_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef LABYRINTH_HPP</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LABYRINTH_HPP</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_room_8hpp.html">Room.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_personnage_8hpp.html">Personnage.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;Room.hpp&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;Personnage.hpp&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_empty_room_8hpp.html">EmptyRoom.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_start_room_8hpp.html">StartRoom.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_end_room_8hpp.html">EndRoom.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_monster_room_8hpp.html">MonsterRoom.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_treasure_room_8hpp.html">TreasureRoom.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;EmptyRoom.hpp&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;StartRoom.hpp&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;EndRoom.hpp&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;MonsterRoom.hpp&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;TreasureRoom.hpp&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;Random.hpp&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="_labyrinth_8hpp.html#a89a4e38d6f15736bb39cfd01bb95762a">   26</a></span>&#160;<span class="preprocessor">#define LABYRINTH_TAILLE_X_DEFAULT 8</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="_labyrinth_8hpp.html#ab7e503f84cf86fe2bbcc0cdf341734e9">   27</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LABYRINTH_TAILLE_Y_DEFAULT 8</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define LABYRINTH_TAILLE_X_DEFAULT 8</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LABYRINTH_TAILLE_Y_DEFAULT 8</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structpos.html">   35</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structpos.html">pos</a> {</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structpos.html#a8507e8245423d67f3bb29e2fa0f08054">   36</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpos.html#aac09c213542d5ffc796972c3c10e4d1c">x</a>, </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="structpos.html#a8507e8245423d67f3bb29e2fa0f08054">y</a>; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="structpos.html">   35</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structpos.html" title="position utilise des coordonnée pour stocker une position">pos</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="structpos.html#a8507e8245423d67f3bb29e2fa0f08054">   36</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpos.html#aac09c213542d5ffc796972c3c10e4d1c" title="coordonnée abscisse">x</a>, </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="structpos.html#a8507e8245423d67f3bb29e2fa0f08054" title="coordonnée ordonnée">y</a>; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_labyrinth.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_labyrinth.html">Labyrinth</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="class_labyrinth.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_labyrinth.html" title="gestion de labyrinthe">Labyrinth</a></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="class_labyrinth.html#a13480c96c7e8d937adf6fd0b2dce8b6d">Labyrinth</a>(<span class="keywordtype">int</span> x = <a class="code" href="_labyrinth_8hpp.html#a89a4e38d6f15736bb39cfd01bb95762a">LABYRINTH_TAILLE_X_DEFAULT</a>,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                            <span class="keywordtype">int</span> y = <a class="code" href="_labyrinth_8hpp.html#ab7e503f84cf86fe2bbcc0cdf341734e9">LABYRINTH_TAILLE_Y_DEFAULT</a>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="class_labyrinth.html#a13480c96c7e8d937adf6fd0b2dce8b6d" title="constucteur">Labyrinth</a>(<span class="keywordtype">int</span> x = LABYRINTH_TAILLE_X_DEFAULT,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                            <span class="keywordtype">int</span> y = LABYRINTH_TAILLE_Y_DEFAULT);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="class_labyrinth.html#a4c955f7eb91e1b1529899a157b410807">~Labyrinth</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="class_labyrinth.html#a4c955f7eb91e1b1529899a157b410807" title="destructeur">~Labyrinth</a>();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="class_labyrinth.html">Labyrinth</a>&amp; <a class="code" href="class_labyrinth.html#a1c84c73db11482be6b04e35bdb97c28f">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_labyrinth.html">Labyrinth</a> &amp;lab);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="class_labyrinth.html" title="gestion de labyrinthe">Labyrinth</a>&amp; <a class="code" href="class_labyrinth.html#a1c84c73db11482be6b04e35bdb97c28f" title="surchage opérateur =">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_labyrinth.html" title="gestion de labyrinthe">Labyrinth</a> &amp;lab);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a7c0789decac44992b6baa12613b9109a">print</a>(<span class="keywordtype">bool</span> godMode = <span class="keyword">false</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a80514a0f6bc2a3a3e68a607ea51a800e">action</a>(<a class="code" href="class_personnage.html">Personnage</a> &amp;perso);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a7c0789decac44992b6baa12613b9109a" title="Affiche le labyrinthe.">print</a>(<span class="keywordtype">bool</span> godMode = <span class="keyword">false</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a80514a0f6bc2a3a3e68a607ea51a800e" title="Actionne la salle courante.">action</a>(<a class="code" href="class_personnage.html" title="Gestion du Personnage.">Personnage</a> &amp;perso);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#ab22fb393c8f6d844096ce6548dff2164">hasNorth</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#aa0008c659d5e512f805ddaff2620912c">hasEast</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#adeb5d81ef6beccdb0360e3c5bdab9f51">hasSouth</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#ae5ffa83a10d415f1f635a58bc25254ba">hasWest</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#ab22fb393c8f6d844096ce6548dff2164" title="Verifie si il y a une porte au nord.">hasNorth</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#aa0008c659d5e512f805ddaff2620912c" title="Verifie si il y a une porte a l&#39;est.">hasEast</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#adeb5d81ef6beccdb0360e3c5bdab9f51" title="Verifie si il y a une porte au sud.">hasSouth</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#ae5ffa83a10d415f1f635a58bc25254ba" title="Verifie si il y a une porte a l&#39;ouest.">hasWest</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a6759f031dd720443786e52d946d3b95a">goNorth</a>();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#ad23a37ea3383534c6206d5d09cc1d1cb">goEast</a>();</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a5b7fa660f6f3ce459b80e661603f4c20">goSouth</a>();</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a28e673608e72a1b69cc91c85f882b477">goWest</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a6759f031dd720443786e52d946d3b95a" title="va au nord">goNorth</a>();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#ad23a37ea3383534c6206d5d09cc1d1cb" title="va a l&#39;est">goEast</a>();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a5b7fa660f6f3ce459b80e661603f4c20" title="va au sud">goSouth</a>();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a28e673608e72a1b69cc91c85f882b477" title="va a l&#39;ouest">goWest</a>();</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#ad50cf7950f97a0d701b1f41125566883">isEnd</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a417eadea0ab0a5df9bb5e9951e166590">clean</a>();</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a4f94ffe9a0097abea1657b8b3d8d85a6">gen</a>();</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#aa6bbe37a3dae3799c0557c8c92a88f06">undo</a>();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#ad50cf7950f97a0d701b1f41125566883" title="Vérifie la fin.">isEnd</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a417eadea0ab0a5df9bb5e9951e166590" title="la salle a été vidé">clean</a>();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a4f94ffe9a0097abea1657b8b3d8d85a6" title="génére qu&#39;une fois le labyrinth">gen</a>();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#aa6bbe37a3dae3799c0557c8c92a88f06" title="retourne a la position précédente position courante == position précédente">undo</a>();</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a85ffc879951c809634eb07cffbf5cfd1">setStart</a>(<a class="code" href="structpos.html">pos</a> p);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a85ffc879951c809634eb07cffbf5cfd1">setStart</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a85ffc879951c809634eb07cffbf5cfd1" title="définie la salle de départ si le labyrinth n&#39;a pas été généré">setStart</a>(<a class="code" href="structpos.html" title="position utilise des coordonnée pour stocker une position">pos</a> p);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a85ffc879951c809634eb07cffbf5cfd1" title="définie la salle de départ si le labyrinth n&#39;a pas été généré">setStart</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="class_labyrinth.html#ae656bd00c1402e153c89611b374a9567">  163</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_labyrinth.html#a0547ee29aa3f3c8987922f8305e26569">m_tailleX</a>,   </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                        <a class="code" href="class_labyrinth.html#ae656bd00c1402e153c89611b374a9567">m_tailleY</a>;   </div>
-<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="class_labyrinth.html#a4ed73d5e4ea2843c3c58f2d7915bd792">  165</a></span>&#160;        <a class="code" href="structpos.html">pos</a>       <a class="code" href="class_labyrinth.html#a4ed73d5e4ea2843c3c58f2d7915bd792">m_current</a>;   </div>
-<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="class_labyrinth.html#af2f5c4ed0cdb9a64556fd7a81fe09d8d">  166</a></span>&#160;        <a class="code" href="structpos.html">pos</a>       <a class="code" href="class_labyrinth.html#af2f5c4ed0cdb9a64556fd7a81fe09d8d">m_precedent</a>; </div>
-<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="class_labyrinth.html#a69ec79c2423fe66a3fae33093320f52c">  167</a></span>&#160;        <a class="code" href="class_room.html">Room</a>     *<a class="code" href="class_labyrinth.html#a69ec79c2423fe66a3fae33093320f52c">m_rooms</a>;     </div>
-<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="class_labyrinth.html#afc4ede85f831118e70dadf5866dda09d">  168</a></span>&#160;        <span class="keywordtype">bool</span>      <a class="code" href="class_labyrinth.html#afc4ede85f831118e70dadf5866dda09d">m_gen</a>;       </div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="code" href="class_labyrinth.html#ae656bd00c1402e153c89611b374a9567">  163</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_labyrinth.html#a0547ee29aa3f3c8987922f8305e26569" title="largeur du labyrinthe">m_tailleX</a>,   </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                        <a class="code" href="class_labyrinth.html#ae656bd00c1402e153c89611b374a9567" title="hauteur du labyrinthe">m_tailleY</a>;   </div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="code" href="class_labyrinth.html#a4ed73d5e4ea2843c3c58f2d7915bd792">  165</a></span>&#160;        <a class="code" href="structpos.html" title="position utilise des coordonnée pour stocker une position">pos</a>       <a class="code" href="class_labyrinth.html#a4ed73d5e4ea2843c3c58f2d7915bd792" title="position courante">m_current</a>;   </div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="code" href="class_labyrinth.html#af2f5c4ed0cdb9a64556fd7a81fe09d8d">  166</a></span>&#160;        <a class="code" href="structpos.html" title="position utilise des coordonnée pour stocker une position">pos</a>       <a class="code" href="class_labyrinth.html#af2f5c4ed0cdb9a64556fd7a81fe09d8d" title="position précédente">m_precedent</a>; </div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="code" href="class_labyrinth.html#a69ec79c2423fe66a3fae33093320f52c">  167</a></span>&#160;        <a class="code" href="class_room.html" title="gestion de salle">Room</a>     *<a class="code" href="class_labyrinth.html#a69ec79c2423fe66a3fae33093320f52c" title="liste des salles du labyrinthe">m_rooms</a>;     </div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="code" href="class_labyrinth.html#afc4ede85f831118e70dadf5866dda09d">  168</a></span>&#160;        <span class="keywordtype">bool</span>      <a class="code" href="class_labyrinth.html#afc4ede85f831118e70dadf5866dda09d" title="labyrinthe généré">m_gen</a>;       </div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_labyrinth.html#ac586bb4db152210ed424f77d68505502">position</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_labyrinth.html#ac586bb4db152210ed424f77d68505502">position</a>(<a class="code" href="structpos.html">pos</a> p) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_labyrinth.html#ac586bb4db152210ed424f77d68505502" title="Calcule la position de la salle dans le tableau.">position</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_labyrinth.html#ac586bb4db152210ed424f77d68505502" title="Calcule la position de la salle dans le tableau.">position</a>(<a class="code" href="structpos.html" title="position utilise des coordonnée pour stocker une position">pos</a> p) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a775a1d628f1179dfca9655dbca6a43f3">newPosition</a>();</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#afc29f7969b11105584bf51c616740bce">_gen</a>();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a775a1d628f1179dfca9655dbca6a43f3" title="actualise ma position courante">newPosition</a>();</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#afc29f7969b11105584bf51c616740bce" title="Génère le labyrinthe.">_gen</a>();</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a1589aae4f56635fd38d4704196571646">init</a>(<a class="code" href="structpos.html">pos</a> p);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a1c81f6ddf4749788d5e97774c6970411">openDoor</a>(<a class="code" href="structpos.html">pos</a> p1, <a class="code" href="structpos.html">pos</a> p2);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#a45c69cdcafe3665bd76db8e854b6e506">hasAdjacent</a>(<a class="code" href="structpos.html">pos</a> p) <span class="keyword">const</span>; <span class="comment">// has an adjacent not visited</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment"></span>        <a class="code" href="structpos.html">pos</a> <a class="code" href="class_labyrinth.html#a46038c2605eadda50894b070a012eb12">oneAdjacent</a>(<a class="code" href="structpos.html">pos</a> p) <span class="keyword">const</span>; <span class="comment">// one adjacent not visited</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a1589aae4f56635fd38d4704196571646" title="Ouvre les chemins a partir de la position p.">init</a>(<a class="code" href="structpos.html" title="position utilise des coordonnée pour stocker une position">pos</a> p);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a1c81f6ddf4749788d5e97774c6970411" title="Créer une porte entre la salle s1 et s2 s1 et s2 adjacent.">openDoor</a>(<a class="code" href="structpos.html" title="position utilise des coordonnée pour stocker une position">pos</a> p1, <a class="code" href="structpos.html" title="position utilise des coordonnée pour stocker une position">pos</a> p2);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#a45c69cdcafe3665bd76db8e854b6e506" title="cherche une salle adjacente non visité">hasAdjacent</a>(<a class="code" href="structpos.html" title="position utilise des coordonnée pour stocker une position">pos</a> p) <span class="keyword">const</span>; <span class="comment">// has an adjacent not visited</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment"></span>        <a class="code" href="structpos.html" title="position utilise des coordonnée pour stocker une position">pos</a> <a class="code" href="class_labyrinth.html#a46038c2605eadda50894b070a012eb12" title="prend une salle adjacente">oneAdjacent</a>(<a class="code" href="structpos.html" title="position utilise des coordonnée pour stocker une position">pos</a> p) <span class="keyword">const</span>; <span class="comment">// one adjacent not visited</span></div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;};</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor">#endif // LABYRINTH_HPP</span></div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="class_labyrinth_html_a1c81f6ddf4749788d5e97774c6970411"><div class="ttname"><a href="class_labyrinth.html#a1c81f6ddf4749788d5e97774c6970411">Labyrinth::openDoor</a></div><div class="ttdeci">void openDoor(pos p1, pos p2)</div><div class="ttdoc">Créer une porte entre la salle s1 et s2 s1 et s2 adjacent. </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:133</div></div>
-<div class="ttc" id="class_labyrinth_html_a85ffc879951c809634eb07cffbf5cfd1"><div class="ttname"><a href="class_labyrinth.html#a85ffc879951c809634eb07cffbf5cfd1">Labyrinth::setStart</a></div><div class="ttdeci">void setStart(pos p)</div><div class="ttdoc">définie la salle de départ si le labyrinth n&amp;#39;a pas été généré </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:58</div></div>
-<div class="ttc" id="class_labyrinth_html_ab22fb393c8f6d844096ce6548dff2164"><div class="ttname"><a href="class_labyrinth.html#ab22fb393c8f6d844096ce6548dff2164">Labyrinth::hasNorth</a></div><div class="ttdeci">bool hasNorth() const </div><div class="ttdoc">Verifie si il y a une porte au nord. </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:197</div></div>
-<div class="ttc" id="class_labyrinth_html_a1c84c73db11482be6b04e35bdb97c28f"><div class="ttname"><a href="class_labyrinth.html#a1c84c73db11482be6b04e35bdb97c28f">Labyrinth::operator=</a></div><div class="ttdeci">Labyrinth &amp; operator=(const Labyrinth &amp;lab)</div><div class="ttdoc">surchage opérateur = </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:27</div></div>
-<div class="ttc" id="_labyrinth_8hpp_html_ab7e503f84cf86fe2bbcc0cdf341734e9"><div class="ttname"><a href="_labyrinth_8hpp.html#ab7e503f84cf86fe2bbcc0cdf341734e9">LABYRINTH_TAILLE_Y_DEFAULT</a></div><div class="ttdeci">#define LABYRINTH_TAILLE_Y_DEFAULT</div><div class="ttdef"><b>Definition:</b> Labyrinth.hpp:27</div></div>
-<div class="ttc" id="class_labyrinth_html_a6759f031dd720443786e52d946d3b95a"><div class="ttname"><a href="class_labyrinth.html#a6759f031dd720443786e52d946d3b95a">Labyrinth::goNorth</a></div><div class="ttdeci">void goNorth()</div><div class="ttdoc">va au nord </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:213</div></div>
-<div class="ttc" id="class_labyrinth_html_a28e673608e72a1b69cc91c85f882b477"><div class="ttname"><a href="class_labyrinth.html#a28e673608e72a1b69cc91c85f882b477">Labyrinth::goWest</a></div><div class="ttdeci">void goWest()</div><div class="ttdoc">va a l&amp;#39;ouest </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:237</div></div>
-<div class="ttc" id="_treasure_room_8hpp_html"><div class="ttname"><a href="_treasure_room_8hpp.html">TreasureRoom.hpp</a></div></div>
-<div class="ttc" id="class_labyrinth_html_a775a1d628f1179dfca9655dbca6a43f3"><div class="ttname"><a href="class_labyrinth.html#a775a1d628f1179dfca9655dbca6a43f3">Labyrinth::newPosition</a></div><div class="ttdeci">void newPosition()</div><div class="ttdoc">actualise ma position courante </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:245</div></div>
-<div class="ttc" id="class_labyrinth_html_ad50cf7950f97a0d701b1f41125566883"><div class="ttname"><a href="class_labyrinth.html#ad50cf7950f97a0d701b1f41125566883">Labyrinth::isEnd</a></div><div class="ttdeci">bool isEnd() const </div><div class="ttdoc">Vérifie la fin. </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:266</div></div>
-<div class="ttc" id="class_labyrinth_html"><div class="ttname"><a href="class_labyrinth.html">Labyrinth</a></div><div class="ttdoc">gestion de labyrinthe </div><div class="ttdef"><b>Definition:</b> Labyrinth.hpp:44</div></div>
-<div class="ttc" id="class_labyrinth_html_af2f5c4ed0cdb9a64556fd7a81fe09d8d"><div class="ttname"><a href="class_labyrinth.html#af2f5c4ed0cdb9a64556fd7a81fe09d8d">Labyrinth::m_precedent</a></div><div class="ttdeci">pos m_precedent</div><div class="ttdoc">position précédente </div><div class="ttdef"><b>Definition:</b> Labyrinth.hpp:166</div></div>
-<div class="ttc" id="class_labyrinth_html_a4c955f7eb91e1b1529899a157b410807"><div class="ttname"><a href="class_labyrinth.html#a4c955f7eb91e1b1529899a157b410807">Labyrinth::~Labyrinth</a></div><div class="ttdeci">~Labyrinth()</div><div class="ttdoc">destructeur </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:23</div></div>
-<div class="ttc" id="class_labyrinth_html_a45c69cdcafe3665bd76db8e854b6e506"><div class="ttname"><a href="class_labyrinth.html#a45c69cdcafe3665bd76db8e854b6e506">Labyrinth::hasAdjacent</a></div><div class="ttdeci">bool hasAdjacent(pos p) const </div><div class="ttdoc">cherche une salle adjacente non visité </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:157</div></div>
-<div class="ttc" id="_personnage_8hpp_html"><div class="ttname"><a href="_personnage_8hpp.html">Personnage.hpp</a></div></div>
-<div class="ttc" id="class_labyrinth_html_a46038c2605eadda50894b070a012eb12"><div class="ttname"><a href="class_labyrinth.html#a46038c2605eadda50894b070a012eb12">Labyrinth::oneAdjacent</a></div><div class="ttdeci">pos oneAdjacent(pos p) const </div><div class="ttdoc">prend une salle adjacente </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:165</div></div>
-<div class="ttc" id="_start_room_8hpp_html"><div class="ttname"><a href="_start_room_8hpp.html">StartRoom.hpp</a></div></div>
-<div class="ttc" id="_empty_room_8hpp_html"><div class="ttname"><a href="_empty_room_8hpp.html">EmptyRoom.hpp</a></div></div>
-<div class="ttc" id="class_labyrinth_html_ae656bd00c1402e153c89611b374a9567"><div class="ttname"><a href="class_labyrinth.html#ae656bd00c1402e153c89611b374a9567">Labyrinth::m_tailleY</a></div><div class="ttdeci">const int m_tailleY</div><div class="ttdoc">hauteur du labyrinthe </div><div class="ttdef"><b>Definition:</b> Labyrinth.hpp:163</div></div>
-<div class="ttc" id="class_labyrinth_html_a417eadea0ab0a5df9bb5e9951e166590"><div class="ttname"><a href="class_labyrinth.html#a417eadea0ab0a5df9bb5e9951e166590">Labyrinth::clean</a></div><div class="ttdeci">void clean()</div><div class="ttdoc">la salle a été vidé </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:262</div></div>
-<div class="ttc" id="class_labyrinth_html_a80514a0f6bc2a3a3e68a607ea51a800e"><div class="ttname"><a href="class_labyrinth.html#a80514a0f6bc2a3a3e68a607ea51a800e">Labyrinth::action</a></div><div class="ttdeci">void action(Personnage &amp;perso)</div><div class="ttdoc">Actionne la salle courante. </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:250</div></div>
-<div class="ttc" id="class_labyrinth_html_a13480c96c7e8d937adf6fd0b2dce8b6d"><div class="ttname"><a href="class_labyrinth.html#a13480c96c7e8d937adf6fd0b2dce8b6d">Labyrinth::Labyrinth</a></div><div class="ttdeci">Labyrinth(int x=LABYRINTH_TAILLE_X_DEFAULT, int y=LABYRINTH_TAILLE_Y_DEFAULT)</div><div class="ttdoc">constucteur </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:10</div></div>
-<div class="ttc" id="class_labyrinth_html_afc4ede85f831118e70dadf5866dda09d"><div class="ttname"><a href="class_labyrinth.html#afc4ede85f831118e70dadf5866dda09d">Labyrinth::m_gen</a></div><div class="ttdeci">bool m_gen</div><div class="ttdoc">labyrinthe généré </div><div class="ttdef"><b>Definition:</b> Labyrinth.hpp:168</div></div>
-<div class="ttc" id="class_labyrinth_html_a0547ee29aa3f3c8987922f8305e26569"><div class="ttname"><a href="class_labyrinth.html#a0547ee29aa3f3c8987922f8305e26569">Labyrinth::m_tailleX</a></div><div class="ttdeci">const int m_tailleX</div><div class="ttdoc">largeur du labyrinthe </div><div class="ttdef"><b>Definition:</b> Labyrinth.hpp:163</div></div>
-<div class="ttc" id="class_labyrinth_html_a69ec79c2423fe66a3fae33093320f52c"><div class="ttname"><a href="class_labyrinth.html#a69ec79c2423fe66a3fae33093320f52c">Labyrinth::m_rooms</a></div><div class="ttdeci">Room * m_rooms</div><div class="ttdoc">liste des salles du labyrinthe </div><div class="ttdef"><b>Definition:</b> Labyrinth.hpp:167</div></div>
-<div class="ttc" id="class_labyrinth_html_adeb5d81ef6beccdb0360e3c5bdab9f51"><div class="ttname"><a href="class_labyrinth.html#adeb5d81ef6beccdb0360e3c5bdab9f51">Labyrinth::hasSouth</a></div><div class="ttdeci">bool hasSouth() const </div><div class="ttdoc">Verifie si il y a une porte au sud. </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:205</div></div>
-<div class="ttc" id="class_labyrinth_html_a1589aae4f56635fd38d4704196571646"><div class="ttname"><a href="class_labyrinth.html#a1589aae4f56635fd38d4704196571646">Labyrinth::init</a></div><div class="ttdeci">void init(pos p)</div><div class="ttdoc">Ouvre les chemins a partir de la position p. </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:124</div></div>
-<div class="ttc" id="class_labyrinth_html_ad23a37ea3383534c6206d5d09cc1d1cb"><div class="ttname"><a href="class_labyrinth.html#ad23a37ea3383534c6206d5d09cc1d1cb">Labyrinth::goEast</a></div><div class="ttdeci">void goEast()</div><div class="ttdoc">va a l&amp;#39;est </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:221</div></div>
-<div class="ttc" id="_room_8hpp_html"><div class="ttname"><a href="_room_8hpp.html">Room.hpp</a></div></div>
-<div class="ttc" id="class_labyrinth_html_afc29f7969b11105584bf51c616740bce"><div class="ttname"><a href="class_labyrinth.html#afc29f7969b11105584bf51c616740bce">Labyrinth::_gen</a></div><div class="ttdeci">void _gen()</div><div class="ttdoc">Génère le labyrinthe. </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:86</div></div>
-<div class="ttc" id="structpos_html"><div class="ttname"><a href="structpos.html">pos</a></div><div class="ttdoc">position utilise des coordonnée pour stocker une position </div><div class="ttdef"><b>Definition:</b> Labyrinth.hpp:35</div></div>
-<div class="ttc" id="class_labyrinth_html_ae5ffa83a10d415f1f635a58bc25254ba"><div class="ttname"><a href="class_labyrinth.html#ae5ffa83a10d415f1f635a58bc25254ba">Labyrinth::hasWest</a></div><div class="ttdeci">bool hasWest() const </div><div class="ttdoc">Verifie si il y a une porte a l&amp;#39;ouest. </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:209</div></div>
-<div class="ttc" id="class_labyrinth_html_aa0008c659d5e512f805ddaff2620912c"><div class="ttname"><a href="class_labyrinth.html#aa0008c659d5e512f805ddaff2620912c">Labyrinth::hasEast</a></div><div class="ttdeci">bool hasEast() const </div><div class="ttdoc">Verifie si il y a une porte a l&amp;#39;est. </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:201</div></div>
-<div class="ttc" id="class_room_html"><div class="ttname"><a href="class_room.html">Room</a></div><div class="ttdoc">gestion de salle </div><div class="ttdef"><b>Definition:</b> Room.hpp:43</div></div>
-<div class="ttc" id="class_labyrinth_html_a7c0789decac44992b6baa12613b9109a"><div class="ttname"><a href="class_labyrinth.html#a7c0789decac44992b6baa12613b9109a">Labyrinth::print</a></div><div class="ttdeci">void print(bool godMode=false) const </div><div class="ttdoc">Affiche le labyrinthe. </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:35</div></div>
-<div class="ttc" id="class_labyrinth_html_ac586bb4db152210ed424f77d68505502"><div class="ttname"><a href="class_labyrinth.html#ac586bb4db152210ed424f77d68505502">Labyrinth::position</a></div><div class="ttdeci">int position(int x, int y) const </div><div class="ttdoc">Calcule la position de la salle dans le tableau. </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:62</div></div>
-<div class="ttc" id="class_labyrinth_html_a4f94ffe9a0097abea1657b8b3d8d85a6"><div class="ttname"><a href="class_labyrinth.html#a4f94ffe9a0097abea1657b8b3d8d85a6">Labyrinth::gen</a></div><div class="ttdeci">void gen()</div><div class="ttdoc">génére qu&amp;#39;une fois le labyrinth </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:80</div></div>
-<div class="ttc" id="class_labyrinth_html_a4ed73d5e4ea2843c3c58f2d7915bd792"><div class="ttname"><a href="class_labyrinth.html#a4ed73d5e4ea2843c3c58f2d7915bd792">Labyrinth::m_current</a></div><div class="ttdeci">pos m_current</div><div class="ttdoc">position courante </div><div class="ttdef"><b>Definition:</b> Labyrinth.hpp:165</div></div>
-<div class="ttc" id="class_labyrinth_html_a5b7fa660f6f3ce459b80e661603f4c20"><div class="ttname"><a href="class_labyrinth.html#a5b7fa660f6f3ce459b80e661603f4c20">Labyrinth::goSouth</a></div><div class="ttdeci">void goSouth()</div><div class="ttdoc">va au sud </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:229</div></div>
-<div class="ttc" id="_monster_room_8hpp_html"><div class="ttname"><a href="_monster_room_8hpp.html">MonsterRoom.hpp</a></div></div>
-<div class="ttc" id="structpos_html_aac09c213542d5ffc796972c3c10e4d1c"><div class="ttname"><a href="structpos.html#aac09c213542d5ffc796972c3c10e4d1c">pos::x</a></div><div class="ttdeci">int x</div><div class="ttdoc">coordonnée abscisse </div><div class="ttdef"><b>Definition:</b> Labyrinth.hpp:36</div></div>
-<div class="ttc" id="class_labyrinth_html_aa6bbe37a3dae3799c0557c8c92a88f06"><div class="ttname"><a href="class_labyrinth.html#aa6bbe37a3dae3799c0557c8c92a88f06">Labyrinth::undo</a></div><div class="ttdeci">void undo()</div><div class="ttdoc">retourne a la position précédente position courante == position précédente </div><div class="ttdef"><b>Definition:</b> Labyrinth.cpp:256</div></div>
-<div class="ttc" id="_end_room_8hpp_html"><div class="ttname"><a href="_end_room_8hpp.html">EndRoom.hpp</a></div></div>
-<div class="ttc" id="_labyrinth_8hpp_html_a89a4e38d6f15736bb39cfd01bb95762a"><div class="ttname"><a href="_labyrinth_8hpp.html#a89a4e38d6f15736bb39cfd01bb95762a">LABYRINTH_TAILLE_X_DEFAULT</a></div><div class="ttdeci">#define LABYRINTH_TAILLE_X_DEFAULT</div><div class="ttdef"><b>Definition:</b> Labyrinth.hpp:26</div></div>
-<div class="ttc" id="class_personnage_html"><div class="ttname"><a href="class_personnage.html">Personnage</a></div><div class="ttdoc">Gestion du Personnage. </div><div class="ttdef"><b>Definition:</b> Personnage.hpp:23</div></div>
-<div class="ttc" id="structpos_html_a8507e8245423d67f3bb29e2fa0f08054"><div class="ttname"><a href="structpos.html#a8507e8245423d67f3bb29e2fa0f08054">pos::y</a></div><div class="ttdeci">int y</div><div class="ttdoc">coordonnée ordonnée </div><div class="ttdef"><b>Definition:</b> Labyrinth.hpp:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_labyrinth_8hpp.html">Labyrinth.hpp</a></li>
-    <li class="footer">Généré le Mercredi Novembre 27 2013 13:38:46 pour Labyrinth RPG par
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>Labyrinth.hpp</b></li>
+    <li class="footer">Généré le Dimanche Décembre 15 2013 18:25:35 pour Labyrinth RPG par
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>
 </div>
 </body>

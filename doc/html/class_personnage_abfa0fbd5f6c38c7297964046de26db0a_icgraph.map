@@ -1,5 +1,0 @@
-<map id="Personnage::afficheEquip" name="Personnage::afficheEquip">
-<area shape="rect" id="node2" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie. " alt="" coords="228,5,316,29"/>
-<area shape="rect" id="node4" href="$class_treasure_deco_equip.html#a9b1481b5456bcdbd7d4f9a4bb03c1c25" title="ouvre le coffre pour le Personnage " alt="" coords="198,53,346,77"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="395,5,440,29"/>
-</map>

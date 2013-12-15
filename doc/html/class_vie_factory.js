@@ -1,5 +1,6 @@
 var class_vie_factory =
 [
+    [ "CreateFactory", "class_vie_factory.html#ab10257decaf2cda946ec482a0dfdfe03", null ],
     [ "GetCasque", "class_vie_factory.html#af45ee6cc4d541d1e52e834466ee52d9f", null ],
     [ "GetDague", "class_vie_factory.html#a3a7da35eafd5145d4f2460fc49576261", null ],
     [ "GetEpee", "class_vie_factory.html#aa2f078f42aa81b1155daeecd4cfaf540", null ],

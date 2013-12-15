@@ -1,5 +1,5 @@
 <map id="RoomEtat" name="RoomEtat">
-<area shape="rect" id="node2" href="$class_room_etat_position.html" title="Salle identifé comme ma position. " alt="" coords="5,161,135,266"/>
-<area shape="rect" id="node3" href="$class_room_etat_unvisited.html" title="Salle jamais visité " alt="" coords="160,161,295,266"/>
-<area shape="rect" id="node4" href="$class_room_etat_visited.html" title="Salle déjà visité " alt="" coords="319,161,443,266"/>
+<area shape="rect" id="node3" href="$class_room_etat_position.html" title="Salle identifé comme ma position." alt="" coords="5,185,136,314"/>
+<area shape="rect" id="node5" href="$class_room_etat_unvisited.html" title="Salle jamais visité" alt="" coords="160,185,296,314"/>
+<area shape="rect" id="node7" href="$class_room_etat_visited.html" title="Salle déjà visité" alt="" coords="320,185,443,314"/>
 </map>

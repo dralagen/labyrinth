@@ -1,4 +1,0 @@
-<map id="Treasure::getFactory" name="Treasure::getFactory">
-<area shape="rect" id="node2" href="$class_treasure_arme.html#a67423f71b0680eb22913f014e717cb00" title="ouvre le coffre pour le Personnage " alt="" coords="176,5,299,29"/>
-<area shape="rect" id="node3" href="$class_treasure_equip.html#a187762eb0e25641cde7a2b15d94af4ed" title="ouvre le coffre pour le Personnage " alt="" coords="176,53,299,77"/>
-</map>

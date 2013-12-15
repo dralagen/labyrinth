@@ -4,16 +4,16 @@ Labyrinth RPG
 Install
 -------
 
-Télécharger les fichiers sources l'une de ces commande :
+Télécharger les fichiers sources avec l'une de ces commande :
 
-Sources récente :
+Sources récente avec _git_ :
 
 ```
 git clone git://github.com/dralagen/labyrinth.git
 git clone git://dralagen.fr/labyrinth.git
 ```
 
-Sources de la version 1.0 :
+Sources de la version 1.0 avec _wget_ :
 
 ```
 wget https://github.com/dralagen/labyrinth/archive/v1.0.zip

@@ -23,7 +23,6 @@ var hierarchy =
         [ "HacheVie", "class_hache_vie.html", null ]
       ] ]
     ] ],
-    [ "ColorTerm::Edit", "class_color_term_1_1_edit.html", null ],
     [ "Equipement", "class_equipement.html", [
       [ "Casque", "class_casque.html", [
         [ "CasqueChance", "class_casque_chance.html", null ],
@@ -57,6 +56,7 @@ var hierarchy =
     [ "Monster", "class_monster.html", null ],
     [ "Personnage", "class_personnage.html", null ],
     [ "pos", "structpos.html", null ],
+    [ "Random", "class_random.html", null ],
     [ "Room", "class_room.html", null ],
     [ "RoomComportement", "class_room_comportement.html", [
       [ "EmptyRoom", "class_empty_room.html", null ],

@@ -1,7 +1,0 @@
-<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
-<area shape="rect" id="node1" href="$class_treasure.html" title="Coffre de salle. " alt="" coords="5,77,72,101"/>
-<area shape="rect" id="node2" href="$class_treasure_arme.html" title="TreasureArme" alt="" coords="134,5,226,29"/>
-<area shape="rect" id="node3" href="$class_treasure_deco_arme.html" title="TreasureDecoArme" alt="" coords="121,53,239,77"/>
-<area shape="rect" id="node4" href="$class_treasure_deco_equip.html" title="TreasureDecoEquip" alt="" coords="121,101,239,125"/>
-<area shape="rect" id="node5" href="$class_treasure_equip.html" title="TreasureEquip" alt="" coords="133,149,227,173"/>
-</map>

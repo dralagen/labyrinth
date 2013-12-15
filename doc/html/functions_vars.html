@@ -3,7 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.5"/>
 <title>Labyrinth RPG: Membres de classe - Variables</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -13,7 +12,6 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +28,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Labyrinth RPG
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
    <div id="projectbrief">Un labyrinthe en 2D additionné à un Jeu de Rôle</div>
   </td>
@@ -39,16 +37,14 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.8.5 -->
+<!-- Généré par Doxygen 1.8.1.2 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
-      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -80,7 +76,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
       <li><a href="functions.html"><span>Tout</span></a></li>
       <li><a href="functions_func.html"><span>Fonctions</span></a></li>
       <li class="current"><a href="functions_vars.html"><span>Variables</span></a></li>
-      <li><a href="functions_rela.html"><span>Fonctions&#160;associées</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -95,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
       <li><a href="#index_j"><span>j</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
       <li><a href="#index_n"><span>n</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
       <li><a href="#index_t"><span>t</span></a></li>
       <li><a href="#index_u"><span>u</span></a></li>
       <li><a href="#index_v"><span>v</span></a></li>
@@ -122,7 +118,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -140,7 +136,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>armure_
 : <a class="el" href="class_personnage.html#adc9faad1d30de099542f716096a32a3b">Personnage</a>
-, <a class="el" href="class_equipement.html#a69339ce4f1f5fe7e6fcdeda5b74c14a4">Equipement</a>
 </li>
 </ul>
 
@@ -148,15 +143,12 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
 <li>bchance_
 : <a class="el" href="class_arme.html#a688792d4393f9e690aa103a8e68c541c">Arme</a>
-, <a class="el" href="class_equipement.html#aa70effa6a8144fe1f4fe874af7139793">Equipement</a>
 </li>
 <li>bforce_
-: <a class="el" href="class_equipement.html#af87cf3f291386d5401be6994dd8fb8be">Equipement</a>
-, <a class="el" href="class_arme.html#a779e9838aa9c50d948f58b593fc5954b">Arme</a>
+: <a class="el" href="class_arme.html#a779e9838aa9c50d948f58b593fc5954b">Arme</a>
 </li>
 <li>bvie_
-: <a class="el" href="class_equipement.html#a73ac5bff40e3f6bf1d8e6f0e524e750f">Equipement</a>
-, <a class="el" href="class_arme.html#a4606c075b38ef49f6ed2ed06d6185173">Arme</a>
+: <a class="el" href="class_arme.html#a4606c075b38ef49f6ed2ed06d6185173">Arme</a>
 </li>
 </ul>
 
@@ -167,9 +159,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>chance_
 : <a class="el" href="class_personnage.html#a383168e6874a1dee5d50fb5c539ccd5e">Personnage</a>
-</li>
-<li>code
-: <a class="el" href="class_color_term_1_1_edit.html#abf1ddaca0fb5d6a07f210db123600143">ColorTerm::Edit</a>
 </li>
 </ul>
 
@@ -236,9 +225,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>m_current
 : <a class="el" href="class_labyrinth.html#a4ed73d5e4ea2843c3c58f2d7915bd792">Labyrinth</a>
 </li>
-<li>m_damage
-: <a class="el" href="class_monster.html#a812e967b98ab121c06dab114abe25995">Monster</a>
-</li>
 <li>m_east
 : <a class="el" href="class_room.html#ab6e6bf0a1168694a27a13a8acf1452a2">Room</a>
 </li>
@@ -251,19 +237,12 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>m_labyrinth
 : <a class="el" href="class_game.html#ae240b11d8e568e768097735d85794d32">Game</a>
 </li>
-<li>m_life
-: <a class="el" href="class_monster.html#ae36b49ffb0e8fe84295850b2fad21e85">Monster</a>
-</li>
 <li>m_lvl
-: <a class="el" href="class_monster.html#a8d1a55805e6607e882fc4da49fabacf0">Monster</a>
-, <a class="el" href="class_room_comportement.html#acfc0d0c3c7dbcd88235e8c615f7290a3">RoomComportement</a>
+: <a class="el" href="class_room_comportement.html#acfc0d0c3c7dbcd88235e8c615f7290a3">RoomComportement</a>
 , <a class="el" href="class_treasure.html#a51144d1fb776d1c0612b87d3d8006aa8">Treasure</a>
 </li>
 <li>m_monster
 : <a class="el" href="class_monster_room.html#a3811824f29760f700f945a49b278c3d7">MonsterRoom</a>
-</li>
-<li>m_name
-: <a class="el" href="class_monster.html#ad5775421b7be86132f4e2e9df81a7d2b">Monster</a>
 </li>
 <li>m_north
 : <a class="el" href="class_room.html#aeb245b2ac8baea5fe4aa2b581ce1e4b9">Room</a>
@@ -276,9 +255,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>m_precedent
 : <a class="el" href="class_labyrinth.html#af2f5c4ed0cdb9a64556fd7a81fe09d8d">Labyrinth</a>
-</li>
-<li>m_room
-: <a class="el" href="class_room_etat.html#a5b23317f60b9d268bbe669955b3c4725">RoomEtat</a>
 </li>
 <li>m_rooms
 : <a class="el" href="class_labyrinth.html#a69ec79c2423fe66a3fae33093320f52c">Labyrinth</a>
@@ -311,7 +287,13 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>nom_
 : <a class="el" href="class_arme.html#a347394a5ab5c3230259c1b7117f3e8d6">Arme</a>
 , <a class="el" href="class_personnage.html#a30b730a6908d2a27a3313a33fca2f2d0">Personnage</a>
-, <a class="el" href="class_equipement.html#a930290aac01ecd40c7a646ab8f66d742">Equipement</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>s_instance
+: <a class="el" href="class_random.html#a891e11b01cad462c0af3eb0013f20e53">Random</a>
 </li>
 </ul>
 
@@ -357,9 +339,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Généré le Mercredi Novembre 27 2013 13:38:48 pour Labyrinth RPG par
+    <li class="footer">Généré le Dimanche Décembre 15 2013 18:25:36 pour Labyrinth RPG par
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>
 </div>
 </body>

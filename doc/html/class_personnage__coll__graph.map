@@ -1,4 +1,4 @@
 <map id="Personnage" name="Personnage">
-<area shape="rect" id="node2" href="$class_arme.html" title="Gestion des armes. " alt="" coords="5,5,91,147"/>
-<area shape="rect" id="node3" href="$class_equipement.html" title="Gestion des equipements. " alt="" coords="115,5,217,147"/>
+<area shape="rect" id="node2" href="$class_arme.html" title="Gestion des armes." alt="" coords="5,6,91,183"/>
+<area shape="rect" id="node4" href="$class_equipement.html" title="Gestion des equipements." alt="" coords="115,6,216,183"/>
 </map>

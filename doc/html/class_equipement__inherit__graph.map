@@ -1,19 +1,19 @@
 <map id="Equipement" name="Equipement">
-<area shape="rect" id="node2" href="$class_casque.html" title="Casque herite de Equipement. " alt="" coords="215,207,296,300"/>
-<area shape="rect" id="node6" href="$class_d_equip.html" title="Decorator d&#39;équipement , hérite de Equipement. " alt="" coords="610,195,696,312"/>
-<area shape="rect" id="node11" href="$class_jambe.html" title="Jambe herite de Equipement. " alt="" coords="917,207,993,300"/>
-<area shape="rect" id="node15" href="$class_torse.html" title="Torse herite de Equipement. " alt="" coords="1301,207,1373,300"/>
-<area shape="rect" id="node3" href="$class_casque_chance.html" title="CasqueChance herite de Casque. " alt="" coords="5,367,117,436"/>
-<area shape="rect" id="node4" href="$class_casque_force.html" title="CasqueForce herite de Casque. " alt="" coords="143,367,247,436"/>
-<area shape="rect" id="node5" href="$class_casque_vie.html" title="CasqueVie herite de Casque. " alt="" coords="271,367,361,436"/>
-<area shape="rect" id="node7" href="$class_d_equip_a.html" title="Decorator d&#39;équipement d&#39;armure , hérite de DEquip. " alt="" coords="386,361,472,442"/>
-<area shape="rect" id="node8" href="$class_d_equip_c.html" title="Decorator d&#39;équipement de chance , hérite de DEquip. " alt="" coords="497,361,585,442"/>
-<area shape="rect" id="node9" href="$class_d_equip_f.html" title="Decorator d&#39;équipement de force , hérite de DEquip. " alt="" coords="610,361,696,442"/>
-<area shape="rect" id="node10" href="$class_d_equip_v.html" title="Decorator d&#39;équipement de vie , hérite de DEquip. " alt="" coords="721,361,807,442"/>
-<area shape="rect" id="node12" href="$class_jambe_chance.html" title="JambeChance herite de Jambe. " alt="" coords="832,361,947,442"/>
-<area shape="rect" id="node13" href="$class_jambe_force.html" title="JambeForce herite de Jambe. " alt="" coords="971,361,1076,442"/>
-<area shape="rect" id="node14" href="$class_jambe_vie.html" title="JambeVie herite de Jambe. " alt="" coords="1101,361,1192,442"/>
-<area shape="rect" id="node16" href="$class_torse_chance.html" title="TorseChance herite de Torse. " alt="" coords="1217,361,1327,442"/>
-<area shape="rect" id="node17" href="$class_torse_force.html" title="TorseForce herite de Torse. " alt="" coords="1352,361,1453,442"/>
-<area shape="rect" id="node18" href="$class_torse_vie.html" title="TorseVie herite de Torse. " alt="" coords="1477,361,1565,442"/>
+<area shape="rect" id="node3" href="$class_casque.html" title="Casque herite de Equipement." alt="" coords="213,249,296,362"/>
+<area shape="rect" id="node11" href="$class_d_equip.html" title="Decorator d&#39;équipement , hérite de Equipement." alt="" coords="605,233,691,378"/>
+<area shape="rect" id="node21" href="$class_jambe.html" title="Jambe herite de Equipement." alt="" coords="909,249,987,362"/>
+<area shape="rect" id="node29" href="$class_torse.html" title="Torse herite de Equipement." alt="" coords="1288,249,1360,362"/>
+<area shape="rect" id="node5" href="$class_casque_chance.html" title="CasqueChance herite de Casque." alt="" coords="5,435,117,517"/>
+<area shape="rect" id="node7" href="$class_casque_force.html" title="CasqueForce herite de Casque." alt="" coords="141,435,245,517"/>
+<area shape="rect" id="node9" href="$class_casque_vie.html" title="CasqueVie herite de Casque." alt="" coords="269,435,360,517"/>
+<area shape="rect" id="node13" href="$class_d_equip_a.html" title="Decorator d&#39;équipement d&#39;armure , hérite de DEquip." alt="" coords="384,427,469,525"/>
+<area shape="rect" id="node15" href="$class_d_equip_c.html" title="Decorator d&#39;équipement de chance , hérite de DEquip." alt="" coords="493,427,581,525"/>
+<area shape="rect" id="node17" href="$class_d_equip_f.html" title="Decorator d&#39;équipement de force , hérite de DEquip." alt="" coords="605,427,691,525"/>
+<area shape="rect" id="node19" href="$class_d_equip_v.html" title="Decorator d&#39;équipement de vie , hérite de DEquip." alt="" coords="715,427,800,525"/>
+<area shape="rect" id="node23" href="$class_jambe_chance.html" title="JambeChance herite de Jambe." alt="" coords="824,427,939,525"/>
+<area shape="rect" id="node25" href="$class_jambe_force.html" title="JambeForce herite de Jambe." alt="" coords="963,427,1067,525"/>
+<area shape="rect" id="node27" href="$class_jambe_vie.html" title="JambeVie herite de Jambe." alt="" coords="1091,427,1181,525"/>
+<area shape="rect" id="node31" href="$class_torse_chance.html" title="TorseChance herite de Torse." alt="" coords="1205,427,1315,525"/>
+<area shape="rect" id="node33" href="$class_torse_force.html" title="TorseForce herite de Torse." alt="" coords="1339,427,1440,525"/>
+<area shape="rect" id="node35" href="$class_torse_vie.html" title="TorseVie herite de Torse." alt="" coords="1464,427,1552,525"/>
 </map>

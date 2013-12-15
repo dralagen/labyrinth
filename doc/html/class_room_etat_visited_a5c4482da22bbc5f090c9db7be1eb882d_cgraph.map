@@ -1,8 +1,0 @@
-<map id="RoomEtatVisited::print" name="RoomEtatVisited::print">
-<area shape="rect" id="node2" href="$class_room.html#a22f38a4beb5db3140082e23da3da9316" title="Récupère si l&#39;access est possible au Nord. " alt="" coords="188,5,287,29"/>
-<area shape="rect" id="node3" href="$class_room.html#aafd7ca57898b2d8f4123fcd755646987" title="Récupère si l&#39;access est possible à l&#39;Ouest. " alt="" coords="189,53,285,77"/>
-<area shape="rect" id="node4" href="$class_room.html#a6267518113960cc5fbb40936ea9cbc36" title="Récupère le contenue de la salle. " alt="" coords="182,101,293,125"/>
-<area shape="rect" id="node6" href="$class_room.html#a4a5d452b159b419bbd6add72bdbe283b" title="Récupère si l&#39;access est possible à l&#39;Est. " alt="" coords="191,149,284,173"/>
-<area shape="rect" id="node7" href="$class_room.html#af329dbe45e8790c559361c7e03f135a7" title="Récupère si l&#39;access est possible au Sud. " alt="" coords="187,197,287,221"/>
-<area shape="rect" id="node5" href="$class_room_comportement.html#a6927d638d17858a303d77b449c7552b4" title="Récupère le contenue de la salle. " alt="" coords="342,101,525,125"/>
-</map>

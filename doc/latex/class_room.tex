@@ -1,5 +1,6 @@
-\section{Référence de la classe Room}
+\hypertarget{class_room}{\section{Référence de la classe Room}
 \label{class_room}\index{Room@{Room}}
+}
 
 
 gestion de salle  
@@ -7,141 +8,131 @@ gestion de salle
 
 
 
-Graphe de collaboration de Room\-:\nopagebreak
+Graphe de collaboration de Room\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_room__coll__graph}
+\includegraphics[height=550pt]{class_room__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-{\bf Room} ()
+\hypertarget{class_room_ac6ef93a7d9c3e1d624e025058d5f16ff}{\hyperlink{class_room_ac6ef93a7d9c3e1d624e025058d5f16ff}{Room} ()}\label{class_room_ac6ef93a7d9c3e1d624e025058d5f16ff}
+
 \begin{DoxyCompactList}\small\item\em constucteur \end{DoxyCompactList}\item 
-virtual {\bf $\sim$\-Room} ()
+\hypertarget{class_room_a67d5da09983cc53097807fd43ba5481a}{virtual \hyperlink{class_room_a67d5da09983cc53097807fd43ba5481a}{$\sim$\-Room} ()}\label{class_room_a67d5da09983cc53097807fd43ba5481a}
+
 \begin{DoxyCompactList}\small\item\em destructeur \end{DoxyCompactList}\item 
-void {\bf print} (std\-::string \&t, std\-::string \&c, std\-::string \&b, bool god\-Mode=false) const 
+void \hyperlink{class_room_a621adfd7a12485b67ba9c26882252830}{print} (std\-::string \&t, std\-::string \&c, std\-::string \&b, bool god\-Mode=false) const 
 \begin{DoxyCompactList}\small\item\em Affiche le contenue de la salle. \end{DoxyCompactList}\item 
-bool {\bf is\-End} () const 
+bool \hyperlink{class_room_a2d04c2be573b64240139ffa96089d0de}{is\-End} () const 
 \begin{DoxyCompactList}\small\item\em verifie si c'est la salle de fin \end{DoxyCompactList}\item 
-int {\bf action} ({\bf Personnage} \&perso)
+int \hyperlink{class_room_ab4ada24b6e294afb6f5cd7f012caab83}{action} (\hyperlink{class_personnage}{Personnage} \&perso)
 \begin{DoxyCompactList}\small\item\em Effectue l'action de la salle. \end{DoxyCompactList}\item 
-void {\bf set\-North} (bool b)
+void \hyperlink{class_room_a1a48c7e2bfa873b36d859eb3471b7400}{set\-North} (bool b)
 \begin{DoxyCompactList}\small\item\em Ouvre/ferme un access vers la salle North. \end{DoxyCompactList}\item 
-void {\bf set\-East} (bool b)
+void \hyperlink{class_room_a23e731f42c158963da07fd2022163021}{set\-East} (bool b)
 \begin{DoxyCompactList}\small\item\em Ouvre/ferme un access vers la salle Est. \end{DoxyCompactList}\item 
-void {\bf set\-South} (bool b)
+void \hyperlink{class_room_a668be12e9202bb38b09c02d880fabdd6}{set\-South} (bool b)
 \begin{DoxyCompactList}\small\item\em Ouvre/ferme un access vers la salle Sud. \end{DoxyCompactList}\item 
-void {\bf set\-West} (bool b)
+void \hyperlink{class_room_a035421048480031e0cde52f1e330025c}{set\-West} (bool b)
 \begin{DoxyCompactList}\small\item\em Ouvre/ferme un access vers la salle Ouest. \end{DoxyCompactList}\item 
-void {\bf set\-Comportement} ({\bf Room\-Comportement} $\ast$r)
+void \hyperlink{class_room_a78150061fe95e0d03b8730fb151cc39f}{set\-Comportement} (\hyperlink{class_room_comportement}{Room\-Comportement} $\ast$r)
 \begin{DoxyCompactList}\small\item\em Modifie le comportement de la salle. \end{DoxyCompactList}\item 
-void {\bf set\-Visited} ()
+\hypertarget{class_room_a50d357cd356b3b1d1bd8e7d9217e5b71}{void \hyperlink{class_room_a50d357cd356b3b1d1bd8e7d9217e5b71}{set\-Visited} ()}\label{class_room_a50d357cd356b3b1d1bd8e7d9217e5b71}
+
 \begin{DoxyCompactList}\small\item\em Etat de la salle \-: visité \end{DoxyCompactList}\item 
-void {\bf set\-Position} ()
+\hypertarget{class_room_ac5949bc2fb5288c733369ad51af7b084}{void \hyperlink{class_room_ac5949bc2fb5288c733369ad51af7b084}{set\-Position} ()}\label{class_room_ac5949bc2fb5288c733369ad51af7b084}
+
 \begin{DoxyCompactList}\small\item\em Etat de la salle \-: ma position. \end{DoxyCompactList}\item 
-void {\bf set\-Unvisited} ()
+\hypertarget{class_room_abcedb8c7a1685089a797805c0567219a}{void \hyperlink{class_room_abcedb8c7a1685089a797805c0567219a}{set\-Unvisited} ()}\label{class_room_abcedb8c7a1685089a797805c0567219a}
+
 \begin{DoxyCompactList}\small\item\em Etat de la salle \-: non visité \end{DoxyCompactList}\item 
-bool {\bf get\-North} () const 
+bool \hyperlink{class_room_a22f38a4beb5db3140082e23da3da9316}{get\-North} () const 
 \begin{DoxyCompactList}\small\item\em Récupère si l'access est possible au Nord. \end{DoxyCompactList}\item 
-bool {\bf get\-East} () const 
+bool \hyperlink{class_room_a4a5d452b159b419bbd6add72bdbe283b}{get\-East} () const 
 \begin{DoxyCompactList}\small\item\em Récupère si l'access est possible à l'Est. \end{DoxyCompactList}\item 
-bool {\bf get\-South} () const 
+bool \hyperlink{class_room_af329dbe45e8790c559361c7e03f135a7}{get\-South} () const 
 \begin{DoxyCompactList}\small\item\em Récupère si l'access est possible au Sud. \end{DoxyCompactList}\item 
-bool {\bf get\-West} () const 
+bool \hyperlink{class_room_aafd7ca57898b2d8f4123fcd755646987}{get\-West} () const 
 \begin{DoxyCompactList}\small\item\em Récupère si l'access est possible à l'Ouest. \end{DoxyCompactList}\item 
-bool {\bf get\-Visited} () const 
+bool \hyperlink{class_room_ae653a070a5eb0598097fcbe949e8b483}{get\-Visited} () const 
 \begin{DoxyCompactList}\small\item\em Récupère l'état de la salle. \end{DoxyCompactList}\item 
-std\-::string {\bf get\-Content} () const 
+std\-::string \hyperlink{class_room_a6267518113960cc5fbb40936ea9cbc36}{get\-Content} () const 
 \begin{DoxyCompactList}\small\item\em Récupère le contenue de la salle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Attributs protégés}
 \begin{DoxyCompactItemize}
 \item 
-bool {\bf m\-\_\-north}
+\hypertarget{class_room_aeb245b2ac8baea5fe4aa2b581ce1e4b9}{bool \hyperlink{class_room_aeb245b2ac8baea5fe4aa2b581ce1e4b9}{m\-\_\-north}}\label{class_room_aeb245b2ac8baea5fe4aa2b581ce1e4b9}
+
 \begin{DoxyCompactList}\small\item\em true =$>$ Porte Nord Ouverte \end{DoxyCompactList}\item 
-bool {\bf m\-\_\-east}
+\hypertarget{class_room_ab6e6bf0a1168694a27a13a8acf1452a2}{bool \hyperlink{class_room_ab6e6bf0a1168694a27a13a8acf1452a2}{m\-\_\-east}}\label{class_room_ab6e6bf0a1168694a27a13a8acf1452a2}
+
 \begin{DoxyCompactList}\small\item\em true =$>$ Porte Nord Ouverte \end{DoxyCompactList}\item 
-bool {\bf m\-\_\-south}
+\hypertarget{class_room_aac69181b1659a52d6e0259f7bfaae182}{bool \hyperlink{class_room_aac69181b1659a52d6e0259f7bfaae182}{m\-\_\-south}}\label{class_room_aac69181b1659a52d6e0259f7bfaae182}
+
 \begin{DoxyCompactList}\small\item\em true =$>$ Porte Nord Ouverte \end{DoxyCompactList}\item 
-bool {\bf m\-\_\-west}
+\hypertarget{class_room_a645eb7a60abecb39a933f6ddd66c907d}{bool \hyperlink{class_room_a645eb7a60abecb39a933f6ddd66c907d}{m\-\_\-west}}\label{class_room_a645eb7a60abecb39a933f6ddd66c907d}
+
 \begin{DoxyCompactList}\small\item\em true =$>$ Porte Nord Ouverte \end{DoxyCompactList}\item 
-{\bf Room\-Comportement} $\ast$ {\bf m\-\_\-comp}
+\hypertarget{class_room_a2eef23a19d68165b2afda676156fec0f}{\hyperlink{class_room_comportement}{Room\-Comportement} $\ast$ \hyperlink{class_room_a2eef23a19d68165b2afda676156fec0f}{m\-\_\-comp}}\label{class_room_a2eef23a19d68165b2afda676156fec0f}
+
 \begin{DoxyCompactList}\small\item\em Comportement de la salle. \end{DoxyCompactList}\item 
-{\bf Room\-Etat\-Visited} {\bf m\-\_\-visited}
+\hypertarget{class_room_aa1641c60eea54c1633d3d1b4f04b34d0}{\hyperlink{class_room_etat_visited}{Room\-Etat\-Visited} \hyperlink{class_room_aa1641c60eea54c1633d3d1b4f04b34d0}{m\-\_\-visited}}\label{class_room_aa1641c60eea54c1633d3d1b4f04b34d0}
+
 \begin{DoxyCompactList}\small\item\em Etat visité \end{DoxyCompactList}\item 
-{\bf Room\-Etat\-Position} {\bf m\-\_\-position}
+\hypertarget{class_room_aa98c341010116cd18d62dc656ea63503}{\hyperlink{class_room_etat_position}{Room\-Etat\-Position} \hyperlink{class_room_aa98c341010116cd18d62dc656ea63503}{m\-\_\-position}}\label{class_room_aa98c341010116cd18d62dc656ea63503}
+
 \begin{DoxyCompactList}\small\item\em Etat ma position. \end{DoxyCompactList}\item 
-{\bf Room\-Etat\-Unvisited} {\bf m\-\_\-unvisited}
+\hypertarget{class_room_af92789f3d7f8eeee7ee2ab2daebfc5c5}{\hyperlink{class_room_etat_unvisited}{Room\-Etat\-Unvisited} \hyperlink{class_room_af92789f3d7f8eeee7ee2ab2daebfc5c5}{m\-\_\-unvisited}}\label{class_room_af92789f3d7f8eeee7ee2ab2daebfc5c5}
+
 \begin{DoxyCompactList}\small\item\em Etat non visité \end{DoxyCompactList}\item 
-{\bf Room\-Etat} $\ast$ {\bf m\-\_\-etat}
+\hypertarget{class_room_acef8df1171e7d81b12ad09fe96df7885}{\hyperlink{class_room_etat}{Room\-Etat} $\ast$ \hyperlink{class_room_acef8df1171e7d81b12ad09fe96df7885}{m\-\_\-etat}}\label{class_room_acef8df1171e7d81b12ad09fe96df7885}
+
 \begin{DoxyCompactList}\small\item\em Etat courant. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Fonctions membres privées}
 \begin{DoxyCompactItemize}
 \item 
-void {\bf top} (std\-::string \&s) const 
+void \hyperlink{class_room_a77d4ea167eb2e32638c4da2f84117873}{top} (std\-::string \&s) const 
 \begin{DoxyCompactList}\small\item\em Modifie le flux de sortie pour afficher le contenue de la salle. \end{DoxyCompactList}\item 
-void {\bf center} (std\-::string \&s) const 
+void \hyperlink{class_room_a792dfc1df5837f19a485b56e68ca4361}{center} (std\-::string \&s) const 
 \begin{DoxyCompactList}\small\item\em Modifie le flux de sortie pour afficher le contenue de la salle. \end{DoxyCompactList}\item 
-void {\bf bottom} (std\-::string \&s) const 
+void \hyperlink{class_room_a5f54422b1ad4569692927542c9ff6927}{bottom} (std\-::string \&s) const 
 \begin{DoxyCompactList}\small\item\em Modifie le flux de sortie pour afficher le contenue de la salle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Description détaillée}
 gestion de salle 
 
-\subsection{Documentation des constructeurs et destructeur}
-\index{Room@{Room}!Room@{Room}}
-\index{Room@{Room}!Room@{Room}}
-\subsubsection[{Room}]{\setlength{\rightskip}{0pt plus 5cm}Room\-::\-Room (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\label{class_room_ac6ef93a7d9c3e1d624e025058d5f16ff}
-
-
-constucteur 
-
-\index{Room@{Room}!$\sim$\-Room@{$\sim$\-Room}}
-\index{$\sim$\-Room@{$\sim$\-Room}!Room@{Room}}
-\subsubsection[{$\sim$\-Room}]{\setlength{\rightskip}{0pt plus 5cm}Room\-::$\sim$\-Room (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_room_a67d5da09983cc53097807fd43ba5481a}
-
-
-destructeur 
-
-
-
 \subsection{Documentation des fonctions membres}
-\index{Room@{Room}!action@{action}}
+\hypertarget{class_room_ab4ada24b6e294afb6f5cd7f012caab83}{\index{Room@{Room}!action@{action}}
 \index{action@{action}!Room@{Room}}
 \subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}int Room\-::action (
 \begin{DoxyParamCaption}
 \item[{{\bf Personnage} \&}]{perso}
 \end{DoxyParamCaption}
-)}\label{class_room_ab4ada24b6e294afb6f5cd7f012caab83}
+)}}\label{class_room_ab4ada24b6e294afb6f5cd7f012caab83}
 
 
 Effectue l'action de la salle. 
 
 
 \begin{DoxyParams}{Paramètres}
-{\em perso} & \doxyref{Personnage}{p.}{class_personnage} qui fait l'action\\
+{\em perso} & \hyperlink{class_personnage}{Personnage} qui fait l'action\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Renvoie}
 l'action realisé 
 \end{DoxyReturn}
-\index{Room@{Room}!bottom@{bottom}}
+\hypertarget{class_room_a5f54422b1ad4569692927542c9ff6927}{\index{Room@{Room}!bottom@{bottom}}
 \index{bottom@{bottom}!Room@{Room}}
 \subsubsection[{bottom}]{\setlength{\rightskip}{0pt plus 5cm}void Room\-::bottom (
 \begin{DoxyParamCaption}
 \item[{std\-::string \&}]{s}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [private]}}\label{class_room_a5f54422b1ad4569692927542c9ff6927}
+) const\hspace{0.3cm}{\ttfamily [private]}}}\label{class_room_a5f54422b1ad4569692927542c9ff6927}
 
 
 Modifie le flux de sortie pour afficher le contenue de la salle. 
@@ -154,13 +145,13 @@ Modifie le flux de sortie pour afficher le contenue de la salle.
 \begin{DoxyReturn}{Renvoie}
 flux de sortie avec le contenue de la salle 
 \end{DoxyReturn}
-\index{Room@{Room}!center@{center}}
+\hypertarget{class_room_a792dfc1df5837f19a485b56e68ca4361}{\index{Room@{Room}!center@{center}}
 \index{center@{center}!Room@{Room}}
 \subsubsection[{center}]{\setlength{\rightskip}{0pt plus 5cm}void Room\-::center (
 \begin{DoxyParamCaption}
 \item[{std\-::string \&}]{s}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [private]}}\label{class_room_a792dfc1df5837f19a485b56e68ca4361}
+) const\hspace{0.3cm}{\ttfamily [private]}}}\label{class_room_a792dfc1df5837f19a485b56e68ca4361}
 
 
 Modifie le flux de sortie pour afficher le contenue de la salle. 
@@ -173,13 +164,13 @@ Modifie le flux de sortie pour afficher le contenue de la salle.
 \begin{DoxyReturn}{Renvoie}
 flux de sortie avec le contenue de la salle 
 \end{DoxyReturn}
-\index{Room@{Room}!get\-Content@{get\-Content}}
+\hypertarget{class_room_a6267518113960cc5fbb40936ea9cbc36}{\index{Room@{Room}!get\-Content@{get\-Content}}
 \index{get\-Content@{get\-Content}!Room@{Room}}
 \subsubsection[{get\-Content}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Room\-::get\-Content (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}\label{class_room_a6267518113960cc5fbb40936ea9cbc36}
+) const}}\label{class_room_a6267518113960cc5fbb40936ea9cbc36}
 
 
 Récupère le contenue de la salle. 
@@ -187,13 +178,13 @@ Récupère le contenue de la salle.
 \begin{DoxyReturn}{Renvoie}
 contenue de la salle 
 \end{DoxyReturn}
-\index{Room@{Room}!get\-East@{get\-East}}
+\hypertarget{class_room_a4a5d452b159b419bbd6add72bdbe283b}{\index{Room@{Room}!get\-East@{get\-East}}
 \index{get\-East@{get\-East}!Room@{Room}}
 \subsubsection[{get\-East}]{\setlength{\rightskip}{0pt plus 5cm}bool Room\-::get\-East (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}\label{class_room_a4a5d452b159b419bbd6add72bdbe283b}
+) const}}\label{class_room_a4a5d452b159b419bbd6add72bdbe283b}
 
 
 Récupère si l'access est possible à l'Est. 
@@ -201,13 +192,13 @@ Récupère si l'access est possible à l'Est.
 \begin{DoxyReturn}{Renvoie}
 vrai =$>$ on peut aller a l'Est 
 \end{DoxyReturn}
-\index{Room@{Room}!get\-North@{get\-North}}
+\hypertarget{class_room_a22f38a4beb5db3140082e23da3da9316}{\index{Room@{Room}!get\-North@{get\-North}}
 \index{get\-North@{get\-North}!Room@{Room}}
 \subsubsection[{get\-North}]{\setlength{\rightskip}{0pt plus 5cm}bool Room\-::get\-North (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}\label{class_room_a22f38a4beb5db3140082e23da3da9316}
+) const}}\label{class_room_a22f38a4beb5db3140082e23da3da9316}
 
 
 Récupère si l'access est possible au Nord. 
@@ -215,13 +206,13 @@ Récupère si l'access est possible au Nord.
 \begin{DoxyReturn}{Renvoie}
 vrai =$>$ on peut aller au Nord 
 \end{DoxyReturn}
-\index{Room@{Room}!get\-South@{get\-South}}
+\hypertarget{class_room_af329dbe45e8790c559361c7e03f135a7}{\index{Room@{Room}!get\-South@{get\-South}}
 \index{get\-South@{get\-South}!Room@{Room}}
 \subsubsection[{get\-South}]{\setlength{\rightskip}{0pt plus 5cm}bool Room\-::get\-South (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}\label{class_room_af329dbe45e8790c559361c7e03f135a7}
+) const}}\label{class_room_af329dbe45e8790c559361c7e03f135a7}
 
 
 Récupère si l'access est possible au Sud. 
@@ -229,13 +220,13 @@ Récupère si l'access est possible au Sud.
 \begin{DoxyReturn}{Renvoie}
 vrai =$>$ on peut aller au Sud 
 \end{DoxyReturn}
-\index{Room@{Room}!get\-Visited@{get\-Visited}}
+\hypertarget{class_room_ae653a070a5eb0598097fcbe949e8b483}{\index{Room@{Room}!get\-Visited@{get\-Visited}}
 \index{get\-Visited@{get\-Visited}!Room@{Room}}
 \subsubsection[{get\-Visited}]{\setlength{\rightskip}{0pt plus 5cm}bool Room\-::get\-Visited (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}\label{class_room_ae653a070a5eb0598097fcbe949e8b483}
+) const}}\label{class_room_ae653a070a5eb0598097fcbe949e8b483}
 
 
 Récupère l'état de la salle. 
@@ -243,13 +234,13 @@ Récupère l'état de la salle.
 \begin{DoxyReturn}{Renvoie}
 vrai =$>$ on l'a déjà visité 
 \end{DoxyReturn}
-\index{Room@{Room}!get\-West@{get\-West}}
+\hypertarget{class_room_aafd7ca57898b2d8f4123fcd755646987}{\index{Room@{Room}!get\-West@{get\-West}}
 \index{get\-West@{get\-West}!Room@{Room}}
 \subsubsection[{get\-West}]{\setlength{\rightskip}{0pt plus 5cm}bool Room\-::get\-West (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}\label{class_room_aafd7ca57898b2d8f4123fcd755646987}
+) const}}\label{class_room_aafd7ca57898b2d8f4123fcd755646987}
 
 
 Récupère si l'access est possible à l'Ouest. 
@@ -257,13 +248,13 @@ Récupère si l'access est possible à l'Ouest.
 \begin{DoxyReturn}{Renvoie}
 vrai =$>$ on peut aller à l'Ouest 
 \end{DoxyReturn}
-\index{Room@{Room}!is\-End@{is\-End}}
+\hypertarget{class_room_a2d04c2be573b64240139ffa96089d0de}{\index{Room@{Room}!is\-End@{is\-End}}
 \index{is\-End@{is\-End}!Room@{Room}}
 \subsubsection[{is\-End}]{\setlength{\rightskip}{0pt plus 5cm}bool Room\-::is\-End (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}\label{class_room_a2d04c2be573b64240139ffa96089d0de}
+) const}}\label{class_room_a2d04c2be573b64240139ffa96089d0de}
 
 
 verifie si c'est la salle de fin 
@@ -271,7 +262,7 @@ verifie si c'est la salle de fin
 \begin{DoxyReturn}{Renvoie}
 vrai =$>$ salle de fin 
 \end{DoxyReturn}
-\index{Room@{Room}!print@{print}}
+\hypertarget{class_room_a621adfd7a12485b67ba9c26882252830}{\index{Room@{Room}!print@{print}}
 \index{print@{print}!Room@{Room}}
 \subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void Room\-::print (
 \begin{DoxyParamCaption}
@@ -280,16 +271,18 @@ vrai =$>$ salle de fin
 \item[{std\-::string \&}]{b, }
 \item[{bool}]{god\-Mode = {\ttfamily false}}
 \end{DoxyParamCaption}
-) const}\label{class_room_a621adfd7a12485b67ba9c26882252830}
+) const}}\label{class_room_a621adfd7a12485b67ba9c26882252830}
 
 
 Affiche le contenue de la salle. 
 
 Réalise un affichage sur 3 lignes en fonction de son état (visited, unvisited, position)\par
-visited \-: Affiche le contenue de la salle \par
-unvisited \-: Affiche un brouillard (masque le contenue) \par
-position \-: Indique ma position dans le labyrinthe \par
- 
+ visited \-: Affiche le contenue de la salle \par
+ unvisited \-: Affiche un brouillard (masque le contenue) \par
+ position \-: Indique ma position dans le labyrinthe \par
+
+
+
 \begin{DoxyParams}{Paramètres}
 {\em t} & flux première ligne \\
 \hline
@@ -300,13 +293,13 @@ position \-: Indique ma position dans le labyrinthe \par
 {\em god\-Mode} & true =$>$ ignore l'état \\
 \hline
 \end{DoxyParams}
-\index{Room@{Room}!set\-Comportement@{set\-Comportement}}
+\hypertarget{class_room_a78150061fe95e0d03b8730fb151cc39f}{\index{Room@{Room}!set\-Comportement@{set\-Comportement}}
 \index{set\-Comportement@{set\-Comportement}!Room@{Room}}
 \subsubsection[{set\-Comportement}]{\setlength{\rightskip}{0pt plus 5cm}void Room\-::set\-Comportement (
 \begin{DoxyParamCaption}
 \item[{{\bf Room\-Comportement} $\ast$}]{r}
 \end{DoxyParamCaption}
-)}\label{class_room_a78150061fe95e0d03b8730fb151cc39f}
+)}}\label{class_room_a78150061fe95e0d03b8730fb151cc39f}
 
 
 Modifie le comportement de la salle. 
@@ -318,13 +311,13 @@ Modifie le comportement de la salle.
 {\em r} & nouveau comportement \\
 \hline
 \end{DoxyParams}
-\index{Room@{Room}!set\-East@{set\-East}}
+\hypertarget{class_room_a23e731f42c158963da07fd2022163021}{\index{Room@{Room}!set\-East@{set\-East}}
 \index{set\-East@{set\-East}!Room@{Room}}
 \subsubsection[{set\-East}]{\setlength{\rightskip}{0pt plus 5cm}void Room\-::set\-East (
 \begin{DoxyParamCaption}
 \item[{bool}]{b}
 \end{DoxyParamCaption}
-)}\label{class_room_a23e731f42c158963da07fd2022163021}
+)}}\label{class_room_a23e731f42c158963da07fd2022163021}
 
 
 Ouvre/ferme un access vers la salle Est. 
@@ -334,13 +327,13 @@ Ouvre/ferme un access vers la salle Est.
 {\em b} & true =$>$ ouvre, false =$>$ ferme \\
 \hline
 \end{DoxyParams}
-\index{Room@{Room}!set\-North@{set\-North}}
+\hypertarget{class_room_a1a48c7e2bfa873b36d859eb3471b7400}{\index{Room@{Room}!set\-North@{set\-North}}
 \index{set\-North@{set\-North}!Room@{Room}}
 \subsubsection[{set\-North}]{\setlength{\rightskip}{0pt plus 5cm}void Room\-::set\-North (
 \begin{DoxyParamCaption}
 \item[{bool}]{b}
 \end{DoxyParamCaption}
-)}\label{class_room_a1a48c7e2bfa873b36d859eb3471b7400}
+)}}\label{class_room_a1a48c7e2bfa873b36d859eb3471b7400}
 
 
 Ouvre/ferme un access vers la salle North. 
@@ -350,24 +343,13 @@ Ouvre/ferme un access vers la salle North.
 {\em b} & true =$>$ ouvre, false =$>$ ferme \\
 \hline
 \end{DoxyParams}
-\index{Room@{Room}!set\-Position@{set\-Position}}
-\index{set\-Position@{set\-Position}!Room@{Room}}
-\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Room\-::set\-Position (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\label{class_room_ac5949bc2fb5288c733369ad51af7b084}
-
-
-Etat de la salle \-: ma position. 
-
-\index{Room@{Room}!set\-South@{set\-South}}
+\hypertarget{class_room_a668be12e9202bb38b09c02d880fabdd6}{\index{Room@{Room}!set\-South@{set\-South}}
 \index{set\-South@{set\-South}!Room@{Room}}
 \subsubsection[{set\-South}]{\setlength{\rightskip}{0pt plus 5cm}void Room\-::set\-South (
 \begin{DoxyParamCaption}
 \item[{bool}]{b}
 \end{DoxyParamCaption}
-)}\label{class_room_a668be12e9202bb38b09c02d880fabdd6}
+)}}\label{class_room_a668be12e9202bb38b09c02d880fabdd6}
 
 
 Ouvre/ferme un access vers la salle Sud. 
@@ -377,35 +359,13 @@ Ouvre/ferme un access vers la salle Sud.
 {\em b} & true =$>$ ouvre, false =$>$ ferme \\
 \hline
 \end{DoxyParams}
-\index{Room@{Room}!set\-Unvisited@{set\-Unvisited}}
-\index{set\-Unvisited@{set\-Unvisited}!Room@{Room}}
-\subsubsection[{set\-Unvisited}]{\setlength{\rightskip}{0pt plus 5cm}void Room\-::set\-Unvisited (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\label{class_room_abcedb8c7a1685089a797805c0567219a}
-
-
-Etat de la salle \-: non visité 
-
-\index{Room@{Room}!set\-Visited@{set\-Visited}}
-\index{set\-Visited@{set\-Visited}!Room@{Room}}
-\subsubsection[{set\-Visited}]{\setlength{\rightskip}{0pt plus 5cm}void Room\-::set\-Visited (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\label{class_room_a50d357cd356b3b1d1bd8e7d9217e5b71}
-
-
-Etat de la salle \-: visité 
-
-\index{Room@{Room}!set\-West@{set\-West}}
+\hypertarget{class_room_a035421048480031e0cde52f1e330025c}{\index{Room@{Room}!set\-West@{set\-West}}
 \index{set\-West@{set\-West}!Room@{Room}}
 \subsubsection[{set\-West}]{\setlength{\rightskip}{0pt plus 5cm}void Room\-::set\-West (
 \begin{DoxyParamCaption}
 \item[{bool}]{b}
 \end{DoxyParamCaption}
-)}\label{class_room_a035421048480031e0cde52f1e330025c}
+)}}\label{class_room_a035421048480031e0cde52f1e330025c}
 
 
 Ouvre/ferme un access vers la salle Ouest. 
@@ -415,13 +375,13 @@ Ouvre/ferme un access vers la salle Ouest.
 {\em b} & true =$>$ ouvre, false =$>$ ferme \\
 \hline
 \end{DoxyParams}
-\index{Room@{Room}!top@{top}}
+\hypertarget{class_room_a77d4ea167eb2e32638c4da2f84117873}{\index{Room@{Room}!top@{top}}
 \index{top@{top}!Room@{Room}}
 \subsubsection[{top}]{\setlength{\rightskip}{0pt plus 5cm}void Room\-::top (
 \begin{DoxyParamCaption}
 \item[{std\-::string \&}]{s}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [private]}}\label{class_room_a77d4ea167eb2e32638c4da2f84117873}
+) const\hspace{0.3cm}{\ttfamily [private]}}}\label{class_room_a77d4ea167eb2e32638c4da2f84117873}
 
 
 Modifie le flux de sortie pour afficher le contenue de la salle. 
@@ -434,75 +394,3 @@ Modifie le flux de sortie pour afficher le contenue de la salle.
 \begin{DoxyReturn}{Renvoie}
 flux de sortie avec le contenue de la salle 
 \end{DoxyReturn}
-
-
-\subsection{Documentation des données membres}
-\index{Room@{Room}!m\-\_\-comp@{m\-\_\-comp}}
-\index{m\-\_\-comp@{m\-\_\-comp}!Room@{Room}}
-\subsubsection[{m\-\_\-comp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Room\-Comportement}$\ast$ Room\-::m\-\_\-comp\hspace{0.3cm}{\ttfamily [protected]}}\label{class_room_a2eef23a19d68165b2afda676156fec0f}
-
-
-Comportement de la salle. 
-
-\index{Room@{Room}!m\-\_\-east@{m\-\_\-east}}
-\index{m\-\_\-east@{m\-\_\-east}!Room@{Room}}
-\subsubsection[{m\-\_\-east}]{\setlength{\rightskip}{0pt plus 5cm}bool Room\-::m\-\_\-east\hspace{0.3cm}{\ttfamily [protected]}}\label{class_room_ab6e6bf0a1168694a27a13a8acf1452a2}
-
-
-true =$>$ Porte Nord Ouverte 
-
-\index{Room@{Room}!m\-\_\-etat@{m\-\_\-etat}}
-\index{m\-\_\-etat@{m\-\_\-etat}!Room@{Room}}
-\subsubsection[{m\-\_\-etat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Room\-Etat}$\ast$ Room\-::m\-\_\-etat\hspace{0.3cm}{\ttfamily [protected]}}\label{class_room_acef8df1171e7d81b12ad09fe96df7885}
-
-
-Etat courant. 
-
-\index{Room@{Room}!m\-\_\-north@{m\-\_\-north}}
-\index{m\-\_\-north@{m\-\_\-north}!Room@{Room}}
-\subsubsection[{m\-\_\-north}]{\setlength{\rightskip}{0pt plus 5cm}bool Room\-::m\-\_\-north\hspace{0.3cm}{\ttfamily [protected]}}\label{class_room_aeb245b2ac8baea5fe4aa2b581ce1e4b9}
-
-
-true =$>$ Porte Nord Ouverte 
-
-\index{Room@{Room}!m\-\_\-position@{m\-\_\-position}}
-\index{m\-\_\-position@{m\-\_\-position}!Room@{Room}}
-\subsubsection[{m\-\_\-position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Room\-Etat\-Position} Room\-::m\-\_\-position\hspace{0.3cm}{\ttfamily [protected]}}\label{class_room_aa98c341010116cd18d62dc656ea63503}
-
-
-Etat ma position. 
-
-\index{Room@{Room}!m\-\_\-south@{m\-\_\-south}}
-\index{m\-\_\-south@{m\-\_\-south}!Room@{Room}}
-\subsubsection[{m\-\_\-south}]{\setlength{\rightskip}{0pt plus 5cm}bool Room\-::m\-\_\-south\hspace{0.3cm}{\ttfamily [protected]}}\label{class_room_aac69181b1659a52d6e0259f7bfaae182}
-
-
-true =$>$ Porte Nord Ouverte 
-
-\index{Room@{Room}!m\-\_\-unvisited@{m\-\_\-unvisited}}
-\index{m\-\_\-unvisited@{m\-\_\-unvisited}!Room@{Room}}
-\subsubsection[{m\-\_\-unvisited}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Room\-Etat\-Unvisited} Room\-::m\-\_\-unvisited\hspace{0.3cm}{\ttfamily [protected]}}\label{class_room_af92789f3d7f8eeee7ee2ab2daebfc5c5}
-
-
-Etat non visité 
-
-\index{Room@{Room}!m\-\_\-visited@{m\-\_\-visited}}
-\index{m\-\_\-visited@{m\-\_\-visited}!Room@{Room}}
-\subsubsection[{m\-\_\-visited}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Room\-Etat\-Visited} Room\-::m\-\_\-visited\hspace{0.3cm}{\ttfamily [protected]}}\label{class_room_aa1641c60eea54c1633d3d1b4f04b34d0}
-
-
-Etat visité 
-
-\index{Room@{Room}!m\-\_\-west@{m\-\_\-west}}
-\index{m\-\_\-west@{m\-\_\-west}!Room@{Room}}
-\subsubsection[{m\-\_\-west}]{\setlength{\rightskip}{0pt plus 5cm}bool Room\-::m\-\_\-west\hspace{0.3cm}{\ttfamily [protected]}}\label{class_room_a645eb7a60abecb39a933f6ddd66c907d}
-
-
-true =$>$ Porte Nord Ouverte 
-
-
-
-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
-\item 
-src/{\bf Room.\-hpp}\item 
-src/{\bf Room.\-cpp}\end{DoxyCompactItemize}

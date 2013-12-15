@@ -1,5 +1,0 @@
-<map id="Labyrinth::isEnd" name="Labyrinth::isEnd">
-<area shape="rect" id="node2" href="$class_labyrinth.html#ac586bb4db152210ed424f77d68505502" title="Calcule la position de la salle dans le tableau. " alt="" coords="153,5,261,29"/>
-<area shape="rect" id="node3" href="$class_room.html#a2d04c2be573b64240139ffa96089d0de" title="verifie si c&#39;est la salle de fin " alt="" coords="165,53,248,77"/>
-<area shape="rect" id="node4" href="$class_room_comportement.html#a240991f90b07c35e0e9114e6a203ba88" title="Vérifie la fin. " alt="" coords="309,53,464,77"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="Room::getWest" name="Room::getWest">
-<area shape="rect" id="node2" href="$class_labyrinth.html#ae5ffa83a10d415f1f635a58bc25254ba" title="Verifie si il y a une porte a l&#39;ouest. " alt="" coords="161,5,274,29"/>
-<area shape="rect" id="node7" href="$class_room_etat_position.html#a56ac0e9929a77a90ddd776f25f72ea65" title="Ajout le contenue sur 3 lignes en fonction de l&#39;etat. " alt="" coords="150,53,285,77"/>
-<area shape="rect" id="node8" href="$class_room_etat_visited.html#a5c4482da22bbc5f090c9db7be1eb882d" title="Ajout le contenue sur 3 lignes en fonction de l&#39;etat. " alt="" coords="153,101,281,125"/>
-<area shape="rect" id="node3" href="$class_game.html#a70b3d987f25dd5e1aeb6ab18cfedc387" title="Choisie une direction et execute l&#39;action de la salle. " alt="" coords="491,7,611,31"/>
-<area shape="rect" id="node6" href="$class_labyrinth.html#a28e673608e72a1b69cc91c85f882b477" title="va a l&#39;ouest " alt="" coords="334,31,442,55"/>
-<area shape="rect" id="node4" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie. " alt="" coords="659,7,747,31"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="795,7,840,31"/>
-</map>

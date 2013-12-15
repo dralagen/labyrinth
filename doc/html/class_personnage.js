@@ -11,6 +11,8 @@ var class_personnage =
     [ "getChance", "class_personnage.html#aa5eabf95d3d0d31385bda9ae8427d57e", null ],
     [ "getForce", "class_personnage.html#a40de0ba95f25eb6f1653b6a4183763ae", null ],
     [ "getJambe", "class_personnage.html#af94423c768e960a49d04ad8514bf1b78", null ],
+    [ "getNbArme", "class_personnage.html#a16c55bf218d254e100dbde44bcad8aeb", null ],
+    [ "getNbEquip", "class_personnage.html#af0c39d7e7d2c799962e9f75a62f2678d", null ],
     [ "getNom", "class_personnage.html#ac0fbc92a7e930ae26148e5e5247e1494", null ],
     [ "getTorse", "class_personnage.html#a28565caaccdf1f8bc5fe76bf00b10311", null ],
     [ "getVie", "class_personnage.html#a261cbb9bb3b23a147d0f88b10eaa1857", null ],

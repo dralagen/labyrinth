@@ -1,0 +1,96 @@
+\hypertarget{class_random}{\section{Référence de la classe Random}
+\label{class_random}\index{Random@{Random}}
+}
+
+
+Gestion des nombres aléatoire.  
+
+
+
+
+Graphe de collaboration de Random\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_random__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_random_aa317d7d010796e711fe9b7ee9065785a}{get\-Rand} ()
+\begin{DoxyCompactList}\small\item\em Récupère un nombre aléatoire avec rand() \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_random}{Random} $\ast$ \hyperlink{class_random_a5d14d1731d76c3a4d9841842fa70580d}{get\-Instance} ()
+\begin{DoxyCompactList}\small\item\em Récupère l'instance de la classe \hyperlink{class_random}{Random}. \end{DoxyCompactList}\item 
+static int \hyperlink{class_random_a0a96dee9126a2267d9736047aff44958}{get\-Random} ()
+\begin{DoxyCompactList}\small\item\em Récupère un nombre aléatoire avec rand() \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_random_a891e11b01cad462c0af3eb0013f20e53}{static \hyperlink{class_random}{Random} $\ast$ \hyperlink{class_random_a891e11b01cad462c0af3eb0013f20e53}{s\-\_\-instance} = 0}\label{class_random_a891e11b01cad462c0af3eb0013f20e53}
+
+\begin{DoxyCompactList}\small\item\em pointeur vers l'instance de \hyperlink{class_random}{Random} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Gestion des nombres aléatoire. 
+
+Utilise rand() du C initialise lui même la seed
+
+Appelle lui même srand() a là 1er utilisation 
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_random_a5d14d1731d76c3a4d9841842fa70580d}{\index{Random@{Random}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!Random@{Random}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Random}$\ast$ Random\-::get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_random_a5d14d1731d76c3a4d9841842fa70580d}
+
+
+Récupère l'instance de la classe \hyperlink{class_random}{Random}. 
+
+Instancie la classe \hyperlink{class_random}{Random} si besoin
+
+/!\textbackslash{} fait le test si \hyperlink{class_random}{Random} est instancié a chaque appel
+
+\begin{DoxyReturn}{Renvoie}
+Instance de la classe \hyperlink{class_random}{Random} 
+\end{DoxyReturn}
+\hypertarget{class_random_aa317d7d010796e711fe9b7ee9065785a}{\index{Random@{Random}!get\-Rand@{get\-Rand}}
+\index{get\-Rand@{get\-Rand}!Random@{Random}}
+\subsubsection[{get\-Rand}]{\setlength{\rightskip}{0pt plus 5cm}int Random\-::get\-Rand (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_random_aa317d7d010796e711fe9b7ee9065785a}
+
+
+Récupère un nombre aléatoire avec rand() 
+
+\begin{DoxyReturn}{Renvoie}
+un entier aléatoire entre 0 et R\-A\-N\-D\-\_\-\-M\-A\-X 
+\end{DoxyReturn}
+\hypertarget{class_random_a0a96dee9126a2267d9736047aff44958}{\index{Random@{Random}!get\-Random@{get\-Random}}
+\index{get\-Random@{get\-Random}!Random@{Random}}
+\subsubsection[{get\-Random}]{\setlength{\rightskip}{0pt plus 5cm}static int Random\-::get\-Random (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_random_a0a96dee9126a2267d9736047aff44958}
+
+
+Récupère un nombre aléatoire avec rand() 
+
+Instancie la classe \hyperlink{class_random}{Random} si besoin
+
+/!\textbackslash{} fait le test si \hyperlink{class_random}{Random} est instancié a chaque appel
+
+\begin{DoxyReturn}{Renvoie}
+un entier aléatoire entre 0 et R\-A\-N\-D\-\_\-\-M\-A\-X 
+\end{DoxyReturn}

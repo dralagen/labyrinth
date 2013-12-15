@@ -1,6 +1,5 @@
 var annotated =
 [
-    [ "ColorTerm", "namespace_color_term.html", "namespace_color_term" ],
     [ "Arme", "class_arme.html", "class_arme" ],
     [ "Casque", "class_casque.html", "class_casque" ],
     [ "CasqueChance", "class_casque_chance.html", "class_casque_chance" ],
@@ -44,6 +43,7 @@ var annotated =
     [ "MonsterRoom", "class_monster_room.html", "class_monster_room" ],
     [ "Personnage", "class_personnage.html", "class_personnage" ],
     [ "pos", "structpos.html", "structpos" ],
+    [ "Random", "class_random.html", "class_random" ],
     [ "Room", "class_room.html", "class_room" ],
     [ "RoomComportement", "class_room_comportement.html", "class_room_comportement" ],
     [ "RoomEtat", "class_room_etat.html", "class_room_etat" ],

@@ -1,6 +1,6 @@
 <map id="Torse" name="Torse">
-<area shape="rect" id="node3" href="$class_torse_chance.html" title="TorseChance herite de Torse. " alt="" coords="5,337,115,418"/>
-<area shape="rect" id="node4" href="$class_torse_force.html" title="TorseForce herite de Torse. " alt="" coords="140,337,241,418"/>
-<area shape="rect" id="node5" href="$class_torse_vie.html" title="TorseVie herite de Torse. " alt="" coords="265,337,353,418"/>
-<area shape="rect" id="node2" href="$class_equipement.html" title="Gestion des equipements. " alt="" coords="139,5,241,147"/>
+<area shape="rect" id="node5" href="$class_torse_chance.html" title="TorseChance herite de Torse." alt="" coords="5,395,115,493"/>
+<area shape="rect" id="node7" href="$class_torse_force.html" title="TorseForce herite de Torse." alt="" coords="139,395,240,493"/>
+<area shape="rect" id="node9" href="$class_torse_vie.html" title="TorseVie herite de Torse." alt="" coords="264,395,352,493"/>
+<area shape="rect" id="node2" href="$class_equipement.html" title="Gestion des equipements." alt="" coords="139,6,240,183"/>
 </map>

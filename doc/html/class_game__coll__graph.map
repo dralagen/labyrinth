@@ -1,13 +1,13 @@
 <map id="Game" name="Game">
-<area shape="rect" id="node2" href="$class_labyrinth.html" title="gestion de labyrinthe " alt="" coords="486,449,580,626"/>
-<area shape="rect" id="node3" href="$class_room.html" title="gestion de salle " alt="" coords="230,185,321,362"/>
-<area shape="rect" id="node4" href="$class_room_etat.html" title="Gestion de l&#39;état de visite de la salle. " alt="" coords="255,485,348,590"/>
-<area shape="rect" id="node5" href="$class_room_etat_unvisited.html" title="Salle jamais visité " alt="" coords="323,689,457,794"/>
-<area shape="rect" id="node6" href="$class_room_etat_visited.html" title="Salle déjà visité " alt="" coords="170,689,293,794"/>
-<area shape="rect" id="node8" href="$class_room_etat_position.html" title="Salle identifé comme ma position. " alt="" coords="5,689,135,794"/>
-<area shape="rect" id="node7" href="$class_room_comportement.html" title="Génère le comportement des salles. " alt="" coords="203,5,349,123"/>
-<area shape="rect" id="node9" href="$structpos.html" title="position utilise des coordonnée pour stocker une position " alt="" coords="514,233,552,314"/>
-<area shape="rect" id="node10" href="$class_personnage.html" title="Gestion du Personnage. " alt="" coords="605,467,707,608"/>
-<area shape="rect" id="node11" href="$class_arme.html" title="Gestion des armes. " alt="" coords="719,203,805,344"/>
-<area shape="rect" id="node12" href="$class_equipement.html" title="Gestion des equipements. " alt="" coords="593,203,695,344"/>
+<area shape="rect" id="node2" href="$class_labyrinth.html" title="gestion de labyrinthe" alt="" coords="469,539,563,781"/>
+<area shape="rect" id="node4" href="$class_room.html" title="gestion de salle" alt="" coords="225,217,316,442"/>
+<area shape="rect" id="node6" href="$class_room_etat.html" title="Gestion de l&#39;état de visite de la salle." alt="" coords="244,595,337,725"/>
+<area shape="rect" id="node9" href="$class_room_etat_unvisited.html" title="Salle jamais visité" alt="" coords="312,846,448,975"/>
+<area shape="rect" id="node12" href="$class_room_etat_visited.html" title="Salle déjà visité" alt="" coords="164,846,287,975"/>
+<area shape="rect" id="node17" href="$class_room_etat_position.html" title="Salle identifé comme ma position." alt="" coords="5,846,136,975"/>
+<area shape="rect" id="node15" href="$class_room_comportement.html" title="Génère le comportement des salles." alt="" coords="197,6,344,151"/>
+<area shape="rect" id="node20" href="$structpos.html" title="position utilise des coordonnée pour stocker une position" alt="" coords="497,281,535,378"/>
+<area shape="rect" id="node22" href="$class_personnage.html" title="Gestion du Personnage." alt="" coords="587,571,688,749"/>
+<area shape="rect" id="node24" href="$class_arme.html" title="Gestion des armes." alt="" coords="699,241,784,418"/>
+<area shape="rect" id="node26" href="$class_equipement.html" title="Gestion des equipements." alt="" coords="573,241,675,418"/>
 </map>

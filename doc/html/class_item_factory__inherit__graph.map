@@ -1,5 +1,5 @@
 <map id="ItemFactory" name="ItemFactory">
-<area shape="rect" id="node2" href="$class_chance_factory.html" title="Factory concrete pour creer des objets de type Chance. " alt="" coords="5,171,99,277"/>
-<area shape="rect" id="node3" href="$class_force_factory.html" title="Factory concrete pour creer des objets de type Force. " alt="" coords="124,171,217,277"/>
-<area shape="rect" id="node4" href="$class_vie_factory.html" title="Factory concrete pour creer des objets de type Vie. " alt="" coords="241,171,335,277"/>
+<area shape="rect" id="node3" href="$class_chance_factory.html" title="Factory concrete pour creer des objets de type Chance." alt="" coords="5,201,99,330"/>
+<area shape="rect" id="node5" href="$class_force_factory.html" title="Factory concrete pour creer des objets de type Force." alt="" coords="123,201,216,330"/>
+<area shape="rect" id="node7" href="$class_vie_factory.html" title="Factory concrete pour creer des objets de type Vie." alt="" coords="240,201,333,330"/>
 </map>

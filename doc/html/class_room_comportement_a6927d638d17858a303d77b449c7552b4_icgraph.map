@@ -1,9 +1,0 @@
-<map id="RoomComportement::getContent" name="RoomComportement::getContent">
-<area shape="rect" id="node2" href="$class_room.html#a792dfc1df5837f19a485b56e68ca4361" title="Modifie le flux de sortie pour afficher le contenue de la salle. " alt="" coords="250,5,337,29"/>
-<area shape="rect" id="node7" href="$class_room.html#a6267518113960cc5fbb40936ea9cbc36" title="Récupère le contenue de la salle. " alt="" coords="238,53,349,77"/>
-<area shape="rect" id="node3" href="$class_room.html#a621adfd7a12485b67ba9c26882252830" title="Affiche le contenue de la salle. " alt="" coords="422,5,501,29"/>
-<area shape="rect" id="node4" href="$class_labyrinth.html#a7c0789decac44992b6baa12613b9109a" title="Affiche le labyrinthe. " alt="" coords="573,5,667,29"/>
-<area shape="rect" id="node5" href="$class_game.html#a35c46e76cde7773850820233754e0bc0" title="Débute le déroulement d&#39;une partie. " alt="" coords="715,5,803,29"/>
-<area shape="rect" id="node6" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="851,5,896,29"/>
-<area shape="rect" id="node8" href="$class_room_etat_visited.html#a5c4482da22bbc5f090c9db7be1eb882d" title="Ajout le contenue sur 3 lignes en fonction de l&#39;etat. " alt="" coords="397,53,525,77"/>
-</map>

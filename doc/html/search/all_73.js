@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['s_5finstance',['s_instance',['../class_random.html#a891e11b01cad462c0af3eb0013f20e53',1,'Random']]],
   ['setarme',['setArme',['../class_personnage.html#ac24d31489cc986e870e60f257a9d0849',1,'Personnage']]],
   ['setcasque',['setCasque',['../class_personnage.html#a6008154c7725bf6309cba8eb63cf2a94',1,'Personnage']]],
   ['setcomportement',['setComportement',['../class_room.html#a78150061fe95e0d03b8730fb151cc39f',1,'Room']]],
@@ -14,7 +15,5 @@ var searchData=
   ['setunvisited',['setUnvisited',['../class_room.html#abcedb8c7a1685089a797805c0567219a',1,'Room']]],
   ['setvisited',['setVisited',['../class_room.html#a50d357cd356b3b1d1bd8e7d9217e5b71',1,'Room']]],
   ['setwest',['setWest',['../class_room.html#a035421048480031e0cde52f1e330025c',1,'Room']]],
-  ['startroom',['StartRoom',['../class_start_room.html',1,'StartRoom'],['../class_start_room.html#ac92cf89ae4fac37b88a708fb762314d8',1,'StartRoom::StartRoom()']]],
-  ['startroom_2ecpp',['StartRoom.cpp',['../_start_room_8cpp.html',1,'']]],
-  ['startroom_2ehpp',['StartRoom.hpp',['../_start_room_8hpp.html',1,'']]]
+  ['startroom',['StartRoom',['../class_start_room.html',1,'']]]
 ];

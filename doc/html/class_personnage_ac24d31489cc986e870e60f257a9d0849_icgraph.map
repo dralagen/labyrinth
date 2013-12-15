@@ -1,5 +1,0 @@
-<map id="Personnage::setArme" name="Personnage::setArme">
-<area shape="rect" id="node2" href="$class_personnage.html#a020576cc14d815a1f4ebb9afe677e4c7" title="Propose au personnage d&#39;équiper une Arme. " alt="" coords="181,5,328,29"/>
-<area shape="rect" id="node4" href="$class_treasure_deco_arme.html#a31ce1bb2064d0bc9318b8b5f21b22a46" title="ouvre le coffre pour le Personnage " alt="" coords="181,53,328,77"/>
-<area shape="rect" id="node3" href="$class_treasure_arme.html#a67423f71b0680eb22913f014e717cb00" title="ouvre le coffre pour le Personnage " alt="" coords="376,5,499,29"/>
-</map>

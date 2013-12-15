@@ -1,4 +1,0 @@
-<map id="Personnage::afficheEquip" name="Personnage::afficheEquip">
-<area shape="rect" id="node2" href="$class_equipement.html#a0b0426a70bfce6e7c3efac605b75cd8e" title="Retourne le nom de l&#39;equipement. " alt="" coords="197,5,320,29"/>
-<area shape="rect" id="node3" href="$class_arme.html#ab1b18cfa41fac19fccedf2165b9ff33c" title="Retourne le nom de l&#39;arme. " alt="" coords="213,53,305,77"/>
-</map>

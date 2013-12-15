@@ -1,5 +1,6 @@
 var class_force_factory =
 [
+    [ "CreateFactory", "class_force_factory.html#ab10257decaf2cda946ec482a0dfdfe03", null ],
     [ "GetCasque", "class_force_factory.html#af7a70ed4e427ff00a637613364e4e465", null ],
     [ "GetDague", "class_force_factory.html#a868dd51ed72902455d44923b149ed01a", null ],
     [ "GetEpee", "class_force_factory.html#a9b868013f6c513d1fb9cfe9dbf23e9c7", null ],

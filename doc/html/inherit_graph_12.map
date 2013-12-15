@@ -1,7 +1,7 @@
 <map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
-<area shape="rect" id="node1" href="$class_treasure.html" title="Coffre de salle. " alt="" coords="5,77,72,101"/>
-<area shape="rect" id="node2" href="$class_treasure_arme.html" title="Coffre de salle comportant une arme aléatoire. " alt="" coords="134,5,226,29"/>
-<area shape="rect" id="node3" href="$class_treasure_deco_arme.html" title="Coffre de salle avec un ou des bonus d&#39;arme aléatoire. " alt="" coords="121,53,239,77"/>
-<area shape="rect" id="node4" href="$class_treasure_deco_equip.html" title="Coffre de salle contenant une ou des amélioration(s) pour un équipement. " alt="" coords="121,101,239,125"/>
-<area shape="rect" id="node5" href="$class_treasure_equip.html" title="Coffre de salle contenant un équipements aléatoir. " alt="" coords="133,149,227,173"/>
+<area shape="rect" id="node1" href="$class_treasure.html" title="Coffre de salle." alt="" coords="5,81,72,109"/>
+<area shape="rect" id="node3" href="$class_treasure_arme.html" title="Coffre de salle comportant une arme aléatoire." alt="" coords="135,5,225,33"/>
+<area shape="rect" id="node5" href="$class_treasure_deco_arme.html" title="Coffre de salle avec un ou des bonus d&#39;arme aléatoire." alt="" coords="121,55,239,83"/>
+<area shape="rect" id="node7" href="$class_treasure_deco_equip.html" title="Coffre de salle contenant une ou des amélioration(s) pour un équipement." alt="" coords="121,106,239,134"/>
+<area shape="rect" id="node9" href="$class_treasure_equip.html" title="Coffre de salle contenant un équipements aléatoir." alt="" coords="133,157,227,185"/>
 </map>
