@@ -107,7 +107,7 @@ void Labyrinth::_gen() {
 		p.x = (rand()%m_tailleX);
 		p.y = (rand()%m_tailleY);
 	} while (p.x == m_current.x && p.y == m_current.y);
-	m_rooms[position(p)].setComportement(new EndRoom(10));
+	m_rooms[position(p)].setComportement(new EndRoom(15));
 
 
 	init(p);
