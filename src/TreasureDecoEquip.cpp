@@ -70,8 +70,8 @@ void TreasureDecoEquip::open(Personnage &p) {
 			}
 			std::cout << COLOR_RESET << std::endl;
 			p.setEquipement(e);
+			sleep(1);
 		}
-		sleep(1);
 	}
 	else {
 		std::cout << COLOR_ERROR << "Objet non utilisable" << COLOR_ERROR << std::endl;
