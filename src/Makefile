@@ -1,5 +1,4 @@
 DEBUG=no
-CC=g++
 EXEC=laby
 ifeq (${DEBUG},yes)
 	#debug
@@ -7,7 +6,7 @@ ifeq (${DEBUG},yes)
 	LDFLAGS=
 else
 	#release
-	CFLAGS=-O2 -s -std=c++0x
+	CFLAGS=-O2 -std=c++0x
 	LDFLAGS=
 endif
 
@@ -21,12 +20,12 @@ ifeq ($(DEBUG),no)
 endif
 
 $(EXEC): $(OBJ)
-	@echo "$@"
-	@$(CC) -o $@ $^ $(LDFLAGS)
+	@echo "${CXX} $@"
+	@$(CXX) -o $@ $^ $(LDFLAGS)
 
 %.o: %.cpp
-	@echo "-o $@ -c $<"
-	@$(CC) -o $@ -c $< $(CFLAGS)
+	@echo "${CXX} -o $@ -c $<"
+	@$(CXX) -o $@ -c $< $(CFLAGS)
 
 .PHONY: clean mrproper
 
